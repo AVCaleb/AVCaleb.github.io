@@ -8,7 +8,7 @@
     <link href="/2022/01/17/tensor/"/>
     <url>/2022/01/17/tensor/</url>
     
-    <content type="html"><![CDATA[<h1 id="postulate">Postulate</h1><p><span class="math display">\[1. \va{P}=P^1\va{g_1}+P^2\va{g_2}\\2. \pmb{g_i·g^j}\equiv\delta^j_i=\begin{cases}1&amp; \text{i=j}\\0&amp; \text{i\ne j}\end{cases}\Longrightarrow\pmb{g_1\perp g^2},\pmb{g_1\perp g^3}\]</span></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="postulate">Postulate</h1><p><span class="math display">\[1. \pmb{P}=P^1\pmb{g_1}+P^2\pmb{g_2}\\2. \pmb{g_i·g^j}\equiv\delta^j_i=\begin{cases}1&amp; \text{i=j}\\0&amp; \text{others}\end{cases}\Longrightarrow\pmb{g_1\perp g^2},\pmb{g_1\perp g^3}\]</span></p>]]></content>
     
     
     
