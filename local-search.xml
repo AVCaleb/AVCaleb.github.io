@@ -4,11 +4,30 @@
   
   
   <entry>
+    <title>poem1</title>
+    <link href="/2022/01/17/poem1/"/>
+    <url>/2022/01/17/poem1/</url>
+    
+    <content type="html"><![CDATA[<p>忧愁变成一种可怕的诉说 季节来临 时间不褪去地轮回于寻常 我们把哀愁的记忆变为交换之物 最精致的苦痛被庸俗、可怜的手段慰抚 我们释怀 只等下一次的凉风兴起—— 再作酒精的奴隶 再凝视平静的灯火。</p><p>疼痛暂时被压抑 幻想着下一次的爱抚 恐惧遗忘之为柔情 让悲哀被金石铭记 狂热于之可鄙而迷人的价值</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Poem</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>The Fundamental Elements of Tensor</title>
     <link href="/2022/01/17/tensor/"/>
     <url>/2022/01/17/tensor/</url>
     
-    <content type="html"><![CDATA[<h1 id="postulate">Postulate</h1><p><span class="math display">\[1. \pmb{P}=P^1\pmb{g_1}+P^2\pmb{g_2}\par 2. \pmb{g_i·g^j}\equiv\delta^j_i=\begin{cases}1&amp; \text{i=j}\\0&amp; \text{others}\end{cases}\Longrightarrow\pmb{g_1\perp g^2},\pmb{g_1\perp g^3}\]</span></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="缘起">缘起</h1><p>对张量的学习无外乎一种纯粹的智性的乐趣，若说其中有多大的裨益倒也不见得。所用到的，便是在一些因为词语的摇撼的轰鸣的时刻进行一些遁世的思索，仿佛要隔绝肉身于外物，在纯粹的符号间耗散过剩的心血。一切不过如此罢了。</p><h1 id="postulate">Postulate</h1><p><span class="math display">\[1. \pmb{P}=P^1\pmb{g_1}+P^2\pmb{g_2}\]</span></p><p><span class="math display">\[2. \pmb{g_i·g^j}\equiv\delta^j_i=\begin{cases}1&amp; \text{i=j}\\0&amp; \text{others}\end{cases}\Longrightarrow\pmb{g_1\perp g^2},\pmb{g_1\perp g^3}\]</span></p>]]></content>
     
     
     
