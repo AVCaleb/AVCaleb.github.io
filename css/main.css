@@ -360,17 +360,17 @@ img[lazyload] {
 }
 :root {
   --color-mode: 'light';
-  --body-bg-color: #eee;
-  --board-bg-color: #fff;
-  --text-color: #3c4858;
+  --body-bg-color: #181818;
+  --board-bg-color: #181818;
+  --text-color: #FFFFFF;
   --sec-text-color: #718096;
-  --post-text-color: #2c3e50;
-  --post-heading-color: #1a202c;
-  --post-link-color: #0366d6;
+  --post-text-color: #FFFFFF;
+  --post-heading-color: #FFFFFF;
+  --post-link-color: #FFFFFF;
   --link-hover-color: #30a9de;
   --link-hover-bg-color: #f8f9fa;
-  --navbar-bg-color: #2f4154;
-  --navbar-text-color: #fff;
+  --navbar-bg-color: #181818;
+  --navbar-text-color: #FFFFFF;
   --scrollbar-color: #c4c6c9;
   --scrollbar-hover-color: #a6a6a6;
 }
@@ -379,17 +379,17 @@ img[lazyload] {
     --color-mode: 'dark';
   }
   :root:not([data-user-color-scheme]) {
-    --body-bg-color: #181c27;
-    --board-bg-color: #252d38;
-    --text-color: #c4c6c9;
+    --body-bg-color: #181818;
+    --board-bg-color: #181818;
+    --text-color: #FFFFFF;
     --sec-text-color: #a7a9ad;
-    --post-text-color: #c4c6c9;
-    --post-heading-color: #c4c6c9;
-    --post-link-color: #1589e9;
+    --post-text-color: #FFFFFF;
+    --post-heading-color: #FFFFFF;
+    --post-link-color: #FFFFFF;
     --link-hover-color: #30a9de;
     --link-hover-bg-color: #364151;
-    --navbar-bg-color: #1f3144;
-    --navbar-text-color: #d0d0d0;
+    --navbar-bg-color: #181818;
+    --navbar-text-color: #FFFFFF;
     --scrollbar-color: #687582;
     --scrollbar-hover-color: #9da8b3;
   }
@@ -452,17 +452,17 @@ img[lazyload] {
   }
 }
 [data-user-color-scheme='dark'] {
-  --body-bg-color: #181c27;
-  --board-bg-color: #252d38;
-  --text-color: #c4c6c9;
+  --body-bg-color: #181818;
+  --board-bg-color: #181818;
+  --text-color: #FFFFFF;
   --sec-text-color: #a7a9ad;
-  --post-text-color: #c4c6c9;
-  --post-heading-color: #c4c6c9;
-  --post-link-color: #1589e9;
+  --post-text-color: #FFFFFF;
+  --post-heading-color: #FFFFFF;
+  --post-link-color: #FFFFFF;
   --link-hover-color: #30a9de;
   --link-hover-bg-color: #364151;
-  --navbar-bg-color: #1f3144;
-  --navbar-text-color: #d0d0d0;
+  --navbar-bg-color: #181818;
+  --navbar-text-color: #FFFFFF;
   --scrollbar-color: #687582;
   --scrollbar-hover-color: #9da8b3;
 }
@@ -1719,11 +1719,11 @@ post-custom {
   border-left: 0.35rem solid;
   border-radius: 0.25rem;
   margin: 1.5rem 0;
-  color: #3c4858;
+  color: #FFFFFF;
   font-size: 0.9rem;
 }
 .note a {
-  color: #3c4858;
+  color: #FFFFFF;
 }
 .note *:last-child {
   margin-bottom: 0;
@@ -1763,7 +1763,7 @@ note-default {
   font-size: 85%;
   margin: 0;
   padding: 0.2em 0.4em;
-  color: #3c4858;
+  color: #FFFFFF;
 }
 .label-default {
   background: #f7f7f7;
