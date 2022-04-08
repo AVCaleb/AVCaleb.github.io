@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-08T15:07:56.318Z</updated>
+  <updated>2022-04-08T09:47:23.623Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>mail</title>
-    <link href="http://example.com/2022/04/08/mail/"/>
-    <id>http://example.com/2022/04/08/mail/</id>
-    <published>2022-04-08T02:00:00.000Z</published>
-    <updated>2022-04-08T15:07:56.318Z</updated>
-    
-    <content type="html"><![CDATA[<p>My email is vangallesolitary@gamil.com.</p><p>If you have any question, you can send an email to me. I'll reply to you when I'm covenient.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;My email is vangallesolitary@gamil.com.&lt;/p&gt;
-&lt;p&gt;If you have any question, you can send an email to me. I&#39;ll reply to you when I&#39;m covenien</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>割礼的意义——一次误读</title>
@@ -559,11 +538,37 @@
     <category term="Essay" scheme="http://example.com/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="http://example.com/tags/Anthropology/"/>
-    
     <category term="Literature" scheme="http://example.com/tags/Literature/"/>
     
+    <category term="Anthropology" scheme="http://example.com/tags/Anthropology/"/>
+    
     <category term="Aesthetic" scheme="http://example.com/tags/Aesthetic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于马克思理论的根基</title>
+    <link href="http://example.com/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/"/>
+    <id>http://example.com/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/</id>
+    <published>2021-10-25T13:53:00.000Z</published>
+    <updated>2022-02-08T01:58:18.543Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于马克思理论的根基">关于马克思理论的根基</h1><p>马克思理论的根基就是生产力，所谓生产力是结构性的功能因素，“即一定的生产方式或结构在实际运作中发挥出来的程度、能力和水平”。这是张一兵对生产力一词的归纳。我想这是对的，这是根据张一兵的引文：</p><blockquote><p>“人们之所以有历史，是因为他们必须生产自己的生活，而且必须用一定的方式来进行。”（《费尔巴哈》，第25页）</p></blockquote><p>也正是因着生产力作为其理论的全部根基，所以其哲学理论根本点就在于历史性——毕竟生产力不是永恒的范畴，其是历史性的。</p><p><img src="/img/Ma.png"></p><p>难以置信，马克思忘记对生产力进行批判——或许他批判了，我不知道——或许对他来说，对生产力的批判是没有意义的。对生产力的批判就是对技术的批判，从而就是对科学的批判，从而就是对理性的批判，从而就是对人自身限制性的批判。或许在前几者上是有纠缠的，但对人的批判是永远第一位的。马克思想说，批判是历史性的，所以对人的批判也是历史性的。康德在这一点上的论证力度是70%，马克思用历史性便把对人的批判打发走了，但我想这一过程还是得继续，现在是需要真正的物理学家来做这样的事。</p><p>不过，如果马克思根本置理性本身的限制性体系于不顾，而单问经济哲学、政治哲学是否其本源是生产，那么我在这一点上与马克思的意见是相同。</p><p>我想，按照马克思的意思，我所想的他根本不想去谈论，因为这对于他最后的社会批判本身似乎没有裨益。不过如今，在面对自由、平等的概念时，我想人的本体场域不再是不可忽视的，相反的，其应当处于一个主导的位置。不过，在马克思的批判语境里是没有这个东西，如果有，那么不过是当时的琐屑问题，也是马克思自己在细节上的愚昧，但他在历史的社会问题上的把握是有一定道理的。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;关于马克思理论的根基&quot;&gt;关于马克思理论的根基&lt;/h1&gt;
+&lt;p&gt;马克思理论的根基就是生产力，所谓生产力是结构性的功能因素，“即一定的生产方式或结构在实际运作中发挥出来的程度、能力和水平”。这是张一兵对生产力一词的归纳。我想这是对的，这是根据张一兵的引文：&lt;/p&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="Essay" scheme="http://example.com/categories/Essay/"/>
+    
+    
+    <category term="Philosophy" scheme="http://example.com/tags/Philosophy/"/>
     
   </entry>
   
