@@ -1742,7 +1742,7 @@ note-default {
   border-color: #5cb85c;
 }
 .note-danger {
-  background-color: #fcf1f2;
+  background-color: #d9534f;
   border-color: #d9534f;
 }
 .note-warning {
@@ -1781,7 +1781,7 @@ note-default {
   background: #fdf8ea;
 }
 .label-danger {
-  background: #fcf1f2;
+  background: #d9534f;
 }
 .markdown-body .btn {
   background: #2f4154;
