@@ -482,9 +482,9 @@
     
     <category term="Theology" scheme="http://example.com/tags/Theology/"/>
     
-    <category term="Ontology" scheme="http://example.com/tags/Ontology/"/>
-    
     <category term="Metaphysics" scheme="http://example.com/tags/Metaphysics/"/>
+    
+    <category term="Ontology" scheme="http://example.com/tags/Ontology/"/>
     
   </entry>
   
