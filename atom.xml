@@ -538,9 +538,9 @@
     <category term="Essay" scheme="http://example.com/categories/Essay/"/>
     
     
-    <category term="Literature" scheme="http://example.com/tags/Literature/"/>
-    
     <category term="Anthropology" scheme="http://example.com/tags/Anthropology/"/>
+    
+    <category term="Literature" scheme="http://example.com/tags/Literature/"/>
     
     <category term="Aesthetic" scheme="http://example.com/tags/Aesthetic/"/>
     

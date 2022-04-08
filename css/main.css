@@ -1721,6 +1721,7 @@ post-custom {
   margin: 1.5rem 0;
   color: #FFFFFF;
   font-size: 0.9rem;
+  text-align: center;
 }
 .note a {
   color: #FFFFFF;
@@ -1744,6 +1745,10 @@ note-default {
 .note-danger {
   background-color: #d9534f;
   border-color: #d9534f;
+}
+.note-doctrine {
+  background-color: #181818;
+  border-color: #181818;
 }
 .note-warning {
   background-color: #fdf8ea;
@@ -1780,8 +1785,11 @@ note-default {
 .label-warning {
   background: #fdf8ea;
 }
+.label-doctrine {
+  background: #181818;
+}
 .label-danger {
-  background: #d9534f;
+  background: #428bca;
 }
 .markdown-body .btn {
   background: #2f4154;
