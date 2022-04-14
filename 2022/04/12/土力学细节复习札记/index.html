@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/classnotes.jpg">
 <meta property="article:published_time" content="2022-04-12T04:50:00.000Z">
-<meta property="article:modified_time" content="2022-04-14T08:00:17.405Z">
+<meta property="article:modified_time" content="2022-04-14T12:49:06.991Z">
 <meta property="article:author" content="Vangalle">
 <meta property="article:tag" content="Science">
 <meta property="article:tag" content="Soil">
@@ -203,7 +203,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.8k 字
+      4.6k 字
     </span>
   
 
@@ -212,7 +212,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6 分钟
+      9 分钟
     </span>
   
 
@@ -265,17 +265,60 @@ C_u=\frac{d_{60}}{d_{10}}
 \]</span> 显然，容易推得，<span class="math inline">\(C_u\)</span>越大，则曲线越平缓，粒径分布越均匀，级配越好。</p>
 <p>曲率系数 <span class="math display">\[
 C_c=\frac{d_{30}^2}{d_{10}\cdot d_{60}}
-\]</span></p>
-<h3 id="两个指数">两个指数</h3>
-<p>塑性指数（注意省去%） <span class="math display">\[
+\]</span> <span class="math inline">\(C_c\)</span>则表现累计曲线的分布范围，反映曲线的整体形状。</p>
+<p>级配良好：</p>
+<ol type="1">
+<li>一般情况下，将<span class="math inline">\(C_u&gt;10\)</span>的土视为级配良好的土。</li>
+<li>一般认为，对于砾类土或砂类土同时满足<span class="math inline">\(C_u\geq 5和C_c=1\sim 3\)</span>两个条件时，则定名为良好级配砾或良好级配砂。</li>
+</ol>
+<p>关于矿物，参考下面这张图</p>
+<p><img src="https://s2.loli.net/2022/04/14/qksHrU8maCdfnu5.png" srcset="/img/loading.gif" lazyload></p>
+<p>黏土矿物可分为高岭石、伊利石、蒙脱石三类。三者亲水能力依次增强，比表面积也依次增大。下面为三者颗粒形状</p>
+<figure>
+<img src="https://s2.loli.net/2022/04/14/wItUDvhZ73XA6KF.png" srcset="/img/loading.gif" lazyload alt="高岭石"><figcaption aria-hidden="true">高岭石</figcaption>
+</figure>
+<figure>
+<img src="https://s2.loli.net/2022/04/14/QmhO1tZbMeaguvJ.png" srcset="/img/loading.gif" lazyload alt="伊利石"><figcaption aria-hidden="true">伊利石</figcaption>
+</figure>
+<figure>
+<img src="https://s2.loli.net/2022/04/14/E19jSz4qYdc8a2B.png" srcset="/img/loading.gif" lazyload alt="蒙脱石"><figcaption aria-hidden="true">蒙脱石</figcaption>
+</figure>
+<h4 id="土中水">土中水</h4>
+<p>强结合水——接近固体</p>
+<p>弱结合水——水膜，土中有较多弱结合水，则具有一定的可塑性</p>
+<p>另外，自由水分为毛细水和重力水，重力水自由流动，毛细水承受表面张力和重力作用。</p>
+<h3 id="三个指数">三个指数</h3>
+<p><strong>密实度</strong> <span class="math display">\[
+D_r=\frac{e_{max}-e}{e_{max}-e_{min}}
+\]</span> 砂土可根据锤击数划分密实度，粗粒土可根基相对密度。</p>
+<p><strong>塑性指数</strong>（注意省去%） <span class="math display">\[
 I_p=w_l-w_p
-\]</span> 塑性指数乃综合性指标，本质上为土体结合水的可能含量，与土颗粒、矿物成分、土中水的离子成分、浓度有关。 液性指数 <span class="math display">\[
+\]</span> 塑性指数乃综合性指标，本质上为<strong>土体结合水的可能含量</strong>，与土颗粒、矿物成分、土中水的离子成分、浓度有关。</p>
+<p><strong>液性指数</strong> <span class="math display">\[
 I_l=\frac{w-w_p}{w_l-w_p}
-\]</span> 本质上为非常巧妙的设计：小于0时，则为半固体（坚硬状态）；在0到1之间时，为可塑状态；大于1，则为流动状态。</p>
+\]</span> 本质上为非常巧妙的设计：小于0时，则为半固体（坚硬状态）；在0到1之间时，为可塑状态；大于1，则为流动状态。因此乃为判断<strong>稠度</strong>。</p>
 <h3 id="两个结构">两个结构</h3>
+<p>粗粒土：单粒结构</p>
+<p><strong>细粒土</strong></p>
 <p>分散结构：分散结构的颗粒一般平行排列</p>
 <p>絮凝结构：土的结构是面-边接触</p>
+<p><img src="https://s2.loli.net/2022/04/14/krSycVHT7mvObau.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="土的压实性">土的压实性</h3>
+<p>细粒土压实标准：<strong>压实度</strong> <span class="math display">\[
+D_c=\frac{\rho_d}{\rho_{dmax}}
+\]</span> 细粒土之所以有最优含水量是两方面：水的润滑作用、水中的空气能否排出。</p>
+<p><img src="https://s2.loli.net/2022/04/14/n9ZhyQDfmsKCSIj.png" srcset="/img/loading.gif" lazyload></p>
+<p>可知，最优含水量大概12%。</p>
+<p>对于粗粒土，压实标准用<strong>相对密度</strong><span class="math inline">\(D_r\)</span>。一般<span class="math inline">\(D_r\)</span>要0.7以上。</p>
+<p><img src="https://s2.loli.net/2022/04/14/kU5nMYupTJjGfoQ.png" srcset="/img/loading.gif" lazyload></p>
+<p>注意完全风干或饱和状态下容易击实。</p>
+<h3 id="土的工程分类">土的工程分类</h3>
+<p>粗粒土：级配组成</p>
+<p>细粒土：矿物成分、亲水性（<span class="math inline">\(I_p\)</span>）</p>
+<p>规范中分为碎石土、砂土、粉土、黏性土</p>
 <h2 id="第三章土的渗透性">第三章、土的渗透性</h2>
+<p>渗透力：孔隙水对土骨架的拖曳和推动力、方向与水力坡降一致</p>
+<p>土体受力分析：土骨架、土水整体为隔离体</p>
 <h3 id="渗透系数">渗透系数</h3>
 <p>温度越高，水粘滞性越低，渗透性越大</p>
 <p>渗透系数分界值（cm/s） <span class="math display">\[
@@ -287,9 +330,9 @@ I_l=\frac{w-w_p}{w_l-w_p}
 <p>流土： 1. 延长上游渗径，减小下游水压 2. 下游增加透水盖重</p>
 <p>管涌： 1. 设反滤层 2. 减小渗透坡降</p>
 <h3 id="有效应力原理">有效应力原理</h3>
-<p>考试时回答方式： 1. 饱和土体任一平面的总应力都可分为有效应力和孔隙水压力 <span class="math display">\[
+<p>考试时回答方式： 1. 饱和土体任一平面的总应力都可分为有效应力和孔隙水压力（要有推导过程） <span class="math display">\[
 \sigma=\sigma'+u
-\]</span> 2. 土的变形与强度都只取决于有效应力</p>
+\]</span> 2. 土的变形与强度都只取决于有效应力 1. 有效应力：是土体变形的原因、是土体强度的成因 2. 孔隙水压力：各个方向受力、不能承受剪力</p>
 <h2 id="第四章地基土的应力计算">第四章、地基土的应力计算</h2>
 <p><strong>总应力=自重应力+附加应力</strong></p>
 <h3 id="自重应力有效应力计算">自重应力（有效应力）计算</h3>
@@ -309,14 +352,13 @@ G=\gamma_d Ad
 p_0=p-\sigma_{cd}=p-\gamma_0 d
 \]</span> 在遇到天然土层有多层土时需要注意 <span class="math display">\[
 \gamma_0=\frac{\sum \gamma_i h_i }{\sum h_i}
-\]</span> 偏心情况（感觉不会考） <span class="math display">\[
-\begin{array}{cc}
-p_{max}=\frac{F+G}{A}(1+6e/l)\\
-p_{min}=\frac{F+G}{A}(1-6e/l)\\
-若e&gt;l/6，则\\
-p_{max}=\frac{2(F+G)}{3(\frac{l}{2}-e)b}
-\end{array}
-\]</span></p>
+\]</span> 由布辛涅斯科解 <span class="math display">\[
+\sigma_z=\alpha \frac{P}{Z^2}
+\]</span> 则可知其应力分布情况</p>
+<p><img src="https://s2.loli.net/2022/04/14/QoLK6yNXPfRiUCM.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/h9tDf58XJuOsib3.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/vH6OcbnorpRzfF2.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/4LQ6WlJpNCEyivd.png" srcset="/img/loading.gif" lazyload></p>
 <h4 id="多层土的情况">多层土的情况</h4>
 <p>如果上层土软，则其高度换算就小，就会应力集中；从而上层土硬，就会应力扩散。</p>
 <h4 id="均质土的情况">均质土的情况</h4>
@@ -334,6 +376,11 @@ E_0=\frac{\Delta\sigma_z}{\Delta\epsilon_z}
 \]</span> 实际上，除了变形模量<span class="math inline">\(E_0\)</span>，其它都是土的侧限压缩的指标。</p>
 <p>常规三轴是可以被压坏的，因为旁边的压力（水压）是固定的，而不会无限支撑；而侧限压缩实验因为旁边有刚体的支护，所以不会被压坏，而存在体积压缩极限。</p>
 <p>土的变形模量<span class="math inline">\(E_0&lt;\)</span>侧限压缩模量<span class="math inline">\(E_s\)</span></p>
+<p>先期固结压力：土在历史上经受过的最大竖向有效应力称为先期固结压力。</p>
+<p>超固结比 <span class="math display">\[
+OCR=\frac{p_c}{p_0}
+\]</span> <span class="math inline">\(p_c\)</span>为先期固结压力，<span class="math inline">\(p_0\)</span>为土现在所受的竖向压力。</p>
+<p>若<span class="math inline">\(OCR&gt;1\)</span>，则该土为超固结土。</p>
 <h3 id="数学模型">数学模型</h3>
 <p>连续性条件：土体的体积变化=孔隙体积变化=流入流出水量差，从而联系起土的压缩特性、有效应力原理、达西定律。从而得到渗流固结方程。</p>
 <p>固结系数<strong>需要记</strong> <span class="math display">\[
@@ -359,6 +406,7 @@ S_{t}=\int \epsilon_zdz
 <p>最好参考一下下面这张图：</p>
 <p><img src="/img/soil3.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="第六章地基沉降与计算">第六章、地基沉降与计算</h2>
+<p>地基沉降的基本理念借鉴于压缩试验，其假定土层压缩时不发生侧向变形</p>
 <p>对于规范法，任意深度z范围内的压缩量为 <span class="math display">\[
 s'=\frac{p_0z\bar{\alpha}}{E_s}
 \]</span> 其中，<span class="math inline">\(\bar{\alpha}\)</span>是附加应力系数。毕竟整个公式是基于附加应力得到的，原型为<span class="math inline">\(s'=\frac{A}{E_s}\)</span>。本质上也是分层总和法，所以结果会比较符合基础中心点下的土体状况。</p>
