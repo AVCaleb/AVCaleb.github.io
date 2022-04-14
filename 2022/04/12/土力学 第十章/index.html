@@ -16,16 +16,16 @@
   <meta name="author" content="Vangalle">
   <meta name="keywords" content="">
   
-    <meta name="description" content="By Vangalle 如果是载荷法，需要对深、宽进行修正。 土坡稳定性分析 重点关注：稳定渗流。 土坡失稳 滑坡：一部分土体相对另一部分的土体的滑动，滑裂面上的土体达到极限状态。 粘性土坡：圆弧形 非粘性土坡：直线（角）性 滑坡形式：崩塌（强降雨）…… 渗流对粘性土、砂性土是不一样的 安全系数（重要） 安全系数(Fs)&#x3D;土的平均抗减强度（抗滑力）&#x2F;潜在破裂面上的平均剪应力（滑动力） \[ F_s">
+    <meta name="description" content="By Vangalle 如果是载荷法，需要对深、宽进行修正。 土坡稳定性分析 重点关注：稳定渗流。 土坡失稳 滑坡：一部分土体相对另一部分的土体的滑动，滑裂面上的土体达到极限状态。 粘性土坡：圆弧形 非粘性土坡：直线（角）性 滑坡形式：崩塌（强降雨）…… 渗流对粘性土、砂性土是不一样的 安全系数（重要） 安全系数(Fs)&#x3D;土的平均抗减强度（抗滑力或抗滑力矩）&#x2F;潜在破裂面上的平均剪应力（滑动力或滑动">
 <meta property="og:type" content="article">
 <meta property="og:title" content="土力学课程笔记">
 <meta property="og:url" content="http://example.com/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%20%E7%AC%AC%E5%8D%81%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Vangalle&#39;s Words">
-<meta property="og:description" content="By Vangalle 如果是载荷法，需要对深、宽进行修正。 土坡稳定性分析 重点关注：稳定渗流。 土坡失稳 滑坡：一部分土体相对另一部分的土体的滑动，滑裂面上的土体达到极限状态。 粘性土坡：圆弧形 非粘性土坡：直线（角）性 滑坡形式：崩塌（强降雨）…… 渗流对粘性土、砂性土是不一样的 安全系数（重要） 安全系数(Fs)&#x3D;土的平均抗减强度（抗滑力）&#x2F;潜在破裂面上的平均剪应力（滑动力） \[ F_s">
+<meta property="og:description" content="By Vangalle 如果是载荷法，需要对深、宽进行修正。 土坡稳定性分析 重点关注：稳定渗流。 土坡失稳 滑坡：一部分土体相对另一部分的土体的滑动，滑裂面上的土体达到极限状态。 粘性土坡：圆弧形 非粘性土坡：直线（角）性 滑坡形式：崩塌（强降雨）…… 渗流对粘性土、砂性土是不一样的 安全系数（重要） 安全系数(Fs)&#x3D;土的平均抗减强度（抗滑力或抗滑力矩）&#x2F;潜在破裂面上的平均剪应力（滑动力或滑动">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/classnotes.jpg">
 <meta property="article:published_time" content="2022-04-12T01:50:00.000Z">
-<meta property="article:modified_time" content="2022-04-12T03:23:50.000Z">
+<meta property="article:modified_time" content="2022-04-14T00:50:26.387Z">
 <meta property="article:author" content="Vangalle">
 <meta property="article:tag" content="Science">
 <meta property="article:tag" content="Soil">
@@ -203,7 +203,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      890 字
+      1.1k 字
     </span>
   
 
@@ -259,9 +259,10 @@
 <p>滑坡形式：崩塌（强降雨）……</p>
 <p><em>渗流对粘性土、砂性土是不一样的</em></p>
 <h2 id="安全系数重要">安全系数（重要）</h2>
-<p>安全系数(Fs)=土的平均抗减强度（抗滑力）/潜在破裂面上的平均剪应力（滑动力） <span class="math display">\[
+<p>安全系数(Fs)=土的平均抗减强度（抗滑力或抗滑力矩）/潜在破裂面上的平均剪应力（滑动力或滑动力矩） <span class="math display">\[
 F_s=\frac{\tau_f}{\tau_d}
 \]</span></p>
+<p>从而，显然的，安全系数越大，就越安全。</p>
 <h2 id="无粘性土坡的稳定性分析">无粘性土坡的稳定性分析</h2>
 <h3 id="砂土">砂土</h3>
 <p><span class="math display">\[
@@ -294,6 +295,8 @@ F_s=\frac{c_u\widehat{AC}R}{Wd}
 \]</span> 若摩擦力不为0，<strong>无法得到理论解</strong>。</p>
 <p>于是采用竖向分块的做法——是一种离散化的计算。</p>
 <p>瑞典(费伦纽斯)简单条分法比较安全。关键在于简化掉了土体之间的作用力。</p>
+<p>毕肖普法考虑了水平的力，但是竖直的力没有考虑，因为难求。根本的求法是迭代，最后得出一个安全系数，只是此时的安全系数还不是最后的结果，最后需要验证，并得到某一区间内最合适的安全系数。</p>
+<p>在现场，一个没有固结好的土，都是用总应力强度指标<span class="math inline">\(c,\ \varphi\)</span>，而非用有效应力指标(堤坝填筑、土坡挖方、竣工)；但稳定期都是用有效应力强度指标<span class="math inline">\(c',\ \varphi'\)</span>。</p>
 
             </div-->
             <hr>
