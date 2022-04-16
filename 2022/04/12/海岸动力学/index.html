@@ -16,16 +16,16 @@
   <meta name="author" content="Vangalle">
   <meta name="keywords" content="">
   
-    <meta name="description" content="By Vangalle 潮波 \[ continuity\quad equitation: \frac {\partial \eta}{\partial t}+\frac {\partial u(h+\eta)}{\partial x}+\frac {\partial v(h+\eta)}{\partial y}&#x3D;0 \] \[ Momentum\quad equitation: \begin{c">
+    <meta name="description" content="By Vangalle 波浪控制方程 微幅波控制方程 基本方程得出 波浪理论有如下假定：  流体均质、不可压缩、密度为常数 无粘 自由水面压力均匀 水流运动无旋 海底水平、不透水 质量力仅为重力，表面张力、科氏力不计 波浪为平面运动  由4可列方程 \[ \pmb{V}&#x3D;\pmb{\nabla}\phi&#x3D; \frac {\partial \phi}{\partial x}\pmb{i}+\frac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="海岸动力学课程笔记">
 <meta property="og:url" content="http://example.com/2022/04/12/%E6%B5%B7%E5%B2%B8%E5%8A%A8%E5%8A%9B%E5%AD%A6/index.html">
 <meta property="og:site_name" content="Vangalle&#39;s Words">
-<meta property="og:description" content="By Vangalle 潮波 \[ continuity\quad equitation: \frac {\partial \eta}{\partial t}+\frac {\partial u(h+\eta)}{\partial x}+\frac {\partial v(h+\eta)}{\partial y}&#x3D;0 \] \[ Momentum\quad equitation: \begin{c">
+<meta property="og:description" content="By Vangalle 波浪控制方程 微幅波控制方程 基本方程得出 波浪理论有如下假定：  流体均质、不可压缩、密度为常数 无粘 自由水面压力均匀 水流运动无旋 海底水平、不透水 质量力仅为重力，表面张力、科氏力不计 波浪为平面运动  由4可列方程 \[ \pmb{V}&#x3D;\pmb{\nabla}\phi&#x3D; \frac {\partial \phi}{\partial x}\pmb{i}+\frac">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/classnotes.jpg">
 <meta property="article:published_time" content="2022-04-12T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-14T03:09:40.459Z">
+<meta property="article:modified_time" content="2022-04-16T12:50:11.477Z">
 <meta property="article:author" content="Vangalle">
 <meta property="article:tag" content="Marine Science">
 <meta name="twitter:card" content="summary_large_image">
@@ -202,7 +202,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.2k 字
+      5.4k 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7 分钟
+      11 分钟
     </span>
   
 
@@ -248,6 +248,90 @@
             
             <div class="markdown-body">
               <p>By <em>Vangalle</em></p>
+<h1 id="波浪控制方程">波浪控制方程</h1>
+<h2 id="微幅波控制方程">微幅波控制方程</h2>
+<h3 id="基本方程得出">基本方程得出</h3>
+<p>波浪理论有如下假定：</p>
+<ol type="1">
+<li>流体均质、不可压缩、密度为常数</li>
+<li>无粘</li>
+<li>自由水面压力均匀</li>
+<li>水流运动无旋</li>
+<li>海底水平、不透水</li>
+<li>质量力仅为重力，表面张力、科氏力不计</li>
+<li>波浪为平面运动</li>
+</ol>
+<p>由4可列方程 <span class="math display">\[
+\pmb{V}=\pmb{\nabla}\phi=
+\frac {\partial \phi}{\partial x}\pmb{i}+\frac {\partial \phi}{\partial y}\pmb{j}
+\]</span> 意味着 <span class="math display">\[
+u=\frac {\partial \phi}{\partial x},\ w=\frac {\partial \phi}{\partial z}\ \ \  (1)
+\]</span></p>
+<p>又知原先的连续性方程为 <span class="math display">\[
+\frac {\partial \rho}{\partial t}+\frac {\partial (\rho u)}{\partial x}+\frac {\partial (\rho w)}{\partial z}=0
+\]</span> 但因为1，所以转化为 <span class="math display">\[
+\frac {\partial u}{\partial x}+\frac {\partial w}{\partial z}=0\ \ \  (2)
+\]</span> 将（1）代入（2）可得 <span class="math display">\[
+\frac {\partial^2 \phi}{\partial x^2}+\frac {\partial^2 \phi}{\partial z^2}=0
+\Longleftrightarrow \pmb{\nabla}\phi^2=0
+\]</span> 此即为拉普拉斯方程</p>
+<p>另可经由复杂的推导并取大气压为0得到（伯努利方程形式） <span class="math display">\[
+\frac {\partial \phi}{\partial t}+\frac {1}{2}[(\frac{\partial \phi}{\partial x})^2+(\frac{\partial \phi}{\partial z})^2]+gz+\frac{p}{\rho}=0
+\]</span> 定解条件：</p>
+<ol type="1">
+<li>海底表面设为固壁，因此水质点垂直速度应为0。（这个条件本质上就是牛顿内摩擦定律所要求的。）</li>
+<li>在波面处，应满足动力边界条件和运动学边界条件。（动力学边界条件的意义就是水面上压力为常数。）运动学边界条件为界面上水质点运动法向速度等于界面运动法向速度，其意义为，在流体界面上，不应有穿越界面的流动，否则界面就不能存在，即流体界面具有保持性，某一时刻位于界面上的流体质点将始终位于界面上，不能有相对法向位移。</li>
+<li>流场左右端面的周期性</li>
+</ol>
+<h3 id="微幅波线性化边界条件">微幅波线性化边界条件</h3>
+<p><strong>目标——线性化自由水面边界条件以及解决不确定的边界问题，在上一部分基础上给出完整的控制方程与微幅波设定下的定解条件。</strong></p>
+<p>注意到自由水面边界条件非线性。且边界不确定。</p>
+<p>把上述条件线性化，利用摄动法（也就是微幅波的本质）……因为过于复杂，就不展示了（具体过程的图放在附录里）……</p>
+<p>可以得到最后的结果</p>
+<h4 id="控制方程及其定解条件微幅波设定下">控制方程及其定解条件（微幅波设定下）</h4>
+$$
+<span class="math display">\[\begin{array}{cc}
+\nabla^2 \phi=0。意义：该运动为无旋，液体不可压缩\\
+
+\frac{\partial\phi}{\partial z}=0,  \ \ z=-h。意义：海底表面设为固壁，因此水质点垂直速度应为0。\\
+
+\frac{\partial^2\phi}{\partial t^2}+g\frac{\partial\phi}{\partial z}=0, \ \ z=0。意义：自由水面运动边界条件。利用摄动法，只考虑一阶近似解。
+\\上一个式子本质上由\frac{\eta_1}{t}-\frac{\phi_1}{t}=0,z=0与下面一个式子联立而得\\
+
+\eta=-\frac{1}{g}\frac{\partial\phi}{\partial t}, \ \ z=0。意义：动力边界条件，由摄动法求出，引入了微幅波。\\
+
+\phi (x,z,t)=\phi (x+L,z,t)=\phi(x,z,t+T)。意义：流场左右两端面的边界条件。\\
+\end{array}\]</span>
+<p>$$</p>
+<h3 id="微幅波理论解">微幅波理论解</h3>
+<p>假设速度势函数 <span class="math inline">\(\phi (x,z,t)=X(x)Z(z)T(t)\)</span>——需要知道这只是一种近似的处理——然后通过解偏微分方程再联立边界条件，最后得到色散方程 <span class="math display">\[
+\sigma^2=gktanhkh
+\]</span> 其中 <span class="math display">\[
+\sigma=\frac{2 \pi}{T},\ k=\frac{2\pi}{L}
+\]</span> 代入可得 <span class="math display">\[
+\begin{array}{cc}
+L=\frac{gT^2}{2\pi}tanhkh \\
+c=\frac{gT}{2\pi}tanhkh
+\end{array}
+\]</span> 如此，从色散方程的本质可以看出，当水深给定时，波的周期越长，波长越长，波速也越大，这样就使不同波长的波在传播过程中逐渐分离开来。这种现象也就使波的色散现象。同时其还表明，波浪的传播与水深也有关。</p>
+<h4 id="深水波">深水波</h4>
+<p><span class="math inline">\(h&gt;L/2\)</span>时，可以认为处于深水情况。</p>
+<p>这时，色散方程转化为 <span class="math display">\[
+\sigma^2=gk
+\]</span> 等价式为 <span class="math display">\[
+\begin{array}{cc}
+L_0=\frac{gT^2}{2\pi} \\
+c_0=\frac{gT}{2\pi}
+\end{array}
+\]</span> 从而深水情况下，波速与波长只与周期有关，与水深无关。</p>
+<h4 id="浅水波">浅水波</h4>
+<p><span class="math display">\[
+\begin{array}{cc}
+\sigma^2=gk^2h \\
+L_s=T\sqrt{gh},\ c_s=\sqrt{gh}
+\end{array}
+\]</span></p>
+<p>从而，浅水波的波速只与水深有关。</p>
 <h1 id="潮波">潮波</h1>
 <p><span class="math display">\[
 continuity\quad equitation: \frac {\partial \eta}{\partial t}+\frac {\partial u(h+\eta)}{\partial x}+\frac {\partial v(h+\eta)}{\partial y}=0
@@ -358,6 +442,10 @@ ncos^2\alpha+\frac{1}{2}(2n-1) &amp; \frac{H}{2}sin2\alpha \\
 <p>所有沿岸流都与底摩阻有关系。</p>
 <h1 id="考试内容">考试内容</h1>
 <p>波浪控制方程、潮流控制方程、海岸波生流控制方程</p>
+<h1 id="附录">附录</h1>
+<h2 id="伯努利方程导出">伯努利方程导出</h2>
+<p><img src="https://s2.loli.net/2022/04/16/3hzAkVMSOdq2cPf.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/16/i6vQKDYSUmAZxdz.png" srcset="/img/loading.gif" lazyload></p>
 
             </div-->
             <hr>
