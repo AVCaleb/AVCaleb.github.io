@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/classnotes.jpg">
 <meta property="article:published_time" content="2022-04-12T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-16T12:50:11.477Z">
+<meta property="article:modified_time" content="2022-04-16T15:15:40.337Z">
 <meta property="article:author" content="Vangalle">
 <meta property="article:tag" content="Marine Science">
 <meta name="twitter:card" content="summary_large_image">
@@ -73,9 +73,9 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
 </head>
 
 
@@ -290,7 +290,7 @@ u=\frac {\partial \phi}{\partial x},\ w=\frac {\partial \phi}{\partial z}\ \ \  
 <p>可以得到最后的结果</p>
 <h4 id="控制方程及其定解条件微幅波设定下">控制方程及其定解条件（微幅波设定下）</h4>
 $$
-<span class="math display">\[\begin{array}{cc}
+<span class="math display">\[\begin{array}{cccc}
 \nabla^2 \phi=0。意义：该运动为无旋，液体不可压缩\\
 
 \frac{\partial\phi}{\partial z}=0,  \ \ z=-h。意义：海底表面设为固壁，因此水质点垂直速度应为0。\\
@@ -332,6 +332,9 @@ L_s=T\sqrt{gh},\ c_s=\sqrt{gh}
 \end{array}
 \]</span></p>
 <p>从而，浅水波的波速只与水深有关。</p>
+<h3 id="水质点运动轨迹">水质点运动轨迹</h3>
+<p>水质点运动轨迹为一个椭圆，在深水情况下为一个圆。</p>
+<p>在水面处轨迹半径为波浪振幅，随着距水面深度增大，轨迹圆的半径以指数形式迅速减小。</p>
 <h1 id="潮波">潮波</h1>
 <p><span class="math display">\[
 continuity\quad equitation: \frac {\partial \eta}{\partial t}+\frac {\partial u(h+\eta)}{\partial x}+\frac {\partial v(h+\eta)}{\partial y}=0
@@ -385,10 +388,7 @@ P_2=E_2\sqrt(gh_2)B_2
 <li>然而，上述对海岸波生流的解释还非最为根本的。后来，此现象通过概念"辐射应力"得到解决。</li>
 </ol>
 <h3 id="辐射应力">辐射应力</h3>
-<ol type="1">
-<li>在x与y轴上各有两个方向（平行某轴、垂直某轴）互相垂直的辐射应力。</li>
-</ol>
-<p><span class="math display">\[
+<p>在x与y轴上各有两个方向（平行某轴、垂直某轴）互相垂直的辐射应力。 <span class="math display">\[
 S=
 \left(
 \begin{array}{cc}
