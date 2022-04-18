@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-18T03:29:13.904Z</updated>
+  <updated>2022-04-18T04:06:11.478Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/04/18/%E6%B2%B3%E6%B5%81/"/>
     <id>http://example.com/2022/04/18/%E6%B2%B3%E6%B5%81/</id>
     <published>2022-04-18T00:00:00.000Z</published>
-    <updated>2022-04-18T03:29:13.904Z</updated>
+    <updated>2022-04-18T04:06:11.478Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="河流">河流</h1><h2 id="河床演变">河床演变</h2><h3 id="主要因素">主要因素</h3><p><strong>进口</strong></p><p>上游来沙、来水</p><p><strong>出口</strong></p><p>河口状况</p><p><strong>河床演变基本原理</strong></p><p>输沙不平衡</p><p><strong>河床的自动调整</strong></p><p>输沙不平衡、河床变形、自动调整、输沙平衡、变形停止</p><h2 id="蜿蜒型河道">蜿蜒型河道</h2><p>弯道水流特性——螺旋流</p><p>弯道水流受离心加速度影响，引起</p><ol type="1"><li>水流的螺旋运动——纵向流速分布，引起离心加速度的沿垂线差异</li><li>凹冲突於——凹处为表面水流大流速冲刷、突处为底层水流低流速淤积</li></ol><p>受力分析：离心力、横向水压力</p><p>因为离心力的作用，水面有一个坡度（横比降<span class="math inline">\(J_y\)</span>） <span class="math display">\[水压力\begin{cases}P_1=\frac{1}{2}\gamma h^2\\ P_2=\frac{1}{2}\gamma (h+J_ydy)^2\end{cases}\]</span> 另外离心力不列出</p><p>把底摩阻略去，可得<span class="math inline">\(J_y\)</span></p><p>弯道水流基本方程 <span class="math display">\[环流相对强度：\frac{v}{U}=\frac{1}{\kappa^2}\frac{D}{r}[F_1(\eta)-\frac{g^{1/2}}{\kappa C}F_2(\eta)]\]</span> <span class="math inline">\(\eta\)</span>是相对水深 <span class="math display">\[\eta=\frac{z}{D}\]</span> 环流旋度<span class="math inline">\(v/U\)</span></p><p>近底相对环流强度大于近水面</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="河流">河流</h1><h2 id="河床演变">河床演变</h2><h3 id="主要因素">主要因素</h3><p><strong>进口</strong></p><p>上游来沙、来水</p><p><strong>出口</strong></p><p>河口状况</p><p><strong>河床演变基本原理</strong></p><p>输沙不平衡</p><p><strong>河床的自动调整</strong></p><p>输沙不平衡、河床变形、自动调整、输沙平衡、变形停止</p><h2 id="蜿蜒型河道">蜿蜒型河道</h2><p>弯道水流特性——螺旋流</p><p>弯道水流受离心加速度影响，引起</p><ol type="1"><li>水流的螺旋运动——纵向流速分布，引起离心加速度的沿垂线差异</li><li>凹冲突於——凹处为表面水流大流速冲刷、突处为底层水流低流速淤积</li></ol><p>受力分析：离心力、横向水压力</p><p>因为离心力的作用，水面有一个坡度（横比降<span class="math inline">\(J_y\)</span>） <span class="math display">\[水压力\begin{cases}P_1=\frac{1}{2}\gamma h^2\\ P_2=\frac{1}{2}\gamma (h+J_ydy)^2\end{cases}\]</span> 另外离心力不列出</p><p>把底摩阻略去，可得<span class="math inline">\(J_y\)</span></p><p>弯道水流基本方程 <span class="math display">\[环流相对强度：\frac{v}{U}=\frac{1}{\kappa^2}\frac{D}{r}[F_1(\eta)-\frac{g^{1/2}}{\kappa C}F_2(\eta)]\]</span> <span class="math inline">\(\eta\)</span>是相对水深 <span class="math display">\[\eta=\frac{z}{D}\]</span> 环流旋度<span class="math inline">\(v/U\)</span></p><p>近底相对环流强度大于近水面</p><h2 id="分汊型河流">分汊型河流</h2><p>分汊型河流——由于江心洲存在而使水流分叉后又重新汇合的河流。又叫江心洲型河流。</p><p>江心洲形成方式：</p><ol type="1"><li>窄河段泥沙堆积</li><li>边岸的切割</li></ol><p>洪水漫滩，当水位退去，把江心洲分割为多个小洲。</p><p>河滩型江心洲稳定性弱于河道型江心洲</p><p>汇流区——横向环流，上低下高</p><p>合流区动力结构：</p><p>洲尾、合流点</p>]]></content>
     
     
       
