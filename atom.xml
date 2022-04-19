@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-19T03:13:51.451Z</updated>
+  <updated>2022-04-19T11:51:52.807Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>港口规划与布置复习</title>
+    <link href="http://example.com/2022/04/19/2022419-%E6%B8%AF%E5%8F%A3%E8%A7%84%E5%88%92%E4%B8%8E%E5%B8%83%E7%BD%AE%E5%A4%8D%E4%B9%A0/"/>
+    <id>http://example.com/2022/04/19/2022419-%E6%B8%AF%E5%8F%A3%E8%A7%84%E5%88%92%E4%B8%8E%E5%B8%83%E7%BD%AE%E5%A4%8D%E4%B9%A0/</id>
+    <published>2022-04-19T11:47:00.000Z</published>
+    <updated>2022-04-19T11:51:52.807Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="港口规划与布置复习">港口规划与布置复习</h1><h2 id="考试重点">考试重点</h2><ol type="1"><li>建港之前的调查：港口调查分析——吞吐量、通货能力、其他方面的调查（气象条件（风、降水、雾）、海象条件（潮汐、潮流、波浪、泥沙疏运））</li><li>码头的布置——需要注意装卸工艺、装卸机械。不同货种及其装卸工艺、流程（只需要了解）。<ol type="1"><li>码头布置形式——顺岸示、突堤式</li><li>陆域尺度确定（包含哪些部分？）（不需要计算陆域尺度）</li><li>水域尺度——码头泊位尺度、码头前沿水深、航道通航水深</li><li>航道的概念——航道的轴线—&gt;宽度、航道宽度的组成（三个部分，如何确定航道宽度）</li><li>锚地（根据防波堤，分为港内锚地（掉头水域、港池）和港外、）</li><li>回旋水域</li><li>外堤（<strong>防波堤</strong>（相关的概念、如何设计、本身所需要遵守的原则、防波堤轴线的布置、确定）、防沙堤、导流堤）</li></ol></li><li>港口的配套设施（了解，不需要记忆）——集疏运设施（海铁联运）、供电照明、给排水</li><li>港口发展的规划（我们港口发展的历史（第一代、第二代、第三代、第四代……主要特点需要掌握）一些港口项目的建设——环境保护的问题，生产期运营期的影响、污染（环境影线评价（注意污染源）））</li><li>河港（应该了解总体如何选址、不同河港的特点。山区河流、平原河流。主要就是河港的特点、如何选址）</li><li>海港如何选择、确定</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;港口规划与布置复习&quot;&gt;港口规划与布置复习&lt;/h1&gt;
+&lt;h2 id=&quot;考试重点&quot;&gt;考试重点&lt;/h2&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;建港之前的调查：港口调查分析——吞吐量、通货能力、其他方面的调查（气象条件（风、降水、雾）、海象条件（潮汐、潮流、波浪、泥沙疏运</summary>
+      
+    
+    
+    
+    <category term="Class Notes" scheme="http://example.com/categories/Class-Notes/"/>
+    
+    
+    <category term="Habor" scheme="http://example.com/tags/Habor/"/>
+    
+  </entry>
   
   <entry>
     <title>躁郁的神学</title>
@@ -553,32 +580,6 @@
     <category term="Anthropology" scheme="http://example.com/tags/Anthropology/"/>
     
     <category term="Theology" scheme="http://example.com/tags/Theology/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The Entity of Time</title>
-    <link href="http://example.com/2022/01/26/The%20Entity%20of%20Time/"/>
-    <id>http://example.com/2022/01/26/The%20Entity%20of%20Time/</id>
-    <published>2022-01-26T11:05:25.000Z</published>
-    <updated>2022-01-26T11:11:25.317Z</updated>
-    
-    <content type="html"><![CDATA[<p>When Einstein said we don’t feel the same speed of time and give the example of the feeling beside the fireplace, he did not want to give some examples to enrich psychological research. While, the main point is that the feeling of the speed of the passage of the time does not mean time is strictly limited to feelings or we can judge the entity of time only by our feelings of it. So, when we found that people moving in different speeds will lead to the different speeds of their aging speed, we can not object it only by different people’s probable similar feelings of the passage of the time.</p><p>So, maybe, it’s still necessary to clarify the usage of some most common concepts, such as time, space etc.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;When Einstein said we don’t feel the same speed of time and give the example of the feeling beside the fireplace, he did not want to give</summary>
-      
-    
-    
-    
-    <category term="Essay" scheme="http://example.com/categories/Essay/"/>
-    
-    
-    <category term="Metaphysics" scheme="http://example.com/tags/Metaphysics/"/>
-    
-    <category term="Physics" scheme="http://example.com/tags/Physics/"/>
     
   </entry>
   
