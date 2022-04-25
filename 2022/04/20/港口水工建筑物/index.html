@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/classnotes.jpg">
 <meta property="article:published_time" content="2022-04-20T02:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-20T03:24:20.826Z">
+<meta property="article:modified_time" content="2022-04-25T01:44:37.972Z">
 <meta property="article:author" content="Vangalle">
 <meta property="article:tag" content="Habor">
 <meta name="twitter:card" content="summary_large_image">
@@ -73,9 +73,9 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
 </head>
 
 
@@ -202,7 +202,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2k 字
+      3.7k 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      8 分钟
     </span>
   
 
@@ -361,6 +361,121 @@ S\leq R
 <li>结构承受设防地震等持续时间很短的状况为偶然状况</li>
 </ol></li>
 </ol></li>
+</ol>
+<h2 id="码头地面组成荷载">码头地面组成荷载</h2>
+<ol type="1">
+<li><p>堆荷荷载与人群荷载</p>
+<ol type="1">
+<li>堆荷荷载
+<ol type="1">
+<li>考虑因素
+<ol type="1">
+<li>装卸及码头堆存工艺</li>
+<li>货种和包装方式</li>
+<li>货物批量和堆存期：小批，临时，小堆，利于货物的运转；大批，堆存期长，大堆，提高库场利用率。</li>
+<li>码头结构型式：不同码头对荷载敏感程度不同</li>
+<li>管理水平：管理严格，则利用率高，不会出现超载</li>
+</ol></li>
+<li>堆荷的分布与取值——码头前沿、前方堆场、后方堆场
+<ol type="1">
+<li>前沿地带——一般不堆货
+<ol type="1">
+<li>多数情况下不堆货，主要作为流动起重云顺机械的通道</li>
+<li>少数情况，货物临时堆放</li>
+<li>前沿地带考虑堆货值是从安全出发，并非从堆货出发</li>
+<li>宽度：有门机，14M；无门机10m（海港），4~8m（河港）</li>
+<li>荷载值<span class="math inline">\(q_1\)</span>，一般取20kPa（主要基于起重机等设备）</li>
+</ol></li>
+<li>前方堆场——效率最高
+<ol type="1">
+<li>宽度：有门机18(23)m，对应门机最大吊幅25(30)m；无门机，取仓库宽度</li>
+</ol></li>
+<li>后方堆场：前方堆场以后的堆场。
+<ol type="1">
+<li>堆存批量较大，堆存期较长，堆存较重</li>
+<li>宽度主要取决于规划</li>
+<li>取值对码头结构无多大影响</li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li>人群荷载（略）——作人行引桥、浮桥设计时需要考虑</li>
+</ol></li>
+<li><p>流动起重运输机械荷载</p>
+<p>起重运输机械：门机、起重机、岸桥、缆车</p>
+<p>装卸搬运机械：叉车、电瓶搬运车、牵引车、单斗车</p>
+<ol type="1">
+<li><p>门机</p>
+<ol type="1">
+<li>表示方法：<span class="math inline">\(M_h-Q-L\)</span>，其中，Q为吊重，L为吊幅</li>
+<li>单机作业主要考虑三种工作状态（三种吊臂位置，最大吊幅，最小吊重；最小吊幅，最大吊重）</li>
+<li>两台门机一般只考虑工作状态1</li>
+<li>不考虑门机荷载的冲击系数（比如起吊、卸货时，但是不考虑，因为风压已经考虑了这一部分内容）</li>
+<li>门机荷载作用下，计算土压力时，应将门机荷载换算为等代线荷载（把门机荷载均匀分布处理）</li>
+</ol></li>
+<li><p>轮胎式起重机</p>
+<ol type="1">
+<li>主要用于中小码头，无门机情况</li>
+<li>码头设计时，对于轮胎式只考虑两种情况：最大吊幅，最小吊重；最小吊幅，最大吊重</li>
+<li>当采用最大吊重时，一般不考虑冲击系数（因为一般起重的货物较小，工人娴熟度较高），否则应考虑1.1~1.3的冲击系数</li>
+</ol></li>
+<li><p>缆车荷载（斜坡码头上、下坡主要运载工具）</p>
+<p>轮压计算： <span class="math display">\[
+P=g(Q+G)K_t/n \ \  \ \ (KN)
+\]</span> 式中：<span class="math inline">\(Q，G\)</span>——载重和自重（t），<span class="math inline">\(n\)</span>——轮数，<span class="math inline">\(K_t\)</span>——轮压不均匀系数</p></li>
+<li><p>岸桥荷载——根据具体机型确定其荷载</p></li>
+</ol></li>
+<li><p>铁路荷载（现在很少使用）（对板桩码头、高桩码头影响很大）</p>
+<ol type="1">
+<li>进港机车有：
+<ol type="1">
+<li>按使用性质分：干线机车、调车机车</li>
+<li>按动力型式分：蒸汽机车、内燃机车、电力机车（现在可以多考虑）</li>
+</ol></li>
+<li>进港车辆有：
+<ol type="1">
+<li>普通车辆：载重量60吨以下</li>
+<li>特种车辆：载重量60吨以上</li>
+<li>荷载取值
+<ol type="1">
+<li>用“中-活载”（轴压）取代轮压，直接计算轮压时除2。<strong>铁路机车在码头上行驶一般不考虑冲击力、离心力、制动力</strong>（行驶速度慢的缘故）</li>
+<li>对直接承受荷载的结构和构件（如梁、单向板、轨枕），“中-活载”要乘以荷载系数K。</li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>汽车荷载</p>
+<ol type="1">
+<li>分级取值：五个等级</li>
+<li>冲击系数：1.1~1.3</li>
+</ol></li>
+<li><p>船舶荷载</p>
+<ol type="1">
+<li><p>按作用方式可分为：系缆力，挤靠力，撞击力</p></li>
+<li><p>船舶系缆力（由风、浪、水流、冰产生）</p>
+<ol type="1">
+<li><p>其中，纵向是平行码头岸线的方向，横向是垂直码头岸线的方向</p></li>
+<li><p>有两个公式</p>
+<p><img src="https://s2.loli.net/2022/04/25/VOEuPtKF7RjgvBp.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/25/GHrC9seycBjhzJ5.png" srcset="/img/loading.gif" lazyload></p>
+<p>V是流速，A对应的是投影面积。</p></li>
+<li><p>计算系缆力标准值不应大于缆绳的破断力，也不应低于规范规定的下限值，若低于，则取下限值</p></li>
+<li><p><span class="math inline">\(\sum F_x,\sum F_y\)</span>应根据可能同时出现的风和水流的情况，不应将两者最大值叠加，一般可按最大风压力计算值和可能同时出现的水流里来叠加。</p></li>
+</ol></li>
+<li><p>船舶挤靠力（1.系泊于码头的船舶手打风、水流、和波浪的共同作用2.船舶离开码头时，在甩尾过程中，船首对码头的挤压）</p>
+<ol type="1">
+<li><p>连续布置 <span class="math display">\[
+F_j=K_j\times \sum F_X/L_n \ \ \ (KN/m)
+\]</span> <span class="math inline">\(L_n\)</span>是船舶直线段与设施接触长度</p></li>
+<li><p>间断布置 <span class="math display">\[
+F_j'=K_j' \times \sum F_X/n \ \ \ (KN)
+\]</span> n为与船舶接触的防冲设施的个数</p></li>
+</ol></li>
+<li><p>挤靠力（相较于挤靠力的持续作用，其作用为接触的一瞬间）（高桩码头、墩柱码头） <span class="math display">\[
+E_0=U=\rho MV^2_n/2 \ \ \ (KN\cdot m)
+\]</span> 其中，<span class="math inline">\(\rho\)</span>为有效动能系数，采用0.7~0.8，<span class="math inline">\(V_n\)</span>为船舶靠岸时的法向速度（x方向）</p>
+<p><img src="https://s2.loli.net/2022/04/25/AZQrVFHnsKiNm7E.png" srcset="/img/loading.gif" lazyload></p>
+<p>波浪引起的撞击力：一般通过模型试验加以确定</p></li>
+</ol></li>
+<li><p>水流力——由建筑物正面的阻力和背面的涡旋力引起。因而在计算时需要乘上一个阻力系数，这个阻力系数也就和桩基的分布等有关，因为这些因素会改变涡旋力。</p></li>
 </ol>
 
             </div-->
