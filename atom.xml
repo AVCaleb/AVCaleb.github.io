@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-12T02:43:22.903Z</updated>
+  <updated>2022-08-26T07:18:48.460Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言和python运行速度的比较</title>
+    <link href="http://example.com/2022/08/26/cvspython/"/>
+    <id>http://example.com/2022/08/26/cvspython/</id>
+    <published>2022-08-26T06:00:00.000Z</published>
+    <updated>2022-08-26T07:18:48.460Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="c语言和python运行速度的比较">C语言和python运行速度的比较</h1><p>今天在利用python算圆周率的过程中，发现python速度过慢，于是寻找运行速度快的语言。</p><p>发现C语言最快，据称效率是python的70倍。<a href="https://www.zhihu.com/question/450605938/answer/1806124622">哪种编程语言的运行效率最高？更值得学习? - 程序员编程指南的回答 - 知乎</a></p><p>然后，我做了一个测试。代码思路源自 <a href="https://zhuanlan.zhihu.com/p/150729238">蒙特卡罗算法 - ARGO创新实验室的文章 - 知乎</a></p><p>首先是python的程序</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> random<br><span class="hljs-keyword">import</span> math<br><span class="hljs-keyword">import</span> xlwt<br><span class="hljs-keyword">import</span> time<br><br><span class="hljs-comment"># def main():</span><br>t0=time.time()<br><span class="hljs-built_in">print</span>(<span class="hljs-string">'显示程序开始的时间:'</span>,time.strftime(<span class="hljs-string">'%Y-%m-%d %H:%M:%S'</span>,time.localtime(time.time())))<br>total = <span class="hljs-number">0</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">'Start experiment: '</span>)<br>n = <span class="hljs-number">0</span><br>f = xlwt.Workbook()<br>sheet1 = f.add_sheet(<span class="hljs-string">'sheet1'</span>,cell_overwrite_ok=<span class="hljs-literal">True</span>)<br><br><span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">20</span>, <span class="hljs-number">10000</span>):<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>        x = random.uniform(-<span class="hljs-number">1</span>,<span class="hljs-number">1</span>)<br>        y = random.uniform(-<span class="hljs-number">1</span>,<span class="hljs-number">1</span>)<br>         <br>        <span class="hljs-keyword">if</span> math.sqrt(x ** <span class="hljs-number">2</span> + y ** <span class="hljs-number">2</span>) &lt;= <span class="hljs-number">1.0</span>:<br>                        total += <span class="hljs-number">1</span><br>    mypi = <span class="hljs-number">4.0</span> * total / n<br>    s=<span class="hljs-built_in">abs</span>(math.pi - mypi) / math.pi<br>    t1=time.time()<br>    sheet1.write(n,<span class="hljs-number">0</span>,n)<span class="hljs-comment">#第n+1行第1列</span><br>    sheet1.write(n,<span class="hljs-number">1</span>,mypi)<span class="hljs-comment">#第n+1行第2列</span><br>    sheet1.write(n,<span class="hljs-number">2</span>,s)<span class="hljs-comment">#第n+1行第3列</span><br>    sheet1.write(n,<span class="hljs-number">3</span>,(t1-t0))<span class="hljs-comment">#第n+1行第4列</span><br>  <br>    total=<span class="hljs-number">0</span><br><br><br><br>t1=time.time()<br>f.save(<span class="hljs-string">'test1.xls'</span>)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">'显示程序结束的时间:'</span>,time.strftime(<span class="hljs-string">'%Y-%m-%d %H:%M:%S'</span>,time.localtime(time.time())))<br><span class="hljs-built_in">print</span>(<span class="hljs-string">"用时：%.6fs"</span>%(t1-t0))<br></code></pre></td></tr></tbody></table></figure><p>其次是C语言的程序</p><figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;math.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;time.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;windows.h&gt;</span></span><br><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> pi acos(-1)</span><br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{<br>LARGE_INTEGER t1, t2, tc;<br>    QueryPerformanceFrequency(&amp;tc);<br>    QueryPerformanceCounter(&amp;t1);<br><span class="hljs-keyword">int</span> n, i, total;<br><span class="hljs-keyword">double</span> x, y, mypi, s, a;<br>FILE *fp = <span class="hljs-literal">NULL</span> ;<br>    fp = fopen(<span class="hljs-string">"C:\\Users\\92196\\Desktop\\test.xls"</span>,<span class="hljs-string">"w"</span>) ;<br>srand((<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span>)time(<span class="hljs-literal">NULL</span>));<br>total = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">for</span> (n = <span class="hljs-number">20</span>;n &lt;= <span class="hljs-number">10000</span>;n++) {<br><br><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; n; i++) {<br>x = <span class="hljs-number">2.0</span> * rand()  /(<span class="hljs-keyword">double</span>)(RAND_MAX) <span class="hljs-number">-1</span> ;<br>y = <span class="hljs-number">2.0</span> * rand()  /(<span class="hljs-keyword">double</span>)(RAND_MAX) <span class="hljs-number">-1</span> ;<br><span class="hljs-keyword">if</span> (<span class="hljs-built_in">sqrt</span>(x * x + y * y) &lt;= <span class="hljs-number">1.0</span>) {<br>total = total + <span class="hljs-number">1</span>;<br>}<br>}<br>s=<span class="hljs-number">0</span>;<br>mypi = <span class="hljs-number">4.0</span> * total / (n*<span class="hljs-number">1.0</span>);<br>s = <span class="hljs-built_in">fabs</span>(pi - mypi) / pi;<br>QueryPerformanceCounter(&amp;t2);<br><span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"%d\t%f\t%f\t%lf\n"</span>,n, mypi, s,(<span class="hljs-keyword">double</span>)(t2.QuadPart-t1.QuadPart)/(<span class="hljs-keyword">double</span>)tc.QuadPart) ;<br>total=<span class="hljs-number">0</span>;<br><br>}<br>fclose(fp);<br><br>    QueryPerformanceCounter(&amp;t2);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Proceed Time: %lfs"</span>,(<span class="hljs-keyword">double</span>)(t2.QuadPart-t1.QuadPart)/(<span class="hljs-keyword">double</span>)tc.QuadPart);<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>}<br></code></pre></td></tr></tbody></table></figure><p>最后发现两者差距确实大，但是在我这个环境下没有70倍这么夸张，应该只有20倍——这是检验10000个随机数后的结果，如果要100000个excel写入程序会报错。</p><p><img src="/img/cpython.png"></p><p><img src="/img/3456.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;c语言和python运行速度的比较&quot;&gt;C语言和python运行速度的比较&lt;/h1&gt;
+&lt;p&gt;今天在利用python算圆周率的过程中，发现python速度过慢，于是寻找运行速度快的语言。&lt;/p&gt;
+&lt;p&gt;发现C语言最快，据称效率是python的70倍。&lt;a href=&quot;</summary>
+      
+    
+    
+    
+    <category term="Class Notes" scheme="http://example.com/categories/Class-Notes/"/>
+    
+    
+    <category term="Computer Science" scheme="http://example.com/tags/Computer-Science/"/>
+    
+  </entry>
   
   <entry>
     <title>三位一体论（The Trinity）</title>
@@ -570,37 +596,6 @@
     <category term="Soteriology" scheme="http://example.com/tags/Soteriology/"/>
     
     <category term="Christology" scheme="http://example.com/tags/Christology/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>圣</title>
-    <link href="http://example.com/2022/03/05/%E5%9C%A3/"/>
-    <id>http://example.com/2022/03/05/%E5%9C%A3/</id>
-    <published>2022-03-05T05:53:00.000Z</published>
-    <updated>2022-04-09T14:18:48.298Z</updated>
-    
-    <content type="html"><![CDATA[<p>圣的问题向来是复杂的，因为对于人来说很难完全明白到底什么是圣的。</p><p>在摩西五经中，有许多关于圣的与俗的分别的条例。</p><blockquote><p>“你们到了迦南地，栽种各样结果子的树木，就要以所结的果子如未受割礼的一样。三年之久，你们要以这些果子，如未受割礼的，是不可吃的。 但第四年所结的果子全要成为圣，用以赞美耶和华。 第五年，你们要吃那树上的果子，好叫树给你们结果子更多。我是耶和华－你们的　神。(利未记19:23-25 和合本)</p></blockquote><p>但是到了新约，却明显地给我们看到，神做了一件奇妙的事情，一些俗的事物变为圣。</p><blockquote><p>觉得饿了，想要吃。那家的人正预备饭的时候，彼得魂游象外， 看见天开了，有一物降下，好像一块大布，系着四角，缒在地上， 里面有地上各样四足的走兽和昆虫，并天上的飞鸟； 又有声音向他说：“彼得，起来，宰了吃！” 彼得却说：“主啊，这是不可的！凡俗物和不洁净的物，我从来没有吃过。” 第二次有声音向他说：“　神所洁净的，你不可当作俗物。” 这样一连三次，那物随即收回天上去了。(使徒行传10:10-16 和合本)</p></blockquote><p>又神借着耶路撒冷教会的长老们，明明地说出这一变化</p><blockquote><p>他们住了声，雅各就说：“诸位弟兄，请听我的话。 方才西门述说　神当初怎样眷顾外邦人，从他们中间选取百姓归于自己的名下； 众先知的话也与这意思相合。 正如经上所写的：此后，我要回来，重新修造大卫倒塌的帐幕，把那破坏的重新修造建立起来，叫余剩的人，就是凡称为我名下的外邦人，都寻求主。这话是从创世以来显明这事的主说的。“所以据我的意见，不可难为那归服　神的外邦人； 只要写信，吩咐他们禁戒偶像的污秽和奸淫，并勒死的牲畜和血。 因为从古以来，摩西的书在各城有人传讲，每逢安息日，在会堂里诵读。”(使徒行传15:13-21 和合本)</p></blockquote><p>在这里可以注意的是，雅各给出三条诫命是基于摩西的书在各城有人传讲这一条件。那么对于从未听过摩西律法的中国人，是否就这三条诫命也不是严格地摆出的呢？</p><p>但是，在纵观这一变化时我们却有疑问。因为，圣经明明告诉我们</p><blockquote><p>各样美善的恩赐和各样全备的赏赐都是从上头来的，从众光之父那里降下来的；在他并没有改变，也没有转动的影儿。 (雅各书1:17 和合本)</p></blockquote><blockquote><p>Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change.(James1:17 ESV)</p></blockquote><p>既然旧约所有关乎圣的与俗的律法都是神所赐下的，而神的本质是甚至所有的行事法则、作为，都是毫无改变的。那么，在旧约神如此恨恶的俗的事物，在新约怎么就算不得俗的，怎么就洁净了？</p><p>在此，我想任何的解释都是不够的，唯一的，我们只能说，这是那基督里的奥秘！</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;圣的问题向来是复杂的，因为对于人来说很难完全明白到底什么是圣的。&lt;/p&gt;
-&lt;p&gt;在摩西五经中，有许多关于圣的与俗的分别的条例。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“你们到了迦南地，栽种各样结果子的树木，就要以所结的果子如未受割礼的一样。三年之久，你们要以这些果子，如未</summary>
-      
-    
-    
-    
-    <category term="Essay" scheme="http://example.com/categories/Essay/"/>
-    
-    
-    <category term="Anthropology" scheme="http://example.com/tags/Anthropology/"/>
-    
-    <category term="Theology" scheme="http://example.com/tags/Theology/"/>
-    
-    <category term="Soteriology" scheme="http://example.com/tags/Soteriology/"/>
     
   </entry>
   
