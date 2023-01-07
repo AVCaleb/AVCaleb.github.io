@@ -34,30 +34,25 @@
 <meta name="twitter:image" content="http://example.com/img/veritas.jpg">
   
   
+  
   <title>论直觉中的圣灵 - Vangalle&#39;s Words</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
 
+
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
 
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
-    
-  
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
 
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
-  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -66,24 +61,45 @@
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.0.0">
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
 </head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       <strong>The Elements</strong>
@@ -106,7 +122,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                <span>首页</span>
               </a>
             </li>
           
@@ -118,7 +134,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                <span>归档</span>
               </a>
             </li>
           
@@ -130,7 +146,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                <span>分类</span>
               </a>
             </li>
           
@@ -142,7 +158,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
+                <span>标签</span>
               </a>
             </li>
           
@@ -154,7 +170,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                <span>关于</span>
               </a>
             </li>
           
@@ -162,14 +178,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -177,61 +195,75 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/veritas.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="论直觉中的圣灵">
-              
-            </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-08-26 22:57" pubdate>
-        2022年8月26日 晚上
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      1.8k 字
-    </span>
   
 
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      4 分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/veritas.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="论直觉中的圣灵"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-08-26 22:57" pubdate>
+          2022年8月26日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          <!-- compatible with older versions-->
+          1.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          <!-- compatible with older versions-->
+          4 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
@@ -240,16 +272,22 @@
 
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
     <div class="col-lg-8 nopadding-x-md">
       <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
+        <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">论直觉中的圣灵</h1>
             
-            <div class="markdown-body">
-              <p>By <em>Vangalle</em></p>
+            
+              <div class="markdown-body">
+                
+                <p>By <em>Vangalle</em></p>
 <h1 id="论直觉中的圣灵">论直觉中的圣灵</h1>
 <p>如果考察那些以直觉作为圣灵在人身上工作之彰显的观点的论证，会发现，其并非是令人信服地从圣经中得出的；但另一方面，我们会注意到，这种观点确实使得基督教信仰有极为浓重的神秘色彩，从而极大程度上增添其超然的成分。在下文中，我所提到的另一派的看法最为诟病的一点是极大的去神秘化，从而把基督教生活完全转化为一种特别的道德规约团体的生活，尽管其信念的基础是超自然的，但生活上已经完全与超自然毫不相干。</p>
 <p>在中国，经典的或是被人奉为圭臬的圣灵的直觉彰显的论述出自倪弟兄（《更美之约》第七章），我将其思路列出如下：</p>
@@ -266,17 +304,15 @@
 <p>我不觉得有任何人会接受这两个预设中的任何一个。</p>
 <p>于是，不赞同倪弟兄观点的人可以提出，圣灵大部分时间都是借着人对圣经的理解以及回想而工作，而其结果也远非直觉。</p>
 <p>倪弟兄下文对悟性的分析也是出于对这种立场进行驳斥的考虑。倪弟兄的手段是让对手无法回应的，因为双方争论的是圣灵直觉的存在性问题（圣灵是否主要以直觉的形式工作），倘若对方坚持不存在，倪弟兄就会说那人只是心硬，又麻木，所以忘了——然而这只是一种特别形态的道德上的指责，不能说明真理如何。<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="仔细一想我们就会发现倪弟兄的论述是不够格的。
-首先，倪弟兄要坚持圣灵直觉存在（圣灵主要以直觉的形式工作），现在问题在于他的论证方式不能排除他从结果推出的原因可能只是智性理解力的结果——不过即使他排除了，也仍然面对数不清的问题，到时候他唯一能用的策略就是声称属灵里的命题的真假有特殊性（许多人可能还意识不到这种神秘性的严重认识论后果）。
-另一方之所声称感觉（平安、喜乐等）只是智性理解力的结果是因为经验中这样的事例很多，而且又不会与圣经所宣传的有任何的矛盾。
-但倪弟兄声称之所以如今与感觉普遍相连的是理解力是因为人们生活的堕落，这相当于间接声称正常情况下圣灵主要以直觉的形式工作。
-于是倪弟兄就要重新把论述组织一遍。现在是要证明正常情况下**圣灵主要以直觉的形式工作，且不正常情况下才以理性工作**。然而，倪弟兄没有继续下去，而为了不在新论证中乞题，他不能直接宣称在理性下工作是不正常的，但他有没有别的证据表明这件事是不正常的——除了他的经验。然而他有经验，别人同样也有经验。
-">[1]</span></a></sup></p>
+    首先，倪弟兄要坚持圣灵直觉存在（圣灵主要以直觉的形式工作），现在问题在于他的论证方式不能排除他从结果推出的原因可能只是智性理解力的结果——不过即使他排除了，也仍然面对数不清的问题，到时候他唯一能用的策略就是声称属灵里的命题的真假有特殊性（许多人可能还意识不到这种神秘性的严重认识论后果）。
+    另一方之所声称感觉（平安、喜乐等）只是智性理解力的结果是因为经验中这样的事例很多，而且又不会与圣经所宣传的有任何的矛盾。
+    但倪弟兄声称之所以如今与感觉普遍相连的是理解力是因为人们生活的堕落，这相当于间接声称正常情况下圣灵主要以直觉的形式工作。
+    于是倪弟兄就要重新把论述组织一遍。现在是要证明正常情况下**圣灵主要以直觉的形式工作，且不正常情况下才以理性工作**。然而，倪弟兄没有继续下去，而为了不在新论证中乞题，他不能直接宣称在理性下工作是不正常的，但他有没有别的证据表明这件事是不正常的——除了他的经验。然而他有经验，别人同样也有经验。">[1]</span></a></sup></p>
 <p>倪弟兄的标准模型为：圣灵直觉→不回应→圣经理解→产生感觉</p>
 <p>反对者的模型为：圣灵给予理解能力→圣经理解→产生感觉</p>
 <p>要记住的是，倪弟兄提出“圣经理解”这一步多多少少带有一种“无可奈何”的姿态，因为这是在“圣灵直觉”真实存在但又被人不好操作的情况下提出的一种次等的解决方案；且其本身是为“圣灵直觉”服务的——因为在倪弟兄眼中只有“圣灵直觉”才是生命真正成长的方式。</p>
 <p>如果抛开所有无法定性的价值判断不说，我们会发现，最后真正双方发生矛盾的点就是在圣经理解到了一定程度是否要重新回到完全的圣灵直觉生活。对此倪弟兄按着经验说是，但另一方是否定的，且认为那种生活仍然并非某种直觉生活，而是理解、回想与接受的生活，即完全可以大部分时间没有特别的<strong>感觉</strong>。</p>
-<p>我之所以对直觉抱有很大的警惕，是因为直觉可以被解释为人的范型（schema）的表达。而人们承认直觉神圣性源头很大程度上是基于其神秘性、无法解释性。但如今，范型很好地解释了直觉<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="我们可以这样想，直觉之所以产生是因为环境中有某物触发了我们意识中的记忆，这种触发机制是难以溯源的——就如我们总是对于特定的事情发怒——而在信仰生活中，这种记忆方式的建立是来源于教会生活的规训，而对此，人们早已达成共识，即一部分是出于人的，一部分是出于圣经的。所以有些人会对于另外音乐类型的诗歌感受到灵的“厌恶”。
-">[2]</span></a></sup>，所以，在这里，我们不得不把直觉神圣性沟通这一方面表示十足的怀疑。</p>
+<p>我之所以对直觉抱有很大的警惕，是因为直觉可以被解释为人的范型（schema）的表达。而人们承认直觉神圣性源头很大程度上是基于其神秘性、无法解释性。但如今，范型很好地解释了直觉<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="我们可以这样想，直觉之所以产生是因为环境中有某物触发了我们意识中的记忆，这种触发机制是难以溯源的——就如我们总是对于特定的事情发怒——而在信仰生活中，这种记忆方式的建立是来源于教会生活的规训，而对此，人们早已达成共识，即一部分是出于人的，一部分是出于圣经的。所以有些人会对于另外音乐类型的诗歌感受到灵的“厌恶”。">[2]</span></a></sup>，所以，在这里，我们不得不把直觉神圣性沟通这一方面表示十足的怀疑。</p>
 <section class="footnotes">
 <div class="footnote-list">
 <ol>
@@ -290,44 +326,100 @@
 </div>
 </section>
 
-            </div-->
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/Essay/">Essay</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/Anthropology/">Anthropology</a>
-                    
-                      <a class="hover-with-bg" href="/tags/Theology/">Theology</a>
-                    
-                      <a class="hover-with-bg" href="/tags/Pneumatology/">Pneumatology</a>
-                    
-                  </div>
                 
               </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Anthropology/">#Anthropology</a>
+      
+        <a href="/tags/Theology/">#Theology</a>
+      
+        <a href="/tags/Pneumatology/">#Pneumatology</a>
+      
+    </div>
+  
+</div>
+
+
               
-                <p class="note note-doctrine">
-                  
-                    本博客所有文章除特别声明外，均为Vangalle原创，转载请注明出处！
-                  
-                </p>
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>论直觉中的圣灵</div>
+      <div>http://example.com/2022/08/26/Spiritintuition/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Vangalle</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年8月26日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
               
               
-                <div class="post-prevnext">
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/29/poem(3)/">
+                      <a href="/2022/08/29/poem(3)/" title="二元论，灵魂">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">二元论，灵魂</span>
                         <span class="visible-mobile">上一篇</span>
@@ -337,7 +429,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/08/26/cvspython/">
+                      <a href="/2022/08/26/cvspython/" title="C语言和python运行速度的比较">
                         <span class="hidden-mobile">C语言和python运行速度的比较</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -353,19 +445,50 @@
         </div>
       </div>
     </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
   <div class="toc-body" id="toc-body"></div>
 </div>
 
-      </div>
-    
+
+
+  </aside>
+
+
+    </div>
   </div>
 </div>
 
-<!-- Custom -->
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
 
 
     
@@ -390,32 +513,34 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-
+    <div class="footer-content">
+       <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
+    </div>
   
-
   
-</footer>
+  
+  
+</div>
 
+  </footer>
 
-  <!-- SCRIPTS -->
+  <!-- Scripts -->
   
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
@@ -423,10 +548,22 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -436,54 +573,77 @@
 
 
 
-  
-
-
 
   
-    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
   
-  
-    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
-  
-  
-  
-    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
-  
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-        typing(title);
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>

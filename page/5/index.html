@@ -27,15 +27,19 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
   <title>Vangalle&#39;s Words</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
 
 
-<!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -44,24 +48,45 @@
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.0.0">
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
 </head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       <strong>The Elements</strong>
@@ -84,7 +109,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                <span>首页</span>
               </a>
             </li>
           
@@ -96,7 +121,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                <span>归档</span>
               </a>
             </li>
           
@@ -108,7 +133,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                <span>分类</span>
               </a>
             </li>
           
@@ -120,7 +145,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
+                <span>标签</span>
               </a>
             </li>
           
@@ -132,7 +157,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                <span>关于</span>
               </a>
             </li>
           
@@ -140,14 +165,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -155,40 +182,115 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/luther.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Eκεινον δει αυξανειν, εμε δε ελαττουσθαι">
-              
-            </span>
+  
 
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/luther.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="Eκεινον δει αυξανειν, εμε δε ελαττουσθαι"></span>
           
         </div>
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
     
       <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
+        <div id="board"
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/01/17/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%A6%E7%AC%94%E8%AE%B0%E7%B3%BB%E5%88%97%E7%9A%84%E8%AF%B4%E6%98%8E/" target="_self">
+          <img src="/img/share1.jpg" srcset="/img/loading.gif" lazyload alt="对文学笔记系列的说明">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/01/17/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%A6%E7%AC%94%E8%AE%B0%E7%B3%BB%E5%88%97%E7%9A%84%E8%AF%B4%E6%98%8E/" target="_self">
+          对文学笔记系列的说明
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/01/17/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%A6%E7%AC%94%E8%AE%B0%E7%B3%BB%E5%88%97%E7%9A%84%E8%AF%B4%E6%98%8E/" target="_self">
+        <div>
+          我厌弃文学已经许久了。 但近日因为新开了这个网站，觉得将旧日于课上的摘抄放上来也是有趣的乐事。 总的来说，中文系所有的必修的文学课，属中国古代文学（元明清）最有深度，同时也是真正的有力的体系的建构。在我读中国古代文学的时候，还是由中文系的叶晔老师授课，他那时很注重对文本实体的接触。后来想起，若是论及中文系可说道的精神，这便是为数不多的之一。现在，我先把当时上叶晔老师的课时所记的笔记放上来。 此外还
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-17 17:11" pubdate>
+              2022-01-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Literature/">#Literature</a>
+            
+              <a href="/tags/Aesthetic/">#Aesthetic</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
 
   <div class="row mx-auto index-card">
     
@@ -207,12 +309,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/01/13/tensor/" target="_self">
-          
-          缘起 对张量的学习无外乎一种纯粹的智性的乐趣，若说其中有多大的裨益倒也不见得。所用到的，便是在一些因为词语的摇撼的轰鸣的时刻进行一些遁世的思索，仿佛要隔绝肉身于外物，在纯粹的符号间耗散过剩的心血。一切不过如此罢了。 Postulate \[ 1. \pmb{P}&#x3D;P^1\pmb{g_1}+P^2\pmb{g_2} \] \[ 2. \pmb{g_i·g^j}\equiv\delta^j_i&#x3D;\be
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/2022/01/13/tensor/" target="_self">
+        <div>
+          缘起 对张量的学习无外乎一种纯粹的智性的乐趣，若说其中有多大的裨益倒也不见得。所用到的，便是在一些因为词语的摇撼的轰鸣的时刻进行一些遁世的思索，仿佛要隔绝肉身于外物，在纯粹的符号间耗散过剩的心血。一切不过如此罢了。 Postulate \[ 1. \pmb{P}=P^1\pmb{g_1}+P^2\pmb{g_2} \] \[ 2. \pmb{g_i·g^j}\equiv\delta^j_i=\be
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -224,18 +326,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Math/">Math</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Math/" class="category-chain-item">Math</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Math/">Math</a>
+              <a href="/tags/Math/">#Math</a>
             
           </div>
         
@@ -260,12 +376,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/12/30/The%20Ontology%20of%20Karl%20Barth/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2021/12/30/The%20Ontology%20of%20Karl%20Barth/" target="_self">
+        <div>
           这里依循着曾劭恺的《黑格尔与现代西方本体论》，其中斜体为评论  预定论问题。预定乃是不可直观、感知的，只有以信心达致对其的知识，从而，预定既非构成性的，便不可以康德的非独断论方法确证，亦而在某种程度上处于知性的理解之外，所以时常看起来与同样不可确证的自由意志处于二律背反中。康德的二律背反的原因是理念或物自体世界所以处理的范畴不能独断地说等同于现象界的范畴，从而以现象界的范畴处理时会发生范畴机能的奔
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -277,24 +393,38 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Reading-Notes/">Reading Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Reading-Notes/" class="category-chain-item">Reading Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Theology/">#Theology</a>
             
-              <a href="/tags/Metaphysics/">Metaphysics</a>
+              <a href="/tags/Metaphysics/">#Metaphysics</a>
             
-              <a href="/tags/Ontology/">Ontology</a>
+              <a href="/tags/Ontology/">#Ontology</a>
             
           </div>
         
@@ -319,12 +449,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/12/11/hello-world/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2021/12/11/hello-world/" target="_self">
+        <div>
           图书馆经常会张贴一些宣传画，以阅读的和谐气息示人，仿佛阅读的重要地位是不言自明的。 在阅读最初被建构于我们的意识之中时，阅读是与知识一同出现的，于是因其与学习行为的依附，阅读本身便获得了善的地位，就仿佛学习本身是不容置疑的善一般。 但是，我们对学习本身的解构也已经够多了，那么为什么阅读在以其形象示人时仍保持其动人的魅力？ 答案是呼之欲出的，即阅读作为实体的存在本身并非依附学习的存在。  我们仔细看
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -336,20 +466,34 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Reading/">Reading</a>
+              <a href="/tags/Reading/">#Reading</a>
             
           </div>
         
@@ -374,12 +518,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/11/07/%E5%8F%88%E8%B0%88%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E6%82%B2%E5%89%A7/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2021/11/07/%E5%8F%88%E8%B0%88%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E6%82%B2%E5%89%A7/" target="_self">
+        <div>
           我们很自然地以为见死的悲剧高尚于不过为了笑的喜剧。如此，若文学欲以高尚论正统，悲剧则是文学的正统。 悲剧的见死倒非真正有谁死去了——奥康纳的小说却是每篇见人死的——生命的暗淡、摧残、蹂躏都可算作见死。 年轻时的创作，不都是有向死的意识与死的痕迹吗？ 如许的生命，在白日黑夜之间耗散，以致逐渐暗淡。 魂灵深深地叹息，于是表于文字，留下暗灭的残影。称作悲剧——所谓不为他人，只为自己。 然而悲剧也有令人厌
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -391,22 +535,36 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Literature/">Literature</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Literature/">#Literature</a>
             
-              <a href="/tags/Aesthetic/">Aesthetic</a>
+              <a href="/tags/Aesthetic/">#Aesthetic</a>
             
           </div>
         
@@ -431,12 +589,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/" target="_self">
+        <div>
           关于马克思理论的根基 马克思理论的根基就是生产力，所谓生产力是结构性的功能因素，“即一定的生产方式或结构在实际运作中发挥出来的程度、能力和水平”。这是张一兵对生产力一词的归纳。我想这是对的，这是根据张一兵的引文：  “人们之所以有历史，是因为他们必须生产自己的生活，而且必须用一定的方式来进行。”（《费尔巴哈》，第25页）  也正是因着生产力作为其理论的全部根基，所以其哲学理论根本点就在于历史性——
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -448,18 +606,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Philosophy/">Philosophy</a>
+              <a href="/tags/Philosophy/">#Philosophy</a>
             
           </div>
         
@@ -484,12 +656,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/10/19/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E6%A8%A1%E6%8B%9F%E5%99%A8/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2021/10/19/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E6%A8%A1%E6%8B%9F%E5%99%A8/" target="_self">
+        <div>
           人生模拟器是一两个月之前的事情了，想来许多人已经渐渐忘了。我也一样，只是今天忽然想起，觉得有一些都是可以一写的。 模拟人生当然不是模拟真的人生。模拟的人生的基本逻辑与人生便是不同的。其中手速快的人，若是碰上一段八十多岁的人生，10秒钟的时间也足够了；而倘若你不喜欢，则还可以再来一遍，试试别样的头脑与容貌又是如何——最终也不过是10秒。于是，就是真的极乐——例如当了官，发了财，或是评上教授，成了也算
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -501,18 +673,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
           </div>
         
@@ -537,12 +723,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/01/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(16)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2021/01/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(16)/" target="_self">
+        <div>
           演变文学史观更关注的是文学是如何动态演变至今
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -554,11 +740,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -583,12 +783,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/01/05/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(15)/" target="_self">
-          
-          如果要全面地了解清诗，要读严迪昌的《清诗史》 严格来说，诗话是讲诗人的轶事，诗评是评论诗歌，诗格&#x2F;式是讲诗是怎么写的。广义诗话把前三种全算进去了，但狭义的就不是了。 清代肌理说是比较独特的，比较注重诗的形式。 乾隆中期因着科举考试要考诗符，极大地影响了清代诗歌生态 浙西词派：朱彝尊—姜夔、吴文英； 阳羡词派：陈维崧—辛弃疾；常州词派（虽然自称要学习花间词派，然而实际上却是学习清真词派中主张不仅要
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/2021/01/05/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(15)/" target="_self">
+        <div>
+          如果要全面地了解清诗，要读严迪昌的《清诗史》 严格来说，诗话是讲诗人的轶事，诗评是评论诗歌，诗格/式是讲诗是怎么写的。广义诗话把前三种全算进去了，但狭义的就不是了。 清代肌理说是比较独特的，比较注重诗的形式。 乾隆中期因着科举考试要考诗符，极大地影响了清代诗歌生态 浙西词派：朱彝尊—姜夔、吴文英； 阳羡词派：陈维崧—辛弃疾；常州词派（虽然自称要学习花间词派，然而实际上却是学习清真词派中主张不仅要
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -600,11 +800,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -629,12 +843,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/12/29/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(14)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/12/29/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(14)/" target="_self">
+        <div>
           我们现在认为《列朝诗集小传》是第一部广义上的明朝诗歌史。是了解明代文学史最为方便的读物。 钱谦益尤其鄙视复古派，推崇公安派、唐宋派。 钱谦益写《列朝诗集小传》花了很大的力气，其中的撰写模式：政治履历+文学轶事+诗论征引+直接评论。虽然钱谦益在头一段写政治履历，似乎价值不高，但其实是春秋笔法。 在古诗的源流中，陶渊明的诗实际上是一种旁枝，并非主流。钟嵘的《诗品》中虽说陶渊明是古今隐逸之宗，但却把陶
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -646,57 +860,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
 
-  <div class="row mx-auto index-card">
+<span class="category-chains">
+  
+  
     
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/" target="_self">
-          <img src="/img/classnotes.jpg" srcset="/img/loading.gif" lazyload alt="中国古代文学课程（叶晔）笔记 第十三讲 古典“诗迹”与中国古代文学的地方书写传统">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <span class="category-chain">
         
-        <a href="/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/" target="_self">
-          中国古代文学课程（叶晔）笔记 第十三讲 古典“诗迹”与中国古代文学的地方书写传统
-        </a>
-      </h1>
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
 
-      <p class="index-excerpt">
-        <a href="/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/" target="_self">
-          
-          地方文学传统的串联不仅是通过作家，也通过当地的地理景观，如杭州西湖。 地域文学研究要突出地域性、地方性，而不能变成地方作家研究。 古代文学的现地研究就是把诗歌中所讲的景点具体地找出来，拍照片，定位。 严格意义上的地方志是在宋代开始，因为只有宋代士人才有地方概念。 无论是沈约还是崔颢，都是文人诗。但竹枝词是来自民歌。竹枝词是从三峡一带出来的。顾况、刘禹锡、杨万里在创作时并没有特定的地方意识。但是随
-        </a>
-      </p>
+      </span>
+    
+  
+</span>
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-12-22 13:05" pubdate>
-              2020-12-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
           </div>
         
         
@@ -741,32 +923,34 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-
+    <div class="footer-content">
+       <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
+    </div>
   
-
   
-</footer>
+  
+  
+</div>
 
+  </footer>
 
-  <!-- SCRIPTS -->
+  <!-- Scripts -->
   
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
@@ -774,10 +958,22 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -787,43 +983,22 @@
 
 
 
-  
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-        typing(title);
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>

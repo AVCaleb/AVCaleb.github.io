@@ -27,15 +27,19 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
   <title>Vangalle&#39;s Words</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
 
 
-<!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -44,24 +48,45 @@
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.0.0">
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
 </head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       <strong>The Elements</strong>
@@ -84,7 +109,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                <span>首页</span>
               </a>
             </li>
           
@@ -96,7 +121,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                <span>归档</span>
               </a>
             </li>
           
@@ -108,7 +133,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                <span>分类</span>
               </a>
             </li>
           
@@ -120,7 +145,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
+                <span>标签</span>
               </a>
             </li>
           
@@ -132,7 +157,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                <span>关于</span>
               </a>
             </li>
           
@@ -140,14 +165,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -155,40 +182,113 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/luther.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Eκεινον δει αυξανειν, εμε δε ελαττουσθαι">
-              
-            </span>
+  
 
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/luther.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="Eκεινον δει αυξανειν, εμε δε ελαττουσθαι"></span>
           
         </div>
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
     
       <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
+        <div id="board"
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/12/14/Death/" target="_self">
+          <img src="/img/veritas.jpg" srcset="/img/loading.gif" lazyload alt="About Death">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/14/Death/" target="_self">
+          About Death
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/12/14/Death/" target="_self">
+        <div>
+          By Vangalle About Death 我们常说，美国是一个被撕碎的国家。现在看来，中国也是。 今天是2022年12月14日，据消息，昨天的时候，华西医院的研一学生，突然晕倒，双瞳散大，氧分压11.3。华西医院称其生死还未知。 人们有许多的议论——一如从前的许多时候一样，然而人们也料到这也将如往日许多的结果一样。 今年是我来浙大的第四年，论起学校，大家知道，或许不至于有过多的畏惧。上个礼拜
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-14 21:06" pubdate>
+              2022-12-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Anthropology/">#Anthropology</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
 
   <div class="row mx-auto index-card">
     
@@ -207,12 +307,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/11/10/CommentaryOnRomans7_8/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/11/10/CommentaryOnRomans7_8/" target="_self">
+        <div>
           By Vangalle 罗马书7、8新解——从伯拉纠主义的视角 第七章 罗马书第7、8章向来是在所讨论的议题上充满争议的两章，我们在这两章也见过许多的解经体系，有改革宗的，也有开西的。双方都有不曾企及的或者是彼此矛盾的地方。我在此给出的，并非意味着已经将这两章解决了，而是提供一种新的视角。 很显然的是，保罗的论述方式并非机械的、模块化地推进，其写作更像是群岛，在岛与岛之间都有各种各样的联系。不过，
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -224,20 +324,34 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Theology/">#Theology</a>
             
           </div>
         
@@ -262,12 +376,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/10/11/Suptrinity1/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/10/11/Suptrinity1/" target="_self">
+        <div>
           By Vangalle 一些对三位一体论的补充（1） 一个疏漏 我完成对三位一体论的初步学习是在今年的八月份，然而今天，十月份的日子，我发现了之前曾一度想起却又被遗忘了的疏漏。 在我原先的阐述中，“本质的”（essential）一词是逃不过的；然而，我发现，使用这个词使我先前所以为的成功的论述处于一种十分危险的地位。 本质属性可以从三个维度进行考虑——这也是我学习SEP相关内容的结果——因为所谓本
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -279,20 +393,34 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Theology/">#Theology</a>
             
           </div>
         
@@ -317,12 +445,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/09/15/ReplyToEnQi/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/09/15/ReplyToEnQi/" target="_self">
+        <div>
           By Vangalle 答恩其弟兄 十分感谢恩其弟兄的在读完我的《恩膏的教训、贵格会、倪弟兄：关于教会中神秘主义的一份调查》后给我回了信。我想，最好的方式是同样给恩其弟兄回一封信。 下面是我信的内容。 1. “启示终止”是否只是原则的终止而非具体事实的终止？ 答： 虽然按照启示终止这一教义的推导过程，圣经从未暗示这只是原则的终止；然而，问题的关键或许在于，人们不会认为那些具体给予信徒的引导能被纳入
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -334,22 +462,36 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Theology/">#Theology</a>
             
-              <a href="/tags/Pneumatology/">Pneumatology</a>
+              <a href="/tags/Pneumatology/">#Pneumatology</a>
             
           </div>
         
@@ -374,12 +516,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/09/13/Mysticism/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/09/13/Mysticism/" target="_self">
+        <div>
           By Vangalle 恩膏的教训、贵格会、倪弟兄：关于教会中神秘主义的一份调查 前言 就着中国的基督徒而言，神秘主义（即Mysticism，有些人爱称其为奥秘派）的教导是再熟悉不过了——所有处于地方教会环境的基督徒若是用心寻求，都会发现牧者们公开地、不止一次地承认地方教会神秘主义的渊源。 所谓教会中的神秘主义，简单地说，就是宣称内住于基督徒的圣灵能以一种让人明白圣经的话之外的方式，使人知道神的真
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -391,22 +533,36 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Theology/">#Theology</a>
             
-              <a href="/tags/Pneumatology/">Pneumatology</a>
+              <a href="/tags/Pneumatology/">#Pneumatology</a>
             
           </div>
         
@@ -431,12 +587,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/09/08/facialdistinction/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/09/08/facialdistinction/" target="_self">
+        <div>
           By Vangalle 亚洲人与欧洲人脸部核心差异 我一直以来怀疑亚洲人与欧洲人的脸部核心差异在于眼睛的位置，所以，我今天作了一个实验。 首先，这是一张亚洲人的脸。  接着，从以下欧洲人的侧脸中把眼睛移植出来  将其放在亚洲人侧脸的眼睛的原先的位置，如下图  发现并没有什么变化。 再将其往深处移动，得到下图  发现，亚洲人成功地被改造为欧洲人。 不过，必须承认的是，人们会觉得这张脸和印度人比较相像
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -448,18 +604,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
           </div>
         
@@ -484,12 +654,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/09/02/Anselm%20on%20Faith/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/09/02/Anselm%20on%20Faith/" target="_self">
+        <div>
           By Vangalle 安瑟伦论信心 安瑟伦在信心上的看法我是很难接受的。贺智在其《系统神学》中将其观点归纳为三点：  心灵的圣洁是真正知识的必要条件。只有宗教真理进入我们个人的经验，我们才能适当地理解它们。 在对信心的帮助上，理性的证据不是必要的。 有一些启示的教义是超出我们的理性的，我们不能理性地理解或事证明那些交易，那些教义只应被作为神简单的证据。  关于第三点，安瑟伦曾说：  Nam Ch
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -501,20 +671,34 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Theology/">#Theology</a>
             
           </div>
         
@@ -539,12 +723,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/08/29/poem(3)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/08/29/poem(3)/" target="_self">
+        <div>
           二元论，灵魂 下午的市场上，如金字塔般耸起的苹果[1] 中午的草地上，被双手托举起的一盆牛奶[2] 我们看向彼端的永恒 沉重的肉身仿佛被遗忘 经过长而又长的路，灵魂仿佛重新被想起     亚当·扎加耶夫斯基《在陌生的城市》  ↩︎   英格玛·伯格曼 《第七封印》  ↩︎
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -556,20 +740,34 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Poem/">Poem</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Poem/" class="category-chain-item">Poem</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Literature/">Literature</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Literature/">#Literature</a>
             
           </div>
         
@@ -594,12 +792,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/08/26/Spiritintuition/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/08/26/Spiritintuition/" target="_self">
+        <div>
           By Vangalle 论直觉中的圣灵 如果考察那些以直觉作为圣灵在人身上工作之彰显的观点的论证，会发现，其并非是令人信服地从圣经中得出的；但另一方面，我们会注意到，这种观点确实使得基督教信仰有极为浓重的神秘色彩，从而极大程度上增添其超然的成分。在下文中，我所提到的另一派的看法最为诟病的一点是极大的去神秘化，从而把基督教生活完全转化为一种特别的道德规约团体的生活，尽管其信念的基础是超自然的，但生活
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -611,22 +809,36 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Theology/">#Theology</a>
             
-              <a href="/tags/Pneumatology/">Pneumatology</a>
+              <a href="/tags/Pneumatology/">#Pneumatology</a>
             
           </div>
         
@@ -651,12 +863,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/08/26/cvspython/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2022/08/26/cvspython/" target="_self">
+        <div>
           C语言和python运行速度的比较 今天在利用python算圆周率的过程中，发现python速度过慢，于是寻找运行速度快的语言。 发现C语言最快，据称效率是python的70倍。哪种编程语言的运行效率最高？更值得学习? - 程序员编程指南的回答 - 知乎 然后，我做了一个测试。代码思路源自 蒙特卡罗算法 - ARGO创新实验室的文章 - 知乎 首先是python的程序 12345678910111
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -668,73 +880,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Computer-Science/">Computer Science</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/08/10/The%20Trinity/" target="_self">
-          <img src="/img/Nicene.jpg" srcset="/img/loading.gif" lazyload alt="三位一体论（The Trinity）">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/08/10/The%20Trinity/" target="_self">
-          三位一体论（The Trinity）
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/08/10/The%20Trinity/" target="_self">
-          
-          By Vangalle 三位一体论（The Trinity） 三位一体的渐进启示 旧约中的三位一体是潜藏的，因为其充满了一神论的宣告（申6:4-5）。 新约中的三位一体是含蓄的，因为新约的作者们从未像旧约的作者那样如宣明一神论那样明确宣明神是三位一体的。 不得不说，三位一体论的得出是对整本圣经反思性的结果，其难以根据某节圣经节就完全确定地找到神三位一体之本性的本体论承诺。 旧约对神多位格的暗示 创
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-08-10 13:57" pubdate>
-              2022-08-10
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Essay/">Essay</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Anthropology/">Anthropology</a>
-            
-              <a href="/tags/Theology/">Theology</a>
+              <a href="/tags/Computer-Science/">#Computer Science</a>
             
           </div>
         
@@ -779,32 +950,34 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-
+    <div class="footer-content">
+       <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
+    </div>
   
-
   
-</footer>
+  
+  
+</div>
 
+  </footer>
 
-  <!-- SCRIPTS -->
+  <!-- Scripts -->
   
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
@@ -812,10 +985,22 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -825,43 +1010,22 @@
 
 
 
-  
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-        typing(title);
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>

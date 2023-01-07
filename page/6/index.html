@@ -27,15 +27,19 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
   <title>Vangalle&#39;s Words</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
 
 
-<!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -44,24 +48,45 @@
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.0.0">
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="Vangalle's Words" type="application/atom+xml">
 </head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       <strong>The Elements</strong>
@@ -84,7 +109,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                <span>首页</span>
               </a>
             </li>
           
@@ -96,7 +121,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                <span>归档</span>
               </a>
             </li>
           
@@ -108,7 +133,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                <span>分类</span>
               </a>
             </li>
           
@@ -120,7 +145,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
+                <span>标签</span>
               </a>
             </li>
           
@@ -132,7 +157,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                <span>关于</span>
               </a>
             </li>
           
@@ -140,14 +165,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -155,40 +182,106 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/luther.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Eκεινον δει αυξανειν, εμε δε ελαττουσθαι">
-              
-            </span>
+  
 
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/luther.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="Eκεινον δει αυξανειν, εμε δε ελαττουσθαι"></span>
           
         </div>
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
     
       <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
+        <div id="board"
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/" target="_self">
+          <img src="/img/classnotes.jpg" srcset="/img/loading.gif" lazyload alt="中国古代文学课程（叶晔）笔记 第十三讲 古典“诗迹”与中国古代文学的地方书写传统">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/" target="_self">
+          中国古代文学课程（叶晔）笔记 第十三讲 古典“诗迹”与中国古代文学的地方书写传统
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/" target="_self">
+        <div>
+          地方文学传统的串联不仅是通过作家，也通过当地的地理景观，如杭州西湖。 地域文学研究要突出地域性、地方性，而不能变成地方作家研究。 古代文学的现地研究就是把诗歌中所讲的景点具体地找出来，拍照片，定位。 严格意义上的地方志是在宋代开始，因为只有宋代士人才有地方概念。 无论是沈约还是崔颢，都是文人诗。但竹枝词是来自民歌。竹枝词是从三峡一带出来的。顾况、刘禹锡、杨万里在创作时并没有特定的地方意识。但是随
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-12-22 13:05" pubdate>
+              2020-12-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
 
   <div class="row mx-auto index-card">
     
@@ -207,12 +300,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/12/15/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(12)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/12/15/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(12)/" target="_self">
+        <div>
           文言小说—聊斋志异；白话小说—红楼梦、儒林外史 所谓话本，它一定是有一个口头素材。《二拍》之所以是“拟话本”，是因为它没有真正的口头素材，只是仿照《三言》的形式写出来的。 才子佳人小说后来一部分融入到了侠义小说，另有融入侠邪小说（鸳鸯蝴蝶派） 红楼梦（脂本（抄本）） 《儒林外史》是五十五回还是五十六回是存疑的。“幽榜”很奇怪。但因着《儒林外史题词》的发现，因此“幽榜”应当是吴敬梓所撰。
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -224,11 +317,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -253,12 +360,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/12/08/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(11)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/12/08/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(11)/" target="_self">
+        <div>
           乐府的题目和词相似，它作为音乐文学，它的题代表了它的音乐旋律 ，也代表它的含义。 乐府的题目在后人的创作中，只保留了音乐，而内容与题目并不匹配。 后来人们开始取新的题目。“新题乐府”的情况在唐代就出现了并不配乐，如杜甫（三吏三别，虽然称作歌行）、白居易的乐府。 李攀龙因为拟古乐府几乎没改原来的文本而引起很大的争议。 王世贞因为身世遭遇，最恨严嵩，故其乐府用乐府变多讽刺。 王世贞的新题乐府是在杜甫
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -270,11 +377,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -299,12 +420,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/12/06/The%20Ture%20Man%20Show/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/12/06/The%20Ture%20Man%20Show/" target="_self">
+        <div>
           论起时间，大概是荒芜太久了，所看到的电影低劣的多。昨日十一点左右，无意地点开The Truman Show，本打算在十分钟之后便结束，因为我深信这一回看到的将是同样的平庸，然而电影的行进却深合近来的理路，以至终局，不觉有丝毫憾恨。 今天应是心血来潮，想大略地写一写。写之前大概看了一下网络上的评论，所有的都在我意料之中，于是便放心地写了这些东西。 我现在想起，若是一定要细究我昨晚为何睡意频仍却坚持看
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -316,22 +437,36 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Essay/">Essay</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Essay/" class="category-chain-item">Essay</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Anthropology/">Anthropology</a>
+              <a href="/tags/Anthropology/">#Anthropology</a>
             
-              <a href="/tags/Film/">Film</a>
+              <a href="/tags/Film/">#Film</a>
             
-              <a href="/tags/Aesthetic/">Aesthetic</a>
+              <a href="/tags/Aesthetic/">#Aesthetic</a>
             
           </div>
         
@@ -356,12 +491,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/12/01/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(10)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/12/01/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(10)/" target="_self">
+        <div>
           白话小说可推至南宋，文言小说可推之《搜神记》。 古代叙事诗很少，后来被人硬是找出了《孔雀东南飞》《木兰辞》，优秀的叙事诗很少，但藏族、蒙古族的叙事诗就很多了。 而在古代叙事传统中，除了如《长恨歌》一般的作品，就只有传记文。 历史文献的叙事学研究可以扩大考察的范围，不再局限于《史记》《左传》文字优美的篇章，几乎所有的都可以被考察（不过不包括表之类），但这种方法因为不太像是文学研究，所以也有很大的争
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -373,11 +508,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -402,12 +551,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/11/24/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(9)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/11/24/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(9)/" target="_self">
+        <div>
           五四—晚明，上世纪八十年代（以陈平原为代表，有力的口号是王德威提出的：“没有晚清，何来五四”）—晚清（研究晚清不会用传统的角度来研究，其近世性吸引了许多研究者） 文学的文本较之历史文本更逼近历史现场，纪实性最强的是文学作品。然而这一格局随着报刊的出现便被打破了。 《官场现形记》《孽海花》等小说是在报刊上连载的。 晚明是东亚文明进入全球史领域的早期。（元代不是，因为元代以前，从东方到西方的交流就是
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -419,11 +568,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -448,12 +611,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/11/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(8)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/11/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(8)/" target="_self">
+        <div>
           背景：明代四大声腔已经脱颖而出。后昆三腔经过改革，成为世之大宗。在汤显祖之前，由身份较高的人的创作戏曲是少有的。不过在汤显祖之前，丘濬（内阁大学士，相当于政治局常委）创作了《五伦全备记》，是道德教化类的，不过是他未考上进士之前写的。作品比较烂，说明精于诗文创作之人一下子转向戏曲创作是难的。 虽然徐渭与汤显祖已经创造了很好的戏曲，但仍然斟酌于自己作品文体的面向。 徐渭更多地面向诗歌，汤显祖面向戏曲
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -465,11 +628,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -494,12 +671,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/11/03/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(7)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/11/03/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(7)/" target="_self">
+        <div>
           《金瓶梅》是世代陈累小说还是文人独立创作小说还没有定论。 一般认为万历本早于崇祯本，但不好说。 此“词话”相当于《大唐三藏取经诗话》，即说唱艺术的话本。 不删郑卫之旨，即孔子删《诗经》时留下男女私奔的诗。 “世庙时一巨公寓言”，即嘉靖皇帝时期一大臣之事。 凤州即王世贞。 因为《金瓶梅》描写细致，应当是按照日历写的。所以据此可以推断出大概时间，且此种方法较为可靠。 《金瓶梅》29回吴神仙诗，是文人
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -511,11 +688,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -540,12 +731,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/10/27/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(6)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/10/27/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(6)/" target="_self">
+        <div>
           徐朔方先生的“世代层累说”启发自顾颉刚的“中国古史世代层累说”。同样西方也有这样的理论。在《故事的歌手》中有口头程式理论。所谓程式就是指某个英雄出场总是有固定的套路。但其实文学程式是无法论证的，因为我们现在所拥有的都是案头文学的文本，口头文学无法可考。但是Bates Lord进行了对南斯拉夫活形态的口头传统的田野调查，从而为我们的口头文学的传统的建立提供借鉴。 在西游记的最早版本中，作者是不确定
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -557,11 +748,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
@@ -586,12 +791,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(5)/" target="_self">
-          
+      
+      <a class="index-excerpt " href="/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(5)/" target="_self">
+        <div>
           环境  台阁文学（台阁体）重要：杨士奇。教习范本《文章正宗》（真德秀，把史书中的一些片段放到集部）《唐音》，推崇道德和文章的统一。  茶陵派（也属于台阁文学），李东阳为代表人物。因为李东阳为男人，所以会比较注重文学的审美。 弘治末期的政治环境宽松，士人社会地位提高，正德年间又因朝廷腐败，却不大理睬士人的讥刺，所以民生不幸诗家幸。 明朝士人大多有对古典审美理想的追求，认为明朝重开乾坤，所以才会力求将
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -603,57 +808,25 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
 
-  <div class="row mx-auto index-card">
+<span class="category-chains">
+  
+  
     
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(4)/" target="_self">
-          <img src="/img/classnotes.jpg" srcset="/img/loading.gif" lazyload alt="中国古代文学课程（叶晔）笔记 第四讲">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <span class="category-chain">
         
-        <a href="/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(4)/" target="_self">
-          中国古代文学课程（叶晔）笔记 第四讲
-        </a>
-      </h1>
+  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
+  
+  
 
-      <p class="index-excerpt">
-        <a href="/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(4)/" target="_self">
-          
-          无可记录
-        </a>
-      </p>
+      </span>
+    
+  
+</span>
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-10-20 13:05" pubdate>
-              2020-10-20
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Class-Notes/">Class Notes</a>
-            
           </div>
         
         
@@ -698,32 +871,34 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-
+    <div class="footer-content">
+       <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Vangalle</span></a> <i class="iconfont icon-love"></i> <a href="https://vangalle.github.io/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
+    </div>
   
-
   
-</footer>
+  
+  
+</div>
 
+  </footer>
 
-  <!-- SCRIPTS -->
+  <!-- Scripts -->
   
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
@@ -731,10 +906,22 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -744,43 +931,22 @@
 
 
 
-  
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-        typing(title);
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
