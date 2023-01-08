@@ -29,8 +29,8 @@
 <meta property="article:author" content="Vangalle">
 <meta property="article:tag" content="Anthropology">
 <meta property="article:tag" content="Theology">
-<meta property="article:tag" content="Metaphysics">
 <meta property="article:tag" content="Ontology">
+<meta property="article:tag" content="Metaphysics">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://vangalle.github.io/img/Barth.jpg">
   
@@ -337,9 +337,9 @@
       
         <a href="/tags/Theology/">#Theology</a>
       
-        <a href="/tags/Metaphysics/">#Metaphysics</a>
-      
         <a href="/tags/Ontology/">#Ontology</a>
+      
+        <a href="/tags/Metaphysics/">#Metaphysics</a>
       
     </div>
   
@@ -418,6 +418,38 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="waline"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://cdn.jsdelivr.net/npm/@waline/client@1/dist/waline.min.css')
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/@waline/client@1/dist/waline.min.js', function() {
+        var options = Object.assign(
+          {"serverURL":"https://comments-iv8tx3rw3-vangalle.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"placeholder":null,"avatar":"retro","avatarCDN":"https://seccdn.libravatar.org/avatar/","avatarForce":false,"highlight":true},
+          {
+            el: '#waline',
+            path: window.location.pathname
+          }
+        )
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
