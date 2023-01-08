@@ -27,8 +27,8 @@
 <meta property="article:published_time" content="2022-03-05T05:53:00.000Z">
 <meta property="article:modified_time" content="2022-04-09T14:18:48.298Z">
 <meta property="article:author" content="Vangalle">
-<meta property="article:tag" content="Anthropology">
 <meta property="article:tag" content="Theology">
+<meta property="article:tag" content="Anthropology">
 <meta property="article:tag" content="Soteriology">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://vangalle.github.io/img/veritas.jpg">
@@ -343,9 +343,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Anthropology/">#Anthropology</a>
-      
         <a href="/tags/Theology/">#Theology</a>
+      
+        <a href="/tags/Anthropology/">#Anthropology</a>
       
         <a href="/tags/Soteriology/">#Soteriology</a>
       
@@ -429,7 +429,8 @@
   
   
     <article id="comments" lazyload>
-      
+      <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
   <div id="waline"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#waline', function() {
@@ -439,7 +440,8 @@
           {"serverURL":"comments-qr8le35oz-vangalle.vercel.app","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"placeholder":null,"avatar":"retro","avatarCDN":"https://seccdn.libravatar.org/avatar/","avatarForce":false,"highlight":true},
           {
             el: '#waline',
-            path: window.location.pathname
+            path: window.location.pathname,
+            serverURL: 'https://comments-qr8le35oz-vangalle.vercel.app/',
           }
         )
         Waline.init(options);

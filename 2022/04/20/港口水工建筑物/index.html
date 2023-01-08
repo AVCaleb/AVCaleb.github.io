@@ -1027,7 +1027,8 @@ L=H_0tg(45°-\varphi_1/2)+t_htg(45°+\varphi_2/2)
   
   
     <article id="comments" lazyload>
-      
+      <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
   <div id="waline"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#waline', function() {
@@ -1037,7 +1038,8 @@ L=H_0tg(45°-\varphi_1/2)+t_htg(45°+\varphi_2/2)
           {"serverURL":"comments-qr8le35oz-vangalle.vercel.app","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"placeholder":null,"avatar":"retro","avatarCDN":"https://seccdn.libravatar.org/avatar/","avatarForce":false,"highlight":true},
           {
             el: '#waline',
-            path: window.location.pathname
+            path: window.location.pathname,
+            serverURL: 'https://comments-qr8le35oz-vangalle.vercel.app/',
           }
         )
         Waline.init(options);
