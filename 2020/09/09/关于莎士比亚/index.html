@@ -243,14 +243,6 @@
 
     
     
-      
-        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
-          <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="leancloud-page-views"></span> 次
-        </span>
-        
-      
-    
   </div>
 
 
@@ -419,24 +411,21 @@
   
   
     <article id="comments" lazyload>
-      <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
-
-  <div id="waline"></div>
+      
+  <div id="valine"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createCssLink('https://cdn.jsdelivr.net/npm/@waline/client@1/dist/waline.min.css')
-      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/@waline/client@1/dist/waline.min.js', function() {
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://comments-qr8le35oz-vangalle.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"placeholder":null,"avatar":"retro","avatarCDN":"https://seccdn.libravatar.org/avatar/","avatarForce":false,"highlight":true},
+          {"appId":"Sdw8DRwUlnjHSsdTfRNMd8RO-MdYXbMMI","appKey":"jBACYng8nnQ3oNpRXo68wBV6","path":"window.location.pathname","placeholder":"Libenter comment~","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"https://sdw8drwu.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
           {
-            el: '#waline',
-            path: window.location.pathname,
-            serverURL: 'https://comments-qr8le35oz-vangalle.vercel.app/',
+            el: "#valine",
+            path: window.location.pathname
           }
         )
-        Waline.init(options);
-        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
-          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
           Fluid.plugins.imageCaption(imgSelector);
           Fluid.plugins.fancyBox(imgSelector);
         })
@@ -543,31 +532,6 @@
     </div>
   
   
-    <div class="statistics">
-  
-  
-
-  
-    
-      <span id="leancloud-site-pv-container" style="display: none">
-        总访问量 
-        <span id="leancloud-site-pv"></span>
-         次
-      </span>
-    
-    
-      <span id="leancloud-site-uv-container" style="display: none">
-        总访客数 
-        <span id="leancloud-site-uv"></span>
-         人
-      </span>
-    
-    
-
-  
-</div>
-
-  
   
   
 </div>
@@ -664,8 +628,6 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
-
-  <script defer src="/js/leancloud.js" ></script>
 
 
 
