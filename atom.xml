@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Vangalle&#39;s Words</title>
-  <icon>https://vangalle.github.io/OIP-C.jpg</icon>
+  <icon>http://vangalle.github.io/OIP-C.jpg</icon>
   <subtitle>Elements</subtitle>
-  <link href="https://vangalle.github.io/atom.xml" rel="self"/>
+  <link href="http://vangalle.github.io/atom.xml" rel="self"/>
   
-  <link href="https://vangalle.github.io/"/>
+  <link href="http://vangalle.github.io/"/>
   <updated>2023-01-19T16:36:34.003Z</updated>
-  <id>https://vangalle.github.io/</id>
+  <id>http://vangalle.github.io/</id>
   
   <author>
     <name>Vangalle</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>为什么是图伦丁的《辩道学要义》？</title>
-    <link href="https://vangalle.github.io/2023/01/19/ST1/"/>
-    <id>https://vangalle.github.io/2023/01/19/ST1/</id>
+    <link href="http://vangalle.github.io/2023/01/19/ST1/"/>
+    <id>http://vangalle.github.io/2023/01/19/ST1/</id>
     <published>2023-01-19T04:12:00.000Z</published>
     <updated>2023-01-19T16:36:34.003Z</updated>
     
@@ -35,17 +35,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Systematic Theology" scheme="https://vangalle.github.io/tags/Systematic-Theology/"/>
+    <category term="Systematic Theology" scheme="http://vangalle.github.io/tags/Systematic-Theology/"/>
     
   </entry>
   
   <entry>
     <title>如何订阅这个网站的RSS</title>
-    <link href="https://vangalle.github.io/2023/01/08/HowToSetRSS/"/>
-    <id>https://vangalle.github.io/2023/01/08/HowToSetRSS/</id>
+    <link href="http://vangalle.github.io/2023/01/08/HowToSetRSS/"/>
+    <id>http://vangalle.github.io/2023/01/08/HowToSetRSS/</id>
     <published>2023-01-07T18:03:00.000Z</published>
     <updated>2023-01-08T09:33:27.720Z</updated>
     
@@ -62,17 +62,17 @@
     
     
     
-    <category term="Notification" scheme="https://vangalle.github.io/categories/Notification/"/>
+    <category term="Notification" scheme="http://vangalle.github.io/categories/Notification/"/>
     
     
-    <category term="Notification" scheme="https://vangalle.github.io/tags/Notification/"/>
+    <category term="Notification" scheme="http://vangalle.github.io/tags/Notification/"/>
     
   </entry>
   
   <entry>
     <title>罗马书7、8新解——从伯拉纠主义的视角</title>
-    <link href="https://vangalle.github.io/2022/11/10/CommentaryOnRomans7_8/"/>
-    <id>https://vangalle.github.io/2022/11/10/CommentaryOnRomans7_8/</id>
+    <link href="http://vangalle.github.io/2022/11/10/CommentaryOnRomans7_8/"/>
+    <id>http://vangalle.github.io/2022/11/10/CommentaryOnRomans7_8/</id>
     <published>2022-11-10T13:06:00.000Z</published>
     <updated>2023-01-08T08:33:27.225Z</updated>
     
@@ -89,19 +89,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>一些对三位一体论的补充（1）</title>
-    <link href="https://vangalle.github.io/2022/10/11/Suptrinity1/"/>
-    <id>https://vangalle.github.io/2022/10/11/Suptrinity1/</id>
+    <link href="http://vangalle.github.io/2022/10/11/Suptrinity1/"/>
+    <id>http://vangalle.github.io/2022/10/11/Suptrinity1/</id>
     <published>2022-10-11T12:55:00.000Z</published>
     <updated>2022-10-11T14:33:02.495Z</updated>
     
@@ -118,19 +118,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>答EQ弟兄</title>
-    <link href="https://vangalle.github.io/2022/09/15/ReplyToEnQi/"/>
-    <id>https://vangalle.github.io/2022/09/15/ReplyToEnQi/</id>
+    <link href="http://vangalle.github.io/2022/09/15/ReplyToEnQi/"/>
+    <id>http://vangalle.github.io/2022/09/15/ReplyToEnQi/</id>
     <published>2022-09-15T06:35:00.000Z</published>
     <updated>2023-01-19T16:38:35.187Z</updated>
     
@@ -146,21 +146,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Pneumatology" scheme="https://vangalle.github.io/tags/Pneumatology/"/>
+    <category term="Pneumatology" scheme="http://vangalle.github.io/tags/Pneumatology/"/>
     
   </entry>
   
   <entry>
     <title>恩膏的教训、贵格会、倪弟兄：关于教会中神秘主义的一份调查</title>
-    <link href="https://vangalle.github.io/2022/09/13/Mysticism/"/>
-    <id>https://vangalle.github.io/2022/09/13/Mysticism/</id>
+    <link href="http://vangalle.github.io/2022/09/13/Mysticism/"/>
+    <id>http://vangalle.github.io/2022/09/13/Mysticism/</id>
     <published>2022-09-13T02:07:00.000Z</published>
     <updated>2023-01-08T08:41:35.949Z</updated>
     
@@ -177,21 +177,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Pneumatology" scheme="https://vangalle.github.io/tags/Pneumatology/"/>
+    <category term="Pneumatology" scheme="http://vangalle.github.io/tags/Pneumatology/"/>
     
   </entry>
   
   <entry>
     <title>亚洲人与欧洲人脸部核心差异</title>
-    <link href="https://vangalle.github.io/2022/09/08/facialdistinction/"/>
-    <id>https://vangalle.github.io/2022/09/08/facialdistinction/</id>
+    <link href="http://vangalle.github.io/2022/09/08/facialdistinction/"/>
+    <id>http://vangalle.github.io/2022/09/08/facialdistinction/</id>
     <published>2022-09-08T05:33:00.000Z</published>
     <updated>2022-09-08T07:40:39.607Z</updated>
     
@@ -208,17 +208,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
   </entry>
   
   <entry>
     <title>安瑟伦论信心</title>
-    <link href="https://vangalle.github.io/2022/09/02/Anselm%20on%20Faith/"/>
-    <id>https://vangalle.github.io/2022/09/02/Anselm%20on%20Faith/</id>
+    <link href="http://vangalle.github.io/2022/09/02/Anselm%20on%20Faith/"/>
+    <id>http://vangalle.github.io/2022/09/02/Anselm%20on%20Faith/</id>
     <published>2022-09-02T05:33:00.000Z</published>
     <updated>2022-09-02T05:45:40.000Z</updated>
     
@@ -236,19 +236,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>二元论，灵魂</title>
-    <link href="https://vangalle.github.io/2022/08/29/poem(3)/"/>
-    <id>https://vangalle.github.io/2022/08/29/poem(3)/</id>
+    <link href="http://vangalle.github.io/2022/08/29/poem(3)/"/>
+    <id>http://vangalle.github.io/2022/08/29/poem(3)/</id>
     <published>2022-08-29T10:00:00.000Z</published>
     <updated>2022-08-29T10:04:07.488Z</updated>
     
@@ -263,19 +263,19 @@
     
     
     
-    <category term="Poem" scheme="https://vangalle.github.io/categories/Poem/"/>
+    <category term="Poem" scheme="http://vangalle.github.io/categories/Poem/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
   </entry>
   
   <entry>
     <title>论直觉中的圣灵</title>
-    <link href="https://vangalle.github.io/2022/08/26/Spiritintuition/"/>
-    <id>https://vangalle.github.io/2022/08/26/Spiritintuition/</id>
+    <link href="http://vangalle.github.io/2022/08/26/Spiritintuition/"/>
+    <id>http://vangalle.github.io/2022/08/26/Spiritintuition/</id>
     <published>2022-08-26T14:57:00.000Z</published>
     <updated>2022-09-15T11:17:41.112Z</updated>
     
@@ -291,21 +291,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Pneumatology" scheme="https://vangalle.github.io/tags/Pneumatology/"/>
+    <category term="Pneumatology" scheme="http://vangalle.github.io/tags/Pneumatology/"/>
     
   </entry>
   
   <entry>
     <title>C语言和python运行速度的比较</title>
-    <link href="https://vangalle.github.io/2022/08/26/cvspython/"/>
-    <id>https://vangalle.github.io/2022/08/26/cvspython/</id>
+    <link href="http://vangalle.github.io/2022/08/26/cvspython/"/>
+    <id>http://vangalle.github.io/2022/08/26/cvspython/</id>
     <published>2022-08-26T06:00:00.000Z</published>
     <updated>2022-08-26T08:56:46.742Z</updated>
     
@@ -321,17 +321,17 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Computer Science" scheme="https://vangalle.github.io/tags/Computer-Science/"/>
+    <category term="Computer Science" scheme="http://vangalle.github.io/tags/Computer-Science/"/>
     
   </entry>
   
   <entry>
     <title>三位一体论（The Trinity）</title>
-    <link href="https://vangalle.github.io/2022/08/10/The%20Trinity/"/>
-    <id>https://vangalle.github.io/2022/08/10/The%20Trinity/</id>
+    <link href="http://vangalle.github.io/2022/08/10/The%20Trinity/"/>
+    <id>http://vangalle.github.io/2022/08/10/The%20Trinity/</id>
     <published>2022-08-10T05:57:00.000Z</published>
     <updated>2022-08-12T02:43:22.903Z</updated>
     
@@ -348,19 +348,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>救恩完全出于神的预定</title>
-    <link href="https://vangalle.github.io/2022/06/17/DivineElection/"/>
-    <id>https://vangalle.github.io/2022/06/17/DivineElection/</id>
+    <link href="http://vangalle.github.io/2022/06/17/DivineElection/"/>
+    <id>http://vangalle.github.io/2022/06/17/DivineElection/</id>
     <published>2022-06-16T17:16:00.000Z</published>
     <updated>2022-06-23T12:20:02.071Z</updated>
     
@@ -378,19 +378,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>开西运动：从1875到1920（三）</title>
-    <link href="https://vangalle.github.io/2022/05/01/Keswick3/"/>
-    <id>https://vangalle.github.io/2022/05/01/Keswick3/</id>
+    <link href="http://vangalle.github.io/2022/05/01/Keswick3/"/>
+    <id>http://vangalle.github.io/2022/05/01/Keswick3/</id>
     <published>2022-05-01T14:57:00.000Z</published>
     <updated>2022-05-13T23:33:14.048Z</updated>
     
@@ -407,21 +407,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Keswick" scheme="https://vangalle.github.io/tags/Keswick/"/>
+    <category term="Keswick" scheme="http://vangalle.github.io/tags/Keswick/"/>
     
   </entry>
   
   <entry>
     <title>开西运动：从1875到1920（二）</title>
-    <link href="https://vangalle.github.io/2022/05/01/Keswick2/"/>
-    <id>https://vangalle.github.io/2022/05/01/Keswick2/</id>
+    <link href="http://vangalle.github.io/2022/05/01/Keswick2/"/>
+    <id>http://vangalle.github.io/2022/05/01/Keswick2/</id>
     <published>2022-05-01T01:38:00.000Z</published>
     <updated>2022-05-05T09:38:00.000Z</updated>
     
@@ -439,21 +439,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Keswick" scheme="https://vangalle.github.io/tags/Keswick/"/>
+    <category term="Keswick" scheme="http://vangalle.github.io/tags/Keswick/"/>
     
   </entry>
   
   <entry>
     <title>开西运动：从1875到1920（一）</title>
-    <link href="https://vangalle.github.io/2022/04/26/Keswick/"/>
-    <id>https://vangalle.github.io/2022/04/26/Keswick/</id>
+    <link href="http://vangalle.github.io/2022/04/26/Keswick/"/>
+    <id>http://vangalle.github.io/2022/04/26/Keswick/</id>
     <published>2022-04-26T10:12:00.000Z</published>
     <updated>2022-05-13T23:33:41.384Z</updated>
     
@@ -469,21 +469,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Keswick" scheme="https://vangalle.github.io/tags/Keswick/"/>
+    <category term="Keswick" scheme="http://vangalle.github.io/tags/Keswick/"/>
     
   </entry>
   
   <entry>
     <title>非理性的信仰是可行的吗</title>
-    <link href="https://vangalle.github.io/2022/04/25/ResonableBelief/"/>
-    <id>https://vangalle.github.io/2022/04/25/ResonableBelief/</id>
+    <link href="http://vangalle.github.io/2022/04/25/ResonableBelief/"/>
+    <id>http://vangalle.github.io/2022/04/25/ResonableBelief/</id>
     <published>2022-04-25T02:26:57.061Z</published>
     <updated>2022-04-22T05:11:04.000Z</updated>
     
@@ -500,19 +500,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>圣经主义与可理解性</title>
-    <link href="https://vangalle.github.io/2022/04/20/%E5%9C%A3%E7%BB%8F%E4%B8%BB%E4%B9%89%E4%B8%8E%E5%8F%AF%E7%90%86%E8%A7%A3%E6%80%A7/"/>
-    <id>https://vangalle.github.io/2022/04/20/%E5%9C%A3%E7%BB%8F%E4%B8%BB%E4%B9%89%E4%B8%8E%E5%8F%AF%E7%90%86%E8%A7%A3%E6%80%A7/</id>
+    <link href="http://vangalle.github.io/2022/04/20/%E5%9C%A3%E7%BB%8F%E4%B8%BB%E4%B9%89%E4%B8%8E%E5%8F%AF%E7%90%86%E8%A7%A3%E6%80%A7/"/>
+    <id>http://vangalle.github.io/2022/04/20/%E5%9C%A3%E7%BB%8F%E4%B8%BB%E4%B9%89%E4%B8%8E%E5%8F%AF%E7%90%86%E8%A7%A3%E6%80%A7/</id>
     <published>2022-04-20T04:10:00.000Z</published>
     <updated>2022-04-20T04:31:00.514Z</updated>
     
@@ -527,19 +527,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>港口水工建筑物</title>
-    <link href="https://vangalle.github.io/2022/04/20/%E6%B8%AF%E5%8F%A3%E6%B0%B4%E5%B7%A5%E5%BB%BA%E7%AD%91%E7%89%A9/"/>
-    <id>https://vangalle.github.io/2022/04/20/%E6%B8%AF%E5%8F%A3%E6%B0%B4%E5%B7%A5%E5%BB%BA%E7%AD%91%E7%89%A9/</id>
+    <link href="http://vangalle.github.io/2022/04/20/%E6%B8%AF%E5%8F%A3%E6%B0%B4%E5%B7%A5%E5%BB%BA%E7%AD%91%E7%89%A9/"/>
+    <id>http://vangalle.github.io/2022/04/20/%E6%B8%AF%E5%8F%A3%E6%B0%B4%E5%B7%A5%E5%BB%BA%E7%AD%91%E7%89%A9/</id>
     <published>2022-04-20T02:00:00.000Z</published>
     <updated>2022-06-08T03:27:37.572Z</updated>
     
@@ -556,17 +556,17 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Habor" scheme="https://vangalle.github.io/tags/Habor/"/>
+    <category term="Habor" scheme="http://vangalle.github.io/tags/Habor/"/>
     
   </entry>
   
   <entry>
     <title>港口规划与布置复习</title>
-    <link href="https://vangalle.github.io/2022/04/19/2022419-%E6%B8%AF%E5%8F%A3%E8%A7%84%E5%88%92%E4%B8%8E%E5%B8%83%E7%BD%AE%E5%A4%8D%E4%B9%A0/"/>
-    <id>https://vangalle.github.io/2022/04/19/2022419-%E6%B8%AF%E5%8F%A3%E8%A7%84%E5%88%92%E4%B8%8E%E5%B8%83%E7%BD%AE%E5%A4%8D%E4%B9%A0/</id>
+    <link href="http://vangalle.github.io/2022/04/19/2022419-%E6%B8%AF%E5%8F%A3%E8%A7%84%E5%88%92%E4%B8%8E%E5%B8%83%E7%BD%AE%E5%A4%8D%E4%B9%A0/"/>
+    <id>http://vangalle.github.io/2022/04/19/2022419-%E6%B8%AF%E5%8F%A3%E8%A7%84%E5%88%92%E4%B8%8E%E5%B8%83%E7%BD%AE%E5%A4%8D%E4%B9%A0/</id>
     <published>2022-04-19T11:47:00.000Z</published>
     <updated>2022-04-20T15:56:59.286Z</updated>
     
@@ -584,17 +584,17 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Habor" scheme="https://vangalle.github.io/tags/Habor/"/>
+    <category term="Habor" scheme="http://vangalle.github.io/tags/Habor/"/>
     
   </entry>
   
   <entry>
     <title>河流</title>
-    <link href="https://vangalle.github.io/2022/04/18/%E6%B2%B3%E6%B5%81/"/>
-    <id>https://vangalle.github.io/2022/04/18/%E6%B2%B3%E6%B5%81/</id>
+    <link href="http://vangalle.github.io/2022/04/18/%E6%B2%B3%E6%B5%81/"/>
+    <id>http://vangalle.github.io/2022/04/18/%E6%B2%B3%E6%B5%81/</id>
     <published>2022-04-18T00:00:00.000Z</published>
     <updated>2022-08-26T06:53:44.775Z</updated>
     
@@ -614,17 +614,17 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Marine Science" scheme="https://vangalle.github.io/tags/Marine-Science/"/>
+    <category term="Marine Science" scheme="http://vangalle.github.io/tags/Marine-Science/"/>
     
   </entry>
   
   <entry>
     <title>Marine Dynamic</title>
-    <link href="https://vangalle.github.io/2022/04/12/MarineDynamic/"/>
-    <id>https://vangalle.github.io/2022/04/12/MarineDynamic/</id>
+    <link href="http://vangalle.github.io/2022/04/12/MarineDynamic/"/>
+    <id>http://vangalle.github.io/2022/04/12/MarineDynamic/</id>
     <published>2022-04-12T09:58:10.000Z</published>
     <updated>2022-04-14T03:15:39.630Z</updated>
     
@@ -647,17 +647,17 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Marine Science" scheme="https://vangalle.github.io/tags/Marine-Science/"/>
+    <category term="Marine Science" scheme="http://vangalle.github.io/tags/Marine-Science/"/>
     
   </entry>
   
   <entry>
     <title>土力学细节复习札记</title>
-    <link href="https://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%E7%BB%86%E8%8A%82%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0/"/>
-    <id>https://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%E7%BB%86%E8%8A%82%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0/</id>
+    <link href="http://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%E7%BB%86%E8%8A%82%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0/"/>
+    <id>http://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%E7%BB%86%E8%8A%82%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0/</id>
     <published>2022-04-12T04:50:00.000Z</published>
     <updated>2022-04-14T12:49:06.991Z</updated>
     
@@ -674,19 +674,19 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Science" scheme="https://vangalle.github.io/tags/Science/"/>
+    <category term="Science" scheme="http://vangalle.github.io/tags/Science/"/>
     
-    <category term="Soil" scheme="https://vangalle.github.io/tags/Soil/"/>
+    <category term="Soil" scheme="http://vangalle.github.io/tags/Soil/"/>
     
   </entry>
   
   <entry>
     <title>土力学课程笔记</title>
-    <link href="https://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%20%E7%AC%AC%E5%8D%81%E7%AB%A0/"/>
-    <id>https://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%20%E7%AC%AC%E5%8D%81%E7%AB%A0/</id>
+    <link href="http://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%20%E7%AC%AC%E5%8D%81%E7%AB%A0/"/>
+    <id>http://vangalle.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%20%E7%AC%AC%E5%8D%81%E7%AB%A0/</id>
     <published>2022-04-12T01:50:00.000Z</published>
     <updated>2022-04-14T13:02:43.504Z</updated>
     
@@ -705,19 +705,19 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Science" scheme="https://vangalle.github.io/tags/Science/"/>
+    <category term="Science" scheme="http://vangalle.github.io/tags/Science/"/>
     
-    <category term="Soil" scheme="https://vangalle.github.io/tags/Soil/"/>
+    <category term="Soil" scheme="http://vangalle.github.io/tags/Soil/"/>
     
   </entry>
   
   <entry>
     <title>海岸动力学课程笔记</title>
-    <link href="https://vangalle.github.io/2022/04/12/%E6%B5%B7%E5%B2%B8%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
-    <id>https://vangalle.github.io/2022/04/12/%E6%B5%B7%E5%B2%B8%E5%8A%A8%E5%8A%9B%E5%AD%A6/</id>
+    <link href="http://vangalle.github.io/2022/04/12/%E6%B5%B7%E5%B2%B8%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
+    <id>http://vangalle.github.io/2022/04/12/%E6%B5%B7%E5%B2%B8%E5%8A%A8%E5%8A%9B%E5%AD%A6/</id>
     <published>2022-04-12T00:00:00.000Z</published>
     <updated>2022-06-02T12:41:48.748Z</updated>
     
@@ -736,17 +736,17 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Marine Science" scheme="https://vangalle.github.io/tags/Marine-Science/"/>
+    <category term="Marine Science" scheme="http://vangalle.github.io/tags/Marine-Science/"/>
     
   </entry>
   
   <entry>
     <title>成圣（一）</title>
-    <link href="https://vangalle.github.io/2022/04/09/ToBeHoly(1)/"/>
-    <id>https://vangalle.github.io/2022/04/09/ToBeHoly(1)/</id>
+    <link href="http://vangalle.github.io/2022/04/09/ToBeHoly(1)/"/>
+    <id>http://vangalle.github.io/2022/04/09/ToBeHoly(1)/</id>
     <published>2022-04-09T14:23:00.000Z</published>
     <updated>2022-04-09T15:35:50.575Z</updated>
     
@@ -761,19 +761,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>割礼的意义——一次误读</title>
-    <link href="https://vangalle.github.io/2022/04/02/circumcisition/"/>
-    <id>https://vangalle.github.io/2022/04/02/circumcisition/</id>
+    <link href="http://vangalle.github.io/2022/04/02/circumcisition/"/>
+    <id>http://vangalle.github.io/2022/04/02/circumcisition/</id>
     <published>2022-04-01T23:48:00.000Z</published>
     <updated>2022-04-12T04:15:56.000Z</updated>
     
@@ -789,19 +789,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>神的怜悯</title>
-    <link href="https://vangalle.github.io/2022/03/18/%E7%A5%9E%E7%9A%84%E6%80%9C%E6%82%AF/"/>
-    <id>https://vangalle.github.io/2022/03/18/%E7%A5%9E%E7%9A%84%E6%80%9C%E6%82%AF/</id>
+    <link href="http://vangalle.github.io/2022/03/18/%E7%A5%9E%E7%9A%84%E6%80%9C%E6%82%AF/"/>
+    <id>http://vangalle.github.io/2022/03/18/%E7%A5%9E%E7%9A%84%E6%80%9C%E6%82%AF/</id>
     <published>2022-03-18T01:35:00.000Z</published>
     <updated>2022-04-07T08:48:18.759Z</updated>
     
@@ -819,19 +819,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>Is Christ&#39;s death for the whole world?</title>
-    <link href="https://vangalle.github.io/2022/03/08/%E5%9F%BA%E7%9D%A3%E6%98%AF%E4%B8%BA%E5%85%A8%E4%B8%96%E7%95%8C%E6%AD%BB%E5%90%97/"/>
-    <id>https://vangalle.github.io/2022/03/08/%E5%9F%BA%E7%9D%A3%E6%98%AF%E4%B8%BA%E5%85%A8%E4%B8%96%E7%95%8C%E6%AD%BB%E5%90%97/</id>
+    <link href="http://vangalle.github.io/2022/03/08/%E5%9F%BA%E7%9D%A3%E6%98%AF%E4%B8%BA%E5%85%A8%E4%B8%96%E7%95%8C%E6%AD%BB%E5%90%97/"/>
+    <id>http://vangalle.github.io/2022/03/08/%E5%9F%BA%E7%9D%A3%E6%98%AF%E4%B8%BA%E5%85%A8%E4%B8%96%E7%95%8C%E6%AD%BB%E5%90%97/</id>
     <published>2022-03-08T09:55:00.000Z</published>
     <updated>2022-04-14T13:07:09.530Z</updated>
     
@@ -845,23 +845,23 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Soteriology" scheme="https://vangalle.github.io/tags/Soteriology/"/>
+    <category term="Soteriology" scheme="http://vangalle.github.io/tags/Soteriology/"/>
     
-    <category term="Christology" scheme="https://vangalle.github.io/tags/Christology/"/>
+    <category term="Christology" scheme="http://vangalle.github.io/tags/Christology/"/>
     
   </entry>
   
   <entry>
     <title>圣</title>
-    <link href="https://vangalle.github.io/2022/03/05/%E5%9C%A3/"/>
-    <id>https://vangalle.github.io/2022/03/05/%E5%9C%A3/</id>
+    <link href="http://vangalle.github.io/2022/03/05/%E5%9C%A3/"/>
+    <id>http://vangalle.github.io/2022/03/05/%E5%9C%A3/</id>
     <published>2022-03-05T05:53:00.000Z</published>
     <updated>2022-04-09T14:18:48.298Z</updated>
     
@@ -878,21 +878,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Soteriology" scheme="https://vangalle.github.io/tags/Soteriology/"/>
+    <category term="Soteriology" scheme="http://vangalle.github.io/tags/Soteriology/"/>
     
   </entry>
   
   <entry>
     <title>先知的灵是顺服先知的</title>
-    <link href="https://vangalle.github.io/2022/02/20/%E5%85%88%E7%9F%A5%E7%9A%84%E7%81%B5%E6%98%AF%E9%A1%BA%E6%9C%8D%E5%85%88%E7%9F%A5%E7%9A%84/"/>
-    <id>https://vangalle.github.io/2022/02/20/%E5%85%88%E7%9F%A5%E7%9A%84%E7%81%B5%E6%98%AF%E9%A1%BA%E6%9C%8D%E5%85%88%E7%9F%A5%E7%9A%84/</id>
+    <link href="http://vangalle.github.io/2022/02/20/%E5%85%88%E7%9F%A5%E7%9A%84%E7%81%B5%E6%98%AF%E9%A1%BA%E6%9C%8D%E5%85%88%E7%9F%A5%E7%9A%84/"/>
+    <id>http://vangalle.github.io/2022/02/20/%E5%85%88%E7%9F%A5%E7%9A%84%E7%81%B5%E6%98%AF%E9%A1%BA%E6%9C%8D%E5%85%88%E7%9F%A5%E7%9A%84/</id>
     <published>2022-02-20T12:14:00.000Z</published>
     <updated>2022-09-15T11:18:01.769Z</updated>
     
@@ -909,21 +909,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Pneumatology" scheme="https://vangalle.github.io/tags/Pneumatology/"/>
+    <category term="Pneumatology" scheme="http://vangalle.github.io/tags/Pneumatology/"/>
     
   </entry>
   
   <entry>
     <title>An Interesting Finding</title>
-    <link href="https://vangalle.github.io/2022/02/08/AnInterstingFinding/"/>
-    <id>https://vangalle.github.io/2022/02/08/AnInterstingFinding/</id>
+    <link href="http://vangalle.github.io/2022/02/08/AnInterstingFinding/"/>
+    <id>http://vangalle.github.io/2022/02/08/AnInterstingFinding/</id>
     <published>2022-02-08T04:07:00.000Z</published>
     <updated>2022-04-02T15:36:53.508Z</updated>
     
@@ -937,19 +937,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>The Attempt to Understand Trinity</title>
-    <link href="https://vangalle.github.io/2022/02/05/%E4%B8%89%E4%BD%8D%E4%B8%80%E4%BD%93/"/>
-    <id>https://vangalle.github.io/2022/02/05/%E4%B8%89%E4%BD%8D%E4%B8%80%E4%BD%93/</id>
+    <link href="http://vangalle.github.io/2022/02/05/%E4%B8%89%E4%BD%8D%E4%B8%80%E4%BD%93/"/>
+    <id>http://vangalle.github.io/2022/02/05/%E4%B8%89%E4%BD%8D%E4%B8%80%E4%BD%93/</id>
     <published>2022-02-05T03:19:22.000Z</published>
     <updated>2022-02-05T06:39:09.671Z</updated>
     
@@ -963,19 +963,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Metaphysics" scheme="https://vangalle.github.io/tags/Metaphysics/"/>
+    <category term="Metaphysics" scheme="http://vangalle.github.io/tags/Metaphysics/"/>
     
   </entry>
   
   <entry>
     <title>The Age of people</title>
-    <link href="https://vangalle.github.io/2022/01/29/The%20Age%20of%20people/"/>
-    <id>https://vangalle.github.io/2022/01/29/The%20Age%20of%20people/</id>
+    <link href="http://vangalle.github.io/2022/01/29/The%20Age%20of%20people/"/>
+    <id>http://vangalle.github.io/2022/01/29/The%20Age%20of%20people/</id>
     <published>2022-01-29T01:49:12.000Z</published>
     <updated>2022-02-05T06:39:42.627Z</updated>
     
@@ -991,17 +991,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
   </entry>
   
   <entry>
     <title>The Beginning of the Country</title>
-    <link href="https://vangalle.github.io/2022/01/29/The%20Beginning%20of%20the%20Country/"/>
-    <id>https://vangalle.github.io/2022/01/29/The%20Beginning%20of%20the%20Country/</id>
+    <link href="http://vangalle.github.io/2022/01/29/The%20Beginning%20of%20the%20Country/"/>
+    <id>http://vangalle.github.io/2022/01/29/The%20Beginning%20of%20the%20Country/</id>
     <published>2022-01-29T01:43:13.000Z</published>
     <updated>2022-02-05T06:39:25.482Z</updated>
     
@@ -1017,17 +1017,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
   </entry>
   
   <entry>
     <title>The Author of Genesis</title>
-    <link href="https://vangalle.github.io/2022/01/27/The%20Author%20of%20Genesis/"/>
-    <id>https://vangalle.github.io/2022/01/27/The%20Author%20of%20Genesis/</id>
+    <link href="http://vangalle.github.io/2022/01/27/The%20Author%20of%20Genesis/"/>
+    <id>http://vangalle.github.io/2022/01/27/The%20Author%20of%20Genesis/</id>
     <published>2022-01-27T02:11:55.000Z</published>
     <updated>2022-01-27T02:15:18.690Z</updated>
     
@@ -1042,17 +1042,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>Salvation</title>
-    <link href="https://vangalle.github.io/2022/01/27/Salvation/"/>
-    <id>https://vangalle.github.io/2022/01/27/Salvation/</id>
+    <link href="http://vangalle.github.io/2022/01/27/Salvation/"/>
+    <id>http://vangalle.github.io/2022/01/27/Salvation/</id>
     <published>2022-01-26T17:51:55.000Z</published>
     <updated>2022-02-07T14:43:21.707Z</updated>
     
@@ -1068,19 +1068,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
   </entry>
   
   <entry>
     <title>The Entity of Time</title>
-    <link href="https://vangalle.github.io/2022/01/26/The%20Entity%20of%20Time/"/>
-    <id>https://vangalle.github.io/2022/01/26/The%20Entity%20of%20Time/</id>
+    <link href="http://vangalle.github.io/2022/01/26/The%20Entity%20of%20Time/"/>
+    <id>http://vangalle.github.io/2022/01/26/The%20Entity%20of%20Time/</id>
     <published>2022-01-26T11:05:25.000Z</published>
     <updated>2022-01-26T11:11:25.317Z</updated>
     
@@ -1094,19 +1094,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Metaphysics" scheme="https://vangalle.github.io/tags/Metaphysics/"/>
+    <category term="Metaphysics" scheme="http://vangalle.github.io/tags/Metaphysics/"/>
     
-    <category term="Physics" scheme="https://vangalle.github.io/tags/Physics/"/>
+    <category term="Physics" scheme="http://vangalle.github.io/tags/Physics/"/>
     
   </entry>
   
   <entry>
     <title>关于MBTI的科学性</title>
-    <link href="https://vangalle.github.io/2022/01/24/20220124-%E5%85%B3%E4%BA%8EMBTI%E7%9A%84%E7%A7%91%E5%AD%A6%E6%80%A7/"/>
-    <id>https://vangalle.github.io/2022/01/24/20220124-%E5%85%B3%E4%BA%8EMBTI%E7%9A%84%E7%A7%91%E5%AD%A6%E6%80%A7/</id>
+    <link href="http://vangalle.github.io/2022/01/24/20220124-%E5%85%B3%E4%BA%8EMBTI%E7%9A%84%E7%A7%91%E5%AD%A6%E6%80%A7/"/>
+    <id>http://vangalle.github.io/2022/01/24/20220124-%E5%85%B3%E4%BA%8EMBTI%E7%9A%84%E7%A7%91%E5%AD%A6%E6%80%A7/</id>
     <published>2022-01-23T16:03:20.000Z</published>
     <updated>2022-01-27T06:57:21.970Z</updated>
     
@@ -1121,21 +1121,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Epistemology" scheme="https://vangalle.github.io/tags/Epistemology/"/>
+    <category term="Epistemology" scheme="http://vangalle.github.io/tags/Epistemology/"/>
     
-    <category term="Psychology" scheme="https://vangalle.github.io/tags/Psychology/"/>
+    <category term="Psychology" scheme="http://vangalle.github.io/tags/Psychology/"/>
     
   </entry>
   
   <entry>
     <title>对一篇“令人作呕”的文章的评论</title>
-    <link href="https://vangalle.github.io/2022/01/20/20220120-%E5%AF%B9%E4%B8%80%E7%AF%87%E2%80%9C%E4%BB%A4%E4%BA%BA%E4%BD%9C%E5%91%95%E2%80%9D%E7%9A%84%E6%96%87%E7%AB%A0%E7%9A%84%E8%AF%84%E8%AE%BA/"/>
-    <id>https://vangalle.github.io/2022/01/20/20220120-%E5%AF%B9%E4%B8%80%E7%AF%87%E2%80%9C%E4%BB%A4%E4%BA%BA%E4%BD%9C%E5%91%95%E2%80%9D%E7%9A%84%E6%96%87%E7%AB%A0%E7%9A%84%E8%AF%84%E8%AE%BA/</id>
+    <link href="http://vangalle.github.io/2022/01/20/20220120-%E5%AF%B9%E4%B8%80%E7%AF%87%E2%80%9C%E4%BB%A4%E4%BA%BA%E4%BD%9C%E5%91%95%E2%80%9D%E7%9A%84%E6%96%87%E7%AB%A0%E7%9A%84%E8%AF%84%E8%AE%BA/"/>
+    <id>http://vangalle.github.io/2022/01/20/20220120-%E5%AF%B9%E4%B8%80%E7%AF%87%E2%80%9C%E4%BB%A4%E4%BA%BA%E4%BD%9C%E5%91%95%E2%80%9D%E7%9A%84%E6%96%87%E7%AB%A0%E7%9A%84%E8%AF%84%E8%AE%BA/</id>
     <published>2022-01-20T14:18:20.000Z</published>
     <updated>2022-01-20T14:56:57.974Z</updated>
     
@@ -1151,17 +1151,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
   </entry>
   
   <entry>
     <title>对文学笔记系列的说明</title>
-    <link href="https://vangalle.github.io/2022/01/17/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%A6%E7%AC%94%E8%AE%B0%E7%B3%BB%E5%88%97%E7%9A%84%E8%AF%B4%E6%98%8E/"/>
-    <id>https://vangalle.github.io/2022/01/17/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%A6%E7%AC%94%E8%AE%B0%E7%B3%BB%E5%88%97%E7%9A%84%E8%AF%B4%E6%98%8E/</id>
+    <link href="http://vangalle.github.io/2022/01/17/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%A6%E7%AC%94%E8%AE%B0%E7%B3%BB%E5%88%97%E7%9A%84%E8%AF%B4%E6%98%8E/"/>
+    <id>http://vangalle.github.io/2022/01/17/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%A6%E7%AC%94%E8%AE%B0%E7%B3%BB%E5%88%97%E7%9A%84%E8%AF%B4%E6%98%8E/</id>
     <published>2022-01-17T09:11:25.000Z</published>
     <updated>2022-02-08T01:54:05.622Z</updated>
     
@@ -1177,19 +1177,19 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
-    <category term="Aesthetic" scheme="https://vangalle.github.io/tags/Aesthetic/"/>
+    <category term="Aesthetic" scheme="http://vangalle.github.io/tags/Aesthetic/"/>
     
   </entry>
   
   <entry>
     <title>The Fundamental Elements of Tensor(未完)</title>
-    <link href="https://vangalle.github.io/2022/01/13/tensor/"/>
-    <id>https://vangalle.github.io/2022/01/13/tensor/</id>
+    <link href="http://vangalle.github.io/2022/01/13/tensor/"/>
+    <id>http://vangalle.github.io/2022/01/13/tensor/</id>
     <published>2022-01-12T16:24:04.000Z</published>
     <updated>2022-01-17T07:42:42.625Z</updated>
     
@@ -1205,17 +1205,17 @@
     
     
     
-    <category term="Math" scheme="https://vangalle.github.io/categories/Math/"/>
+    <category term="Math" scheme="http://vangalle.github.io/categories/Math/"/>
     
     
-    <category term="Math" scheme="https://vangalle.github.io/tags/Math/"/>
+    <category term="Math" scheme="http://vangalle.github.io/tags/Math/"/>
     
   </entry>
   
   <entry>
     <title>关于卡尔·巴特（Karl Barth）</title>
-    <link href="https://vangalle.github.io/2021/12/30/The%20Ontology%20of%20Karl%20Barth/"/>
-    <id>https://vangalle.github.io/2021/12/30/The%20Ontology%20of%20Karl%20Barth/</id>
+    <link href="http://vangalle.github.io/2021/12/30/The%20Ontology%20of%20Karl%20Barth/"/>
+    <id>http://vangalle.github.io/2021/12/30/The%20Ontology%20of%20Karl%20Barth/</id>
     <published>2021-12-30T04:49:55.000Z</published>
     <updated>2022-01-27T07:10:30.017Z</updated>
     
@@ -1231,23 +1231,23 @@
     
     
     
-    <category term="Reading Notes" scheme="https://vangalle.github.io/categories/Reading-Notes/"/>
+    <category term="Reading Notes" scheme="http://vangalle.github.io/categories/Reading-Notes/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Theology" scheme="https://vangalle.github.io/tags/Theology/"/>
+    <category term="Theology" scheme="http://vangalle.github.io/tags/Theology/"/>
     
-    <category term="Ontology" scheme="https://vangalle.github.io/tags/Ontology/"/>
+    <category term="Ontology" scheme="http://vangalle.github.io/tags/Ontology/"/>
     
-    <category term="Metaphysics" scheme="https://vangalle.github.io/tags/Metaphysics/"/>
+    <category term="Metaphysics" scheme="http://vangalle.github.io/tags/Metaphysics/"/>
     
   </entry>
   
   <entry>
     <title>阅读的人类学意义</title>
-    <link href="https://vangalle.github.io/2021/12/11/hello-world/"/>
-    <id>https://vangalle.github.io/2021/12/11/hello-world/</id>
+    <link href="http://vangalle.github.io/2021/12/11/hello-world/"/>
+    <id>http://vangalle.github.io/2021/12/11/hello-world/</id>
     <published>2021-12-11T00:11:25.000Z</published>
     <updated>2022-01-17T09:25:35.697Z</updated>
     
@@ -1263,19 +1263,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Reading" scheme="https://vangalle.github.io/tags/Reading/"/>
+    <category term="Reading" scheme="http://vangalle.github.io/tags/Reading/"/>
     
   </entry>
   
   <entry>
     <title>又谈文学——悲剧</title>
-    <link href="https://vangalle.github.io/2021/11/07/%E5%8F%88%E8%B0%88%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E6%82%B2%E5%89%A7/"/>
-    <id>https://vangalle.github.io/2021/11/07/%E5%8F%88%E8%B0%88%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E6%82%B2%E5%89%A7/</id>
+    <link href="http://vangalle.github.io/2021/11/07/%E5%8F%88%E8%B0%88%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E6%82%B2%E5%89%A7/"/>
+    <id>http://vangalle.github.io/2021/11/07/%E5%8F%88%E8%B0%88%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E6%82%B2%E5%89%A7/</id>
     <published>2021-11-07T09:36:55.000Z</published>
     <updated>2022-01-27T07:08:13.538Z</updated>
     
@@ -1291,21 +1291,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
-    <category term="Aesthetic" scheme="https://vangalle.github.io/tags/Aesthetic/"/>
+    <category term="Aesthetic" scheme="http://vangalle.github.io/tags/Aesthetic/"/>
     
   </entry>
   
   <entry>
     <title>关于马克思理论的根基</title>
-    <link href="https://vangalle.github.io/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/"/>
-    <id>https://vangalle.github.io/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/</id>
+    <link href="http://vangalle.github.io/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/"/>
+    <id>http://vangalle.github.io/2021/10/25/%E9%A9%AC%E5%85%8B%E6%80%9D/</id>
     <published>2021-10-25T13:53:00.000Z</published>
     <updated>2022-02-08T01:58:18.543Z</updated>
     
@@ -1321,17 +1321,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Philosophy" scheme="https://vangalle.github.io/tags/Philosophy/"/>
+    <category term="Philosophy" scheme="http://vangalle.github.io/tags/Philosophy/"/>
     
   </entry>
   
   <entry>
     <title>关于人生模拟器</title>
-    <link href="https://vangalle.github.io/2021/10/19/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
-    <id>https://vangalle.github.io/2021/10/19/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E6%A8%A1%E6%8B%9F%E5%99%A8/</id>
+    <link href="http://vangalle.github.io/2021/10/19/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
+    <id>http://vangalle.github.io/2021/10/19/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E6%A8%A1%E6%8B%9F%E5%99%A8/</id>
     <published>2021-10-19T14:50:55.000Z</published>
     <updated>2022-01-17T07:22:04.314Z</updated>
     
@@ -1346,17 +1346,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第十六讲 遗产的意义：元明清文学的关键词与古代文学的再展望</title>
-    <link href="https://vangalle.github.io/2021/01/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(16)/"/>
-    <id>https://vangalle.github.io/2021/01/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(16)/</id>
+    <link href="http://vangalle.github.io/2021/01/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(16)/"/>
+    <id>http://vangalle.github.io/2021/01/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(16)/</id>
     <published>2021-01-12T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:49.790Z</updated>
     
@@ -1373,15 +1373,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第十五讲：清诗与清词？谁是古典文学的绝唱之音</title>
-    <link href="https://vangalle.github.io/2021/01/05/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(15)/"/>
-    <id>https://vangalle.github.io/2021/01/05/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(15)/</id>
+    <link href="http://vangalle.github.io/2021/01/05/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(15)/"/>
+    <id>http://vangalle.github.io/2021/01/05/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(15)/</id>
     <published>2021-01-05T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:43.672Z</updated>
     
@@ -1398,15 +1398,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第十四讲 古人文学史观及批评体系——《诗源辩体》到《四库全书总目》</title>
-    <link href="https://vangalle.github.io/2020/12/29/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(14)/"/>
-    <id>https://vangalle.github.io/2020/12/29/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(14)/</id>
+    <link href="http://vangalle.github.io/2020/12/29/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(14)/"/>
+    <id>http://vangalle.github.io/2020/12/29/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(14)/</id>
     <published>2020-12-29T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:37.508Z</updated>
     
@@ -1423,15 +1423,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第十三讲 古典“诗迹”与中国古代文学的地方书写传统</title>
-    <link href="https://vangalle.github.io/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/"/>
-    <id>https://vangalle.github.io/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/</id>
+    <link href="http://vangalle.github.io/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/"/>
+    <id>http://vangalle.github.io/2020/12/22/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(13)/</id>
     <published>2020-12-22T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:30.580Z</updated>
     
@@ -1448,15 +1448,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第十二讲 三部文人独立创作的清代小说</title>
-    <link href="https://vangalle.github.io/2020/12/15/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(12)/"/>
-    <id>https://vangalle.github.io/2020/12/15/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(12)/</id>
+    <link href="http://vangalle.github.io/2020/12/15/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(12)/"/>
+    <id>http://vangalle.github.io/2020/12/15/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(12)/</id>
     <published>2020-12-15T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:23.768Z</updated>
     
@@ -1473,15 +1473,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第十一讲 从“乐府变”到“梅村体”：晚明清初的新题乐府</title>
-    <link href="https://vangalle.github.io/2020/12/08/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(11)/"/>
-    <id>https://vangalle.github.io/2020/12/08/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(11)/</id>
+    <link href="http://vangalle.github.io/2020/12/08/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(11)/"/>
+    <id>http://vangalle.github.io/2020/12/08/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(11)/</id>
     <published>2020-12-08T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:16.584Z</updated>
     
@@ -1498,15 +1498,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>楚门的世界</title>
-    <link href="https://vangalle.github.io/2020/12/06/The%20Ture%20Man%20Show/"/>
-    <id>https://vangalle.github.io/2020/12/06/The%20Ture%20Man%20Show/</id>
+    <link href="http://vangalle.github.io/2020/12/06/The%20Ture%20Man%20Show/"/>
+    <id>http://vangalle.github.io/2020/12/06/The%20Ture%20Man%20Show/</id>
     <published>2020-12-06T11:21:55.000Z</published>
     <updated>2022-01-17T07:10:39.957Z</updated>
     
@@ -1521,21 +1521,21 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Film" scheme="https://vangalle.github.io/tags/Film/"/>
+    <category term="Film" scheme="http://vangalle.github.io/tags/Film/"/>
     
-    <category term="Aesthetic" scheme="https://vangalle.github.io/tags/Aesthetic/"/>
+    <category term="Aesthetic" scheme="http://vangalle.github.io/tags/Aesthetic/"/>
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第十讲 小说笔法与文章学视野：明清散传的勃兴</title>
-    <link href="https://vangalle.github.io/2020/12/01/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(10)/"/>
-    <id>https://vangalle.github.io/2020/12/01/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(10)/</id>
+    <link href="http://vangalle.github.io/2020/12/01/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(10)/"/>
+    <id>http://vangalle.github.io/2020/12/01/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(10)/</id>
     <published>2020-12-01T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:09.308Z</updated>
     
@@ -1552,15 +1552,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第九讲 晚明还是晚清：中国文学现代性的生长</title>
-    <link href="https://vangalle.github.io/2020/11/24/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(9)/"/>
-    <id>https://vangalle.github.io/2020/11/24/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(9)/</id>
+    <link href="http://vangalle.github.io/2020/11/24/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(9)/"/>
+    <id>http://vangalle.github.io/2020/11/24/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(9)/</id>
     <published>2020-11-24T05:05:00.000Z</published>
     <updated>2022-01-17T09:44:02.410Z</updated>
     
@@ -1576,15 +1576,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第八讲——徐渭与汤显祖：在诗歌与戏曲之间抉择</title>
-    <link href="https://vangalle.github.io/2020/11/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(8)/"/>
-    <id>https://vangalle.github.io/2020/11/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(8)/</id>
+    <link href="http://vangalle.github.io/2020/11/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(8)/"/>
+    <id>http://vangalle.github.io/2020/11/12/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(8)/</id>
     <published>2020-11-12T05:12:00.000Z</published>
     <updated>2022-01-17T09:43:53.263Z</updated>
     
@@ -1599,15 +1599,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第七讲《金瓶梅》——文人独立创作白话小说的黎明</title>
-    <link href="https://vangalle.github.io/2020/11/03/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(7)/"/>
-    <id>https://vangalle.github.io/2020/11/03/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(7)/</id>
+    <link href="http://vangalle.github.io/2020/11/03/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(7)/"/>
+    <id>http://vangalle.github.io/2020/11/03/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(7)/</id>
     <published>2020-11-03T05:05:00.000Z</published>
     <updated>2022-01-17T09:43:46.132Z</updated>
     
@@ -1625,15 +1625,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第六讲——对《西游记》的批判</title>
-    <link href="https://vangalle.github.io/2020/10/27/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(6)/"/>
-    <id>https://vangalle.github.io/2020/10/27/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(6)/</id>
+    <link href="http://vangalle.github.io/2020/10/27/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(6)/"/>
+    <id>http://vangalle.github.io/2020/10/27/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(6)/</id>
     <published>2020-10-27T05:15:00.000Z</published>
     <updated>2022-01-17T09:43:38.389Z</updated>
     
@@ -1648,15 +1648,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第五讲——明代的文学复古</title>
-    <link href="https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(5)/"/>
-    <id>https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(5)/</id>
+    <link href="http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(5)/"/>
+    <id>http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(5)/</id>
     <published>2020-10-20T05:07:00.000Z</published>
     <updated>2022-01-17T09:43:31.349Z</updated>
     
@@ -1674,15 +1674,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第四讲</title>
-    <link href="https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(4)/"/>
-    <id>https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(4)/</id>
+    <link href="http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(4)/"/>
+    <id>http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(4)/</id>
     <published>2020-10-20T05:05:30.000Z</published>
     <updated>2022-01-17T09:43:23.354Z</updated>
     
@@ -1697,15 +1697,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第三讲</title>
-    <link href="https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(3)/"/>
-    <id>https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(3)/</id>
+    <link href="http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(3)/"/>
+    <id>http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(3)/</id>
     <published>2020-10-20T05:05:20.000Z</published>
     <updated>2022-01-17T09:43:13.273Z</updated>
     
@@ -1722,15 +1722,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第二讲</title>
-    <link href="https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(2)/"/>
-    <id>https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(2)/</id>
+    <link href="http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(2)/"/>
+    <id>http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(2)/</id>
     <published>2020-10-20T05:05:10.000Z</published>
     <updated>2022-01-17T09:43:05.713Z</updated>
     
@@ -1746,15 +1746,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>中国古代文学课程（叶晔）笔记 第一讲</title>
-    <link href="https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(1)/"/>
-    <id>https://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(1)/</id>
+    <link href="http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(1)/"/>
+    <id>http://vangalle.github.io/2020/10/20/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E4%BB%A3%E6%96%87%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%20(1)/</id>
     <published>2020-10-20T05:05:00.000Z</published>
     <updated>2022-01-17T09:42:54.644Z</updated>
     
@@ -1770,15 +1770,15 @@
     
     
     
-    <category term="Class Notes" scheme="https://vangalle.github.io/categories/Class-Notes/"/>
+    <category term="Class Notes" scheme="http://vangalle.github.io/categories/Class-Notes/"/>
     
     
   </entry>
   
   <entry>
     <title>如何撰写文学类书评</title>
-    <link href="https://vangalle.github.io/2020/10/16/2022-02-08/"/>
-    <id>https://vangalle.github.io/2020/10/16/2022-02-08/</id>
+    <link href="http://vangalle.github.io/2020/10/16/2022-02-08/"/>
+    <id>http://vangalle.github.io/2020/10/16/2022-02-08/</id>
     <published>2020-10-16T00:00:00.000Z</published>
     <updated>2022-02-08T01:36:06.295Z</updated>
     
@@ -1794,19 +1794,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Writing" scheme="https://vangalle.github.io/tags/Writing/"/>
+    <category term="Writing" scheme="http://vangalle.github.io/tags/Writing/"/>
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
   </entry>
   
   <entry>
     <title>回顾</title>
-    <link href="https://vangalle.github.io/2020/10/07/%E5%9B%9E%E9%A1%BE/"/>
-    <id>https://vangalle.github.io/2020/10/07/%E5%9B%9E%E9%A1%BE/</id>
+    <link href="http://vangalle.github.io/2020/10/07/%E5%9B%9E%E9%A1%BE/"/>
+    <id>http://vangalle.github.io/2020/10/07/%E5%9B%9E%E9%A1%BE/</id>
     <published>2020-10-06T16:02:00.000Z</published>
     <updated>2022-02-08T01:38:27.068Z</updated>
     
@@ -1822,17 +1822,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
   </entry>
   
   <entry>
     <title>读书札记</title>
-    <link href="https://vangalle.github.io/2020/09/19/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/"/>
-    <id>https://vangalle.github.io/2020/09/19/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/</id>
+    <link href="http://vangalle.github.io/2020/09/19/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/"/>
+    <id>http://vangalle.github.io/2020/09/19/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/</id>
     <published>2020-09-19T07:12:00.000Z</published>
     <updated>2022-04-18T07:48:04.901Z</updated>
     
@@ -1849,17 +1849,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
   </entry>
   
   <entry>
     <title>关于文学领域的问题</title>
-    <link href="https://vangalle.github.io/2020/09/13/%E6%96%87%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://vangalle.github.io/2020/09/13/%E6%96%87%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <link href="http://vangalle.github.io/2020/09/13/%E6%96%87%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://vangalle.github.io/2020/09/13/%E6%96%87%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%9A%84%E9%97%AE%E9%A2%98/</id>
     <published>2020-09-13T11:07:00.000Z</published>
     <updated>2022-02-08T01:54:18.671Z</updated>
     
@@ -1875,19 +1875,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Aesthetic" scheme="https://vangalle.github.io/tags/Aesthetic/"/>
+    <category term="Aesthetic" scheme="http://vangalle.github.io/tags/Aesthetic/"/>
     
   </entry>
   
   <entry>
     <title>关于莎士比亚</title>
-    <link href="https://vangalle.github.io/2020/09/09/%E5%85%B3%E4%BA%8E%E8%8E%8E%E5%A3%AB%E6%AF%94%E4%BA%9A/"/>
-    <id>https://vangalle.github.io/2020/09/09/%E5%85%B3%E4%BA%8E%E8%8E%8E%E5%A3%AB%E6%AF%94%E4%BA%9A/</id>
+    <link href="http://vangalle.github.io/2020/09/09/%E5%85%B3%E4%BA%8E%E8%8E%8E%E5%A3%AB%E6%AF%94%E4%BA%9A/"/>
+    <id>http://vangalle.github.io/2020/09/09/%E5%85%B3%E4%BA%8E%E8%8E%8E%E5%A3%AB%E6%AF%94%E4%BA%9A/</id>
     <published>2020-09-09T15:10:00.000Z</published>
     <updated>2022-02-08T01:54:26.457Z</updated>
     
@@ -1904,17 +1904,17 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
   </entry>
   
   <entry>
     <title>灰色的落日</title>
-    <link href="https://vangalle.github.io/2020/09/09/poem(2)/"/>
-    <id>https://vangalle.github.io/2020/09/09/poem(2)/</id>
+    <link href="http://vangalle.github.io/2020/09/09/poem(2)/"/>
+    <id>http://vangalle.github.io/2020/09/09/poem(2)/</id>
     <published>2020-09-09T01:50:00.000Z</published>
     <updated>2022-02-08T01:43:03.905Z</updated>
     
@@ -1935,19 +1935,19 @@
     
     
     
-    <category term="Poem" scheme="https://vangalle.github.io/categories/Poem/"/>
+    <category term="Poem" scheme="http://vangalle.github.io/categories/Poem/"/>
     
     
-    <category term="Anthropology" scheme="https://vangalle.github.io/tags/Anthropology/"/>
+    <category term="Anthropology" scheme="http://vangalle.github.io/tags/Anthropology/"/>
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
   </entry>
   
   <entry>
     <title>关于《浮士德》的一些记录</title>
-    <link href="https://vangalle.github.io/2020/09/08/%E6%B5%AE%E5%A3%AB%E5%BE%B7/"/>
-    <id>https://vangalle.github.io/2020/09/08/%E6%B5%AE%E5%A3%AB%E5%BE%B7/</id>
+    <link href="http://vangalle.github.io/2020/09/08/%E6%B5%AE%E5%A3%AB%E5%BE%B7/"/>
+    <id>http://vangalle.github.io/2020/09/08/%E6%B5%AE%E5%A3%AB%E5%BE%B7/</id>
     <published>2020-09-08T06:18:00.000Z</published>
     <updated>2022-02-08T01:57:53.939Z</updated>
     
@@ -1963,19 +1963,19 @@
     
     
     
-    <category term="Essay" scheme="https://vangalle.github.io/categories/Essay/"/>
+    <category term="Essay" scheme="http://vangalle.github.io/categories/Essay/"/>
     
     
-    <category term="Literature" scheme="https://vangalle.github.io/tags/Literature/"/>
+    <category term="Literature" scheme="http://vangalle.github.io/tags/Literature/"/>
     
-    <category term="Philosophy" scheme="https://vangalle.github.io/tags/Philosophy/"/>
+    <category term="Philosophy" scheme="http://vangalle.github.io/tags/Philosophy/"/>
     
   </entry>
   
   <entry>
     <title>Poem(1)</title>
-    <link href="https://vangalle.github.io/2020/08/19/poem1/"/>
-    <id>https://vangalle.github.io/2020/08/19/poem1/</id>
+    <link href="http://vangalle.github.io/2020/08/19/poem1/"/>
+    <id>http://vangalle.github.io/2020/08/19/poem1/</id>
     <published>2020-08-19T09:20:57.000Z</published>
     <updated>2022-04-19T02:19:32.227Z</updated>
     
@@ -1996,10 +1996,10 @@
     
     
     
-    <category term="Poem" scheme="https://vangalle.github.io/categories/Poem/"/>
+    <category term="Poem" scheme="http://vangalle.github.io/categories/Poem/"/>
     
     
-    <category term="Poem" scheme="https://vangalle.github.io/tags/Poem/"/>
+    <category term="Poem" scheme="http://vangalle.github.io/tags/Poem/"/>
     
   </entry>
   
