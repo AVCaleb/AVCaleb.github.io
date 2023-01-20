@@ -765,13 +765,13 @@ sup > a::before,
   padding: 3rem 0;
 }
 html {
-  font-size: 18px;
-  letter-spacing: 0.02em;
+  font-size: 18px;;
+  letter-spacing: 0.02em;;
 }
 html,
 body {
   height: 100%;
-  font-family: sans-serif;
+  font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;;
   overflow-wrap: break-word;
 }
 body {
@@ -1319,7 +1319,7 @@ figure.highlight td.code > pre {
 .markdown-body {
   font-size: 1rem;
   line-height: 1.6;
-  font-family: sans-serif;
+  font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;;
   margin-bottom: 2rem;
   color: var(--post-text-color);
 }
@@ -1385,7 +1385,7 @@ figure.highlight td.code > pre {
   transition: border-color 0.2s ease-in-out;
 }
 .markdown-body pre {
-  font-size: 100% !important;
+  font-size: 100%; !important;
 }
 .markdown-body pre .mermaid {
   text-align: center;
