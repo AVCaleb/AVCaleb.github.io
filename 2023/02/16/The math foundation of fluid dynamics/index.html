@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2023/02/16/nKT4tSskOfcN9rJ.png">
 <meta property="article:published_time" content="2023-02-16T06:16:00.000Z">
-<meta property="article:modified_time" content="2023-02-21T02:31:04.634Z">
+<meta property="article:modified_time" content="2023-02-25T10:06:03.335Z">
 <meta property="article:author" content="Vangalle">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          21k 字
+          25k 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
           <!-- compatible with older versions-->
-          40 分钟
+          49 分钟
         
       </span>
     
@@ -352,6 +352,77 @@ f\left(x_0+h, y_0+k\right)= &amp; f\left(x_0, y_0\right)+\left(h \frac{\partial}
 &amp; +\frac{1}{(n+1) !}\left(h \frac{\partial}{\partial x}+k \frac{\partial}{\partial y}\right)^{n+1} f\left(x_0+\theta h, y_0+\theta k\right)
 \end{aligned}
 \]</span> 这称作二元函数<span class="math inline">\(f\)</span>在点<span class="math inline">\(P_0\)</span>处的<span class="math inline">\(n\)</span>阶泰勒公式。（证明略）</p></li>
+<li><p>二重叉积恒等式 <span class="math display">\[
+\vec{u}\times(\vec{v}\times\vec{w})=(\vec{u}\cdot\vec{w})\vec{v}-(\vec{u}\cdot\vec{v})\vec{w}\\
+(\vec{u}\times\vec{v})\times\vec{w}=(\vec{u}\cdot\vec{w})\vec{v}-(\vec{w}\cdot\vec{v})\vec{u}
+\]</span> 证 设 <span class="math inline">\(\boldsymbol{a}=a_1 \boldsymbol{i}+a_2 \boldsymbol{j}+a_3 k, \boldsymbol{b}=b_1 \boldsymbol{i}+b_2 \boldsymbol{j}+b_3 k, \boldsymbol{c}=c_1 \boldsymbol{i}+c_2 \boldsymbol{j}+c_3 k\)</span>, 有 <span class="math display">\[
+\begin{aligned}
+\boldsymbol{a} \times(\boldsymbol{b} \times \boldsymbol{c})= &amp; {\left[\left(b_1 c_2-b_2 c_1\right) a_2-\left(b_3 c_1-b_1 c_3\right) a_3\right] \boldsymbol{i} } \\
+&amp; +\left[\left(b_2 c_3-b_3 c_2\right) a_3-\left(b_1 c_2-b_2 c_1\right) a_1\right] \boldsymbol{j} \\
+&amp; +\left[\left(b_3 c_1-b_1 c_3\right) a_1-\left(b_2 c_3-b_3 c_2\right) a_2\right] \boldsymbol{k} \\
+= &amp; {\left[\left(a_1 c_1+a_2 c_2+a_3 c_3\right) b_1-\left(a_1 b_1+a_2 b_2+a_3 b_3\right) c_1\right] \boldsymbol{i} } \\
+&amp; +\left[\left(a_1 c_1+a_2 c_2+a_3 c_3\right) b_2-\left(a_1 b_1+a_2 b_2+a_3 b_3\right) c_2\right] \boldsymbol{j} \\
+&amp; +\left[\left(a_1 c_1+a_2 c_2+a_3 c_3\right) b_3-\left(a_1 b_1+a_2 b_2+a_3 b_3\right) c_3\right] \boldsymbol{k} \\
+= &amp; \left(a_1 c_1+a_2 c_2+a_3 c_3\right)\left(b_1 \boldsymbol{i}+b_2 \boldsymbol{j}+b_3 \boldsymbol{k}\right) \\
+&amp; -\left(a_1 b_1+a_2 b_2+a_3 b_3\right)\left(c_1 \boldsymbol{i}+c_2 \boldsymbol{j}+c_3 \boldsymbol{k}\right) \\
+= &amp; (\boldsymbol{a} \cdot \boldsymbol{c}) \boldsymbol{b}-(\boldsymbol{a} \cdot \boldsymbol{b}) \boldsymbol{c} . 
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+(\boldsymbol{a} \times\boldsymbol{b}) \times \boldsymbol{c}= &amp; {\left[\left(b_1 a_3-b_3 a_1\right) c_3-\left(a_1 b_2-b_1 a_2\right) c_2\right] \boldsymbol{i} } \\
+&amp; +\left[\left(a_1 b_2-a_2 b_1\right) c_1-\left(a_2 b_3-b_2 a_3\right) c_3\right] \boldsymbol{j} \\
+&amp; +\left[\left(b_3 a_2-b_2 a_3\right) c_2-\left(b_1 a_3-b_3 a_1\right) c_1\right] \boldsymbol{k} \\
+= &amp; {\left[\left(a_1 c_1+a_2 c_2+a_3 c_3\right) b_1-\left(c_1 b_1+c_2 b_2+c_3 b_3\right) a_1\right] \boldsymbol{i} } \\
+&amp; +\left[\left(a_1 c_1+a_2 c_2+a_3 c_3\right) b_2-\left(c_1 b_1+c_2 b_2+c_3 b_3\right) a_2\right] \boldsymbol{j} \\
+&amp; +\left[\left(a_1 c_1+a_2 c_2+a_3 c_3\right) b_3-\left(c_1 b_1+c_2 b_2+c_3 b_3\right) a_3\right] \boldsymbol{k} \\
+= &amp; \left(a_1 c_1+a_2 c_2+a_3 c_3\right)\left(b_1 \boldsymbol{i}+b_2 \boldsymbol{j}+b_3 \boldsymbol{k}\right) \\
+&amp; -\left(c_1 b_1+c_2 b_2+c_3 b_3\right)\left(a_1 \boldsymbol{i}+a_2 \boldsymbol{j}+a_3 \boldsymbol{k}\right) \\
+= &amp; (\boldsymbol{a} \cdot \boldsymbol{c}) \boldsymbol{b}-(\boldsymbol{b} \cdot \boldsymbol{c}) \boldsymbol{a} . \square
+\end{aligned}
+\]</span></p></li>
+<li><p>哈密顿算子的运算方式 <span class="math display">\[
+\nabla u=\left(\vec{i} \frac{\partial}{\partial x}+\vec{j} \frac{\partial}{\partial y}+\vec{k} \frac{\partial}{\partial z}\right) u=\frac{\partial u}{\partial x} \vec{i}+\frac{\partial u}{\partial y} \vec{j}+\frac{\partial u}{\partial z} \vec{k}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\nabla \cdot \vec{A} &amp; =\left(\vec{i}\frac{\partial}{\partial x}+\vec{j}\frac{\partial}{\partial y}+\vec{k} \cdot \frac{\partial}{\partial z}\right) \cdot\left(A_x \vec{i}+A_y \vec{j}+A_z \vec{k}\right) \\
+&amp; =\frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_x}{\partial z}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\nabla \times \vec{A} &amp; =\left|\begin{array}{ccc}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\
+A_x &amp; A_y &amp; A_z
+\end{array}\right| \\
+&amp; =\left(\frac{\partial A_z}{\partial y}-\frac{\partial A_y}{\partial z}\right) \vec{i}+\left(\frac{\partial A_x}{\partial z}-\frac{\partial A_z}{\partial x}\right) \vec{i}+\left(\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \vec{k}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\vec{A} \cdot \nabla &amp; =\left(A_x \vec{i}+A_y \vec{j}+A_z \vec{k}\right) \cdot\left(\vec{i} \frac{\partial}{\partial x}+\vec{j} \frac{\partial}{\partial y}+\vec{k}\frac{\partial}{\partial z}\right) \\
+&amp; =A_x \frac{\partial}{\partial x}+A_y\frac{\partial}{\partial y}+A_z \frac{\partial}{\partial z}
+\end{aligned}
+\]</span></p></li>
+<li><p>哈密顿算子的一些定理</p>
+<ol type="1">
+<li><p><span class="math inline">\(\nabla(\vec{A}\cdot \vec{B})= \vec{A}\times(\nabla \times \vec{B})+(\vec{A}\cdot\nabla)\vec{B}+\vec{B}\times(\nabla \times \vec{A})+(\vec{B}\cdot\nabla)\vec{A}\)</span></p>
+<p>证明 由于哈密顿算子本身是一种偏微分的缩写，所以其应当具有线性运算的性质。另外，二重叉积可以转化为点积，因为 <span class="math display">\[
+\vec{u}\times(\vec{v}\times\vec{w})=(\vec{u}\cdot\vec{w})\vec{v}-(\vec{u}\cdot\vec{v})\vec{w}\\
+(\vec{u}\times\vec{v})\times\vec{w}=(\vec{u}\cdot\vec{w})\vec{v}-(\vec{w}\cdot\vec{v})\vec{u}
+\]</span></p>
+<p>故而，以下属性成立</p>
+<figure>
+<img src="https://s2.loli.net/2023/02/25/zK9kptLDdIEl72u.png" srcset="/img/loading.gif" lazyload alt="叉积属性"><figcaption aria-hidden="true">叉积属性</figcaption>
+</figure>
+<p>从而，其证明过程如下图</p>
+<figure>
+<img src="https://s2.loli.net/2023/02/25/lhE9Z7GUvAon32W.png" srcset="/img/loading.gif" lazyload alt="定理证明过程"><figcaption aria-hidden="true">定理证明过程</figcaption>
+</figure>
+<p>这里之所以可以取出向下的箭头是因为观察上面的定理发现，如果函数只有一个项，则定理的两边可以等同，所以箭头可以去掉。</p></li>
+</ol></li>
 </ol>
 <h2 id="多元函数积分学">多元函数积分学</h2>
 <ol type="1">
