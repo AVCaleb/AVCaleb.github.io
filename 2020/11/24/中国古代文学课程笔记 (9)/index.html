@@ -283,7 +283,7 @@
             
               <div class="markdown-body">
                 
-                <ol type="1">
+                <ol>
 <li>五四—晚明，上世纪八十年代（以陈平原为代表，有力的口号是王德威提出的：“没有晚清，何来五四”）—晚清（研究晚清不会用传统的角度来研究，其近世性吸引了许多研究者）</li>
 <li>文学的文本较之历史文本更逼近历史现场，纪实性最强的是文学作品。然而这一格局随着报刊的出现便被打破了。</li>
 <li>《官场现形记》《孽海花》等小说是在报刊上连载的。</li>
@@ -399,28 +399,23 @@
   
     <article id="comments" lazyload>
       
-  <div id="waline"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
-      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
-        var options = Object.assign(
-          {"serverURL":"https://waline-coral-psi.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
-          {
-            el: '#waline',
-            path: window.location.pathname
-          }
-        )
-        Waline.init(options);
-        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
-          var imgSelector = '#waline .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script>
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          Fluid.utils.createCssLink('https://lib.baomitu.com/disqusjs/1.3.0/disqusjs.css');
+          Fluid.utils.createScript('https://lib.baomitu.com/disqusjs/1.3.0/disqus.js', function() {
+            new DisqusJS({
+              shortname: 'avcaleb',
+              apikey: 'WQISvkpjgz0sQX5P55pCvDaOO1UeKYH6tBarIOVrK5mugdbM90mY9CPsNMOYs1kM'
+            });
+          });
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
 
 
     </article>

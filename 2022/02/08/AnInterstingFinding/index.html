@@ -285,19 +285,8 @@
             
               <div class="markdown-body">
                 
-                <p>When Rachel was going to die, she named her child Benoni, which means
-<em>son of my sorrow</em> or <em>son of my strength</em>. The meaning of
-Benoni indicates Rachel’s despair condition, and she was in great stress
-and felt like all of her strength gone. So, at the moment, the meaning
-of the pregnant and the pain in childbirth was completely confined to
-Rachel’s feeling. The children do not mean anything to Rachel, and he
-could even be replaced by other inanimate things, such as rocks, solis
-and so on.</p>
-<p>However, the hope of life begun when someone died away. The meaning
-of Benjamin is <em>son of the right hand</em>, it seemed as if the life
-of Rachel poured into the life of Benjamin. The strength of Rachel died
-away, but Benjamin gained it and became the <em>son of the right
-hand</em>.</p>
+                <p>When Rachel was going to die, she named her child Benoni, which means <em>son of my sorrow</em> or <em>son of my strength</em>. The meaning of Benoni indicates Rachel’s despair condition, and she was in great stress and felt like all of her strength gone. So, at the moment, the meaning of the pregnant and the pain in childbirth was completely confined to Rachel’s feeling. The children do not mean anything to Rachel, and he could even be replaced by other inanimate things, such as rocks, solis and so on.</p>
+<p>However, the hope of life begun when someone died away. The meaning of Benjamin is <em>son of the right hand</em>, it seemed as if the life of Rachel poured into the life of Benjamin. The strength of Rachel died away, but Benjamin gained it and became the <em>son of the right hand</em>.</p>
 <p>So, here, death becomes life.</p>
 
                 
@@ -417,28 +406,23 @@ hand</em>.</p>
   
     <article id="comments" lazyload>
       
-  <div id="waline"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
-      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
-        var options = Object.assign(
-          {"serverURL":"https://waline-coral-psi.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
-          {
-            el: '#waline',
-            path: window.location.pathname
-          }
-        )
-        Waline.init(options);
-        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
-          var imgSelector = '#waline .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script>
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          Fluid.utils.createCssLink('https://lib.baomitu.com/disqusjs/1.3.0/disqusjs.css');
+          Fluid.utils.createScript('https://lib.baomitu.com/disqusjs/1.3.0/disqus.js', function() {
+            new DisqusJS({
+              shortname: 'avcaleb',
+              apikey: 'WQISvkpjgz0sQX5P55pCvDaOO1UeKYH6tBarIOVrK5mugdbM90mY9CPsNMOYs1kM'
+            });
+          });
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
 
 
     </article>

@@ -283,13 +283,12 @@
             
               <div class="markdown-body">
                 
-                <ol type="1">
+                <ol>
 <li>如果要全面地了解清诗，要读严迪昌的《清诗史》</li>
 <li>严格来说，诗话是讲诗人的轶事，诗评是评论诗歌，诗格/式是讲诗是怎么写的。广义诗话把前三种全算进去了，但狭义的就不是了。</li>
 <li>清代肌理说是比较独特的，比较注重诗的形式。</li>
 <li>乾隆中期因着科举考试要考诗符，极大地影响了清代诗歌生态</li>
-<li>浙西词派：朱彝尊—姜夔、吴文英；
-阳羡词派：陈维崧—辛弃疾；常州词派（虽然自称要学习花间词派，然而实际上却是学习清真词派中主张不仅要学习花间的文辞同时要追求文辞背后的意义关系）张惠言</li>
+<li>浙西词派：朱彝尊—姜夔、吴文英； 阳羡词派：陈维崧—辛弃疾；常州词派（虽然自称要学习花间词派，然而实际上却是学习清真词派中主张不仅要学习花间的文辞同时要追求文辞背后的意义关系）张惠言</li>
 <li>唐宋词的范式分为花间（到晏殊、欧阳修为止）；东坡；清真（从周邦彦开始）。花间词的情感是多人的情感（类型化书写）；东坡的词开始转向个人，所以难以像花间词一般引起许多人的共鸣；从周邦彦开始，用花间词的文辞体系，但是内部更加追求个人的表达。</li>
 <li>清代后期是常州词派横行的天下。</li>
 <li>体格性分。</li>
@@ -407,28 +406,23 @@
   
     <article id="comments" lazyload>
       
-  <div id="waline"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
-      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
-        var options = Object.assign(
-          {"serverURL":"https://waline-coral-psi.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
-          {
-            el: '#waline',
-            path: window.location.pathname
-          }
-        )
-        Waline.init(options);
-        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
-          var imgSelector = '#waline .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script>
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          Fluid.utils.createCssLink('https://lib.baomitu.com/disqusjs/1.3.0/disqusjs.css');
+          Fluid.utils.createScript('https://lib.baomitu.com/disqusjs/1.3.0/disqus.js', function() {
+            new DisqusJS({
+              shortname: 'avcaleb',
+              apikey: 'WQISvkpjgz0sQX5P55pCvDaOO1UeKYH6tBarIOVrK5mugdbM90mY9CPsNMOYs1kM'
+            });
+          });
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
 
 
     </article>
