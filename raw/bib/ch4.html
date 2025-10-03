@@ -102,31 +102,36 @@
              text-decoration: none; color: #007bff;
         }
 
-        /* --- 書卷導航網格 --- */
-        .book-nav-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin: 1.5em 0;
-            padding: 1em;
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
+        /* --- 目錄表格樣式 --- */
+        .nav-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+            font-size: 0.95em;
         }
-        .book-nav-grid a {
-            flex: 1 1 120px; /* Flex-grow, flex-shrink, basis */
-            padding: 8px;
-            text-align: center;
+        .nav-table td {
+            border: 1px solid #ddd;
+            padding: 0; /* Padding is applied to the link instead */
+            vertical-align: middle;
+        }
+        .nav-table td a {
+            display: block;
+            padding: 10px 8px;
             text-decoration: none;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 4px;
             color: #007bff;
+            text-align: center;
             transition: background-color 0.2s;
         }
-        .book-nav-grid a:hover {
-            background-color: #f0f0f0;
-            border-color: #bbb;
+        .nav-table td a:hover {
+            background-color: #f2f2f2;
+        }
+        .nav-table .full-row-header {
+            background-color: #e9ecef;
+        }
+        .nav-table .full-row-header a {
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1em;
         }
 
         /* --- 響應式設計 --- */
@@ -138,8 +143,30 @@
             }
             h2 { font-size: 1.5em; }
             p { text-indent: 0; text-align: left; }
-            .book-nav-grid a {
-                 flex-basis: calc(50% - 10px); /* Two columns on mobile */
+
+            /* Stack table cells vertically on mobile */
+            .nav-table, .nav-table tbody, .nav-table tr, .nav-table td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .nav-table tr {
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            .nav-table td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                text-align: left;
+            }
+            .nav-table td:last-child {
+                border-bottom: none;
+            }
+            .nav-table .full-row-header a, .nav-table td a {
+                text-align: left;
+                padding-left: 15px;
             }
         }
     </style>
@@ -197,7 +224,7 @@
             <li>James Strong, Exhaustive Concordance of the Bible.</li>
             <li>Alexander Cruden, Cruden Concordance.</li>
         </ol>
-        <p>接下來需要聖經彙編。假設有一個字我們不知道在聖經何處，那麼只要查彙編就知道了。猶記得當初讀聖經裏的葡萄乾，這是筆者第一次讀聖經的詞；為什麼讀葡萄乾呢？ क्योंकि它在聖經中只出現四次，很快就可以讀完。怎麼知道它在聖經中只出現四次呢？查Concardance經文彙編。在此舉出Young’s和Strong’s Concordance。讀者應該儘可能擁有一本《Young’s Concordance》（楊氏彙編）論到楊氏彙編，它含有31萬1千個獨立的輸入條目，涵蓋新舊約中的字和句。這比其他的彙編多了十一萬項的輸入條目。一本字典的好壞，它的輸入條目是判斷的標準之一；因而筆者特別推薦楊氏彙編。</p>
+        <p>接下來需要聖經彙編。假設有一個字我們不知道在聖經何處，那麼只要查彙編就知道了。猶記得當初讀聖經裏的葡萄乾，這是筆者第一次讀聖經的詞；為什麼讀葡萄乾呢？ 它在聖經中只出現四次，很快就可以讀完。怎麼知道它在聖經中只出現四次呢？查Concardance經文彙編。在此舉出Young’s和Strong’s Concordance。讀者應該儘可能擁有一本《Young’s Concordance》（楊氏彙編）論到楊氏彙編，它含有31萬1千個獨立的輸入條目，涵蓋新舊約中的字和句。這比其他的彙編多了十一萬項的輸入條目。一本字典的好壞，它的輸入條目是判斷的標準之一；因而筆者特別推薦楊氏彙編。</p>
         <p class="back-to-top"><a href="#ch4-top">返回本章開頭</a></p>
 
         <h4 id="三百科全書">(三)百科全書</h4>
@@ -255,73 +282,115 @@
         <p class="back-to-top"><a href="#ch4-top">返回本章開頭</a></p>
 
         <h3 id="book-nav-anchor">聖經各卷書介</h3>
-        <div class="book-nav-grid">
-            <a href="#舊約各卷">舊約總覽</a>
-            <a href="#一摩西五經-1">摩西五經</a>
-            <a href="#創世記">創世記</a>
-            <a href="#出埃及記">出埃及記</a>
-            <a href="#利未記">利未記</a>
-            <a href="#民數記">民數記</a>
-            <a href="#申命記">申命記</a>
-            <a href="#二歷史書-1">歷史書</a>
-            <a href="#約書亞記">約書亞記</a>
-            <a href="#士師記">士師記</a>
-            <a href="#路得記">路得記</a>
-            <a href="#撒母耳記列王紀歷代志">撒母耳/列王/歷代志</a>
-            <a href="#以斯拉記尼希米記以斯帖記">以斯拉/尼希米/以斯帖記</a>
-            <a href="#三詩歌智慧書-1">詩歌智慧書</a>
-            <a href="#約伯記">約伯記</a>
-            <a href="#诗篇">詩篇</a>
-            <a href="#箴言">箴言</a>
-            <a href="#傳道書">傳道書</a>
-            <a href="#雅歌">雅歌</a>
-            <a href="#四大先知書-1">大先知書</a>
-            <a href="#以賽亞書">以賽亞書</a>
-            <a href="#耶利米書">耶利米書</a>
-            <a href="#耶利米哀歌">耶利米哀歌</a>
-            <a href="#以西結書">以西結書</a>
-            <a href="#但以理書">但以理書</a>
-            <a href="#六小先知書">小先知書</a>
-            <a href="#何西阿書">何西阿書</a>
-            <a href="#約珥書">約珥書</a>
-            <a href="#阿摩司書">阿摩司書</a>
-            <a href="#俄巴底亞書">俄巴底亞書</a>
-            <a href="#约拿書">約拿書</a>
-            <a href="#彌迦書">彌迦書</a>
-            <a href="#那鴻書">那鴻書</a>
-            <a href="#哈巴谷書">哈巴谷書</a>
-            <a href="#西番雅書">西番雅書</a>
-            <a href="#哈該書">哈該書</a>
-            <a href="#撒迦利亞書">撒迦利亞書</a>
-            <a href="#瑪拉基書">瑪拉基書</a>
-            <a href="#新約各卷">新約總覽</a>
-            <a href="#一四福音">四福音</a>
-            <a href="#二關於主耶穌的生平與教訓">耶穌生平與教訓</a>
-            <a href="#三四福音各卷">四福音各卷</a>
-            <a href="#馬太福音">馬太福音</a>
-            <a href="#馬可福音">馬可福音</a>
-            <a href="#路加福音">路加福音</a>
-            <a href="#约翰福音">約翰福音</a>
-            <a href="#四使徒行傳">使徒行傳</a>
-            <a href="#五保羅的生平與工作">保羅生平與工作</a>
-            <a href="#六使徒書信">使徒書信</a>
-            <a href="#羅馬書">羅馬書</a>
-            <a href="#哥林多前後書">哥林多前後書</a>
-            <a href="#加拉太書">加拉太書</a>
-            <a href="#以弗所書">以弗所書</a>
-            <a href="#腓立比書">腓立比書</a>
-            <a href="#歌羅西書腓利門書">歌羅西/腓利門書</a>
-            <a href="#帖撒羅尼迦前後書">帖撒羅尼迦前後書</a>
-            <a href="#七牧者書信">牧者書信</a>
-            <a href="#提摩太前後書">提摩太前後書</a>
-            <a href="#提多書">提多書</a>
-            <a href="#希伯來書">希伯來書</a>
-            <a href="#雅各書">雅各書</a>
-            <a href="#彼得書信">彼得書信</a>
-            <a href="#約翰書信">約翰書信</a>
-            <a href="#猶大書">猶大書</a>
-            <a href="#启示錄">啟示錄</a>
-        </div>
+        <table class="nav-table">
+            <tbody>
+                <tr><td colspan="3" class="full-row-header"><a href="#一摩西五經-1">摩西五經</a></td></tr>
+                <tr>
+                    <td><a href="#創世記">創世記</a></td>
+                    <td><a href="#出埃及記">出埃及記</a></td>
+                    <td><a href="#利未記">利未記</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#民數記">民數記</a></td>
+                    <td><a href="#申命記">申命記</a></td>
+                    <td></td>
+                </tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#二歷史書-1">歷史書</a></td></tr>
+                <tr>
+                    <td><a href="#約書亞記">約書亞記</a></td>
+                    <td><a href="#士師記">士師記</a></td>
+                    <td><a href="#路得記">路得記</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#撒母耳記列王紀歷代志">撒母耳/列王/歷代志</a></td>
+                    <td colspan="2"><a href="#以斯拉記尼希米記以斯帖記">以斯拉/尼希米/以斯帖記</a></td>
+                </tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#三詩歌智慧書-1">詩歌智慧書</a></td></tr>
+                <tr>
+                    <td><a href="#約伯記">約伯記</a></td>
+                    <td><a href="#诗篇">詩篇</a></td>
+                    <td><a href="#箴言">箴言</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#傳道書">傳道書</a></td>
+                    <td><a href="#雅歌">雅歌</a></td>
+                    <td></td>
+                </tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#四大先知書-1">大先知書</a></td></tr>
+                <tr>
+                    <td><a href="#以賽亞書">以賽亞書</a></td>
+                    <td><a href="#耶利米書">耶利米書</a></td>
+                    <td><a href="#耶利米哀歌">耶利米哀歌</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#以西結書">以西結書</a></td>
+                    <td><a href="#但以理書">但以理書</a></td>
+                    <td></td>
+                </tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#六小先知書">小先知書</a></td></tr>
+                <tr>
+                    <td><a href="#何西阿書">何西阿書</a></td>
+                    <td><a href="#約珥書">約珥書</a></td>
+                    <td><a href="#阿摩司書">阿摩司書</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#俄巴底亞書">俄巴底亞書</a></td>
+                    <td><a href="#约拿書">約拿書</a></td>
+                    <td><a href="#彌迦書">彌迦書</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#那鴻書">那鴻書</a></td>
+                    <td><a href="#哈巴谷書">哈巴谷書</a></td>
+                    <td><a href="#西番雅書">西番雅書</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#哈該書">哈該書</a></td>
+                    <td><a href="#撒迦利亞書">撒迦利亞書</a></td>
+                    <td><a href="#瑪拉基書">瑪拉基書</a></td>
+                </tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#新約各卷">新約總覽</a></td></tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#一四福音">四福音</a></td></tr>
+                <tr>
+                    <td><a href="#馬太福音">馬太福音</a></td>
+                    <td><a href="#馬可福音">馬可福音</a></td>
+                    <td><a href="#路加福音">路加福音</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#约翰福音">約翰福音</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#四使徒行傳">使徒行傳</a></td></tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#五保羅的生平與工作">保羅的生平與工作</a></td></tr>
+                <tr><td colspan="3" class="full-row-header"><a href="#六使徒書信">使徒書信</a></td></tr>
+                <tr>
+                    <td><a href="#羅馬書">羅馬書</a></td>
+                    <td><a href="#哥林多前後書">哥林多前後書</a></td>
+                    <td><a href="#加拉太書">加拉太書</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#以弗所書">以弗所書</a></td>
+                    <td><a href="#腓立比書">腓立比書</a></td>
+                    <td><a href="#歌羅西書腓利門書">歌羅西/腓利門書</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#帖撒羅尼迦前後書">帖撒羅尼迦前後書</a></td>
+                    <td><a href="#提摩太前後書">提摩太前後書</a></td>
+                    <td><a href="#提多書">提多書</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#希伯來書">希伯來書</a></td>
+                    <td><a href="#雅各書">雅各書</a></td>
+                    <td><a href="#彼得書信">彼得書信</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#約翰書信">約翰書信</a></td>
+                    <td><a href="#猶大書">猶大書</a></td>
+                    <td><a href="#启示錄">啟示錄</a></td>
+                </tr>
+            </tbody>
+        </table>
+
         
         <h4 id="舊約各卷">舊約各卷：</h4>
         <h4 id="一摩西五經-1">(一)摩西五經</h4>
@@ -1043,7 +1112,7 @@
         <p>近代的著作中，也許只有Leon Morris的《The Gospel According to John》，可與Westcott的那一本名著並駕齊驅。</p>
         <p class="back-to-top"><a href="#book-nav-anchor">返回書卷導航</a> | <a href="#ch4-top">返回本章開頭</a></p>
         
-        <h4 id="四使徒行傳">四使徒行傳</h4>
+        <h4 id="四使徒行傳">(四)使徒行傳</h4>
         <ol type="1">
             <li>F. F. Bruce, The Acts of the Apostles.<br />
             </li>
@@ -1692,5 +1761,8 @@
             <a href="ch5.html">下一章 →</a>
         </div>
     </div>
+    <footer>
+      <p>&copy; 运用 MinerU 转录自扫描件，2025年6月3刷印次，活道出版社，仅供个人学习交流使用</p>
+    </footer>
 </body>
 </html>
