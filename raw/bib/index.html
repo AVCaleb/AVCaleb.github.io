@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屬靈古典名著評介 - 陳希曾</title>
+    <style>
+        /* --- 通用樣式 --- */
+        body {
+            font-family: "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fdfdfd;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- 內容容器 --- */
+        .container {
+            max-width: 800px; /* 在大螢幕上的最大寬度 */
+            margin: 20px auto; /* 頁面居中並上下留白 */
+            padding: 20px 40px; /* 內容的左右內邊距 */
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* 添加細微陰影增加立體感 */
+            border-radius: 8px;
+        }
+
+        /* --- 排版樣式 --- */
+        h1 { /* 書籍主標題 */
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 0.5em;
+            color: #1a1a1a;
+        }
+
+        h2 { /* 章節大標題，例如 "寫在前面", "第一章" */
+            font-size: 2em;
+            margin-top: 2em;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            color: #2c2c2c;
+        }
+
+        .no-border {
+            border-bottom: none; /* 移除下邊框 */
+            padding-bottom: 0;   /* 移除下邊距，讓它恢復正常間距 */
+        }
+
+        .sub-h2 {
+            font-size: 1.3em;
+            font-weight: normal;
+            font-style: italic;
+            text-align: center;
+            color: #666;
+            margin-top: -10px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        h3 { /* 章節內的小標題 */
+            font-size: 1.6em;
+            margin-top: 1.5em;
+            color: #333;
+        }
+        
+        h4 { /* 更次級的標題，例如章節標題下的副標題 */
+            font-size: 1.4em;
+            font-weight: normal;
+            /*margin-top: -10px;*/
+        }
+
+        h5{
+            font-size: 1.2em;
+            font-weight: normal;
+            /*margin-top: -10px;*/
+        }
+
+        p { /* 普通段落 */
+            text-indent: 2em; /* 首行縮進兩個字符 */
+            margin-bottom: 1em;
+            text-align: justify; /* 兩端對齊，中文排版更美觀 */
+        }
+
+        blockquote { /* 用於引用經文 */
+            margin: 20px 0;
+            padding: 15px 20px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ccc;
+            font-style: normal;
+            color: #444;
+        }
+        
+        blockquote p {
+            text-indent: 0; /* 引用塊內的段落不需要首行縮進 */
+        }
+
+        /* --- 特殊類樣式 --- */
+        .author { /* 作者 */
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 0;
+        }
+
+        .signature { /* 文末署名 */
+            text-align: right;
+            text-indent: 0;
+        }
+
+        .date { /* 文末日期 */
+            text-align: right;
+            text-indent: 0;
+        }
+
+        /* --- 目錄樣式 (已更新) --- */
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc ul ul {
+            padding-left: 25px;
+            margin-top: 8px;
+        }
+        
+        .toc li {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        /* 1. 為包裹英文標題和頁碼的新容器應用 Flexbox */
+        .toc .line-item {
+            display: flex;
+            justify-content: space-between; /* 兩端對齊：第一個元素靠左，最後一個元素靠右 */
+            align-items: baseline; /* 讓文字基線對齊，更好看 */
+        }
+
+        /* 2. 移除 en-title 的 display: block */
+        .toc .en-title {
+            color: #555;
+            padding-right: 15px; /* 在英文標題和頁碼之間增加一些間距，防止標題過長時貼在一起 */
+        }
+        
+        /* 3. 移除 page-number 的 float: right */
+        .page-number {
+            font-weight: bold;
+            color: #333;
+            flex-shrink: 0; /* 防止頁碼因為空間不足而被壓縮換行 */
+        }
+
+        /* --- 響應式設計：針對手機等小螢幕設備 --- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 20px; /* 在手機上減少左右邊距 */
+                margin: 10px auto;
+                border-radius: 0;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            p {
+                text-indent: 0; /* 在小螢幕上可以取消首行縮進以節省空間 */
+                text-align: left; /* 左對齊可能更易讀 */
+            }
+        }
+
+        .book-info-dl {
+            display: grid;
+            grid-template-columns: max-content 1fr; /* 第一列根据内容宽度，第二列占据剩余空间 */
+            gap: 10px 20px; /* 行间距和列间距 */
+        }
+        .book-info-dl dt {
+            font-weight: bold;
+            grid-column: 1; /* 始终在第一列 */
+            text-align: justify; /* 两端对齐，处理汉字间距 */
+            text-align-last: justify;
+            width: 80px; /* 固定宽度以对齐 */
+        }
+        .book-info-dl dd {
+            grid-column: 2; /* 始终在第二列 */
+            margin: 0; /* 清除默认的 dd 边距 */
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .disclaimer {
+            font-size: 14px;           /* 较小的字体大小 */
+            /* color: #888;               /* 柔和的灰色文字 */
+            margin-top: 40px;          /* 与上方内容的间距 */
+            padding-top: 20px;         /* 顶部的内边距 */
+            border-top: 1px solid #eee;/* 顶部有一条细微的分割线 */
+            line-height: 1.6;          /* 适中的行高，保证易读性 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>屬靈古典名著評介</h1>
+        <p class="author">陳希曾 編著</p>
+
+        <h2>寫在前面</h2>
+        <p>記得第一次接觸到那麼多屬靈的好書是在廿五年前的一個秋天。地點是美國紐約市皇后區一棟洋房的地下室裡。時間難以沖淡當時如同發現新大陸一般的無比驚喜。從那時候起，就開始了人生中一項屬靈長跑——書中黃金屋的追尋。</p>
+        <p>就在那難忘的地下室裡，猶如好奇的兒童不停地問了許多問題：諸如哪些書是好書，哪些書值得擁有等等；而那位地下室的主人則不厭其詳地一一加以指點。這一問一答所累積的資料就構成了本書的第一個重要來源。其他的資料則源自教會史上的名讀書人，諸如司布真、Willbur Smith 等人的書評；此外再加上多年耕耘的心得，就組成了本書的全部內容。</p>
+        <p>飲水思源，除了感謝萬福之源，我們的主之外，在此謹向那位啟蒙師傅，如今依然是谆谆善誘的長者，致最多的敬意與謝意。</p>
+        <p class="signature">作者</p>
+        <p class="date">1992.11.28 於高雄旅次</p>
+        
+        <h2 id="toc">目录 (CONTENTS)</h2>
+        <div class="toc">
+            <ul>
+                <li>
+                    寫在前面<br>Forward
+                    <ul>
+                        <li>
+                            <a href="ch1.html">
+                            第一章 馬可、外衣和書
+                            <div class="line-item">
+                                <span class="en-title">Chapter I Mark, the Cloak and the Books</span>
+                                <span class="page-number">1</span>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href="ch2.html">
+                            第二章 那充滿萬有者的豐滿
+                            <div class="line-item">
+                                <span class="en-title">Chapter II The Fulness of Him who Fills All in All</span>
+                                <span class="page-number">11</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ch3.html">
+                            第三章 一百零一本好書
+                            <div class="line-item">
+                                <span class="en-title">Chapter III One Hundred and One Choice Books</span>
+                                <span class="page-number">19</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ch4.html">
+                            第四章 關於研讀聖經的書
+                            <div class="line-item">
+                                <span class="en-title">Chapter IV Books for Bible Study</span>
+                                <span class="page-number">53</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ch5.html">
+                            第五章 關於福音真理的書
+                            <div class="line-item">
+                                <span class="en-title">Chapter V Books on Christian Faith</span>
+                                <span class="page-number">115</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ch6.html">
+                            第六章 關於屬靈生命的書
+                            <div class="line-item">
+                                <span class="en-title">Chapter VI Books on Christian Life</span>
+                                <span class="page-number">135</span>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="special_section.html">
+                    英語讀者專欄<br>Special Section for English Readers
+                    <ul>
+                        <li>
+                            <a href="special_section.html#recommended-books-for-bible-study">
+                            解經叢書短評
+                            <div class="line-item">
+                                <span class="en-title">Recommended Books for Bible Study With Book-by-Book Comments</span>
+                                <span class="page-number">179</span>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="bibliography.html">
+                    書目一覽表<br>Bibliography
+                    <ul>
+                        <li>
+                            <a href="bibliography.html">
+                            屬靈古典名著精選<br>
+                            <span class="en-title">A Selection of Christian Classics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bibliography.html#part-i-bible-study">
+                            第一部份 研讀聖經叢書
+                            <div class="line-item">
+                                <span class="en-title">Part I Bible Study</span>
+                                <span class="page-number">287</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bibliography.html#part-ii-christian-faith">
+                            第二部份 福音真理叢書
+                            <div class="line-item">
+                                <span class="en-title">Part II Christian Faith</span>
+                                <span class="page-number">321</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bibliography.html#part-iii-christian-life">
+                            第三部份 屬靈生命叢書
+                            <div class="line-item">
+                                <span class="en-title">Part III Christian Life</span>
+                                <span class="page-number">331</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bibliography.html#part-iv-biographical-books">
+                            第四部份 名人傳記叢書
+                            <div class="line-item">
+                                <span class="en-title">Part IV Biographical Books</span>
+                                <span class="page-number">351</span>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h2>书籍出版信息</h1>
+
+        <dl class="book-info-dl">
+            <dt>作&emsp;&emsp;者</dt>
+            <dd>陳希曾</dd>
+
+            <dt>出&emsp;&emsp;版</dt>
+            <dd>活道出版社</dd>
+            
+            <dt>&emsp;</dt>
+            <dd>新北市淡水區新市二路段 126 號 7F</dd>
+
+            <dt>電&emsp;&emsp;話</dt>
+            <dd>(02) 2805-7937</dd>
+
+            <dt>傳&emsp;&emsp;真</dt>
+            <dd>(02) 2805-7721</dd>
+
+            <dt>E-mail</dt>
+            <dd>livingword@livingword.com.tw</dd>
+
+            <dt>網&emsp;&emsp;址</dt>
+            <dd><a href="http://www.livingword.com.tw/">http://www.livingword.com.tw/</a></dd>
+
+            <dt>郵政劃撥</dt>
+            <dd>1489795-6 活道出版社</dd>
+
+            <dt>發 行 人</dt>
+            <dd>鍾聲實</dd>
+            
+            <dt>&emsp;</dt>
+            <dd>行政院新聞局版台業字第 4970 號</dd>
+
+            <dt>印&emsp;&emsp;刷</dt>
+            <dd>永望文化事業有限公司</dd>
+        </dl>
+        
+        <hr>
+        
+        <p>主曆一九九二年十二月初版 版權所有</p>
+        <p>主曆二零二五年 6 月初版三刷</p>
+        <div class="disclaimer">
+            <h3>免责声明 (Disclaimer)</h3>
+            本网站拥有者未有该书版权，此网站行为仅用于个人学习使用。如侵犯您的权益，请联系网站所有者（www.avcaleb.top）删除。
+        </div>
+
+    </div>
+    <footer>
+      <p>&copy; 运用 MinerU 转录自扫描件，2025年6月3刷印次，活道出版社，仅供个人学习交流使用</p>
+    </footer>
+</body>
+</html>
