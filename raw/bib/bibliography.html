@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,23 +22,80 @@
             margin: 20px auto;
             padding: 20px 40px;
             background-color: #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
         }
 
         /* --- 排版樣式 --- */
-        h1, h2, h3, h4, h5 { color: #333; }
-        h2 { font-size: 2em; margin-top: 1.5em; text-align: center; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .no-border { border-bottom: none; padding-bottom: 0; }
-        .sub-h2 { font-size: 1.3em; font-weight: normal; font-style: italic; text-align: center; color: #666; margin-top: -10px; }
-        h3 { font-size: 1.6em; margin-top: 2.5em; border-top: 1px solid #eee; padding-top: 1em; }
-        h4 { font-size: 1.4em; font-weight: bold; margin-top: 2em; border-bottom: 1px solid #eee; padding-bottom: 0.5em;}
-        h5 { font-size: 1.2em; font-weight: normal; }
-        p, li { text-align: justify; }
-        p { text-indent: 2em; }
-        ol li { text-indent: 0; margin-left: 2em; }
-        ul li { text-indent: 0; margin-left: 2em; }
-        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: #333;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 1.5em;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .no-border {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .sub-h2 {
+            font-size: 1.3em;
+            font-weight: normal;
+            font-style: italic;
+            text-align: center;
+            color: #666;
+            margin-top: -10px;
+        }
+
+        h3 {
+            font-size: 1.6em;
+            margin-top: 2.5em;
+            border-top: 1px solid #eee;
+            padding-top: 1em;
+        }
+
+        h4 {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-top: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5em;
+        }
+
+        h5 {
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+
+        p,
+        li {
+            text-align: justify;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+        ol li {
+            text-indent: 0;
+            margin-left: 2em;
+        }
+
+        ul li {
+            text-indent: 0;
+            margin-left: 2em;
+        }
+
         /* --- 導航樣式 --- */
         .mini-toc {
             background-color: #f8f9fa;
@@ -46,20 +104,44 @@
             margin: 2em 0;
             border-radius: 5px;
         }
+
         .mini-toc ul {
             padding-left: 20px;
             margin-top: 0;
             margin-bottom: 0;
         }
+
         .mini-toc ul ul {
             padding-left: 20px;
         }
-        
-        .nav-links { text-align: center; margin: 2em 0; font-size: 1.1em; }
-        .nav-links a { margin: 0 15px; text-decoration: none; color: #007bff; }
-        .nav-links a:hover { text-decoration: underline; }
-        .back-to-top { text-align: right; text-indent: 0; margin-top: 1.5em; font-size: 0.9em; }
-        .back-to-top a { text-decoration: none; color: #007bff; }
+
+        .nav-links {
+            text-align: center;
+            margin: 2em 0;
+            font-size: 1.1em;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            text-align: right;
+            text-indent: 0;
+            margin-top: 1.5em;
+            font-size: 0.9em;
+        }
+
+        .back-to-top a {
+            text-decoration: none;
+            color: #007bff;
+        }
 
         /* --- 目錄表格樣式 --- */
         .nav-table {
@@ -68,11 +150,13 @@
             margin: 2em 0;
             font-size: 0.95em;
         }
+
         .nav-table td {
             border: 1px solid #ddd;
             padding: 0;
             vertical-align: middle;
         }
+
         .nav-table td a {
             display: block;
             padding: 10px 8px;
@@ -81,55 +165,78 @@
             text-align: center;
             transition: background-color 0.2s;
         }
+
         .nav-table td a:hover {
             background-color: #f2f2f2;
         }
+
         .nav-table .full-row-header {
             background-color: #e9ecef;
         }
+
         .nav-table .full-row-header a {
             color: #333;
             font-weight: bold;
             font-size: 1.1em;
         }
-        
+
         /* --- 響應式設計 --- */
         @media (max-width: 600px) {
-            .container { padding: 15px 20px; margin: 10px auto; border-radius: 0; }
-            h2 { font-size: 1.5em; }
-            p { text-indent: 0; text-align: left; }
+            .container {
+                padding: 15px 20px;
+                margin: 10px auto;
+                border-radius: 0;
+            }
 
-            .nav-table, .nav-table tbody, .nav-table tr, .nav-table td {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                text-indent: 0;
+                text-align: left;
+            }
+
+            .nav-table,
+            .nav-table tbody,
+            .nav-table tr,
+            .nav-table td {
                 display: block;
                 width: 100%;
                 box-sizing: border-box;
             }
+
             .nav-table tr {
                 margin-bottom: 10px;
                 border: 1px solid #ddd;
                 border-radius: 4px;
                 overflow: hidden;
             }
+
             .nav-table td {
                 border: none;
                 border-bottom: 1px solid #eee;
                 text-align: left;
             }
+
             .nav-table td:last-child {
                 border-bottom: none;
             }
-            .nav-table .full-row-header a, .nav-table td a {
+
+            .nav-table .full-row-header a,
+            .nav-table td a {
                 text-align: left;
                 padding-left: 15px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <div class="nav-links">
-            <a href="special_section.html">← 上一節</a> | 
+            <a href="special_section.html">← 上一節</a> |
             <a href="index.html#toc">返回目录</a> |
             <a href="index.html#toc">結束 →</a>
         </div>
@@ -151,22 +258,38 @@
 
         <table class="nav-table" id="part1-nav-table">
             <tbody>
-                <tr><td colspan="3" class="full-row-header"><a href="#bible">BIBLE（聖經）</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#concordances">CONCORDANCES（經文彙編）</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#encyclopedias">ENCYCLOPEDIAS（百科全書）</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#parallels">PARALLELS（平行之書）</a></td></tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#bible">BIBLE（聖經）</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#concordances">CONCORDANCES（經文彙編）</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#encyclopedias">ENCYCLOPEDIAS（百科全書）</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#parallels">PARALLELS（平行之書）</a></td>
+                </tr>
                 <tr>
                     <td><a href="#word-parallels">Word Parallels</a></td>
                     <td><a href="#idea-parallels">Idea Parallels</a></td>
                     <td><a href="#doctrinal-parallels">Doctrinal Parallels</a></td>
                 </tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#bible-commentaries">BIBLE COMMENTARIES（聖經註解）</a></td></tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#bible-commentaries">BIBLE COMMENTARIES（聖經註解）</a>
+                    </td>
+                </tr>
                 <tr>
                     <td colspan="2"><a href="#famous-ones">Famous Ones (出名的)</a></td>
                     <td><a href="#useful-ones">Useful Ones (有用的)</a></td>
                 </tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#general-introduction">GENERAL INTRODUCTION（聖經指引）</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#old-testament">OLD TESTAMENT（舊約各卷）</a></td></tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#general-introduction">GENERAL
+                            INTRODUCTION（聖經指引）</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#old-testament">OLD TESTAMENT（舊約各卷）</a></td>
+                </tr>
                 <tr>
                     <td><a href="#pentateuch">Pentateuch</a></td>
                     <td><a href="#genesis-ot">Genesis</a></td>
@@ -183,9 +306,9 @@
                     <td><a href="#joshua-judges-ruth">Joshua, Judges, Ruth</a></td>
                 </tr>
                 <tr>
-                     <td><a href="#joshua-ot">Joshua</a></td>
-                     <td><a href="#judges-ot">Judges</a></td>
-                     <td><a href="#ruth-ot">Ruth</a></td>
+                    <td><a href="#joshua-ot">Joshua</a></td>
+                    <td><a href="#judges-ot">Judges</a></td>
+                    <td><a href="#ruth-ot">Ruth</a></td>
                 </tr>
                 <tr>
                     <td><a href="#samuel-kings-chronicles">Samuel, Kings, etc.</a></td>
@@ -193,9 +316,9 @@
                     <td><a href="#wisdom-books">Wisdom Books</a></td>
                 </tr>
                 <tr>
-                     <td><a href="#job-ot">Job</a></td>
-                     <td><a href="#psalms-ot">Psalms</a></td>
-                     <td><a href="#proverbs-ot">Proverbs</a></td>
+                    <td><a href="#job-ot">Job</a></td>
+                    <td><a href="#psalms-ot">Psalms</a></td>
+                    <td><a href="#proverbs-ot">Proverbs</a></td>
                 </tr>
                 <tr>
                     <td><a href="#ecclesiastes-ot">Ecclesiastes</a></td>
@@ -203,62 +326,64 @@
                     <td><a href="#prophets-ot">Prophets</a></td>
                 </tr>
                 <tr>
-                     <td><a href="#isaiah-ot">Isaiah</a></td>
-                     <td><a href="#jeremiah-ot">Jeremiah</a></td>
-                     <td><a href="#lamentations-ot">Lamentations</a></td>
+                    <td><a href="#isaiah-ot">Isaiah</a></td>
+                    <td><a href="#jeremiah-ot">Jeremiah</a></td>
+                    <td><a href="#lamentations-ot">Lamentations</a></td>
                 </tr>
                 <tr>
                     <td><a href="#ezekiel-ot">Ezekiel</a></td>
                     <td><a href="#daniel-ot">Daniel</a></td>
                     <td><a href="#minor-prophets">Minor Prophets</a></td>
                 </tr>
-                 <tr>
-                     <td><a href="#hosea-ot">Hosea</a></td>
-                     <td><a href="#joel-ot">Joel</a></td>
-                     <td><a href="#amos-ot">Amos</a></td>
-                </tr>
-                 <tr>
-                     <td><a href="#obadiah-ot">Obadiah</a></td>
-                     <td><a href="#jonah-ot">Jonah</a></td>
-                     <td><a href="#micah-ot">Micah</a></td>
-                </tr>
-                 <tr>
-                     <td><a href="#nahum-ot">Nahum</a></td>
-                     <td><a href="#habakkuk-ot">Habakkuk</a></td>
-                     <td><a href="#zephaniah-ot">Zephaniah</a></td>
+                <tr>
+                    <td><a href="#hosea-ot">Hosea</a></td>
+                    <td><a href="#joel-ot">Joel</a></td>
+                    <td><a href="#amos-ot">Amos</a></td>
                 </tr>
                 <tr>
-                     <td><a href="#haggai-ot">Haggai</a></td>
-                     <td><a href="#zechariah-ot">Zechariah</a></td>
-                     <td><a href="#malachi-ot">Malachi</a></td>
+                    <td><a href="#obadiah-ot">Obadiah</a></td>
+                    <td><a href="#jonah-ot">Jonah</a></td>
+                    <td><a href="#micah-ot">Micah</a></td>
                 </tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#new-testament">NEW TESTAMENT（新約各卷）</a></td></tr>
-                 <tr>
+                <tr>
+                    <td><a href="#nahum-ot">Nahum</a></td>
+                    <td><a href="#habakkuk-ot">Habakkuk</a></td>
+                    <td><a href="#zephaniah-ot">Zephaniah</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#haggai-ot">Haggai</a></td>
+                    <td><a href="#zechariah-ot">Zechariah</a></td>
+                    <td><a href="#malachi-ot">Malachi</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#new-testament">NEW TESTAMENT（新約各卷）</a></td>
+                </tr>
+                <tr>
                     <td><a href="#gospels-nt">Gospels</a></td>
                     <td><a href="#life-teaching-of-christ">Life of Christ</a></td>
                     <td><a href="#matthew-nt">Matthew</a></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td><a href="#mark-nt">Mark</a></td>
                     <td><a href="#luke-john">Luke &amp; John</a></td>
                     <td><a href="#luke-nt">Luke</a></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td><a href="#john-nt">John</a></td>
                     <td><a href="#acts-nt">Acts</a></td>
                     <td><a href="#life-of-paul">Life of Paul</a></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td><a href="#letters-of-apostles">Apostolic Letters</a></td>
                     <td><a href="#romans-nt">Romans</a></td>
                     <td><a href="#corinthians-nt">Corinthians</a></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td><a href="#galatians-nt">Galatians</a></td>
                     <td><a href="#ephesians-nt">Ephesians</a></td>
                     <td><a href="#philippians-nt">Philippians</a></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td><a href="#colossians-philemon-nt">Colossians/Philemon</a></td>
                     <td><a href="#thessalonians-nt">Thessalonians</a></td>
                     <td><a href="#pastoral-epistles">Pastoral Epistles</a></td>
@@ -304,7 +429,8 @@
         <h4 id="encyclopedias">ENCYCLOPEDIAS（百科全書）</h4>
         <ol>
             <li>William Smith 1813-1893, <em>Smith’s Dictionary of the Bible.</em> (Four vols.).</li>
-            <li>John McClintoch &amp; James Strong, <em>The Cyclopedia of Biblical, Theological and Ecclesiastical Literature.</em> (1867-1881, 10 vols.)</li>
+            <li>John McClintoch &amp; James Strong, <em>The Cyclopedia of Biblical, Theological and Ecclesiastical
+                    Literature.</em> (1867-1881, 10 vols.)</li>
             <li>Schaff-Herzog, <em>New Schaff-Herzog Encyclopedia of Religious Knowledge.</em></li>
             <li>James Hastings, <em>Hastings Dictionary to the Bible.</em> (Four vols.)</li>
             <li>James Hastings, <em>The Dictionary of Christ and the Gospels.</em> (Two vols.)</li>
@@ -336,11 +462,13 @@
         <ol>
             <li>Alexander Maclaren, <em>Expositions of Holy Scripture.</em></li>
             <li>Joseph Parker, <em>People’s Bible.</em>(28 vols)</li>
-            <li>Matthew Henry, <em>Bible Commentary.</em>(1708, 5 vols.) (《袖珍聖經釋義》一～八)，浸信會；《創世記釋義》上、下冊，弘智；《享利馬太聖經註釋》（卷一），種籽；《路得記釋義》、《以斯帖記釋義》，少年歸主)</li>
+            <li>Matthew Henry, <em>Bible Commentary.</em>(1708, 5 vols.)
+                (《袖珍聖經釋義》一～八)，浸信會；《創世記釋義》上、下冊，弘智；《享利馬太聖經註釋》（卷一），種籽；《路得記釋義》、《以斯帖記釋義》，少年歸主)</li>
         </ol>
         <h5 id="useful-ones">Useful Ones（有用的）</h5>
         <ol>
-            <li>John Peter Lange, <em>Lange’s Commentary Series</em> (8 vols. Old; 10 vols. New), edited by Dr. Philip Schaff.</li>
+            <li>John Peter Lange, <em>Lange’s Commentary Series</em> (8 vols. Old; 10 vols. New), edited by Dr. Philip
+                Schaff.</li>
             <li>C. F. Keil &amp; Franz Delitzsch, <em>Biblical Commentary on the Old Testament.</em> (10 vols)</li>
             <li>Dean Henry Alford, <em>The Greek Testament.</em> (4 vols.)</li>
             <li>Dean Henry Alford, <em>The New Testament for English Readers.</em></li>
@@ -427,7 +555,7 @@
             <li>J.G. Bellett, <em>The Patriarchs.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="genesis-ot">GENESIS（創世記）：</h5>
         <ol>
             <li>W. H. Griffith Thomas, <em>Genesis.</em></li>
@@ -489,7 +617,7 @@
             <li>S.J. Schultz, <em>Deuteronomy: The Gospel of Love.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="history-ot">HISTORY（歷史書）</h4>
         <h5 id="joshua-judges-ruth">JOSHUA, JUDGES AND RUTH（約書亞記、士師記、路得記）：</h5>
         <ol>
@@ -499,7 +627,7 @@
             <li>Sammuel Ridout, <em>Lectures on the Books of Judges and Ruth.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="joshua-ot">JOSHUA（約書亞記）：</h5>
         <ol>
             <li>Arthur Pink, <em>Gleanings in Joshua.</em></li>
@@ -513,14 +641,14 @@
             <li>W. G. Scroggle, <em>The Land and Life of Rest.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="judges-ot">JUDGES（士師記）：</h5>
         <ol>
             <li>A. R. Fausset, <em>A Critical and Expository Commentary on the Book of Judges.</em></li>
             <li>G. Bush, <em>Notes on the Book of Judges.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="ruth-ot">RUTH（路得記）：</h5>
         <ol>
             <li>Philip Mauro, <em>Ruth: The Satisfied Stranger.</em></li>
@@ -546,7 +674,7 @@
             <li>Z. R. Thiele, <em>A Chronology of the Hebrew Kings.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="ezra-nehemiah-esther">EZRA, NEHEMIAH AND ESTHER（以斯拉記、尼希米記、以斯帖記）：</h5>
         <ol>
             <li>H. A. Ironside, <em>Notes on the Books of Ezra, Nehemiah, and Esther.</em></li>
@@ -557,7 +685,7 @@
             <li>J. H. Goodman, <em>Homiletical Commentary on Nehemiah.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="wisdom-books">BOOKS OF WISDOM（詩歌智慧書）</h4>
         <h5 id="job-ot">JOB（約伯記）：</h5>
         <ol>
@@ -579,7 +707,7 @@
             <li>E.H. Ralph, <em>The Voice Out of the Whirlwind: The Book of Job.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="psalms-ot">PSALMS（詩篇）：</h5>
         <ol>
             <li>J. J. Stewart Perowne, <em>The Book of Psalms.</em></li>
@@ -594,7 +722,7 @@
             <li>Stephen Kaung, <em>Song of Degrees: Meditations on Fifteen Psalms.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="proverbs-ot">PROVERBS（箴言）：</h5>
         <ol>
             <li>William Arnot, <em>Studies in Proverbs.</em></li>
@@ -602,7 +730,7 @@
             <li>J. H. Greenstone, <em>The Holy Scripture with Commentary: Proverbs.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="ecclesiastes-ot">ECCLESIASTES（傳道書）：</h5>
         <ol>
             <li>E. W. Hengstenberg, <em>Commentary on Ecclesiastes.</em></li>
@@ -614,7 +742,7 @@
             <li>W. C. Kaiser, JR., <em>Ecclesiastes: Total Life.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="song-of-songs-ot">SONG OF SONGS（雅歌）：</h5>
         <ol>
             <li>J. Penn-Lewis, <em>The Hidden Ones.</em> (《隱藏的泉源》，橄欖)</li>
@@ -636,14 +764,14 @@
             <li>R. P. Lawson, <em>Origen, The Song of Songs.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="prophets-ot">BOOKS OF PROPHETS（先知書）</h4>
         <ol>
             <li>H. L. Ellison, <em>Men Spake from God</em>, (1952)</li>
             <li>H.E.Freeman, <em>An Introduction to the Old Testament Prophets.</em> （《舊約先知導論》，華神出版社）</li>
             <li>Samuel J. Schultz, <em>The Prophets Speak: The Law of Love.</em></li>
         </ol>
-        
+
         <h5 id="isaiah-ot">ISAIAH（以賽亞書）：</h5>
         <ol>
             <li>Franz Delitzsch, <em>Biblical Commentary on Isaiah.</em></li>
@@ -662,21 +790,21 @@
             <li>Herbert C. Leupold, <em>Exposition of Isaiah</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="jeremiah-ot">JEREMIAH（耶利米書）：</h5>
         <ol>
             <li>G. C. Morgan, <em>Studies in the Prophecy of Jeremiah.</em> （《耶利米書註釋》，美國活泉）</li>
             <li>T. F. K. Laetsch, <em>Bible Commentary: Jeremiah.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="lamentations-ot">LAMENTATIONS（耶利米哀歌）：</h5>
         <ol>
             <li>G. Barlow, <em>Homiletic Commentary on Lamentations.</em></li>
             <li>Francis Landy, <em>Lamentations.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="ezekiel-ot">EZEKIEL（以西結書）：</h5>
         <ol>
             <li>G. W. Grant, <em>Numerical Bible-Ezekiel.</em></li>
@@ -685,7 +813,7 @@
             <li>R. Alexander, <em>Ezekiel.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="daniel-ot">DANIEL（但以理書）：</h5>
         <ol>
             <li>H. C. Leupold, <em>Daniel.</em></li>
@@ -703,7 +831,7 @@
             <li>Arthur E. Bloomfield, <em>The End of the Days.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="minor-prophets">THE MINOR PROPHETS（小先知書）</h5>
         <ol>
             <li>Theodore F. K. Laetsch, <em>The Minor Prophets.</em></li>
@@ -718,7 +846,7 @@
             <li>Frank E. Gaebelein, <em>Four Minor Prophets.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="hosea-ot">HOSEAA（何西阿書）：</h5>
         <ol>
             <li>Jeremiah Burroughes, <em>Exposition of the Prophecies of Hosea.</em></li>
@@ -727,14 +855,14 @@
             <li>J. L. Mays, <em>Hosea, A Commentary.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="joel-ot">JOEL（約珥書）：</h5>
         <ol>
             <li>Edward Topsell, <em>Times Lamentations or An Exposition on the Prophet Joel.</em> (1599)</li>
             <li>A. S. Kapelrud, <em>Joel Studies.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="amos-ot">AMOS（阿摩司書）：</h5>
         <ol>
             <li>C. L. Feinberg, <em>Amos: The Righteousness of God.</em></li>
@@ -743,7 +871,7 @@
             <li>J. L. Mays, <em>Amos: A Commentary.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="obadiah-ot">OBADIAH（俄巴底亞書）：</h5>
         <ol>
             <li>Edward Marbury, <em>Obadiah.</em> (1649)</li>
@@ -752,7 +880,7 @@
             <li>J. D. W. Watts, <em>Obadiah.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="jonah-ot">JONAH（約拿書）：</h5>
         <ol>
             <li>Patrick Fairbairn, <em>Jonah: His Life, Character, and Mission.</em> (1849)</li>
@@ -765,20 +893,20 @@
             <li>Hugh Martin, <em>The Prophet Jonah.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="micah-ot">MICAH（彌迦書）：</h5>
         <ol>
             <li>C. L. Feinberg, <em>Micah: Wrath Upon Samaria and Jerusalem.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="nahum-ot">NAHUM（那鴻書）：</h5>
         <ol>
             <li>C. L. Feinberg, <em>Nahum.</em></li>
             <li>W. A. Maier, <em>The Book of Nahum.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="habakkuk-ot">HABAKKUK（哈巴谷書）：</h5>
         <ol>
             <li>Edward Marbury, <em>Commentaries on Habakkuk.</em> (1650)</li>
@@ -786,13 +914,13 @@
             <li>C. L. Feinberg, <em>Habakkuk: Problems of Faith.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="zephaniah-ot">ZEPHANIAH（西番雅書）：</h5>
         <ol>
             <li>C. L. Feinberg, <em>Zephaniah: The Day of the Lord.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="haggai-ot">HAGGAI（哈該書）：</h5>
         <ol>
             <li>T. V. Moore, <em>Haggai, Zechariah &amp; Malachi.</em> (1856)</li>
@@ -800,7 +928,7 @@
             <li>F. E. Gabelein, <em>Haggai.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="zechariah-ot">ZECHARIAH（撒迦利亞書）：</h5>
         <ol>
             <li>David Baron, <em>The Visions and Prophecies of Zechariah.</em></li>
@@ -810,14 +938,14 @@
             <li>M. F. Unger, <em>Zechariah: Prophet of Messiah’s Glory.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="malachi-ot">MALACHI（瑪拉基書）：</h5>
         <ol>
             <li>C. L. Feinberg, <em>Malachi: Formal Worship.</em></li>
             <li>G. C. Morgan, <em>Wherein Have We Robbed God?</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="new-testament">NEW TESTAMENT（新約各卷）</h4>
         <ol>
             <li>R. C. Trench, <em>The Synonyms of the New Testament.</em></li>
@@ -835,7 +963,8 @@
 
         <h5 id="gospels-nt">GOSPELS（四福音）</h5>
         <ol>
-            <li>William A. Stevens &amp; Ernest DeWitt Burton, <em>The Harmony of the Gospels for Historical Study.</em></li>
+            <li>William A. Stevens &amp; Ernest DeWitt Burton, <em>The Harmony of the Gospels for Historical Study.</em>
+            </li>
             <li>Dr. Albert C. Wieand, <em>The Harmony of the Gospels.</em></li>
             <li>A. T. Robertson, <em>A Harmony of the Gospels.</em></li>
             <li>R. C. Trench, <em>Studies on the Gospels.</em></li>
@@ -853,7 +982,8 @@
         <h5 id="life-teaching-of-christ">THE LIFE AND TEACHING OF THE LORD JESUS CHRIST (關於主耶穌的生平與教訓)</h5>
         <ol>
             <li>Alfred Edershiem, <em>The Life and Times of Jesus The Messiah.</em></li>
-            <li>Samuel J. Andrews, <em>The Life of Our Lord upon the Earth Considered in its Historical, Chornological &amp; Geographical Relations.</em></li>
+            <li>Samuel J. Andrews, <em>The Life of Our Lord upon the Earth Considered in its Historical, Chornological
+                    &amp; Geographical Relations.</em></li>
             <li>John Peter Lange, <em>The Life and Times of the Lord Jesus Christ.</em></li>
             <li>David Smith, <em>The Days of His Flesh.</em></li>
             <li>Everett Harrison, <em>A Short Life of Christ.</em>(1968)</li>
@@ -878,7 +1008,8 @@
             <li>K. Schilder, <em>Christ Crucified.</em></li>
             <li>Otto Zoeokler, <em>The Cross of Christ.</em> (1877)</li>
             <li>W. M. Clow, <em>The Day of the Cross.</em></li>
-            <li>James Denney, <em>The Death of Christ: Its Place and Interpretation in the New Testament.</em> (1902)</li>
+            <li>James Denney, <em>The Death of Christ: Its Place and Interpretation in the New Testament.</em> (1902)
+            </li>
             <li>George Smeaton, <em>The Doctrine of the Atonement as Taught by Christ Himself.</em></li>
             <li>George Smeaton, <em>The Doctrine of the Atonement as Taught by the Apostles.</em></li>
             <li>B. B. Warfield, <em>The Lord of Glory.</em></li>
@@ -945,7 +1076,7 @@
             <li>W. G. Scroggie, <em>Luke and John.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="luke-nt">LUKE（路加福音）：</h5>
         <ol>
             <li>Alfred Plummer, <em>Luke in the International Critical Commentary.</em></li>
@@ -953,20 +1084,23 @@
             <li>W. M. Ramsey, <em>Luke, the Physician.</em></li>
             <li>F. Godet, <em>Commentary on Luke.</em></li>
             <li>C. A. Coates, <em>An Outline of Luke’s Gospel.</em></li>
-            <li>J. N. Geldenhuys, <em>Commentary on the Gospel of Luke, In Eerdmans New International Commentary of the New Testament.</em></li>
+            <li>J. N. Geldenhuys, <em>Commentary on the Gospel of Luke, In Eerdmans New International Commentary of the
+                    New Testament.</em></li>
             <li>A. T. Robertson, <em>Luke the Historian in the Light of Research.</em></li>
             <li>W. H. G. Thomas, <em>Outline Studies in the Gospel of Luke.</em></li>
             <li>William Kirk Hobart, <em>The Medical Language of St. Luke.</em></li>
             <li>Adolf Harnack, <em>Luke the Physician.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="john-nt">JOHN（约翰福音）：</h5>
         <ol>
             <li>B. F. Westcott, <em>The Gospel According to St. John.</em></li>
             <li>William Milligan &amp; William F. Moulton, <em>The Gospel of John.</em></li>
-            <li>R. C. H. Lenski, <em>An Interpretation of St. John’s Gospel in Lenski’s Series.</em> (the best in series)</li>
-            <li>William Hendricksen, <em>The New Testament Commentary Exposition of the Gospel according to John.</em></li>
+            <li>R. C. H. Lenski, <em>An Interpretation of St. John’s Gospel in Lenski’s Series.</em> (the best in
+                series)</li>
+            <li>William Hendricksen, <em>The New Testament Commentary Exposition of the Gospel according to John.</em>
+            </li>
             <li>J. Ritchie Smith, <em>The Teaching of the Gospel of John.</em></li>
             <li>F. Godet, <em>The Gospel of John.</em></li>
             <li>George Hutcheson, <em>An Exposition of the Gospel According to John.</em></li>
@@ -991,7 +1125,7 @@
             <li>A. F. Godet, <em>Additional Notes on John’s Gospel.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="acts-nt">THE ACTS OF THE APOSTLES（使徒行傳）</h5>
         <ol>
             <li>F. F. Bruce, <em>The Acts of the Apostles.</em> （《使徒行傳》，浸信出版社）</li>
@@ -1053,7 +1187,8 @@
             <li>M. Lloyd-Jones, <em>Romans.</em>(6 vols.)</li>
             <li>H. C. G. Moule, <em>The Epistle to the Romans.</em></li>
             <li>R. C. Stedman, <em>From Guilt to Glory.</em> (2 vols.)</li>
-            <li>William Sanday &amp; Bishop Arthur C. Headlam, <em>Romans in the International Critical Commentary.</em></li>
+            <li>William Sanday &amp; Bishop Arthur C. Headlam, <em>Romans in the International Critical Commentary.</em>
+            </li>
             <li>H. P. Liddon, <em>The Explanatory Analysis of St. Paul’s Epistle to the Romans.</em></li>
             <li>Charles J. Ellicott, <em>Commentary on St. Paul’s Epistles.</em></li>
             <li>Robert Govett, <em>Govett on Romans.</em></li>
@@ -1086,7 +1221,8 @@
             <li>R. Haldane, <em>Exposition of the Epistle to the Romans.</em></li>
             <li>J. G. Hoare, <em>Righteousness and Life.</em></li>
             <li>W. Kelly, <em>Notes on Romans.</em></li>
-            <li>J. B. Lightfoot, <em>Notes on the Epistles of St. Paul; Article on “Romans” in Smith’s Dictionary of the Bible.</em></li>
+            <li>J. B. Lightfoot, <em>Notes on the Epistles of St. Paul; Article on “Romans” in Smith’s Dictionary of the
+                    Bible.</em></li>
             <li>H. C. Mabie, <em>The Divine Reason of the Cross, Ch. VII.</em></li>
             <li>A. Maclaren, <em>Expositions of Holy Scripture: The Epistle to the Romans.</em></li>
             <li>P. Mauro, <em>The “Wretched Man” and his Deliverance.</em></li>
@@ -1095,7 +1231,8 @@
             <li>C. Neil, <em>The Expositor’s Commentary: Romans.</em></li>
             <li>W. R. Newell, <em>Bible Class Lessons on Romans.</em></li>
             <li>F. A. Philippi, <em>Commentary on the Romans, Vols. I . and II .</em></li>
-            <li>M. Rainsford, <em>Lectures on Romans V; Lectures on Romans VI; Lectures on Romans VII; No Condemnation-No Separation; Lectures on Romans VIII.</em></li>
+            <li>M. Rainsford, <em>Lectures on Romans V; Lectures on Romans VI; Lectures on Romans VII; No
+                    Condemnation-No Separation; Lectures on Romans VIII.</em></li>
             <li>W. G. Rutherford, <em>St. Paul’s Epistle to the Romans.</em></li>
             <li>A. Sabatier, <em>The Apostle Paul.</em></li>
             <li>W. Sanday, <em>Cassell’s Commentary for Schools: Romans.</em></li>
@@ -1125,7 +1262,7 @@
             <li>R. L. Thomas, <em>Understanding Spiritual Gifts.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="galatians-nt">GALATIANS（加拉太書）：</h5>
         <ol>
             <li>Robert Govett, <em>Govett on Galatians.</em></li>
@@ -1137,7 +1274,7 @@
             <li>J. R. W. Stott, <em>The Message of Galatians.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="ephesians-nt">EPHESIANS（以弗所書）：</h5>
         <ol>
             <li>H. C. G. Moule, <em>Ephesian Studies.</em></li>
@@ -1150,7 +1287,8 @@
             <li>F. F. Bruce, <em>The Epistle to the Ephesians.</em></li>
             <li>F. B. Meyer, <em>The Heavenly.</em></li>
             <li>B. F. Westcott, <em>St. Paul’s Epistle to the Ephesians.</em></li>
-            <li>J. A. Beet, <em>A Commentary on St. Paul’s Epistles to the Ephesians, Philippians, Colossians, and to Philemon.</em></li>
+            <li>J. A. Beet, <em>A Commentary on St. Paul’s Epistles to the Ephesians, Philippians, Colossians, and to
+                    Philemon.</em></li>
             <li>Ruth Paxson, <em>The Wealth, Walk and Warfare of the Christian.</em></li>
             <li>F. L. Godet, <em>Commentary on Ephesiams.</em></li>
         </ol>
@@ -1236,7 +1374,8 @@
             <li>F. Delitzsch, <em>Commentary to the Hebrews Translation from the German Text.</em></li>
             <li>Andrew Murray, <em>The Holiest of All.</em> (《至聖所》，中華神學院旅港校友會)</li>
             <li>F. F. Bruce, <em>Commentary on the Epistle to the Hebrews.</em> (1964)</li>
-            <li>John Owen, <em>The Exposition of the Epistle to the Hebrews with Preliminary Exercitations.</em> (7 vols, 4000 pages)</li>
+            <li>John Owen, <em>The Exposition of the Epistle to the Hebrews with Preliminary Exercitations.</em> (7
+                vols, 4000 pages)</li>
             <li>G. C. Morgan, <em>God’s Last Word to Man.</em></li>
             <li>A. W. Pink, <em>An Exposition of Hebrews.</em></li>
             <li>W. H. Griffith Thomas, <em>Hebrews: A Devotional Commentary.</em></li>
@@ -1264,8 +1403,13 @@
 
         <h5 id="peter-nt">I、II PETER（彼得書信）：</h5>
         <ol>
-            <li>John Brown, <em>Expository Discourses on I Peter.</em></li>
-            <li>Robert Leighton, <em>Commentary upon I Peter.</em></li>
+            <li>John Brown (1784-1858), <em>Expository Discourses on I Peter.</em><a
+                    href="https://archive.org/details/expositorydiscou00browuoft/page/n5/mode/2up">[Archive]</a></li>
+            <li>Robert Leighton (1611-1684), <em>Commentary upon I Peter.</em><a
+                    href="https://archive.org/details/1864practicalcom01leiguoft/mode/2up">[Archive vol. 1],
+                </a><a href="https://archive.org/details/1864practicalcom02leiguoft/page/n7/mode/2up">[Archive vol.
+                    2]</a>
+            </li>
             <li>John Brown, <em>Parting Counsels; An Exposition of II Peter.</em></li>
             <li>F. B. Meyer, <em>Tried by Fire.</em></li>
             <li>A. M. Stibbs, <em>The First Epistle of Peter.</em></li>
@@ -1300,11 +1444,13 @@
             <li>G. L. Lawlor, <em>Translation and Exposition of the Epistle of Jude.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h5 id="revelation-nt">REVELATION（啟示錄）：</h5>
         <ol>
-            <li>J. A. Seiss, <em>The Apocalypse, A Series of Special Lectures on the Revelation of Jesus Christ.</em></li>
-            <li>R. F. Weidner, <em>Annotations on the Revelation of St. John the Divine in the Lutheran Commentary Series.</em></li>
+            <li>J. A. Seiss, <em>The Apocalypse, A Series of Special Lectures on the Revelation of Jesus Christ.</em>
+            </li>
+            <li>R. F. Weidner, <em>Annotations on the Revelation of St. John the Divine in the Lutheran Commentary
+                    Series.</em></li>
             <li>Henry Barclay Swete, <em>The Apocalypse of St. John.</em></li>
             <li>Robert Govett, <em>Lectures on the Apocalypse.</em></li>
             <li>Walter Scott, <em>Exposition of the Revelation of Jesus Christ.</em></li>
@@ -1318,7 +1464,8 @@
             <li>G. E. Ladd, <em>The Blessed Hope.</em></li>
             <li>G. H. Lang, <em>The Revelation of Jesus Christ.</em></li>
             <li><em>Pember on Prophecies.</em> (vol. 1-4)</li>
-            <li>Carl August Auberlen, <em>The Prophecies of Daniel and the Revelation of St. John, Viewed in Thier Mutual Relation.</em></li>
+            <li>Carl August Auberlen, <em>The Prophecies of Daniel and the Revelation of St. John, Viewed in Thier
+                    Mutual Relation.</em></li>
             <li>William Kelly, <em>Lectures on the Book of Revelation.</em></li>
             <li>G. E. Ladd, <em>Commentary on the Revelation of John.</em></li>
             <li>F. A. Tatford, <em>Prophecy’s Last Word.</em></li>
@@ -1357,20 +1504,37 @@
             <li>F. W. Grant, <em>History of the Church.</em></li>
             <li>Joseph Tanner, <em>Daniel and the Revelation.</em></li>
             <li>Sir William Whitla, <em>Sir Isaac Newtons’ Daniel and the Apocalypse.</em></li>
-            <li>E. B. Elliott, <em>Horae Apocalyptic, A Commentary on the Apocalypse, Critical &amp; Hisorical.</em></li>
+            <li>E. B. Elliott, <em>Horae Apocalyptic, A Commentary on the Apocalypse, Critical &amp; Hisorical.</em>
+            </li>
         </ol>
         <p class="back-to-top"><a href="#part1-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
 
         <h3 id="part-ii-christian-faith">第二部分 福音真理叢書 (PART II CHRISTIAN FAITH)</h3>
-        
+
         <table class="nav-table" id="part2-nav-table">
             <tbody>
-                <tr><td colspan="3" class="full-row-header"><a href="#general-books-on-gospel-truth">General Books on Gospel Truth (一般福音真理)</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#person-and-work-of-christ">Person and Work of Christ（基督的身位與工作）</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#salvation-and-sanctification">Salvation and Sanctification (救恩與成聖)</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#person-and-work-of-the-holy-spirit">Person and Work of The Holy SPIRIT（聖靈的身位與工作）</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#last-things">Last Things (末期的事)</a></td></tr>
-                <tr><td colspan="3" class="full-row-header"><a href="#prophecy">Prophecy（預言）</a></td></tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#general-books-on-gospel-truth">General Books on
+                            Gospel Truth (一般福音真理)</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#person-and-work-of-christ">Person and Work of
+                            Christ（基督的身位與工作）</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#salvation-and-sanctification">Salvation and
+                            Sanctification (救恩與成聖)</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#person-and-work-of-the-holy-spirit">Person and
+                            Work of The Holy SPIRIT（聖靈的身位與工作）</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#last-things">Last Things (末期的事)</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="full-row-header"><a href="#prophecy">Prophecy（預言）</a></td>
+                </tr>
             </tbody>
         </table>
 
@@ -1605,8 +1769,10 @@
             <li>Thomas S. McCall &amp; Zola Levitt, <em>The Coming Russian Invasion of Israel</em> (updated).</li>
             <li>G. H. Lang <em>The Histories and Prophecies of Daniel.</em></li>
             <li>Walter K. Price, <em>In The Final Days.</em></li>
-            <li>G. H. Pember, <em>The Great Prophecies Concerning The Gentiles, The Jews, and the Church Of God.</em> (vol.1).</li>
-            <li>G. H. Pember, <em>The Great Prophecies of The Centuries Concerning Israel and The Gentiles</em> (vol.2).</li>
+            <li>G. H. Pember, <em>The Great Prophecies Concerning The Gentiles, The Jews, and the Church Of God.</em>
+                (vol.1).</li>
+            <li>G. H. Pember, <em>The Great Prophecies of The Centuries Concerning Israel and The Gentiles</em> (vol.2).
+            </li>
             <li>G. H. Pember, <em>The Church, The Churches, and The Mysteries</em> (vol.3).</li>
             <li>G. H. Pember, <em>The Great Prophecies Of The Centuries Concerning The Church</em> (vol.4).</li>
             <li>Dr. Kenneth Gentry, <em>The Beast of Revelation 666.</em></li>
@@ -1631,7 +1797,7 @@
         <p class="back-to-top"><a href="#part2-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
 
         <h3 id="part-iii-christian-life">第三部分 屬靈生命叢書 (PART III CHRISTIAN LIFE)</h3>
-        
+
         <table class="nav-table" id="part3-nav-table">
             <tbody>
                 <tr>
@@ -1729,7 +1895,7 @@
                     <td><a href="#john-wesley">John Wesley</a></td>
                     <td><a href="#charles-finney">Charles Finney</a></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td><a href="#william-booth">William Booth</a></td>
                     <td><a href="#eusebius">Eusebius</a></td>
                     <td><a href="#fenelon">Fenelon</a></td>
@@ -2027,7 +2193,7 @@
             <li><em>Chirst, the Sum of All Spiritual Things.</em></li>
             <li><em>“Come, Lord Jesus”.</em></li>
             <li><em>The Church and The Work-3 vol. set.</em>
-                 <ol>
+                <ol>
                     <li>Assembly Life.</li>
                     <li>Rethinking the Work.</li>
                     <li>Church Affairs.</li>
@@ -2218,7 +2384,7 @@
             <li><em>The Letters of Samuel Rutherford.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part3-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="ab-simpson">A.B.Simpson（宣信）</h4>
         <ol>
             <li><em>But God.</em></li>
@@ -2312,7 +2478,7 @@
             <li><em>I Clement.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part3-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="ignatius">Ignatius of Antioch (35-107 A.D.)</h4>
         <ol>
             <li><em>Letter of the Church.</em></li>
@@ -2355,7 +2521,7 @@
             <li><em>The Councs.</em></li>
         </ol>
         <p class="back-to-top"><a href="#part3-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="thomas-aquinas">Thomas Aquinas (1225-1274 A.D.)</h4>
         <ol>
             <li><em>Suma Theologiae.</em></li>
@@ -2440,7 +2606,7 @@
             <li><em>Let Go.</em> (《前進》，橄欖)</li>
         </ol>
         <p class="back-to-top"><a href="#part3-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
-        
+
         <h4 id="jd-pentecost">J. D. Pentecost</h4>
         <ol>
             <li><em>Design for Discipleship.</em></li>
@@ -2515,35 +2681,47 @@
         <p class="back-to-top"><a href="#part3-nav-table">返回本節導航</a> | <a href="#toc">返回总導航</a></p>
 
         <h3 id="part-iv-biographical-books">第四部分 名人傳記叢書 (PART IV BIOGRAPHICAL BOOKS)</h3>
-        
+
         <h4 id="subject-and-author">Subject(傳記人物) &amp; Title/Author(書名及作者)</h4>
         <ol>
-            <li><strong>Alexander, Charles M.</strong> - <em>A Romance of Song and Soul-Winning</em>, by Helen C. Alexander</li>
-            <li><strong>Anderson, Sir Robert</strong> - <em>Sir Robert Anderson and Lady Agnes Anderson</em>, by A. P. Moore-Anderson</li>
+            <li><strong>Alexander, Charles M.</strong> - <em>A Romance of Song and Soul-Winning</em>, by Helen C.
+                Alexander</li>
+            <li><strong>Anderson, Sir Robert</strong> - <em>Sir Robert Anderson and Lady Agnes Anderson</em>, by A. P.
+                Moore-Anderson</li>
             <li><strong>Andrew, Brother</strong> - <em>God’s Smuggler</em></li>
             <li><strong>Aquinas, Saint Thomas</strong> - <em>The Dumb Ox</em>, by C.K. Chesterton</li>
             <li><strong>Augustine, St.</strong> - <em>The Fathers for English Readers</em>, by Edward L. Cutts</li>
-            <li><strong>Bagster, Samuel</strong> - <em>Biographical Memoir</em>, by John Baillie; <em>Samuel Bagster of London 1772-1851</em></li>
+            <li><strong>Bagster, Samuel</strong> - <em>Biographical Memoir</em>, by John Baillie; <em>Samuel Bagster of
+                    London 1772-1851</em></li>
             <li><strong>Barnardo, Doctor</strong> - <em>Physician, Pioneer, Prophet</em>, by J. Wesley Bready</li>
             <li><strong>Baxter, Richard</strong> - <em>Richard Baxter</em>, by G.D. Boyle.</li>
             <li><strong>Beecher, Henry Ward</strong> - <em>Henry Ward Beecher</em>, by Lyman Abbott</li>
             <li><strong>Bennett, Dennis J.</strong> - <em>Nine O’Clock in the Morning</em></li>
-            <li><strong>Bentley-Taylor, David</strong> - <em>The Prisoner Leaps, A Dairy of Missionary Life in Java</em></li>
-            <li><strong>Bernard, Saint</strong> - <em>The Life and Times of Saint Bernard, Abbot of Clairvaux</em>, by James Cotter Morison</li>
+            <li><strong>Bentley-Taylor, David</strong> - <em>The Prisoner Leaps, A Dairy of Missionary Life in Java</em>
+            </li>
+            <li><strong>Bernard, Saint</strong> - <em>The Life and Times of Saint Bernard, Abbot of Clairvaux</em>, by
+                James Cotter Morison</li>
             <li><strong>Boehme, Jacob</strong> - <em>Studies in His Life and Teaching</em>, by Hans L. Martensen</li>
             <li><strong>Bonar, Andrew</strong> - <em>Diary and Life</em></li>
             <li><strong>Bonhoeffer, Dietrich</strong> - <em>The Life and Death</em>, by Mary Bosanquet</li>
             <li><strong>Booth, Mary Warburton</strong> - <em>My Testimony</em></li>
-            <li><strong>Booth, William</strong> - <em>Life of the Founder of the Salvation Army</em>, by Harold Begbie</li>
-            <li><strong>Brainerd, David</strong> - <em>Flagellant on Horseback</em>, by Richard Ellsworth Day; <em>Personal Testimony</em>, by Walter Searle; <em>Life and Diary of David Brainerd</em>, by Johnathan Edwards</li>
+            <li><strong>Booth, William</strong> - <em>Life of the Founder of the Salvation Army</em>, by Harold Begbie
+            </li>
+            <li><strong>Brainerd, David</strong> - <em>Flagellant on Horseback</em>, by Richard Ellsworth Day;
+                <em>Personal Testimony</em>, by Walter Searle; <em>Life and Diary of David Brainerd</em>, by Johnathan
+                Edwards
+            </li>
             <li><strong>Bray, Billy</strong> - <em>The King’s Son</em>, by F. W. Bourne</li>
             <li><strong>Broadbent, Edmund Saint and Pioneer</strong>, by G.H. Lang Homer</li>
             <li><strong>Brown, John</strong> - <em>John Brown of Haddington</em>, by Robert Mackenzie</li>
             <li><strong>Bruce Robert</strong> - <em>Minister in the Kirk of Edinburgh</em>, by D.C.Macnicol</li>
-            <li><strong>Bunyan, John</strong> - <em>Story of His Life</em>, by Frank Mott Harrison; <em>So Pilgrim Rang The Bells</em>, by Richard E. Day</li>
-            <li><strong>Calvin, John</strong> - <em>Genius of Geneva: A Popular Account of the Life and Times of John Calvin</em>, by L. Penning; <em>The Life of John Calvin</em>, by Albert Hyma</li>
+            <li><strong>Bunyan, John</strong> - <em>Story of His Life</em>, by Frank Mott Harrison; <em>So Pilgrim Rang
+                    The Bells</em>, by Richard E. Day</li>
+            <li><strong>Calvin, John</strong> - <em>Genius of Geneva: A Popular Account of the Life and Times of John
+                    Calvin</em>, by L. Penning; <em>The Life of John Calvin</em>, by Albert Hyma</li>
             <li><strong>Carey, William</strong> - <em>Missionary Pioneer and Statesman</em>, by F. Deaville Walker</li>
-            <li><strong>Carmichael, Amy</strong> - <em>God’s Madcap</em>, by Nancy E. Robbins; <em>Amy Carmichael of Donavur, The Story of a Lover and Her Beloved</em>, by Frank Houghton</li>
+            <li><strong>Carmichael, Amy</strong> - <em>God’s Madcap</em>, by Nancy E. Robbins; <em>Amy Carmichael of
+                    Donavur, The Story of a Lover and Her Beloved</em>, by Frank Houghton</li>
             <li><strong>Chalmers, James</strong> - <em>His Autobiography and Letters</em></li>
             <li><strong>Chambers, Oswald</strong> - <em>His Life and Work</em>, by Disdale Young</li>
             <li><strong>Chapman, Robert Cleaver</strong> - <em>Brother Indeed</em>, by Frank Holmes</li>
@@ -2557,33 +2735,49 @@
             <li><strong>Darby, John Nelson</strong> - <em>John Nelson Darby</em>, by W. G. Turner</li>
             <li><strong>David, Brother</strong> - <em>God’s Smuggler To China</em></li>
             <li><strong>Drysdale, J.D.</strong> - <em>Prophet of Holiness</em></li>
-            <li><strong>Edwards, Johnathan</strong> - <em>On Evangelism</em>, by Carl Wolf; <em>A New Biography</em>, by Iain H. Murray</li>
-            <li><strong>Elliot, Jim</strong> - <em>Shadow of the Almighty, Life and Testament of Jim Elliot</em>, by Elisabeth Elliot</li>
+            <li><strong>Edwards, Johnathan</strong> - <em>On Evangelism</em>, by Carl Wolf; <em>A New Biography</em>, by
+                Iain H. Murray</li>
+            <li><strong>Elliot, Jim</strong> - <em>Shadow of the Almighty, Life and Testament of Jim Elliot</em>, by
+                Elisabeth Elliot</li>
             <li><strong>Erasmus</strong> - <em>Life and Letters of Erasmus</em>, by James Anthony Froude</li>
             <li><strong>Eva, Sister</strong> - <em>A Servant of others, For Chirst’s Sake</em>, by Sister Annie</li>
             <li><strong>Evans, Eifion</strong> - <em>Two Welch Revivalists</em></li>
             <li><strong>Farel, William</strong> - <em>The Life of William Farel</em>, by Frances Bevan</li>
             <li><strong>Fenelon</strong> - <em>Fenelon: The Mystic</em>, by James Mudge</li>
-            <li><strong>Finney, Charles G.</strong> - <em>The Life of Charles Finney</em>; <em>Memoirs of Charles Finney</em>; <em>Men of Like Passions, A Dramatic Biography</em>, by Richard E. Day; <em>Finney Lives On</em>, by V. R. Edman</li>
-            <li><strong>Fletcher, Lionel B.</strong> - <em>Mighty Moments</em>; <em>Twelve Hours in the Day</em>, by Charles W. Malcolm</li>
+            <li><strong>Finney, Charles G.</strong> - <em>The Life of Charles Finney</em>; <em>Memoirs of Charles
+                    Finney</em>; <em>Men of Like Passions, A Dramatic Biography</em>, by Richard E. Day; <em>Finney
+                    Lives On</em>, by V. R. Edman</li>
+            <li><strong>Fletcher, Lionel B.</strong> - <em>Mighty Moments</em>; <em>Twelve Hours in the Day</em>, by
+                Charles W. Malcolm</li>
             <li><strong>Fox, George</strong> - <em>Autobiography, From His Journal</em></li>
             <li><strong>Francis, Saint</strong> - <em>Life of St. Francis of Assisi</em>, by Paul Sabatier</li>
-            <li><strong>Fraser, J. O.</strong> - <em>Behind the Ranges: Biog of J.O. Fraser of Lisuland, Southwest China</em>, by Mrs. Howard Taylor</li>
-            <li><strong>Fry, Elizabeth</strong> - <em>Memoirs of Her life With Extracts From Her Journal and Letters</em> (Vol I and Vol II)</li>
+            <li><strong>Fraser, J. O.</strong> - <em>Behind the Ranges: Biog of J.O. Fraser of Lisuland, Southwest
+                    China</em>, by Mrs. Howard Taylor</li>
+            <li><strong>Fry, Elizabeth</strong> - <em>Memoirs of Her life With Extracts From Her Journal and
+                    Letters</em> (Vol I and Vol II)</li>
             <li><strong>Gairdner, Temple</strong> - <em>Temple Gairdner of Cairo</em>, by Constance E. Padwick</li>
             <li><strong>Goforth, Johnathan</strong> - <em>Coforth of China</em>, by Rosalind Goforth</li>
             <li><strong>Goforth, Rosalind</strong> - <em>Memories of a Missionaries Wife</em></li>
-            <li><strong>Gordon, A. J., D. D.</strong> - <em>His Story</em>, by Ernest B. Gordon; <em>How Christ Comes To Church: The Pastors Dream</em></li>
+            <li><strong>Gordon, A. J., D. D.</strong> - <em>His Story</em>, by Ernest B. Gordon; <em>How Christ Comes To
+                    Church: The Pastors Dream</em></li>
             <li><strong>Goodman, George</strong> - <em>The Spiritual Legacy</em>, by Percy Ruoff</li>
-            <li><strong>Graham, Billy</strong> - <em>The Personal Story of the Man, His Message and His Mission</em>, by Stanley High; <em>Why Billy Graham</em>, by David Poling</li>
+            <li><strong>Graham, Billy</strong> - <em>The Personal Story of the Man, His Message and His Mission</em>, by
+                Stanley High; <em>Why Billy Graham</em>, by David Poling</li>
             <li><strong>Grebel, Bonrad</strong> - <em>Son of Zurich</em>, by John L. Ruth</li>
-            <li><strong>Groves, Anthony Norris</strong> - <em>Saint and Pioneer, A Combined Study of a Man of God and of the Original Principles and Practices of the Brethern With Appoications To Present Conditions</em>, by G. H. Lang</li>
+            <li><strong>Groves, Anthony Norris</strong> - <em>Saint and Pioneer, A Combined Study of a Man of God and of
+                    the Original Principles and Practices of the Brethern With Appoications To Present Conditions</em>,
+                by G. H. Lang</li>
             <li><strong>Grubb, Norman</strong> - <em>Once Caught No Escape: My life Story</em></li>
-            <li><strong>Guyon, Madame</strong> - <em>Her Autobiography</em>; <em>The Life Of</em>, by T. C. Upham; <em>Another Autobiography</em>; <em>The Spiritual Adventure</em></li>
-            <li><strong>Haire, Thomas</strong> - <em>The Praying Plumber of Lisburn, A Sketch of God’s Dealings with Thomas Haire</em>, by A. W. Tozer</li>
-            <li><strong>Herron, Wally</strong> - <em>The Condor of the Jungle</em>, by C. Peter Wagner and Joseph McCullough</li>
+            <li><strong>Guyon, Madame</strong> - <em>Her Autobiography</em>; <em>The Life Of</em>, by T. C. Upham;
+                <em>Another Autobiography</em>; <em>The Spiritual Adventure</em>
+            </li>
+            <li><strong>Haire, Thomas</strong> - <em>The Praying Plumber of Lisburn, A Sketch of God’s Dealings with
+                    Thomas Haire</em>, by A. W. Tozer</li>
+            <li><strong>Herron, Wally</strong> - <em>The Condor of the Jungle</em>, by C. Peter Wagner and Joseph
+                McCullough</li>
             <li><strong>Hession, Roy</strong> - <em>My Calvary Road</em></li>
-            <li><strong>Hopkins, Evan Henry</strong> - <em>A Memoir</em>, by Alexander Smellie; <em>The Intercessor</em>; <em>The Intercession of Rees Howel</em>, by Doris M. Ruscoe</li>
+            <li><strong>Hopkins, Evan Henry</strong> - <em>A Memoir</em>, by Alexander Smellie; <em>The
+                    Intercessor</em>; <em>The Intercession of Rees Howel</em>, by Doris M. Ruscoe</li>
             <li><strong>Howells, Rees</strong> - <em>Confucian Scholar and Christian</em>, by Mrs. Howard Taylor</li>
             <li><strong>Hsi, Pastor</strong></li>
             <li><strong>Ironside, H. A.</strong> - <em>Ordained of the Lord</em>, by E. Schuyer English</li>
@@ -2592,17 +2786,28 @@
             <li><strong>Jones, E. Stanely</strong> - <em>A Song of Ascents</em></li>
             <li><strong>Judson, Andonirm</strong> - <em>The Earnest Man</em>, by H.C. conant</li>
             <li><strong>Kagawa of Japan</strong> - <em>Saint in the Slums</em>, by Cyril Davey</li>
-            <li><strong>Kempis, Thomas A.</strong> - <em>Memories in the Life and Las Days</em>, by Heyman Wreford; <em>Thomas A. Kempis</em>, by F. R. Cruise</li>
-            <li><strong>Knox, John</strong> - <em>Life of John Knox (Containing illustrations of the history of the reformation in Scotland)</em>, by Thomas M’Crie; <em>John Knox</em>, by Jasper Ridley</li>
-            <li><strong>Kuhn, Isobel</strong> - <em>By Searching One Vision</em>, by Carolyn L. Cranfield; <em>Green Leaf In Drought Time (Story of escape of the last C.I. M. missionaries from communist China)</em></li>
+            <li><strong>Kempis, Thomas A.</strong> - <em>Memories in the Life and Las Days</em>, by Heyman Wreford;
+                <em>Thomas A. Kempis</em>, by F. R. Cruise
+            </li>
+            <li><strong>Knox, John</strong> - <em>Life of John Knox (Containing illustrations of the history of the
+                    reformation in Scotland)</em>, by Thomas M’Crie; <em>John Knox</em>, by Jasper Ridley</li>
+            <li><strong>Kuhn, Isobel</strong> - <em>By Searching One Vision</em>, by Carolyn L. Cranfield; <em>Green
+                    Leaf In Drought Time (Story of escape of the last C.I. M. missionaries from communist China)</em>
+            </li>
             <li><strong>Lamie, Thomas</strong> - <em>A Doctor’s Great Commission</em></li>
             <li><strong>Lang, G. H.</strong> - <em>An Ordered Life</em></li>
             <li><strong>Law, William</strong> - <em>His Life and Word</em>, by A. K. Walker</li>
             <li><strong>Lewis, C. S.</strong> - <em>Surprised By Joy: The Shape of My Early Life</em></li>
-            <li><strong>Lloyd-Jones, D. Martyn</strong> - <em>The First Forty Years: 1899-1939</em>, by Iain H. Murray</li>
-            <li><strong>Livingstone, David</strong> - <em>The Personal Life</em>, by W. Garden Blaikie; <em>Trail Maker</em>, by Robert Latham; <em>Explorer Missionary</em>, by Basil Miller; <em>His Life and Letters</em>, by George Seaver; <em>The Life of David Livingstone</em>, by Mrs. J. H. Worcester,Jr.</li>
-            <li><strong>Luther, Martin</strong> - <em>Martin Luther</em>, by John Dillenburger; <em>Life and Times of</em>, by D'Aubigne; <em>Last Days of Luther</em></li>
-            <li><strong>McCheyne, Robert M.</strong> - <em>Memories of McCheyne (Including Letters and Messages)</em>, by Andrew A. Bonar (Part I and Part II)</li>
+            <li><strong>Lloyd-Jones, D. Martyn</strong> - <em>The First Forty Years: 1899-1939</em>, by Iain H. Murray
+            </li>
+            <li><strong>Livingstone, David</strong> - <em>The Personal Life</em>, by W. Garden Blaikie; <em>Trail
+                    Maker</em>, by Robert Latham; <em>Explorer Missionary</em>, by Basil Miller; <em>His Life and
+                    Letters</em>, by George Seaver; <em>The Life of David Livingstone</em>, by Mrs. J. H. Worcester,Jr.
+            </li>
+            <li><strong>Luther, Martin</strong> - <em>Martin Luther</em>, by John Dillenburger; <em>Life and Times
+                    of</em>, by D'Aubigne; <em>Last Days of Luther</em></li>
+            <li><strong>McCheyne, Robert M.</strong> - <em>Memories of McCheyne (Including Letters and Messages)</em>,
+                by Andrew A. Bonar (Part I and Part II)</li>
             <li><strong>McNair, Stuary E.</strong> - <em>Some Reminiscences</em></li>
             <li><strong>McQuilkin, Robert C.</strong> - <em>Always in Triumph</em>, by Marguerite McQuilkin</li>
             <li><strong>MacKay, Alexander</strong> - <em>Wizard of the Great Lake</em>, by Donald McFarlam</li>
@@ -2617,10 +2822,15 @@
             <li><strong>Molinos, Michael</strong> - <em>The Spiritual Guide</em></li>
             <li><strong>Monsen, Marie</strong> - <em>A Present Help</em></li>
             <li><strong>Moody, D. L.</strong> - <em>Life of D. L. Moody</em>, by A. P. Fitt</li>
-            <li><strong>Morgan, G. Campbell</strong> - <em>Life of</em>, by Jill Morgan; <em>The Man and His Ministry</em>, by John Harries</li>
-            <li><strong>Moule, Handley Carr</strong> - <em>Bishop Moule of Durham</em>, by John B. Harford and Frederick MacDonald</li>
-            <li><strong>Muller, George</strong> - <em>A Million and A Half In Answer To Prayer</em>, Compiled by Arthur Pierson; <em>The Dairy of Gorge Muller</em>, by A. Rendue Short; <em>The Modern Apostle of Faith</em>, by Frederick Warne; <em>George Muller of Bristoll</em>, by Pierson</li>
-            <li><strong>Nee, Watchman</strong> - <em>Against the Tide</em>, by Angus I. Kenniar; <em>Meet Brother Nee</em>, by James Chen; <em>Watchman Nee’s Testimony</em>, compiled by K. H. Weigh</li>
+            <li><strong>Morgan, G. Campbell</strong> - <em>Life of</em>, by Jill Morgan; <em>The Man and His
+                    Ministry</em>, by John Harries</li>
+            <li><strong>Moule, Handley Carr</strong> - <em>Bishop Moule of Durham</em>, by John B. Harford and Frederick
+                MacDonald</li>
+            <li><strong>Muller, George</strong> - <em>A Million and A Half In Answer To Prayer</em>, Compiled by Arthur
+                Pierson; <em>The Dairy of Gorge Muller</em>, by A. Rendue Short; <em>The Modern Apostle of Faith</em>,
+                by Frederick Warne; <em>George Muller of Bristoll</em>, by Pierson</li>
+            <li><strong>Nee, Watchman</strong> - <em>Against the Tide</em>, by Angus I. Kenniar; <em>Meet Brother
+                    Nee</em>, by James Chen; <em>Watchman Nee’s Testimony</em>, compiled by K. H. Weigh</li>
             <li><strong>Newton, John</strong> - <em>Autobiography and Narrative</em>, compiled by Josiah Bull</li>
             <li><strong>Niemoller, Martin</strong> - <em>Here Stand I</em></li>
             <li><strong>Noble, John</strong> - <em>I Found God in Soviet Russia</em></li>
@@ -2628,7 +2838,8 @@
             <li><strong>Ortiz, Juan Carlos</strong> - <em>Call to Discipleship</em></li>
             <li><strong>Paton, John G.</strong> - <em>Prophet of the Pacific</em>, by Margaret Kabell</li>
             <li><strong>Petterson, George N.</strong> - <em>A Fool At Forty</em></li>
-            <li><strong>Penn-Lewis, Jessie</strong> - <em>Mrs.Penn-Lewis, A Memoir</em>, by Mary N. Garrard; <em>In the Mold of the Cross</em>, by J.C. Metcalfe</li>
+            <li><strong>Penn-Lewis, Jessie</strong> - <em>Mrs.Penn-Lewis, A Memoir</em>, by Mary N. Garrard; <em>In the
+                    Mold of the Cross</em>, by J.C. Metcalfe</li>
             <li><strong>Pierson, Arthur T.</strong> - <em>Arthur Pierson</em>, by Delvan Pierson</li>
             <li><strong>Pilkington</strong> - <em>Pilkington of Uganda</em>, by Charles F. Harford-Battersby</li>
             <li><strong>Pink, A. W.</strong> - <em>Biography of A. W. Pink</em>, by Iain Murray</li>
@@ -2636,12 +2847,16 @@
             <li><strong>Roberts, Oral</strong> - <em>If You Need Healing, Do These Things</em></li>
             <li><strong>Rolle, Richard</strong> - <em>The Fire of Love</em></li>
             <li><strong>Roseveare, Helen</strong> - <em>Doctor Among Congo rebels</em></li>
-            <li><strong>Rutherford, Samuel</strong> - <em>The Letters Of</em>; <em>Samuel Rutherford and Some of His Correspondence</em>, by Alexander Whyte; <em>Samuel Rutherford</em> by Robert Gilmour; <em>Life of Samual Rutherford</em></li>
+            <li><strong>Rutherford, Samuel</strong> - <em>The Letters Of</em>; <em>Samuel Rutherford and Some of His
+                    Correspondence</em>, by Alexander Whyte; <em>Samuel Rutherford</em> by Robert Gilmour; <em>Life of
+                    Samual Rutherford</em></li>
             <li><strong>St. John, Harold</strong> - <em>A Portrait</em>, by Patricia St. John, his daughter</li>
-            <li><strong>Saint, Nate</strong> - <em>Jungle Pilot, The Life and Witness of Nate Saint</em>, by Russell Hitt</li>
+            <li><strong>Saint, Nate</strong> - <em>Jungle Pilot, The Life and Witness of Nate Saint</em>, by Russell
+                Hitt</li>
             <li><strong>Sangster, W. E.</strong> - <em>Sangster of Westminster</em></li>
             <li><strong>Saphie, Adolph</strong> - <em>Mighty in the Scriptures</em>, by Rev. Gavin Carlyle</li>
-            <li><strong>Sattler, Michael</strong> - <em>Pilgrim A Flame</em>, by Myron S. Augsburger; <em>Classics of the Radical Reformation</em>, translated and edited by John H. Yoder</li>
+            <li><strong>Sattler, Michael</strong> - <em>Pilgrim A Flame</em>, by Myron S. Augsburger; <em>Classics of
+                    the Radical Reformation</em>, translated and edited by John H. Yoder</li>
             <li><strong>Savonarola, Girolamo</strong> - <em>Savonarola</em>, by Goerge M’Hardy</li>
             <li><strong>Schaeffer, Edith</strong> - <em>L’Abri</em></li>
             <li><strong>Schaeffer, Francis A.</strong> - <em>Portraits of the Man and His Work</em></li>
@@ -2650,31 +2865,42 @@
             <li><strong>Schlink, Basilea</strong> - <em>I Found the Key to The Heart of God</em></li>
             <li><strong>Schnell, W. J.</strong> - <em>Thirsty Years: A Watchtower Slave</em></li>
             <li><strong>Simeon, Charles</strong> - <em>Simeon</em>, by H. C. G. Moule</li>
-            <li><strong>Simpson, Albert B.</strong> - <em>Wingspread: A Study in Spiritual Alititude</em>, by A. W. Tozer</li>
+            <li><strong>Simpson, Albert B.</strong> - <em>Wingspread: A Study in Spiritual Alititude</em>, by A. W.
+                Tozer</li>
             <li><strong>Singh, Bakht</strong> - <em>Bakht Singh of India-A Prophet of God</em>, by Daniel Smith</li>
-            <li><strong>Singh, Sunder</strong> - <em>Sundar Singh</em>, by A. J. Appasamy; <em>The Gospel of Sadhu Sundar Singh</em>, by Freiderick Heiler, Ph.D; <em>Sadhu Sundar Singh Called of God</em>, by Rebecca Parker</li>
+            <li><strong>Singh, Sunder</strong> - <em>Sundar Singh</em>, by A. J. Appasamy; <em>The Gospel of Sadhu
+                    Sundar Singh</em>, by Freiderick Heiler, Ph.D; <em>Sadhu Sundar Singh Called of God</em>, by Rebecca
+                Parker</li>
             <li><strong>Skinner, Tom</strong> - <em>Black and Free</em></li>
-            <li><strong>Slessor, Mary</strong> - <em>The White Queen-A True Story of Adventue, Heroism, and Faith</em>, by W. P. Livingstone</li>
+            <li><strong>Slessor, Mary</strong> - <em>The White Queen-A True Story of Adventue, Heroism, and Faith</em>,
+                by W. P. Livingstone</li>
             <li><strong>Smith, Oswald J.</strong> - <em>Story of My Life and the Peoples Church</em></li>
             <li><strong>Spear, Robert E.</strong> - <em>A Man Sent From God</em></li>
             <li><strong>Soltan, Henrietta</strong> - <em>A Woman Who Laughed</em>, by Mildred Cable</li>
             <li><strong>Soper, Annie</strong> - <em>Dawn Beyond the Andes</em>, by Phyllis Thompson</li>
-            <li><strong>Spurgeon, C. H.</strong> - <em>The Life and Labors of Pastor C.H. Spurgeon, From Usher’s Desk to the Tabernacle</em>, by Rev. R. Shindler</li>
-            <li><strong>Stam, John &amp; Betty</strong> - <em>The Triumph of John &amp; Betty Stam</em>, by Mrs. Howard Taylor</li>
-            <li><strong>Stewart, James Alexander</strong> - <em>I Must Tell</em>; <em>Life of James Stewart</em>, by James Wells</li>
+            <li><strong>Spurgeon, C. H.</strong> - <em>The Life and Labors of Pastor C.H. Spurgeon, From Usher’s Desk to
+                    the Tabernacle</em>, by Rev. R. Shindler</li>
+            <li><strong>Stam, John &amp; Betty</strong> - <em>The Triumph of John &amp; Betty Stam</em>, by Mrs. Howard
+                Taylor</li>
+            <li><strong>Stewart, James Alexander</strong> - <em>I Must Tell</em>; <em>Life of James Stewart</em>, by
+                James Wells</li>
             <li><strong>Strachan, R. Kenneth</strong> - <em>Who Shall Ascend</em>, by Elisabeth Elliot</li>
             <li><strong>Studd, C. T.</strong> - <em>Cricketer and Pioneer</em>, by Norman P. Grubb</li>
             <li><strong>Sunday, “Billy”</strong> - <em>The Man and His Message</em>, by William Ellis</li>
             <li><strong>Sung, John</strong> - <em>John Sung</em>, by Leslie Lyall</li>
             <li><strong>Swedenborg, Emanuel</strong> - <em>Life of Emanuel Swedenborg</em>, by George Trobridge</li>
             <li><strong>Suso, Henry</strong> - <em>Life of the Servant</em></li>
-            <li><strong>Tauler, John</strong> - <em>History and Life of Rev. Dr. John Tauler</em>, by Susannah Winkworth (includes 25 of his sermons)</li>
+            <li><strong>Tauler, John</strong> - <em>History and Life of Rev. Dr. John Tauler</em>, by Susannah Winkworth
+                (includes 25 of his sermons)</li>
             <li><strong>Taylor, Mrs. Howard</strong> - <em>Her Web of Time</em>, by Joy Guinness</li>
-            <li><strong>Taylor, Hudson</strong> - <em>Early Years and the Growth of a Soul</em>, by Dr. &amp; Mrs. Howard Taylor; <em>The China Inland Mission</em>, by Dr. &amp; Mrs. Howard Taylor; <em>Hudson and Maria: Pioneers in China</em>, by J. C. Pollock</li>
+            <li><strong>Taylor, Hudson</strong> - <em>Early Years and the Growth of a Soul</em>, by Dr. &amp; Mrs.
+                Howard Taylor; <em>The China Inland Mission</em>, by Dr. &amp; Mrs. Howard Taylor; <em>Hudson and Maria:
+                    Pioneers in China</em>, by J. C. Pollock</li>
             <li><strong>Ten Boom, Corrie</strong> - <em>In My Fathers House</em></li>
             <li><strong>Teresa, St. of Avila</strong> - <em>Interior Castle</em></li>
             <li><strong>Therese, St. Of Lisieux</strong> - <em>Autobiography</em></li>
-            <li><strong>Tozer, A.W.</strong> - <em>General Correspondence-1877-1890</em>; <em>Tozer-A 20th Century Prophet</em>, by David Fant</li>
+            <li><strong>Tozer, A.W.</strong> - <em>General Correspondence-1877-1890</em>; <em>Tozer-A 20th Century
+                    Prophet</em>, by David Fant</li>
             <li><strong>Trotterm Lilias</strong> - <em>The Love That Was Stronger</em>, by I. R. Govan Stewart</li>
             <li><strong>Tsai, Christian</strong> - <em>Queen of the Dark Chambers</em></li>
             <li><strong>Underhill, Evelyn</strong> - <em>Life of Evelyn Underhill</em>, by Margaret Cropper</li>
@@ -2686,8 +2912,12 @@
             <li><strong>Watson, J. B.</strong> - <em>Memoir and Selected Writings</em>, by Robert Handall</li>
             <li><strong>Webster-Smith, Irene</strong> - <em>Sensei</em>, by Russell T. Hitt</li>
             <li><strong>Wesley, Charles</strong> - <em>Revealed by His Letters</em>, by Frank Baker</li>
-            <li><strong>Wesley, John</strong> - <em>His Life and Theology</em>, by Robert G. Tuttle, Jr.; <em>The Journal of John Wesley</em>; <em>John Wesley</em>, by Stanley Ayling; <em>John Wesley</em>, by Basil Miller; <em>True Stories of God’s Servants</em>, by Frances Bevan; <em>John Wesley-Preacher</em>, by W. L. Doughty</li>
-            <li><strong>Whitefield, George</strong> - <em>Geo. Whitefield</em>, by Arnold Dallimore; <em>Memories of the Life of the Rev. Geo. Whitefield</em>, by John Gillies</li>
+            <li><strong>Wesley, John</strong> - <em>His Life and Theology</em>, by Robert G. Tuttle, Jr.; <em>The
+                    Journal of John Wesley</em>; <em>John Wesley</em>, by Stanley Ayling; <em>John Wesley</em>, by Basil
+                Miller; <em>True Stories of God’s Servants</em>, by Frances Bevan; <em>John Wesley-Preacher</em>, by W.
+                L. Doughty</li>
+            <li><strong>Whitefield, George</strong> - <em>Geo. Whitefield</em>, by Arnold Dallimore; <em>Memories of the
+                    Life of the Rev. Geo. Whitefield</em>, by John Gillies</li>
             <li><strong>Whyte, Alexander</strong> - <em>The Life of Alexander Whyte, D.D.</em>, by G. F. Barbour</li>
             <li><strong>Wilkes, Paget</strong> - <em>Dynamic Paget Wilkes of Japan</em>, by I. R. Govan Stewart</li>
             <li><strong>Willis, Helen</strong> - <em>Through An Encouragement of the Scriptures</em></li>
@@ -2696,15 +2926,16 @@
         <p class="back-to-top"><a href="#toc">返回总導航</a></p>
 
         <div class="nav-links">
-            <a href="special_section.html">← 上一節</a> | 
+            <a href="special_section.html">← 上一節</a> |
             <a href="index.html#toc">返回目录</a> |
             <a href="index.html#toc">結束 →</a>
         </div>
     </div>
 
     <footer>
-      <p>&copy; 运用 MinerU 转录自扫描件，2025年6月3刷印次，活道出版社，仅供个人学习使用</p>
+        <p>&copy; 运用 MinerU 转录自扫描件，2025年6月3刷印次，活道出版社，仅供个人学习使用</p>
     </footer>
 
 </body>
+
 </html>
