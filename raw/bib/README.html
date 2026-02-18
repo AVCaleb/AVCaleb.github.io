@@ -24,8 +24,8 @@
 <meta property="og:description" content="项目描述基本框架该项目的主体是对陈希增弟兄《属灵古典名著评介》的电子化。主要入口是index.html，剩余的bibliography.html是书目一览表，special_section.html是英语读者专栏，ch1.html到ch6.html则是第一到第六章。 bibliography.html里面的添加了许多超链接，一些超链接是指向互联网上现存的资源，另一些则是该项目在开发中的电子书资源。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://avcaleb.github.io/raw/bib/image/sample.png">
-<meta property="article:published_time" content="2026-02-02T08:57:00.858Z">
-<meta property="article:modified_time" content="2026-02-02T08:56:50.991Z">
+<meta property="article:published_time" content="2026-02-03T10:21:47.622Z">
+<meta property="article:modified_time" content="2026-02-03T08:43:34.738Z">
 <meta property="article:author" content="A. V. Caleb">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://avcaleb.github.io/raw/bib/image/sample.png">
@@ -230,7 +230,7 @@
   <h1 id="项目描述"><a href="#项目描述" class="headerlink" title="项目描述"></a>项目描述</h1><h2 id="基本框架"><a href="#基本框架" class="headerlink" title="基本框架"></a>基本框架</h2><p>该项目的主体是对陈希增弟兄《属灵古典名著评介》的电子化。主要入口是<code>index.html</code>，剩余的<code>bibliography.html</code>是书目一览表，<code>special_section.html</code>是英语读者专栏，<code>ch1.html</code>到<code>ch6.html</code>则是第一到第六章。</p>
 <p><code>bibliography.html</code>里面的添加了许多超链接，一些超链接是指向互联网上现存的资源，另一些则是该项目在开发中的电子书资源。目前我的计划是，将该书目一览表中所有能找到的书籍资源电子化，并提供中、英、中英对照三版本（英文原文的识别由AI完成，对应中文的翻译同样由AI完成），并以超链接形式在<code>bibliography.html</code>里放置入口，方便读者浏览。</p>
 <h2 id="书籍资源电子化"><a href="#书籍资源电子化" class="headerlink" title="书籍资源电子化"></a>书籍资源电子化</h2><p>书籍电子化是指，在<code>bibliography.html</code>里以超链接的形式添加所有对应公开书籍的电子化版本，方便读者阅读。由于原先的书籍大多是保存在Archive上的PDF书籍，因此总体操作流程包括</p>
-<figure class="highlight mathematica"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mathematica">书籍底本<span class="hljs-built_in">PDF</span>下载 → 基于<span class="hljs-variable">AI</span>扫描<span class="hljs-built_in">PDF</span>并输出为<span class="hljs-variable">YAML</span>格式文件 → <span class="hljs-variable">AI</span> 翻译文件并完善<span class="hljs-variable">YAML</span>文件 → 本地<span class="hljs-variable">LaTex</span>编译导出<span class="hljs-built_in">PDF</span>文件，包含中、英、中英对照三版本<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight mathematica"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mathematica">书籍底本<span class="hljs-punctuation">(</span>用户提供<span class="hljs-punctuation">)</span><span class="hljs-built_in">PDF</span>下载 → 基于<span class="hljs-variable">AI</span>扫描<span class="hljs-built_in">PDF</span>并输出为<span class="hljs-variable">YAML</span>格式文件 → <span class="hljs-variable">AI</span> 翻译文件并完善<span class="hljs-variable">YAML</span>文件 → 基于<span class="hljs-variable">YAML</span>文件生成对应书籍网页版文件 → 用户手动在<span class="hljs-operator">`</span><span class="hljs-variable">bibliography</span><span class="hljs-operator">.</span><span class="hljs-variable">html</span><span class="hljs-operator">`</span>中插入网页版对应链接 → 本地<span class="hljs-variable">LaTex</span>编译导出<span class="hljs-built_in">PDF</span>文件，包含中、英、中英对照三版本<br></code></pre></td></tr></tbody></table></figure>
 <p>因为目前有海量的书籍资源需要处理，所以进行如下标准化操作：</p>
 <ol>
 <li>所有书籍的网页版展示遵循同一个模版。<ol>
@@ -238,6 +238,8 @@
 <li>排版应尽可能美观。</li>
 <li>每一个具体内容页面应该用按钮在三种显示模式之间切换：原文、中译、原文/中译对照。</li>
 <li>对照模式应原文一段、中译一段。</li>
+<li>生成的网页版文件统一存放在当前目录下的books目录下，每本书单独一个文件夹。</li>
+<li>生成网页版文件后，程序提供入口html文件地址。如 <em>Bible Synopsis</em> 的入口文件地址为 <code>./books/Bible_Synonpsis_J_N_Darby/entry.html</code>。</li>
 </ol>
 </li>
 <li>YAML 文件中同时储存书籍原文（可能为英语，也可能为其他语言）以及对应的中文翻译。原文与翻译是同一段条目下的不同分点，例如</li>
@@ -258,6 +260,7 @@
 <li>目前平台是MacOS，相关的中文PDF字体等板式设置应该对应优化。</li>
 <li>生成的文档应该尽可能美观。</li>
 <li>对照文档的PDF格式应该要原文一段，中译一段。原文与中译之间的段间距小于该整段（原文+中译）与其他整段之间的间距。</li>
+<li>生成的用于编译的tex文件应该放在单独的目录下，如 <em>Bible Synopsis</em> 的入口原文tex文件地址为<code>./pdf_output/Bible_Synonpsis_J_N_Darby/original/main.tex</code>，入口中文tex文件地址为<code>./pdf_output/Bible_Synonpsis_J_N_Darby/translation/main.tex</code>，入口对照tex文件地址为<code>./pdf_output/Bible_Synonpsis_J_N_Darby/bilingual/main.tex</code>，</li>
 </ol>
 </li>
 </ol>

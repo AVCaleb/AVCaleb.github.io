@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://s2.loli.net/2023/01/08/v4qVodeyGSQxFpf.jpg">
+  <link rel="icon" href="https://s2.loli.net/2023/01/08/v4qVodeyGSQxFpf.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#181818">
+  <meta name="author" content="A. V. Caleb">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="书籍电子化处理流水线Book Digitization Pipeline using Qwen AI Models 概述 &#x2F; Overview本项目提供完整的书籍电子化处理流程，将PDF格式的古典书籍转换为：  YAML 数据文件：存储原文和中文翻译 HTML 网站：支持三种显示模式（原文、中译、对照） PDF 文档：三个版本（原文版、中译版、中英对照版）  This pipeline conve">
+<meta property="og:type" content="website">
+<meta property="og:title" content="page.title">
+<meta property="og:url" content="http://avcaleb.github.io/raw/bib/src/README.html">
+<meta property="og:site_name" content="The Meditations of A. V. Caleb">
+<meta property="og:description" content="书籍电子化处理流水线Book Digitization Pipeline using Qwen AI Models 概述 &#x2F; Overview本项目提供完整的书籍电子化处理流程，将PDF格式的古典书籍转换为：  YAML 数据文件：存储原文和中文翻译 HTML 网站：支持三种显示模式（原文、中译、对照） PDF 文档：三个版本（原文版、中译版、中英对照版）  This pipeline conve">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-02-03T10:10:18.778Z">
+<meta property="article:modified_time" content="2026-02-03T08:31:44.057Z">
+<meta property="article:author" content="A. V. Caleb">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>page.title - The Meditations of A. V. Caleb</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"avcaleb.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Sdw8DRwUlnjHSsdTfRNMd8RO-MdYXbMMI","app_key":"jBACYng8nnQ3oNpRXo68wBV6","server_url":null,"path":"window.location.pathname","ignore_local":false},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="The Meditations of A. V. Caleb" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>The Elements</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/reformation.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="page.title"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<article class="page-content">
+  <h1 id="书籍电子化处理流水线"><a href="#书籍电子化处理流水线" class="headerlink" title="书籍电子化处理流水线"></a>书籍电子化处理流水线</h1><p>Book Digitization Pipeline using Qwen AI Models</p>
+<h2 id="概述-Overview"><a href="#概述-Overview" class="headerlink" title="概述 / Overview"></a>概述 / Overview</h2><p>本项目提供完整的书籍电子化处理流程，将PDF格式的古典书籍转换为：</p>
+<ul>
+<li><strong>YAML 数据文件</strong>：存储原文和中文翻译</li>
+<li><strong>HTML 网站</strong>：支持三种显示模式（原文、中译、对照）</li>
+<li><strong>PDF 文档</strong>：三个版本（原文版、中译版、中英对照版）</li>
+</ul>
+<p>This pipeline converts classic books from PDF to:</p>
+<ul>
+<li>YAML data files with original and translated content</li>
+<li>HTML websites with three display modes</li>
+<li>PDF documents in three versions</li>
+</ul>
+<h2 id="技术栈-Tech-Stack"><a href="#技术栈-Tech-Stack" class="headerlink" title="技术栈 / Tech Stack"></a>技术栈 / Tech Stack</h2><ul>
+<li><p><strong>AI Models (Qwen 系列)</strong>:</p>
+<ul>
+<li><code>qwen3-vl-plus</code>: 视觉模型，用于 PDF 文字识别 (OCR)</li>
+<li><code>qwen3-max</code>: 语言模型，用于翻译</li>
+</ul>
+</li>
+<li><p><strong>Python Libraries</strong>:</p>
+<ul>
+<li><code>openai</code>: API 调用</li>
+<li><code>PyMuPDF (fitz)</code>: PDF 处理</li>
+<li><code>PyYAML</code>: 数据存储</li>
+</ul>
+</li>
+<li><p><strong>PDF Generation</strong>:</p>
+<ul>
+<li>XeLaTeX (需要安装 TeX Live 或 MacTeX)</li>
+</ul>
+</li>
+</ul>
+<h2 id="安装-Installation"><a href="#安装-Installation" class="headerlink" title="安装 / Installation"></a>安装 / Installation</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1. 安装 Python 依赖</span><br>pip install -r requirements.txt<br><br><span class="hljs-comment"># 2. 安装 LaTeX (macOS)</span><br>brew install --cask mactex<br><span class="hljs-comment"># 或使用基础版</span><br>brew install basictex<br><br><span class="hljs-comment"># 3. 设置 API Key</span><br><span class="hljs-built_in">export</span> DASHSCOPE_API_KEY=<span class="hljs-string">"your_api_key_here"</span><br></code></pre></td></tr></tbody></table></figure>
+<h2 id="使用方法-Usage"><a href="#使用方法-Usage" class="headerlink" title="使用方法 / Usage"></a>使用方法 / Usage</h2><h3 id="完整流程"><a href="#完整流程" class="headerlink" title="完整流程"></a>完整流程</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 运行完整处理流程</span><br>python pipeline.py full book.pdf \<br>    --title <span class="hljs-string">"Book Title"</span> \<br>    --title-cn <span class="hljs-string">"书名"</span> \<br>    --author <span class="hljs-string">"Author"</span> \<br>    --author-cn <span class="hljs-string">"作者"</span><br></code></pre></td></tr></tbody></table></figure>
+<h3 id="分步执行"><a href="#分步执行" class="headerlink" title="分步执行"></a>分步执行</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 步骤1：扫描 PDF</span><br>python pipeline.py scan book.pdf<br><br><span class="hljs-comment"># 步骤2：翻译内容</span><br>python pipeline.py translate book_scan.yaml<br><br><span class="hljs-comment"># 步骤3：生成 HTML 网站</span><br>python pipeline.py html book_translated.yaml<br><br><span class="hljs-comment"># 步骤4：生成 PDF 文档</span><br>python pipeline.py pdf book_translated.yaml<br></code></pre></td></tr></tbody></table></figure>
+<h3 id="开发者操作"><a href="#开发者操作" class="headerlink" title="开发者操作"></a>开发者操作</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1. Clone the repo</span><br>git <span class="hljs-built_in">clone</span> &lt;your-repo&gt;<br><span class="hljs-built_in">cd</span> src<br><br><span class="hljs-comment"># 2. Create .env from template</span><br><span class="hljs-built_in">cp</span> .env.example .<span class="hljs-built_in">env</span><br><br><span class="hljs-comment"># 3. Edit .env and add your API key(s)</span><br>nano .<span class="hljs-built_in">env</span>  <span class="hljs-comment"># or use your preferred editor</span><br><br><span class="hljs-comment"># 4. Install dependencies</span><br>pip install -r requirements.txt<br></code></pre></td></tr></tbody></table></figure>
+<h3 id="调用不同AI模型"><a href="#调用不同AI模型" class="headerlink" title="调用不同AI模型"></a>调用不同AI模型</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Use Qwen (default)</span><br>python pipeline.py full book.pdf --title <span class="hljs-string">"My Book"</span><br><br><span class="hljs-comment"># Use Gemini</span><br>python pipeline.py full book.pdf --title <span class="hljs-string">"My Book"</span> --provider gemini<br><br><span class="hljs-comment"># Use OpenAI</span><br>python pipeline.py scan book.pdf --provider openai<br><br><span class="hljs-comment"># Use local Ollama (no API key needed)</span><br>python pipeline.py translate book_scan.yaml --provider ollama<br><br><span class="hljs-comment"># List available providers</span><br>python pipeline.py --list-providers<br></code></pre></td></tr></tbody></table></figure>
+<h3 id="演示模式"><a href="#演示模式" class="headerlink" title="演示模式"></a>演示模式</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 无需 API Key，生成示例输出</span><br>python demo.py<br></code></pre></td></tr></tbody></table></figure>
+<h2 id="项目结构-Project-Structure"><a href="#项目结构-Project-Structure" class="headerlink" title="项目结构 / Project Structure"></a>项目结构 / Project Structure</h2><figure class="highlight dockerfile"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">src/<br>├── .<span class="hljs-keyword">env</span>.example         <span class="hljs-comment"># Template for API keys (copy to .env)</span><br>├── .gitignore           <span class="hljs-comment"># Excludes .env and sensitive files</span><br>├── config.py            <span class="hljs-comment"># Configuration with .env loading</span><br>├── pipeline.py          <span class="hljs-comment"># Main CLI with --provider flag</span><br>├── demo.py              <span class="hljs-comment"># Demo script (no API needed)</span><br>├── requirements.txt     <span class="hljs-comment"># Dependencies for all providers</span><br>│<br>├── providers/           <span class="hljs-comment"># Multi-provider AI system</span><br>│   ├── base.py          <span class="hljs-comment"># Abstract provider interface</span><br>│   ├── factory.py       <span class="hljs-comment"># Provider factory &amp; auto-loading</span><br>│   ├── qwen_provider.py<br>│   ├── gemini_provider.py<br>│   ├── openai_provider.py<br>│   ├── anthropic_provider.py<br>│   └── ollama_provider.py<br>│<br>├── modules/             <span class="hljs-comment"># Core processing modules</span><br>│   ├── pdf_scanner.py   <span class="hljs-comment"># Uses provider.vision()</span><br>│   ├── translator.py    <span class="hljs-comment"># Uses provider.chat()</span><br>│   ├── yaml_processor.py<br>│   ├── html_generator.py<br>│   └── latex_generator.py<br>│<br>└── utils/<br>    └── helpers.py<br></code></pre></td></tr></tbody></table></figure>
+<h2 id="YAML-数据格式-YAML-Data-Format"><a href="#YAML-数据格式-YAML-Data-Format" class="headerlink" title="YAML 数据格式 / YAML Data Format"></a>YAML 数据格式 / YAML Data Format</h2><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">metadata:</span><br>  <span class="hljs-attr">title:</span> <span class="hljs-string">"Book Title"</span><br>  <span class="hljs-attr">title_cn:</span> <span class="hljs-string">"书名"</span><br>  <span class="hljs-attr">author:</span> <span class="hljs-string">"Author Name"</span><br>  <span class="hljs-attr">author_cn:</span> <span class="hljs-string">"作者"</span><br>  <span class="hljs-attr">year:</span> <span class="hljs-string">"1900"</span><br>  <span class="hljs-attr">source:</span> <span class="hljs-string">"https://archive.org/..."</span><br><br><span class="hljs-attr">chapters:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">chapter_number:</span> <span class="hljs-number">1</span><br>    <span class="hljs-attr">title:</span> <span class="hljs-string">"Chapter Title"</span><br>    <span class="hljs-attr">title_cn:</span> <span class="hljs-string">"章节标题"</span><br>    <span class="hljs-attr">scripture_text:</span> <span class="hljs-string">"Greek/Hebrew text"</span>  <span class="hljs-comment"># 可选</span><br>    <span class="hljs-attr">scripture_translation:</span> <span class="hljs-string">"Translation"</span><br>    <span class="hljs-attr">sections:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-number">1</span><br>        <span class="hljs-attr">en:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          Original English text paragraph.</span><br><span class="hljs-string"></span>        <span class="hljs-attr">cn:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          中文翻译段落。</span><br><span class="hljs-string"></span>        <span class="hljs-attr">footnotes:</span><br>          <span class="hljs-bullet">-</span> <span class="hljs-attr">marker:</span> <span class="hljs-string">"[1]"</span><br>            <span class="hljs-attr">content:</span> <span class="hljs-string">"脚注内容"</span><br>            <span class="hljs-attr">original:</span> <span class="hljs-string">"Original footnote"</span><br></code></pre></td></tr></tbody></table></figure>
+<h2 id="HTML-显示模式-HTML-Display-Modes"><a href="#HTML-显示模式-HTML-Display-Modes" class="headerlink" title="HTML 显示模式 / HTML Display Modes"></a>HTML 显示模式 / HTML Display Modes</h2><p>生成的 HTML 网站支持三种显示模式：</p>
+<ol>
+<li><strong>English (原文)</strong>: 仅显示原文</li>
+<li><strong>中文 (翻译)</strong>: 仅显示中文翻译</li>
+<li><strong>对照 (Bilingual)</strong>: 原文一段、中译一段并排显示</li>
+</ol>
+<p>用户可通过页面顶部的按钮切换模式，偏好设置会保存在浏览器本地。</p>
+<h2 id="PDF-输出-PDF-Output"><a href="#PDF-输出-PDF-Output" class="headerlink" title="PDF 输出 / PDF Output"></a>PDF 输出 / PDF Output</h2><p>使用 XeLaTeX 生成三个版本的 PDF：</p>
+<ol>
+<li><code>*_en.pdf</code>: 原文版</li>
+<li><code>*_cn.pdf</code>: 中译版</li>
+<li><code>*_bilingual.pdf</code>: 中英对照版</li>
+</ol>
+<h3 id="macOS-字体配置"><a href="#macOS-字体配置" class="headerlink" title="macOS 字体配置"></a>macOS 字体配置</h3><p>默认使用以下字体：</p>
+<ul>
+<li>中文：PingFang SC</li>
+<li>英文：Times New Roman</li>
+<li>等宽：Menlo</li>
+</ul>
+<p>可在 <code>config.py</code> 中修改字体设置。</p>
+<h2 id="圣经注释书特殊处理-Bible-Commentary-Processing"><a href="#圣经注释书特殊处理-Bible-Commentary-Processing" class="headerlink" title="圣经注释书特殊处理 / Bible Commentary Processing"></a>圣经注释书特殊处理 / Bible Commentary Processing</h2><p>对于圣经注释类书籍（如 Lightfoot 的歌罗西书注释），系统会：</p>
+<ol>
+<li>识别页面顶部的希腊文/希伯来文经文</li>
+<li>将分散在多页的经文合并</li>
+<li>在 HTML 和 PDF 中以特殊样式显示经文块</li>
+<li>保留原文的学术脚注</li>
+</ol>
+<h2 id="API-配置-API-Configuration"><a href="#API-配置-API-Configuration" class="headerlink" title="API 配置 / API Configuration"></a>API 配置 / API Configuration</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># config.py 中的默认配置</span><br>QwenConfig(<br>    api_base=<span class="hljs-string">"https://dashscope.aliyuncs.com/compatible-mode/v1"</span>,<br>    vision_model=<span class="hljs-string">"qwen-vl-plus"</span>,    <span class="hljs-comment"># 用于 OCR</span><br>    language_model=<span class="hljs-string">"qwen-max"</span>,       <span class="hljs-comment"># 用于翻译</span><br>    max_tokens=<span class="hljs-number">4096</span>,<br>    temperature=<span class="hljs-number">0.7</span><br>)<br></code></pre></td></tr></tbody></table></figure>
+<h2 id="示例-Examples"><a href="#示例-Examples" class="headerlink" title="示例 / Examples"></a>示例 / Examples</h2><h3 id="Python-API-使用"><a href="#Python-API-使用" class="headerlink" title="Python API 使用"></a>Python API 使用</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> modules <span class="hljs-keyword">import</span> (<br>    PDFScanner, Translator, YAMLProcessor,<br>    HTMLGenerator, LaTeXGenerator, OutputMode<br>)<br><br><span class="hljs-comment"># 扫描 PDF</span><br>scanner = PDFScanner()<br>pages, structure = scanner.scan_pdf(<span class="hljs-string">"book.pdf"</span>)<br><br><span class="hljs-comment"># 翻译</span><br>translator = Translator()<br>sections = translator.create_sections_from_pages(pages)<br><br><span class="hljs-comment"># 保存 YAML</span><br>processor = YAMLProcessor()<br>book = create_book_yaml(pages, sections, {<span class="hljs-string">"title"</span>: <span class="hljs-string">"My Book"</span>})<br>processor.save_book(book)<br><br><span class="hljs-comment"># 生成 HTML</span><br>html_gen = HTMLGenerator()<br>html_gen.generate_book(book)<br><br><span class="hljs-comment"># 生成 PDF</span><br>latex_gen = LaTeXGenerator()<br>latex_gen.generate_all_versions(book)<br></code></pre></td></tr></tbody></table></figure>
+<h2 id="注意事项-Notes"><a href="#注意事项-Notes" class="headerlink" title="注意事项 / Notes"></a>注意事项 / Notes</h2><ol>
+<li><strong>API 配额</strong>：大型书籍处理可能消耗较多 API 配额</li>
+<li><strong>处理时间</strong>：完整流程可能需要较长时间，取决于书籍大小</li>
+<li><strong>LaTeX 安装</strong>：PDF 生成需要完整的 LaTeX 环境</li>
+<li><strong>字体支持</strong>：确保系统安装了所需的中文字体</li>
+</ol>
+<h2 id="许可-License"><a href="#许可-License" class="headerlink" title="许可 / License"></a>许可 / License</h2><p>This project is for educational and research purposes.</p>
+
+
+  
+
+</article>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://www.avcaleb.top/about/" target="_blank" rel="nofollow noopener"><span>A. V. Caleb</span></a> <i class="iconfont icon-love"></i> <a href="https://www.avcaleb.top/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

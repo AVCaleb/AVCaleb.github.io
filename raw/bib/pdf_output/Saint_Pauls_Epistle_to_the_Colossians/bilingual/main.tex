@@ -1,0 +1,238 @@
+% !TEX program = xelatex
+\documentclass[12pt, a4paper]{book}
+
+% Geometry
+\usepackage[margin=2.5cm]{geometry}
+
+% Unicode and fonts
+\usepackage{fontspec}
+\usepackage{xeCJK}
+
+% Set fonts
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+\setCJKsansfont{PingFang SC}
+\setCJKmonofont{Menlo}
+
+% Greek and Hebrew support
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{greek}
+\setotherlanguage{hebrew}
+\newfontfamily\greekfont{Times New Roman}
+\newfontfamily\hebrewfont{Times New Roman}
+
+% Typography
+\usepackage{setspace}
+\setstretch{1.3}
+\setlength{\parskip}{0.8em}
+\setlength{\parindent}{2em}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{圣保罗致歌罗西人书注释}
+\fancyhead[LO]{\leftmark}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Chapter styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{accentcolor}{RGB}{52, 152, 219}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+% Boxes for scripture
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% For parallel text
+\usepackage{paracol}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accentcolor,
+    urlcolor=accentcolor,
+    bookmarks=true,
+    pdfauthor={Saint Paul's Epistle to the Colossians},
+    pdftitle={圣保罗致歌罗西人书注释}
+}
+
+% Table of contents depth
+\setcounter{tocdepth}{2}
+
+% Custom commands
+\newcommand{\scripture}[1]{%
+    \begin{tcolorbox}[
+        colback=accentcolor!10,
+        colframe=accentcolor,
+        arc=3mm,
+        boxrule=0.5pt,
+        left=10pt,
+        right=10pt,
+        top=8pt,
+        bottom=8pt,
+        breakable
+    ]
+    \textit{#1}
+    \end{tcolorbox}
+}
+
+
+% Bilingual paragraph environment
+\newenvironment{bilingualblock}{%
+    \par\vspace{0.5em}
+    \begin{tcolorbox}[
+        colback=lightgray,
+        colframe=lightgray,
+        arc=2mm,
+        boxrule=0pt,
+        left=12pt,
+        right=12pt,
+        top=10pt,
+        bottom=10pt,
+        breakable
+    ]
+}{%
+    \end{tcolorbox}
+    \par\vspace{0.5em}
+}
+
+\newcommand{\originaltext}[1]{%
+    \noindent\textcolor{accentcolor}{\rule{3pt}{1em}}\hspace{8pt}%
+    #1\par\vspace{0.3em}
+}
+
+\newcommand{\translatedtext}[1]{%
+    \noindent\textcolor{gray}{\rule{3pt}{1em}}\hspace{8pt}%
+    #1\par
+}
+
+% Footnotes
+\usepackage[bottom]{footmisc}
+\renewcommand{\footnoterule}{\vfill\kern-3pt\hrule width 0.4\columnwidth\kern2.6pt}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{3cm}
+
+{\Huge\bfseries 圣保罗致歌罗西人书注释}
+
+\vspace{0.5cm}
+
+{\Large\itshape Saint Paul's Epistle to the Colossians}
+
+\vspace{2cm}
+
+{\large 莱特福特}
+
+\vspace{0.5cm}
+
+{\normalsize J. B. Lightfoot}
+
+\vspace{3cm}
+
+{\small Bilingual Edition / 中英对照版}
+
+\vfill
+
+{\small 1879}
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\chapter*{前言 / Preface}
+\addcontentsline{toc}{chapter}{前言 / Preface}
+
+
+\begin{bilingualblock}
+\originaltext{This commentary on the Epistle to the Colossians is the result of many years of careful study. The Greek text has been thoroughly revised, and the notes aim to explain both the grammatical construction and the theological significance of the Apostle's words.}
+\translatedtext{这部歌罗西书注释是多年精心研究的成果。希腊文本经过全面修订，注释旨在解释使徒话语的语法结构和神学意义。}
+\end{bilingualblock}
+
+\chapter{问候与感恩 \\ \normalsize\textit{Salutation and Thanksgiving}}
+
+\scripture{Παῦλος ἀπόστολος Χριστοῦ Ἰησοῦ διὰ θελήματος θεοῦ καὶ Τιμόθεος ὁ ἀδελφός \\ \textit{Paul, an apostle of Christ Jesus by the will of God, and Timothy our brother}}
+
+
+\begin{bilingualblock}
+\originaltext{Paul, an apostle of Jesus Christ by the will of God, and Timotheus our brother, To the saints and faithful brethren in Christ which are at Colosse: Grace be unto you, and peace, from God our Father and the Lord Jesus Christ.}
+\translatedtext{奉神旨意，作基督耶稣使徒的保罗和弟兄提摩太，写信给歌罗西的圣徒，在基督里有忠心的弟兄。愿恩惠、平安从神我们的父归于你们。}
+\end{bilingualblock}
+
+\begin{bilingualblock}
+\originaltext{We give thanks to God and the Father of our Lord Jesus Christ, praying always for you, Since we heard of your faith in Christ Jesus, and of the love which ye have to all the saints.}
+\translatedtext{我们感谢神、我们主耶稣基督的父，常常为你们祷告，因听见你们在基督耶稣里的信心，并向众圣徒的爱心。}
+\end{bilingualblock}
+
+\begin{bilingualblock}
+\originaltext{For the hope which is laid up for you in heaven, whereof ye heard before in the word of the truth of the gospel; Which is come unto you, as it is in all the world; and bringeth forth fruit, as it doth also in you, since the day ye heard of it, and knew the grace of God in truth.}
+\translatedtext{是为那给你们存在天上的盼望。这盼望就是你们从前在福音真理的道上所听见的。这福音传到你们那里，也传到普天之下，并且结果增长，如同在你们中间，自从你们听见福音，真知道神恩惠的日子一样。}
+\end{bilingualblock}
+
+\vspace{1em}
+\noindent\rule{\textwidth}{0.4pt}
+\small
+\textbf{注释 / Notes:}
+\begin{enumerate}
+\item[1] Paul emphasizes the divine origin of his apostleship / 保罗在此强调他使徒身份的神圣来源
+
+\end{enumerate}
+\normalsize
+
+\chapter{警戒错误教导 \\ \normalsize\textit{Warning Against False Teaching}}
+
+\scripture{Θέλω γὰρ ὑμᾶς εἰδέναι ἡλίκον ἀγῶνα ἔχω ὑπὲρ ὑμῶν \\ \textit{For I want you to know how great a struggle I have for you}}
+
+
+\begin{bilingualblock}
+\originaltext{For I would that ye knew what great conflict I have for you, and for them at Laodicea, and for as many as have not seen my face in the flesh.}
+\translatedtext{我愿意你们知道，我为你们和老底嘉人，并一切没有与我亲自见面的人，是何等的尽心竭力。}
+\end{bilingualblock}
+
+\begin{bilingualblock}
+\originaltext{That their hearts might be comforted, being knit together in love, and unto all riches of the full assurance of understanding, to the acknowledgment of the mystery of God, and of the Father, and of Christ.}
+\translatedtext{要叫他们的心得安慰，因爱心互相联络，以致丰丰足足在悟性中有充足的信心，使他们真知道神的奥秘，就是基督。}
+\end{bilingualblock}
+
+\chapter{在基督里的新生命 \\ \normalsize\textit{The New Life in Christ}}
+
+\scripture{Εἰ οὖν συνηγέρθητε τῷ Χριστῷ, τὰ ἄνω ζητεῖτε \\ \textit{If then you have been raised with Christ, seek the things that are above}}
+
+
+\begin{bilingualblock}
+\originaltext{If ye then be risen with Christ, seek those things which are above, where Christ sitteth on the right hand of God. Set your affection on things above, not on things on the earth.}
+\translatedtext{所以，你们若真与基督一同复活，就当求在上面的事，那里有基督坐在神的右边。你们要思念上面的事，不要思念地上的事。}
+\end{bilingualblock}
+
+\begin{bilingualblock}
+\originaltext{For ye are dead, and your life is hid with Christ in God. When Christ, who is our life, shall appear, then shall ye also appear with him in glory.}
+\translatedtext{因为你们已经死了，你们的生命与基督一同藏在神里面。基督是我们的生命，他显现的时候，你们也要与他一同显现在荣耀里。}
+\end{bilingualblock}
+
+\vspace{1em}
+\noindent\rule{\textwidth}{0.4pt}
+\small
+\textbf{注释 / Notes:}
+\begin{enumerate}
+\item[2] This emphasizes the believer's union with Christ in life / 这里强调信徒与基督生命的联合
+
+\end{enumerate}
+\normalsize
+
+\end{document}

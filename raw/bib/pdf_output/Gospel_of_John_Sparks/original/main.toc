@@ -1,0 +1,23 @@
+\selectlanguage *{english}
+\contentsline {chapter}{\numberline {1}The Vocation of the Church}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Church}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Seeking Heavenly Things}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The Place of Testing}{5}{section.1.3}%
+\contentsline {chapter}{\numberline {2}God's Comprehensive Purpose}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Summary of John's gospel}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Chapters 14, 15 and 16}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}The Definition of Fruit}{16}{section.2.3}%
+\contentsline {chapter}{\numberline {3}God's Purpose Realised Through Sonship}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Levitical Ministry}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Sonship}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The House of God}{26}{section.3.3}%
+\contentsline {chapter}{\numberline {4}The Cross in Relation to God's Eternal Purpose}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Cross Viewed from Satan's Standpoint}{33}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}His hatred revealed in crucifixion.}{33}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}His hold on men revealed in crucifixion.}{34}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}The Cross Viewed from the Divine Standpoint}{35}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The Cross Viewed from the Standpoint of the Church}{37}{section.4.3}%
+\contentsline {chapter}{\numberline {5}The Resurrected Position of the Church}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The Great Shepherd Returns}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Attachment to Him on the Basis of Resurrection}{45}{section.5.2}%
+\contentsline {chapter}{\numberline {6}A Companion to the Gospel by John}{51}{chapter.6}%

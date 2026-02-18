@@ -1,0 +1,43 @@
+# Book Digitization Pipeline Dependencies
+# =========================================
+
+# Core Dependencies
+PyMuPDF>=1.23.0                   # PDF rendering and text extraction (fitz)
+PyYAML>=6.0                       # YAML file handling
+
+# =========================================
+# AI Provider SDKs (install based on your choice)
+# =========================================
+
+# Qwen (Alibaba DashScope) - uses OpenAI-compatible API
+openai>=1.0.0
+
+# Google Gemini
+# pip install google-generativeai
+google-generativeai>=0.3.0
+
+# OpenAI (GPT-4)
+# Already included via openai package above
+
+# Anthropic (Claude)
+# pip install anthropic
+anthropic>=0.18.0
+
+# Ollama (Local) - no additional package needed
+# Install Ollama from: https://ollama.ai/
+
+# =========================================
+# Optional: LaTeX for PDF Generation
+# =========================================
+# Note: TeX Live or MacTeX must be installed separately
+# On macOS: brew install --cask mactex
+# Or: brew install basictex
+# On Ubuntu: sudo apt install texlive-xetex texlive-fonts-recommended
+
+# =========================================
+# Development Dependencies (optional)
+# =========================================
+# pytest>=7.0                     # Testing
+# black>=23.0                     # Code formatting
+# mypy>=1.0                       # Type checking
+# flake8>=6.0                     # Linting

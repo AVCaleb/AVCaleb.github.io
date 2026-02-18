@@ -1,0 +1,1261 @@
+% !TEX program = xelatex
+\documentclass[12pt, a4paper]{book}
+
+% Geometry
+\usepackage[margin=2.5cm]{geometry}
+
+% ============================================
+% IMPORTANT: Load these packages BEFORE polyglossia/bidi
+% The bidi package (loaded by polyglossia for Hebrew) requires
+% xcolor and graphicx to be loaded first.
+% It also requires hyperref, fancyhdr, pgf, tikz, titlesec to be loaded BEFORE it.
+% ============================================
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{accentcolor}{RGB}{52, 152, 219}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+% Unicode and fonts
+\usepackage{fontspec}
+\usepackage{xeCJK}
+
+% Set fonts
+\setmainfont{GaramondMT-W04}
+\setsansfont{Helvetica Neue}
+\setmonofont{Palatino}
+\setCJKmainfont{STSong}
+\setCJKsansfont{STHeiti}
+\setCJKmonofont{Menlo}
+
+% Typography
+\usepackage{setspace}
+\setstretch{1.3}
+% \setlength{\parskip}{0.8em}
+% \setlength{\parindent}{2em}
+\raggedbottom
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\footnotesize T. Austin Sparks}
+\fancyhead[RE]{\footnotesize Gospel of John}
+\fancyhead[LO]{\footnotesize \leftmark}
+\fancyfoot[C]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Chapter styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+% Boxes for scripture
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% For parallel text
+\usepackage{paracol}
+
+% Hyperlinks
+\usepackage[bookmarks=true]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=accentcolor,
+    pdfauthor={T. Austin Sparks},
+    pdftitle={Gospel of John}
+}
+
+% Greek and Hebrew support (loads bidi package internally)
+% MUST BE LOADED AFTER hyperref, fancyhdr, etc.
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{greek}
+\setotherlanguage{hebrew}
+\newfontfamily\greekfont{Times New Roman}
+\newfontfamily\hebrewfont{Times New Roman}
+
+% Table of contents depth
+\setcounter{tocdepth}{2}
+
+% Custom commands
+\newcommand{\scripture}[1]{%
+    \begin{tcolorbox}[
+        enhanced,
+        colback=accentcolor!8,
+        colframe=white,
+        boxrule=0.5pt,
+        sharp corners,
+        left=10pt,
+        right=0pt,
+        top=10pt,
+        bottom=10pt,
+        boxsep=0pt,
+        breakable
+    ]
+    \ttfamily #1
+    \end{tcolorbox}
+}
+
+\newcommand{\outlinesection}[1]{
+    \begin{center}
+        \textbf{#1}
+    \end{center}
+}
+
+% Custom outline environment
+\newenvironment{outline}{%
+    \par
+    \ttfamily
+    \setlength{\parindent}{0pt}%
+    \obeylines
+}{%
+    \par
+}
+
+% Footnotes
+\usepackage[bottom]{footmisc}
+\renewcommand{\footnoterule}{\vfill\kern-3pt\hrule width 0.4\columnwidth\kern2.6pt}
+
+\begin{document}
+
+\frontmatter
+
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+
+    {\Huge\bfseries Gospel of John}
+
+    \vspace{2cm}
+
+    {\large T. Austin Sparks}
+
+    \vfill
+
+    {\large \ttfamily Published in 1900}
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\mainmatter
+
+\chapter{The Vocation of the Church}
+
+\scripture{\textbf{John 13:1-38} 1 Now before the Feast of the Passover, Jesus knowing that His hour had come that He would depart out of this world to the Father, having loved His own who were in the world, He loved them to the end. 2 During supper, the devil having already put into the heart of Judas Iscariot, the son of Simon, to betray Him, 3 Jesus, knowing that the Father had given all things into His hands, and that He had come forth from God and was going back to God, 4 got up from supper, and laid aside His garments; and taking a towel, He girded Himself. 5 Then He poured water into the basin, and began to wash the disciples’ feet and to wipe them with the towel with which He was girded. 6 So He came to Simon Peter. He said to Him, ``Lord, do You wash my feet?'' 7 Jesus answered and said to him, ``What I do you do not realize now, but you will understand hereafter.'' 8 Peter said to Him, ``Never shall You wash my feet!'' Jesus answered him, ``If I do not wash you, you have no part with Me.'' 9 Simon Peter said to Him, ``Lord, then wash not only my feet, but also my hands and my head.'' 10 Jesus said to him, ``He who has bathed needs only to wash his feet, but is completely clean; and you are clean, but not all of you.'' 11 For He knew the one who was betraying Him; for this reason He said, ``Not all of you are clean.'' 12 So when He had washed their feet, and taken His garments and reclined at the table again, He said to them, ``Do you know what I have done to you? 13 ``You call Me Teacher and Lord; and you are right, for so I am. 14 ``If I then, the Lord and the Teacher, washed your feet, you also ought to wash one another’s feet. 15 ``For I gave you an example that you also should do as I did to you. 16 ``Truly, truly, I say to you, a slave is not greater than his master, nor is one who is sent greater than the one who sent him. 17 ``If you know these things, you are blessed if you do them. 18 ``I do not speak of all of you. I know the ones I have chosen; but it is that the Scripture may be fulfilled, ‘HE WHO EATS MY BREAD HAS LIFTED UP HIS HEEL AGAINST ME.’ 19 ``From now on I am telling you before it comes to pass, so that when it does occur, you may believe that I am He. 20 ``Truly, truly, I say to you, he who receives whomever I send receives Me; and he who receives Me receives Him who sent Me.'' 21 When Jesus had said this, He became troubled in spirit, and testified and said, ``Truly, truly, I say to you, that one of you will betray Me.'' 22 The disciples began looking at one another, at a loss to know of which one He was speaking. 23 There was reclining on Jesus’ bosom one of His disciples, whom Jesus loved. 24 So Simon Peter gestured to him, and said to him, ``Tell us who it is of whom He is speaking.'' 25 He, leaning back thus on Jesus’ bosom, said to Him, ``Lord, who is it?'' 26 Jesus then answered, ``That is the one for whom I shall dip the morsel and give it to him.'' So when He had dipped the morsel, He took and gave it to Judas, the son of Simon Iscariot. 27 After the morsel, Satan then entered into him. Therefore Jesus said to him, ``What you do, do quickly.'' 28 Now no one of those reclining at the table knew for what purpose He had said this to him. 29 For some were supposing, because Judas had the money box, that Jesus was saying to him, ``Buy the things we have need of for the feast''; or else, that he should give something to the poor. 30 So after receiving the morsel he went out immediately; and it was night. 31 Therefore when he had gone out, Jesus said, ``Now is the Son of Man glorified, and God is glorified in Him; 32 if God is glorified in Him, God will also glorify Him in Himself, and will glorify Him immediately. 33 ``Little children, I am with you a little while longer. You will seek Me; and as I said to the Jews, now I also say to you, ‘Where I am going, you cannot come.’ 34 ``A new commandment I give to you, that you love one another, even as I have loved you, that you also love one another. 35 ``By this all men will know that you are My disciples, if you have love for one another.'' 36 Simon Peter said to Him, ``Lord, where are You going?'' Jesus answered, ``Where I go, you cannot follow Me now; but you will follow later.'' 37 Peter said to Him, ``Lord, why can I not follow You right now? I will lay down my life for You.'' 38 Jesus answered, ``Will you lay down your life for Me? Truly, truly, I say to you, a rooster will not crow until you deny Me three times.}
+
+It is necessary for us to look closely into several things that will help us to look into the Divine meaning and the content of this chapter, and of the chapter following. These two chapters constitute one definite section of the Gospel.
+
+Let us underline a few things in this chapter. First of all, let us note the references to the imminent departure of the Lord out of this world: verse 1, ``His hour was come that He should depart out of this world...''; verse 3, ``...knowing that the Father had given all things into His hands, and that He... goeth unto God''; verse 33, ``Little children, yet a little while I am with you...''; verse 36, ``Simon Peter saith unto Him, Lord, whither goest Thou? Jesus answered him, Whither I go...''.
+
+If you glance back to chapter 12 at verse 35, you will remember that He had said something quite similar: ``Then Jesus said unto them, Yet a little while is the light among you...''.
+
+The second thing to see is the impossibility of following Him now, and the reference to an ``afterward'': verse 7, ``Jesus answered and said unto him, What I do thou knowest not now; but thou shalt know afterward''; verse 36, ``Whither I go... thou shalt follow Me afterward.''
+
+The third thing to notice is that with which the chapter opens: the feet washing. Keep that in mind as a definite feature of this chapter; the washing of the feet by the Lord, and then the command that they should do the same to one another.
+
+Then another thing to note is the new commandment, and the testimony to the world that is bound up with it: verses 34-35, ``A new commandment I give unto you, that ye love one another; as I have loved you, that ye also love one another. By this shall all men know that ye are My disciples, if ye have love one to another.''
+
+Then in three verses we should note another thing: that is, partnership with Christ and service. Verse 8, ``If I wash thee not, thou hast no part with Me'' - I regard those last three words as governing the whole of this section: ``part with Me''. Verses 13-14, ``Ye call Me Master and Lord: and ye say well; for so I am. If I then, your Lord and Master...''; verse 16, ``The servant is not greater than his lord...''.
+
+With those things noted, let us come to the general message of this chapter. It marks a step forward from chapter 12 as to the church.
+
+\section{The Church}
+
+Let us again define the church. According to John 12 it is the company of those who are in a living fellowship with the Lord Jesus through His death and resurrection. That is the church, and, so far as that is concerned, this chapter carries us a step forward. In chapter 12 it is resurrection union with the Lord Jesus. In chapters 13 and 14 what is introduced is ascension union with the Lord Jesus. That is why we have noted those four verses in chapter 13 and one in chapter 12 with reference to His imminent departure. That is a governing thing here. It is very much in view.
+
+Chapter 14 is very much taken up with the Lord's going, the Father's house (``I go to prepare a place''), and all that follows in the chapter bears upon the Lord's going to the Father, leaving this world. It is the Lord's going into heaven that is very much in view, and is governing everything here.
+
+This is all set forth to show that the church, the fellowship of believers with Christ, through death and resurrection, is a heavenly thing; and inasmuch as service also comes up in this section, the service of the church has to do with Christ in heaven. The Lord is saying, in other words, that there is a new place for Him and for you, and that new place is outside of this world, it is in heaven. He says, ``I am going to heaven, I am going to the Father, I am going out of the world, and you spiritually are going out with Me, you in a spiritual way are going to be united with Me in a new place. So that everything for you henceforth - because I am in that place as your Head, your Lord, your Master - is going to be heavenly, out from heaven.''
+
+If you go back to chapter 12 and verse 31, you will recall these words: ``...now is the judgement of this world''. This world, then, lies under judgement, ``I am going out of the world, out of the sphere of judgement, out of the realm of condemnation, I am going out to the Father, and you, My church, will be spiritually joined with Me, taken outside of the realm of judgement, out of the world.''
+
+If there is one thing that is true about the church, one thing that is made clear in the subsequent revelation of the New Testament, where the doctrine of these things is developed, it is that the church is outside of the realm of judgement and condemnation. The Lord's people have been translated out of the power of darkness, the kingdom of darkness, into the kingdom of the Son of God's love. He is there, and we are represented as being in Him in the heavenlies, and in Christ Jesus there is no condemnation. ``The whole world lieth in the wicked one'', and the whole world, therefore, lieth under judgement. But we are not of this world, we are in Christ, taken out. The church is a heavenly thing, having escaped the judgement of the world.
+
+Now that is made incumbent upon the Lord's people. It is impossible to be in the good pleasure of God unless we are spiritually in that position, outside of the world. He that is a friend of the world (that is, he that has heart relationship in any way with the world) is at enmity with God. So that we cannot know the good pleasure of God unless we are spiritually right out of that which is called the world. To put that another way, we must know heaven now as our home, our native air, our resting place, our source of all supplies, in order to enjoy the good pleasure of the Lord, and when we do know heaven in that way, we know the good pleasure of the Father.
+
+\section{Seeking Heavenly Things}
+
+Another thing arises out of that; it is that, just in the measure in which our life is in heaven, and we are fulfilling the Word of the Lord in Colossians 3:1,2: ``If ye then be risen with Christ, seek those things which are above, where Christ sitteth on the right hand of God. Set your affection on things above, not on things on the earth...'' just in the measure in which our life is a heavenly life, and we are living in heavenly union with Christ and drawing all our resources from Him, there shall we understand heavenly things. To put that another way, voluntary contact, fellowship, life in this world in a spiritual sense is a deadening thing to spiritual knowledge and spiritual understanding. It means that our powers of spiritual perception and apprehension of the things of Christ are deadened, spoiled, arrested, paralysed by the things of this world.
+
+If we have our life in this world (we are not speaking physically, and by reason of the obligations to move among men; we mean that inner life in this world) or a heart relationship with this world, then we shall move in its darkness. That is why the Lord says that union with Him is Light, and unless we go out with Him we shall be left to walk in darkness: ``Walk in the light while ye have the light...''. He is not saying to His disciples that they are going to be left without the Light; they are going to be able to walk all the time in the Light in a dark world, because of their heavenly union with Him. But if we are left here in this world without that union, then it is darkness. Any touch with this world in a spiritual way is a paralyzing of our spiritual faculties. If we want understanding in heavenly things, then we must have a heavenly life, and our understanding of the things of the Lord depends entirely upon the measure in which we are living in heavenly union with the Lord Himself.
+
+\section{The Place of Testing}
+
+There is yet another thing. It is our place which is always the ground of our testing; that is, we are tested by the place in which we live. That is illustrated for us in the case of Israel. They had been used to a certain kind of life in Egypt. It may have been a hard life, there may have been difficulties about it, but there were some things about it which were not so difficult. They did know where their food was coming from; their life was one of sense. It was fairly certain and fairly regular, and there was not very much to test them in the matter of faith. They knew pretty well what sort of a life they would be called upon to live, and it was a routine which was fairly fixed, and there was not much uncertainty about it; therefore there was not much test of faith. But when they came out into the wilderness, then they found themselves tested very much by the place in which they were.
+
+How often the test was too much for them, and they harked back to Egypt. ``Out here we are never sure of anything, we never know where our next meal is coming from; everything out here is uncertain, it seems to be so indefinite, we cannot see, we cannot do anything. Nothing that we can do will secure for us what we need. We are simply out here, and we are dependent upon God!'' Ah, yes, it depends on how you say that, what that means. You can say it in a tone which implies that it is a terrible thing, or you can say, ``Well, I have the surest and most certain of all sources - I have God''. But the flesh does not look at things like that. The natural man thinks it is an awful thing to be dependent upon God and not upon his own effort, knowledge, wisdom, strength and understanding. To the natural man it is an awful position to be in a place where your own understanding, ability, strength and you yourself altogether are perfectly useless and altogether dependent upon Someone outside of yourself.
+
+We are brought out of the world into heavenly union with the Lord, and there everything is out from Him, not out from ourselves, not out from the world. It is a life of utter dependence, but what a test it is! You find you can do nothing. There is nothing in yourself with which to cope with this situation. The disciples simply clung to the Lord as long as they could, to hold Him within the realm of their senses, for they felt that if He went back to the Father the bottom would fall out of their world.
+
+The real testimony of the church is just in that direction, the absolute reality of Christ as in heaven, manifested by the church's life. You take it up at the beginning with the Acts, and right on, and the testimony of the church is the testimony that Jesus, though in heaven, is more real, wonderful and glorious than ever we knew Him to be, or ever He was to us when He was here in the days of His flesh! The church was given this testimony on that very ground. Take the case of the apostles, and then the case of the great apostle Paul, and you see that the whole testimony of the church as represented by them is the testimony to the wonderful reality of the ascended Christ, the risen Lord. It was all secured. The Lord was seeking to make clear to His disciples that it was expedient for them that He went away, for they were going to make discoveries of Him when He was gone which they had never been able to make before.
+
+What a change there was between John 13 and Acts 9. In John 12 the Lord Jesus is in humiliation, rejected, set at naught. Acts 9 reveals a light from heaven above, the brightness of the sun, with all the power and authority in His hands, so that Saul of Tarsus met far more than his match in the ascended Christ, and the whole system of Judaism as gathered up in its intensest form in that one man met more than its match in the ascended Christ. What no other thing in this universe could have done in changing such a man as Saul of Tarsus from the position which he had held, into a devoted servant of the despised Jesus, was accomplished by a revelation of Jesus as in heaven. That was the thing that startled and broke him, that was the thing that accomplished this miracle. ``I am Jesus.'' We can never imagine the impact that that announcement made upon Saul of Tarsus.
+
+Saul had thought of Jesus of Nazareth as some imposter, false teacher, blasphemer of God, and who had died under the curse of God, for ``cursed is every one that hangeth upon a tree''. Jesus of Nazareth was, to Saul of Tarsus, the most miserable object of contempt and hatred. Now hear the announcement out of such transcendent glory that cannot be borne, that is intolerable and blinding - ``I am Jesus''!
+
+The church has its testimony in the value of that, and its ministry is all to do with what the Lord Jesus is, not in a historic sense but in His heavenly, glorified, exalted Person. It is the Son of Man at God's right hand that gives the ministry to the church, what it means that God has got a Man in the glory. That is the church's ministry.
+
+You see how this links with that which we said at the beginning. God's eternal purpose is to display Himself in the universe through a creation, the centre of which creation is man, and the centre of which corporate man is the Man Christ Jesus. Power over the world and power over Satan is only - but is surely - on the ground of heavenly union with Christ.
+
+You notice, then, that so much comes in with the word ``hereafter'', of verse 36. When Christ is in heaven, then they will understand, and when Christ is in heaven then they will be able to follow. What the Lord meant when He said to Peter, ``Thou canst not follow Me now; but thou shalt follow Me hereafter'', was not, ``You cannot follow Me now, but when you die you will go to heaven with Me'', what He meant was this: ``Peter, you are in the flesh, and your flesh is a very self-confident flesh. You say you will go with Me even unto death. You do not know how impossible it is for your flesh to take you through! The flesh cannot go right through. But when you are no longer in the flesh but in the Spirit, when the Holy Spirit has come and you are a spiritual man, and not a fleshly or carnal man, then you will be able to follow through, you will be able to go through the cross, you will be able to die for Me, but not now.'' That ``afterwards'' depends upon Christ being in heaven; just how far we understand and how far we can go depends on heavenly union with Christ in the power of the Holy Spirit.
+
+So you see that all the Epistles are directed towards bringing heavenly fulness into the saints, and the saints into the heavenly fulness. That is the ministry, that is the service of John 13. It is to bring the Lord's people into His heavenly fulness, and to bring His heavenly fulness into them.
+
+Now we are getting near to feet washing. What a lot of misunderstanding there has been about this. You have got to see things from the heavenlies. If you begin to view things from the earthlies, you go astray all the time.
+
+What is the meaning of this? Why wash the feet? Well, they had been in contact with the earth, and their contact with the earth had defiled them. Now then, get rid of all that which is of the earth, keep free of the earthly, of the world in a spiritual and a moral way. The Lord says, ``I am going out of the world. You have to come out of the world with Me in a spiritual way, and yet you have to remain here. Your life will be here, although you will not be of the world. As you move in this world you will become touched by it, but remember you are a heavenly people and you have got to maintain your heavenly relationship. Now then, your ministry to one another is to help one another to keep clean from the world in order to help one another to abide in the heavenly life.'' That is feet washing. It is a mutual engagement to help one another to keep clean so far as this world is concerned.
+
+The Lord Jesus in His great act said, in effect, ``I make you a people, a company, clean from this world, a heavenly people, but you have to remain in the world in testimony. You will be in touch with the world, and from time to time it will lay its hand upon you, and there will be defilement, but do not remain there, do not allow it to remain upon you. In your fellowship together seek to help one another to keep free, to elevate one another from the world, to keep the world out. And if you see a brother, a sister, who has been touched by something of the world, seek to minister in a loving, humble way to that one, to get them free of that touch, that condemnation.'' This is what He means later on by the new commandment, that you ``love one another even as I have loved you.'' ``How have I loved you? I have loved you to take you out of the realm of condemnation and judgement. I have loved you so that My very life has been laid down for you, to get you out to be a heavenly people. Now you, in that same love must minister to one another to maintain that heavenly position, that heavenly life.'' It is a ministry of love. It is not official. It is a ministry of love towards one another to help in the heavenly way (verse 35).
+
+Love is self-emptying. He laid aside His garment, He took a towel and girded Himself, He poured water into the basin, He came forth to wash His disciples feet. That is the self-emptying of God's Son. As we know, it is the type of Philippians 2: ``Found in fashion as a man, He humbled Himself... taking the form of a bondservant... becoming obedient unto death, the death of the cross.'' It is just the opposite of that satanic pride which seeks mastery, lordship. Pride will never wash another's feet, it will not come forth to serve others. Pride seeks all the time to be served.
+
+The Lord Jesus says, ``If you and I are really going to be true ministers of heavenly things, if we ourselves are going to come into the knowledge of that, and are going to be used by the Lord, we have got to be without pride, we have to be characterized by love.'' And that love is to show itself in this way: that we are constantly seeking to help one another to escape the toils and touches and contaminations of this evil world, and to enable one another to live the heavenly life, the life of heavenly union with the Lord. It is elevation all the time, uplift. It is so easy to do just the opposite, to remind one another of the things which belong to the old creation about us, and that brings us down to earth. It is not very helpful. You will not lift me very high if you are constantly reminding me of the old creation things that are still about me. I shall not help you to get very high if I keep pointing out the old faults that are still clinging to you. Let us minister to one another unto lifting up, unto heavenliness of life. There is nothing more elevating than that we should constantly remind one another that it is not what we are, but what He is that matters, what He is in glory for us. That is an uplifting thing at once, as Horatius Bonar puts it in his hymn: ``Not what I am, O Lord, but what Thou art.'' That is heavenliness; that is heavenly ministry, to keep Christ in view and to minister Christ. That is true love, and that is the love of Christ to us.
+
+Now we can see a little more of what the Lord's thought is for His people, and the way in which He is going to reach His end; for you and I and all the Lord's people will only reach that great end, where God is manifested in this universe through a new creation, as we are out from this world, a heavenly people, living a heavenly life upon heavenly resources, where there is no condemnation, no judgement or power of this world, but where we are in the kingdom of the Son of God's love. That is the way to the glory.
+
+Notice that the Lord Jesus connects those two things; that He is about to depart, and now is the Son of Man glorified. The glory is bound up with deliverance from this evil world and with heavenly life.
+
+\chapter{God's Comprehensive Purpose}
+
+\scripture{\textbf{John 15:1-27} 1 ``I am the true vine, and My Father is the vinedresser. 2 ``Every branch in Me that does not bear fruit, He takes away; and every branch that bears fruit, He prunes it so that it may bear more fruit. 3 ``You are already clean because of the word which I have spoken to you. 4 ``Abide in Me, and I in you. As the branch cannot bear fruit of itself unless it abides in the vine, so neither can you unless you abide in Me. 5 ``I am the vine, you are the branches; he who abides in Me and I in him, he bears much fruit, for apart from Me you can do nothing. 6 ``If anyone does not abide in Me, he is thrown away as a branch and dries up; and they gather them, and cast them into the fire and they are burned. 7 ``If you abide in Me, and My words abide in you, ask whatever you wish, and it will be done for you. 8 ``My Father is glorified by this, that you bear much fruit, and so prove to be My disciples. 9 ``Just as the Father has loved Me, I have also loved you; abide in My love. 10 ``If you keep My commandments, you will abide in My love; just as I have kept My Father’s commandments and abide in His love. 11 ``These things I have spoken to you so that My joy may be in you, and that your joy may be made full. 12 ``This is My commandment, that you love one another, just as I have loved you. 13 ``Greater love has no one than this, that one lay down his life for his friends. 14 ``You are My friends if you do what I command you. 15 ``No longer do I call you slaves, for the slave does not know what his master is doing; but I have called you friends, for all things that I have heard from My Father I have made known to you. 16 ``You did not choose Me but I chose you, and appointed you that you would go and bear fruit, and that your fruit would remain, so that whatever you ask of the Father in My name He may give to you. 17 ``This I command you, that you love one another. 18 ``If the world hates you, you know that it has hated Me before it hated you. 19 ``If you were of the world, the world would love its own; but because you are not of the world, but I chose you out of the world, because of this the world hates you. 20 ``Remember the word that I said to you, ‘A slave is not greater than his master.’ If they persecuted Me, they will also persecute you; if they kept My word, they will keep yours also. 21 ``But all these things they will do to you for My name’s sake, because they do not know the One who sent Me. 22 ``If I had not come and spoken to them, they would not have sin, but now they have no excuse for their sin. 23 ``He who hates Me hates My Father also. 24 ``If I had not done among them the works which no one else did, they would not have sin; but now they have both seen and hated Me and My Father as well. 25 ``But they have done this to fulfill the word that is written in their Law, ‘THEY HATED ME WITHOUT A CAUSE.’ 26 ``When the Helper comes, whom I will send to you from the Father, that is the Spirit of truth who proceeds from the Father, He will testify about Me, 27 and you will testify also, because you have been with Me from the beginning.}
+
+There are really three chapters which form this section, and contain the special truth relative to the whole purpose of God - chapters 14, 15 and 16. They cannot really be separated or divided, because they are one piece, but chapter 15 is the heart of things, reaching back into chapter 14 and on into chapter 16.
+
+We are now coming to the fullest phase of the development of the revelation, and we are touching the things which are the strongest things, and those which represent a completeness, a wholeness. Therefore it is necessary and it will be helpful for us to just review the whole ground in order to see how this part both fits into it and very largely gathers it up.
+
+We have been thinking of God's eternal purpose in Christ His Son, and we have seen that that purpose is an expression, a manifestation, a revelation of Himself in a creation, and that that intention and purpose in the eternal counsels was to be realised and fulfilled man-wise. That is, by man as the central instrument and vehicle, the sum of all that which is meant by ``man'' in the racial sense is His Son, Jesus Christ.
+
+Perhaps it would be again valuable if we referred to some of those Scriptures which speak of the eternal counsels of God, and show us what was in these counsels. The Letter to the Ephesians is the main channel of that revelation. Ephesians 1:4-6: ``He chose us in Him before the foundation of the world, that we should be holy and without blemish before Him in love; having foreordained us unto adoption as sons through Jesus Christ unto Himself, according to the good pleasure of His will, to the praise of the glory of His grace, which He freely bestowed on us in the Beloved One.'' Verses 11-12: ``In whom also we have obtained an inheritance, being predestined according to the purpose of Him who worketh all things after the counsel of His own will that we should be to the praise of His glory...''. Ephesians 2:7: ``That in the ages to come He might show the exceeding riches of His grace in kindness towards us through Christ Jesus''; verse 10: ``...we are His workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them''; Ephesians 3:9-11: "...to make all men see what is the fellowship of the mystery, which from the beginning of the world hath been hid in God, who created all things by Jesus Christ; to the intent that now unto the principalities and powers in the heavenlies might be known by the church the manifold wisdom of God, according to the eternal purpose which He purposed in Christ Jesus our Lord.''
+
+That contains several other things, but the first thing that we note is that it represents counsels of God before times eternal. It sets before us the fact that God in eternal counsels determined certain things; planned, arranged and secured certain things. Those counsels are summed up in the one phrase: ``the eternal purpose''.
+
+Then the other two things which are seen in those passages and in others are firstly that that eternal purpose and those eternal counsels are bound up with His Son, the Lord Jesus, and are all in Him. The second thing is that Christ as God's Son is set forth as a comprehensive and inclusive Son, and a great company, now known to us by the title of the church which is His Body, was in those eternal counsels and foreknowledge chosen in Christ.
+
+Therefore you have this order: God's eternal counsels, and the purpose of the ages, summed up in His Son, Jesus Christ, realised in and manifested through the church. All that is summed up in one word, and that word is: ``Son''. It is a very comprehensive word.
+
+The beginning of the Letter to the Hebrews is explicit: ``God, having of old times spoken unto the fathers in the prophets... hath at the end of these days spoken to us in Son (the margin says 'a son', but the Greek has nothing corresponding to ' his' or 'a', and the literal translation of the Greek would be just this: ``hath spoken unto us Son-wise''. --Of course, we know from what immediately follows that that relates to the Lord Jesus in the first place), ``whom He appointed heir of all things, through whom also He made the worlds (or the ages).'' That term ``Son-wise'', as the Letter very quickly goes on to show, is an inclusive term as well as a personal one, and that Son is seen to be brought into corporate relationship with other sons, or others who are called to be sons, who are to be brought to glory.
+
+If we look again at Colossians chapter 1 we have a very full presentation of this. Verses 12-19: ``Giving thanks unto the Father, which hath made us meet to be partakers of the inheritance (these are family terms) of the saints in light... who hath... translated us into the kingdom of the Son of His love; in whom we have our redemption... by Him were all things created... thrones, dominions, principalities, powers, in Him all things hold together... It pleased the Father that in Him should all fulness dwell.''
+
+There are the eternal counsels especially related to the Son, and then our place is seen in the Son as related to and bound up with those eternal counsels; that is, the place of the church.
+
+So that the word, the idea, the thought which governs everything, from the formation and projection of those counsels unto the ultimate realisation of them, is that of sonship, and we have seen and know quite well that sonship is the full thought of God in the matter of relationship to Himself. Not the initial thought connected with the word 'child', a child is one thing, but the thought in fulness is that of ``son'', and that is the end to which the eternal counsels are moving. It is with that always in view that every activity of God takes place: creation, redemption, all things - and no one knows how to tabulate that, it is quite impossible for us to comprehend what that means - after the counsel of His own will He is working. So that everything that is going on is governed by this one end of God, to produce sonship in this universe in all that it means to Him, ``that we should be unto the praise of His glory''; that is the end, so that if we look on, we see that the end of all things is a universe which is filled with praise unto His glory.
+
+The great activities of God in sovereignty in the universe, in nature, in the creation, even in the fallen creation, according to Romans 8, and all those minute activities of God in our own lives who are the called according to His purpose, are held by Him in relation to sonship. If that really gripped our hearts and kept a grip upon them, our attitude towards everything would be one of enquiry as to how this could issue in sonship, how this could result in that growth and development which means a full expression of God's thought.
+
+We ought to settle it, to lay it down as a standing, abiding, unalterable fact, that from God's standpoint everything is being controlled with that end in view where we are concerned, where the church is concerned, to produce sonship - in all that that means. It is a comprehensive thought. At the end of these times no longer in divers portions, in divers manners, no longer in the fathers, but all now gathered up and comprehended in One, Son-wise.
+
+Now, have we seen anew the purpose of God, the end towards which He is working? Have we got that clearly before us? (And, oh, what a universe of fulness it is!) Right through from the beginning, God moved on the principle of sonship. If we have that in view we are able to come back and understand John's Gospel. Indeed, we are able to understand all the scriptures, but as this gospel is particularly brought to us at this time, it yields up the great secrets of sonship, and shows us how and by what means God moves to that end; the laws and the principles which govern sonship. John's whole object in writing this Gospel, as he says at the end, is to prove the Sonship of Jesus Christ.
+
+Now, if we are included in sonship, then the principles which governed His life govern ours, and so the gospel is not just a revelation of Jesus Christ, but it is a revelation of things for us in Christ, that we also may come to that for which we were foreordained unto adoption as sons.
+
+\section{Summary of John's gospel}
+
+Chapter 1 of John's gospel is the inclusive and comprehensive presentation of the Son from eternity, and the great statement which affects us and affects God's purpose so immediately is that statement: ``In Him was Life and the Life was the Light of men.'' It is a statement which presents a unique fact; in Him was Life, in no other. Then it presents a related truth: ``the Life was the Light of men.'' He is related to men as the Light.
+
+Chapter 2 brings before us the principles of fulness. We refer to the marriage of Cana in Galilee. This brings before us the principles of fulness, for the end of that parabolic sign was fulness everywhere; fulness of life, fulness of joy, fulness of blessing, fulness of glory. The best wine kept to the last, and He showed forth His glory. It is just the end reached, and if you study the details of what took place there, you have the principles which issue in fulness.
+
+Now, God always brings His whole subject into view early, at the beginning, and then He begins to break up and apply it afterwards. So that in chapter 1 you have the comprehensive presentation in Christ; in chapter 2 you have the comprehensive statement of principles of fulness in Christ. We can break it up into fragments.
+
+In chapter 3 with Nicodemus it is a matter of a new creation essential, with a new Life not possessed by the natural man, if God's end is to be reached. There cannot be the first step taken towards the realisation of these eternal counsels until there is a new creation in Christ, which creation is characterised by a new life; not that which is born of the flesh, the will of the flesh, or of blood, the will of man; but that which is born of the Spirit, a new creation with Divine Life.
+
+Chapter 4 shows us the next step, that that Life, when it is planted within the centre of the being of a believer, answers all that deep enquiry of the heart as to purpose. The woman of Samaria is marked in every way by longing, desire, need. (Thirst is a characteristic word in connection with man in his relationship with God). Here is one who is the very personification of conscious need, longing and wanting to know real Life, what is the meaning of life, what is the meaning of everything - though perhaps not expressing it in such technical terms. There is a consciousness of some thing which ought to be, which is not. There is inside a deep knowledge that we were made for something, and we cannot find it; that this kind of life is a mockery, this kind of life is simply all the time a seeking to find satisfaction and never finding it.
+
+The very desire to be satisfied, the very sense of need itself is surely a witness to the fact that we were made for something. There is a destiny for which we were created, and we are groping for it, and yet we never seem to find it or reach it. If we finish our life here on this earth like that, then life will have mocked us. That is the state represented by the woman, and then the Lord Jesus, speaking of the water that He gives, the Life of the Spirit of God dwelling within, shows that there is an answer to all that, and that that Divine Life dwelling within is the solution to the problem, the key to the whole situation. When you have got that Life you have got your destiny in essence, you have found that for which your whole being craves as the explanation of your very being. It is a wonderful thing to recognise that. I trust that is not too abstract.
+
+You ask, ``Why have I a being? I am conscious of longings, desires, reachings out, and if they are not fully and finally satisfied then life has mocked me, I have missed something that I am conscious I ought to have had to explain my being''. Now, when the Lord plants eternal Life within, there is an answer to the whole situation and that very Life itself says, ``This is what you were made for; this is what you were created for, for God''. So, in the very receiving of eternal Life we have in essence all the purpose of God for which we were created, and all the answer to those eternal counsels which marked us out unto the adoption of sons. ``Because we are sons, God hath sent forth the spirit of His Son into our hearts, whereby we cry, Abba, Father.'' That is the Spirit of Life in Christ linking us with God and God's purpose in our creation.
+
+Chapter 5 and chapter 6 lead us on to see that union with Christ is the full basis and way of eternal purpose. We shall not stay with this in detail, but those two chapters make very clear the facts of Divine union. Chapter 5 emphasises Christ's union with the Father, and how it worked, His dependence upon the Father, His drawing everything from the Father, His doing everything, speaking everything as out from the Father, with nothing out from Himself. Then He carries that over to us, to show that as He lived by the Father, so we have to live by Him. Chapter 6 shows that form of union with Christ which is feeding upon Him: ``I am the bread''. He lived by the Father; we have to live by Him. But chapter 6 also emphasises that union with Him is through death and resurrection, because it is broken bread. It is His body, His flesh, and His blood. These cannot be taken until they are released - the body broken, the blood shed, and we are partaking in a spiritual way. Therefore union with Christ is the full basis and way of the Divine purpose; that is, nothing is apart from Christ. God does not give us eternal life as some thing. We have it only in the Son.
+
+Chapter 7 leads us to the heavenliness of union with Christ. The Feast of Tabernacles, governing that section, sets forth how the people of God are called out to live in booths and maintain that testimony throughout their whole course on earth. Theirs is not an earthly life of abiding places here, but they have to keep a testimony all the time to the fact that they do not belong to this world; they live in booths; they are a heavenly people. It is a great principle of the purpose of God that we should recognise that we are a heavenly people and have to live a heavenly life.
+
+Chapters 8 and 9 deal with another great principle and law of the eternal purpose; it is this, that revelation as to Christ is a supreme factor in the eternal purpose. In chapter 8 you have much said about the Lord as to Light. In chapter 9 you have the man born blind. The two things go together, and the issue of that was the full knowledge of God's Son; of course, in a typical way. The man came eventually to see who Jesus was, and that was the outworking of the Light. It is what Paul means in Ephesians by ``a spirit of wisdom and revelation in the full knowledge of Him''; not just the initial knowledge of Christ, but the full knowledge of Him. Revelation of Jesus Christ is a law of the eternal purpose; that is, we move on towards God's end of sonship by the full revelation of God's Son in us. It is a progressive thing, and spiritual growth unto fulness, unto perfection, unto sonship is by a progressive and ever-growing and ever-fresh knowledge of Jesus Christ by the revelation of the Holy Spirit.
+
+Chapter 10 gathers this all up into a corporate company and introduces the fact that this is not a matter of so many separate units. The realisation of God's eternal purpose requires the church, and is intended to be expressed in and through the church. So that the church being introduced, or the corporate company in union with Christ, in chapter 10 we are led into chapters 11 and 12 to see the church as a resurrection company.
+
+Chapter 13 takes us beyond that still, and shows the church in heavenly union, heavenly Life, and heavenly service. Christ is leaving the world, and while in one sense He is leaving the church behind, He is, in another sense, taking it with Him. That is what we are going to see in a moment, for the feet washing speaks of a constant separation from this world, and all ministry is in the direction of helping the Lord's people to maintain their heavenly position and heavenly Life, and not to become entangled with this world.
+
+\section{Chapters 14, 15 and 16}
+
+We come then, to chapters 14, 15 and 16. Chapter 14 shows us Christ leaving the world, or in the main the emphasis is on that. Chapter 15 brings in that which to the natural mind and to these disciples, not yet having received the Spirit, that which is always an enigma, a seeming contradiction. The Lord Jesus says repeatedly, ``I am leaving the world; I am going to the Father; yet a little while and ye see Me no more'' - ``Abide in Me''. The natural man says, ``How can that be?'' That is just the difficulty with the disciples, ``You say You are going; we do not know what You mean by 'a little while'. That enough is a problem, but then, added to that, You say we are to abide in You, and You are going. You are speaking in a realm that we do not understand''. Well, of course, it is not possible for the natural man to understand things like that. You and I understand because we are living in the truth of it, in the reality of it, but we can immediately see how this relates to the eternal purpose. Christ has gone; Christ is in heaven, and, being there, everything for the church as to the eternal purpose of God is transferred with Him to heaven. It is outside of this world. There is a new place, and there is a Man in that place, and that Man and that place are the source, the fountain-head of everything in relation to Divine purpose concerning the church. Christ in heaven is the sphere and the source of everything for the saints in connection with God's purpose.
+
+He says that if the purpose is to be reached or realised, it is essential that we abide in Him as outside of this world, as in heaven, and abide in Him as the fountain-head of all things.
+
+There is a passage in Ephesians which is the fuller, doctrinal, spiritual setting forth of this: ``God raised Him... and gave Him to be head over all things to the church which is His body, the fulness of Him that filleth all in all.'' The fountain-head of the church is in heaven, and for all things it is essential to abide in Him.
+
+The question of the disciples, and the question which would be ours if we did but know, would be, ``How can those here on this earth abide in One who is in heaven, and how can all that fulness which is locked up in Him in heaven be released to those who are here on this earth, in order that God's end in sonship should be reached?''
+
+Chapter 16 in the main answers the question, but these three chapters bear upon it. The answer is the Holy Spirit. Abiding in Christ is only another way of saying living in and by the Spirit, having your whole life in, and drawing all your resource by the Holy Spirit. We know that, and yet it is a matter that has got to be constantly repeated, and we have to be continually reminded of it. Sonship is, after all, a matter of having our life in the Holy Spirit, and having the Life of the Holy Spirit in us, and that to the full. When we use the word ``sonship'' we are only putting into one word all the eternal counsels of God, that which is meant by the purpose of the ages.
+
+Now you understand John 15 and you can break up that chapter. On the one hand, nothing is possible, said the Lord Jesus, apart from that abiding. A great many things are possible in a certain realm, but not in the realm of God's purpose. You may do quite a lot of things, achieve a lot of things, but they are outside of the realm of the eternal purpose. They do not relate to sonship, they do not issue in sonship, and that is the thing that matters.
+
+But when it comes to the matter of God's end, then the one word which sets heavily upon the whole situation is this, that nothing is possible, only in Christ, by abiding in Christ. In other words, nothing is possible apart from Life in the Spirit. That excludes everything: ``...apart from Me ye can do nothing''. On the other hand, the positive side, that everything is possible by abiding in Christ. Let this come to our hearts and bring rest. It says this, that God has planned a great end; God has purposed tremendous things. All that means that tremendous changes have got to take place in you and in me. We have got to be different creatures; we have got to be conformed to the image of God's Son. Everything has got to be Christlike, of Christ.
+
+That represents a tremendous transformation. It is a very high standard. It means perfection. Then in our hearts we faint and say, ``How can it be? It is too much, it is too high, it is beyond us''. We are so conscious of the tremendous amount in us that is set against that, the positive strength of evil, and the absolute weakness of the good. How? The answer is this: it will all happen if you abide. That is all. You have not got to do it. You have not got to produce it. You have not got to conform yourself to the image of God's Son. You have not got to create the fruit that is to be borne to God's glory. You have not got to produce this at all. All that you have got to do is to abide in Christ. Live your life in the Spirit, and it will all happen. That is the meaning of John 15.
+
+Everything of God's comprehensive purpose is all in the abiding. Surely that ought to bring rest, and that is just Christ becoming our Sabbath, our rest. The Holy Spirit will do everything if we will abide in Him, and as we abide the fruit is borne.
+
+\section{The Definition of Fruit}
+
+Let us be quite clear as to what the fruit is. Do not confuse things. A great many people have the idea that the fruit of John 15 is the work they do for the Lord, and the results of that work. It is not. There may be, in another sense, a fruitfulness of life seen in the winning of souls, and in helping others Christ-ward, but that is not the fruit here. The fruit here is that which realises God's end and what is the manifestation of Himself: ``Herein is My Father glorified... that we should be unto the praise of His glory''. What is the fruit, then? It is that which expresses God, it is the showing forth of God. ``The fruit of the Spirit is love, joy, peace, long-suffering, gentleness, goodness, faith, meekness, self-control...''. It is the expression of God.
+
+So many people who have that idea, that fruit-bearing according to John 15 is a matter of what we do for the Lord, have gone off and tried to work for the Lord, to be fruitful by doing things. They have failed to see that if you and I abide in Christ, or abide in the Holy Spirit, that sort of thing will not be what we take up. It will become spontaneous. You see souls, and you say, ``I have got to win those souls!'', and so you make a beeline for everybody and anybody under a kind of legalistic whip, whereas if you abide in Christ, watchfully and in readiness (and surely to abide in Christ means not to abide in ourselves in these matters, and in our own feelings about things), the Holy Spirit knows where a soul is ready and where a soul is not ready. The timing is known to Him; He Himself times these things. There is a sovereignty at work behind the lives of men of which they are not conscious, and when the Lord does eventually come to a life it is just at the right time.
+
+That Ethiopian Eunuch was just ripe, and the Holy Spirit knew and got hold of Philip and said, ``Go, join yourself to the chariot; here is a man who is ready, this is the time for that man''. The Holy Spirit knew Cornelius and spoke to Peter, ``Here is a man who is ready; the hour has come''. The Holy Spirit knows. We, on the other hand, take up this thing, and try to be fruitful.
+
+No one must think we are discouraging earnest desire for souls. It is a part of the Holy Spirit's work in us that we should have an earnest desire, but if we are going off to take up this matter and say, ``I must be fruitful and win souls'', and simply do it as out from ourselves, there may be a good deal of discouragement and a great many questions arise sooner or later, whereas a spontaneous work of the Spirit is always fruitful. It is abiding in Christ for every kind of fruit.
+
+What we want to emphasise is this: that before there can be those practical, concrete expressions of fruitfulness in other lives, there has got to be the expression of the Lord in us. Ministry comes out of what we are, and absolutely depends upon what we are, and when our ministry becomes something that is ahead of our walk with God, we have got into a realm of barrenness, unfruitfulness, ineffectiveness, and sooner or later: defeat. All ministry must just be in line with our walk with God. Abide in Him, so shall you bear fruit. It is that way. Have your life in the Spirit, and God's end will be reached; that is, an expression of Himself, sonship; and through what He is in us others will be met, for it is not what we can say to others about the Lord, it is what we can give to others of the Lord. To put it the other way: what the Holy Spirit has of Christ in us to give, ``I am the living bread'' and He put it into the hands of disciples, and said, ``You give it''. He gave Himself to them in type to give to others. That is ministry. It is receiving Christ, and giving Christ, not talking about Him. Unto that ministry we must abide, and as we abide, that just happens. The struggle, the strain and the stress goes out of life, and the fret, and the anxiety will depart as to the Lord's work and as to our own spiritual growth. Rest will come in as we abide. Our business is to abide, to live in and walk by the Spirit. All the rest will spontaneously result, and we can leave it at that.
+
+Let us have that understanding, and be quite clear, and say, ``Now, Lord, my desire and my intention is just to abide in You. All the rest is Your matter. My spiritual growth is Your matter. My ministry, my service, is Your matter. I abide!'' It sounds as though it is too simple, and too easy; we want to do something. That is just the trouble, we get into ourselves again.
+
+It is Life in the Spirit by which we come to God's end, and all that is meant by sonship; that is, an expression of Himself, with all its glorious results and primarily being unto the praise of His glory.
+
+\chapter{God's Purpose Realised Through Sonship}
+
+\scripture{\textbf{John 1-26} 1 Jesus spoke these things; and lifting up His eyes to heaven, He said, ``Father, the hour has come; glorify Your Son, that the Son may glorify You, 2 even as You gave Him authority over all flesh, that to all whom You have given Him, He may give eternal life. 3 ``This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent. 4 ``I glorified You on the earth, having accomplished the work which You have given Me to do. 5 ``Now, Father, glorify Me together with Yourself, with the glory which I had with You before the world was. 6 ``I have manifested Your name to the men whom You gave Me out of the world; they were Yours and You gave them to Me, and they have kept Your word. 7 ``Now they have come to know that everything You have given Me is from You; 8 for the words which You gave Me I have given to them; and they received them and truly understood that I came forth from You, and they believed that You sent Me. 9 ``I ask on their behalf; I do not ask on behalf of the world, but of those whom You have given Me; for they are Yours; 10 and all things that are Mine are Yours, and Yours are Mine; and I have been glorified in them. 11 ``I am no longer in the world; and yet they themselves are in the world, and I come to You. Holy Father, keep them in Your name, the name which You have given Me, that they may be one even as We are. 12 ``While I was with them, I was keeping them in Your name which You have given Me; and I guarded them and not one of them perished but the son of perdition, so that the Scripture would be fulfilled. 13 ``But now I come to You; and these things I speak in the world so that they may have My joy made full in themselves. 14 ``I have given them Your word; and the world has hated them, because they are not of the world, even as I am not of the world. 15 ``I do not ask You to take them out of the world, but to keep them from the evil one. 16 ``They are not of the world, even as I am not of the world. 17 ``Sanctify them in the truth; Your word is truth. 18 ``As You sent Me into the world, I also have sent them into the world. 19 ``For their sakes I sanctify Myself, that they themselves also may be sanctified in truth. 20 ``I do not ask on behalf of these alone, but for those also who believe in Me through their word; 21 that they may all be one; even as You, Father, are in Me and I in You, that they also may be in Us, so that the world may believe that You sent Me. 22 ``The glory which You have given Me I have given to them, that they may be one, just as We are one; 23 I in them and You in Me, that they may be perfected in unity, so that the world may know that You sent Me, and loved them, even as You have loved Me. 24 ``Father, I desire that they also, whom You have given Me, be with Me where I am, so that they may see My glory which You have given Me, for You loved Me before the foundation of the world. 25 ``O righteous Father, although the world has not known You, yet I have known You; and these have known that You sent Me; 26 and I have made Your name known to them, and will make it known, so that the love with which You loved Me may be in them, and I in them.''
+
+    \textbf{Numbers 3:5-7} 5 Then the LORD spoke to Moses, saying, 6 ``Bring the tribe of Levi near and set them before Aaron the priest, that they may serve him. 7 ``They shall perform the duties for him and for the whole congregation before the tent of meeting, to do the service of the tabernacle.
+
+    \textbf{Numbers 3:7}  ``They shall perform the duties for him and for the whole congregation before the tent of meeting, to do the service of the tabernacle.
+
+    \textbf{Numbers 3:11-13} 11 Again the LORD spoke to Moses, saying, 12 ``Now, behold, I have taken the Levites from among the sons of Israel instead of every firstborn, the first issue of the womb among the sons of Israel. So the Levites shall be Mine. 13 ``For all the firstborn are Mine; on the day that I struck down all the firstborn in the land of Egypt, I sanctified to Myself all the firstborn in Israel, from man to beast. They shall be Mine; I am the LORD.''
+
+    \textbf{Numbers 3:41} You shall take the Levites for Me, I am the Lord, instead of all the firstborn among the sons of Israel, and the cattle of the Levites instead of all the firstborn among the cattle of the sons of Israel.''
+
+    \textbf{Numbers 3:45} ``Take the Levites instead of all the firstborn among the sons of Israel and the cattle of the Levites. And the Levites shall be Mine; I am the Lord.
+
+    \textbf{Numbers 8:13} You shall have the Levites stand before Aaron and before his sons so as to present them as a wave offering to the Lord.
+
+    \textbf{Numbers 8:15} Then after that the Levites may go in to serve the tent of meeting. But you shall cleanse them and present them as a wave offering;
+
+    \textbf{Acts 20:28} Be on guard for yourselves and for all the flock, among which the Holy Spirit has made you overseers, to shepherd the church of God which He purchased with His own blood.
+
+    \textbf{Ephesians 5:25-26} 25 Husbands, love your wives, just as Christ also loved the church and gave Himself up for her,
+    26 so that He might sanctify her, having cleansed her by the washing of water with the word,
+
+    \textbf{Hebrews 12:23} to the general assembly and church of the firstborn who are enrolled in heaven, and to God, the Judge of all, and to the spirits of the righteous made perfect,
+
+    \textbf{Hebrews 2:10-12} 10 For it was fitting for Him, for whom are all things, and through whom are all things, in bringing many sons to glory, to perfect the author of their salvation through sufferings.
+    11 For both He who sanctifies and those who are sanctified are all from one Father; for which reason He is not ashamed to call them brethren,
+    12 saying, ``I will proclaim Your name to My brethren, In the midst of the congregation I will sing Your praise.''
+
+    \textbf{Hebrews 2:17} Therefore, He had to be made like His brethren in all things, so that He might become a merciful and faithful high priest in things pertaining to God, to make propitiation for the sins of the people.
+
+    \textbf{Hebrews 3:1} Therefore, holy brethren, partakers of a heavenly calling, consider Jesus, the Apostle and High Priest of our confession;}
+
+It is not very difficult to recognise the spiritual link between John 17 and those passages which we have linked with them, both in the Old Testament and the New Testament. They are a commentary upon the chapter, an exposition of it. We shall, as we come to this point in our meditation, allow those Scriptures to interpret John 17 to us.
+
+We are keeping before us the ultimate object of God. We can only understand any part of His Word and get the full value from it, as we see it in the light of God's eternal intention, and so once more we remind ourselves that God sets forth His full thought in a representative way, and demands that that thought presented shall be a governing one for all generations. The full intention or thought of God is the manifestation of Himself, and to give Himself an expression throughout the universe, and He has chosen to do that through a vessel which shall be the instrument of the manifestation of God, and therefore that vessel must take its character from Him. It is not just a reflection of God, but a living expression of Him. That is what God has planned as the end of all things.
+
+\section{Levitical Ministry}
+
+Now, the Levites represent that thought. We must remember that the Old Testament is a book of spiritual principles and we are not to take it in a literal way, because these opportunities are wrapped up in figures and types, representations and symbols. The types and the figures in themselves always fall short of that which they are called to typify, and what we have to look for is that which they are intended to embody and set forth as a spiritual truth. The Levites, therefore, embody a great spiritual principle, and we must not take the Levites as representing something literal for all time (we will touch upon that further later).
+
+We begin by recognising this, that the Levites do embody and set forth in a typical way the full thought of God; that is, the manifestation of Himself, God expressing Himself, God bringing a world into the knowledge of Himself, God distributing the knowledge of Himself abroad through a channel. To put that round the other way, it is an instrument, a vessel standing to show God's thoughts to men, to the universe, because it is not only unto man, but in so far as the truth of the church is hidden in the Levites, the manifestation of God by them is also unto principalities and powers. It is a universal making known of God, expressing God.
+
+Recognising that as the inclusive and comprehensive fact, we can break it up into smaller fragments, and note certain things about the Levites.
+
+Firstly, the Levite was to be always kept and held in honour, regard, and care. You notice that even in days of deep and terrible declension, when things had gone far from God's thought, the Levite was still held in honour and respect. He had a place - sometimes superstitiously so - but he was recognised.
+
+Then note the Levites' relationship to the rest of the people. The Levites were taken as a tribe in place of all the firstborn. The Lord said, in the day that He smote the firstborn in the land of Egypt, that He took all the firstborn of Israel to be His. In the firstborn all the family is regarded as being included and summed up. The firstborn stands as over the family in an inclusive and representative way, so that, in taking the firstborn, the Lord said, ``The family is Mine, all the others belong to Me'', just as the firstfruits were claimed by God as an earnest of all the harvest and all the fruit as God's right, to be held for God. So that when the Levites were taken in the place of the firstborn, from God's standpoint it was the taking of all the people as His. So they represented all Israel in relation to God, as being a priestly nation.
+
+That is what we meant when we said that we must not take them in a literal way, but in a spiritual way, as embodying a principle. The Levites spiritually do not represent a class apart. Nowadays ministers and laity are spoken of, but that is a thought foreign to the Word of God, and it is just a failure to recognise this fact which has led to such a division and false position: the Levites are not the ministers among the Lord's people, but they are the Lord's people in ministry. All the Lord's people are regarded as ministering in priestly office unto the Lord.
+
+Then note the corresponding truth, the counterpart of that, the relationship of the Levite to God. They were to be offered as a wave offering unto the Lord. They were His. They belonged to Him in an utter way: ``They are Mine, saith the Lord.'' But they are His as purchased with blood, redeemed unto God. That lies at the very foundation of Israel's history in the blood of the Pascal Lamb. It is followed on in another symbolic way, by the half shekel of silver; the redemption of the firstborn by the half shekel of silver. Silver, as we know, is the type of redemption. Therefore the Levites set forth the fact that the people of God are His by reason of redemption, purchased with precious blood.
+
+The next thing that follows is that the Levites were given to Aaron to minister unto him. They were a gift to Aaron, the High Priest. It is almost impossible for us to close our ears to the demand for entrance at this moment of words from John  ``...those whom Thou hast given Me... they are Thine, and Thou gavest them to Me...'' - but we must not anticipate things too soon. The Levites were given to Aaron to be his fellows in responsibility for the testimony of the Lord, for the preservation, maintenance, and perpetuation of the Lord's testimony. They were fellows with Aaron.
+
+Now, those few things help us when we come to John 17, for undoubtedly we are in the presence of the High Priest, who is, according to His own words in this prayer, consecrating Himself, or has consecrated Himself. Everything in this chapter, so far as the Lord Jesus Himself is concerned, is High Priestly. He has, right through this Gospel, been represented as taking the place of Jewish ordinances one after the other. He has taken the place of the Passover, and has Himself become the Pascal Lamb, the shed blood. He has taken the place of the Feast of Tabernacles. He has stepped right into the place of all the feasts of the Jews and transferred them to Himself. Now at length He steps right into the place of the High Priest and transfers that to Himself also. But He is not alone. There is a priestly company for whom He is concerned, and He links their consecration with His own: ``For their sakes I consecrate Myself, that they may be consecrated.'' There is a priestly company consecrated in the consecration of the High Priest, the Lord Jesus.
+
+Now notice the family element in this chapter (and this is the heart of things). Notice the repeated occurrences of the name, ``Father'': ``O righteous Father''; ``Holy Father''; ``Father, the hour is come''. Then notice, linked with that, ``the Son''; ``glorify the Son that the Son may glorify Thee''. Then, as in that relationship: ``Thine they were, and Thou gavest them to Me''; ``those whom Thou hast given Me''.
+
+\section{Sonship}
+
+When you want the explanation of that, you turn to the passages of the letter to the Hebrews: ``He was not ashamed to call them brethren... saying, I and the children whom God hath given Me... I will declare Thy name unto My brethren... Wherefore, holy brethren, partners in the heavenly calling, consider the apostle and High Priest''. It is a High Priestly Family, and that brings us to the heart of things. The heart of things is sonship. By what means, on what basis, has God determined from all eternity to reveal, to manifest, and express Himself throughout this universe? It is through sonship, and what sonship means in its full thought. ``Son-wise'' is God's eternal thought for the revelation of Himself.
+
+The Lord Jesus in this chapter - while the actual words are not used - is clearly set forth as the Son from all eternity, the Firstborn. He speaks twice of His relationship with the Father before the world was, and as we have already pointed out, He was chosen before the foundation of the world as the Son in whom God would sum up all things. Then in Him we were chosen and foreordained unto the adoption as sons.
+
+Now we understand two things: the Levites being in principle the firstborn; and the word in Hebrews 12:22-23: ``...ye are come... unto the church of the firstborn ones, whose names are enrolled in heaven''. So sonship governs everything, and Hebrews has again told us that by reason of our relationship with Him, "because the children are sharers in flesh and blood, He also partook of the same... He that sanctified (or consecrated) and they that are sanctified (consecrated) are all of one and these are the many sons whom He is bringing to glory.
+
+That will lay the foundation of everything for us. First of all it will explain to us the real nature of our union with Christ, begotten of God, risen with Christ, joined to Him in risen life.
+
+If you care to meditate long enough upon John 17 with this thought in mind you will find it unspeakably profitable. All the rest of John's gospel is gathered into John 17. The Lord Jesus is set forth as having enunciated in word and deed great principles in relation to God's eternal, ultimate end, the revelation of Himself in the universe through a company in Christ; and, having set forth those laws, those principles in word and in deed, He gathers them all up in prayer, and then, as it were, prays the whole thing through.
+
+It is a lesson for us. Principles are not just abstract things, they are things which have got to be prayed about. They have to be prayed into action, into realisation, into fulfilment. It seems, moving in the realm of the Holy Spirit, as though the Lord Jesus took up all those things and prayed them through with the Father. He goes right back to eternity past, and takes things up as in the counsels of God, and then He comes on and touched upon all these things relative to that predestined purpose and end of God, the revelation of His glory. He touches in this prayer upon God being glorified in Him, and He being glorified in God, and the church coming into that glory. He touches upon the fact that the purpose of God can only be realised in a corporate Body, sharing one Life in a unity of one Spirit, and He prays it out.
+
+This is not a matter for detached and unrelated individuals; it is a corporate thing, and He prays it through. So He touches upon all these things from the beginning.
+
+We saw that the very first principle governing the end of God is the possessing of eternal Life, and new creation Life, and He touches upon it twice: ``...that He should give eternal life to as many as Thou hast given Him. And this is life eternal, that they might know Thee the only true God, and Him whom Thou didst send, Jesus Christ.'' The principles are all taken up, all the elements of this great purpose of God, and prayed over and prayed through, gathered up in prayer. That is where you and I have got to end; not in the accumulating of principles, not in the constituting of a kind of manual of spiritual laws, but in getting down in prayer to have these things prayed into expression, into realisation.
+
+He gathers up sixteen chapters, so far as their governing principles are concerned, and prays them through. It is a most impressive thing. He is praying through, all-inclusively and comprehensively, the question of sonship. It is not enough that in the eternal counsels of God the sons were foreseen, foreordained and chosen in Him. That is a great truth, but even that has got to be prayed over. This is one of the mysteries. We cannot reconcile these things mentally. They will always remain to us a mystery, but there is the fact, that while God knows everything at the beginning, sees the end and possesses the end at the beginning, from eternity, the realisation of that end comes about through prayer, through co-operation with Him. This He has pointed out.
+
+The whole matter of sonship, gathered up in all its elements and features, is being prayed through. You can see what the church is as the church of the firstborn ones. It is heavenly in its origin, heavenly in its life, heavenly in its fellowship, heavenly in its unity, heavenly in its vocation. These are all things which are marked in type, in symbol in the Levites. Its heavenliness comes out of the fact, is the outgrowth of the fact, that it has received a heavenly life, and that heavenliness is developed by its living according to that heavenly life that is all the time drawing upon the exalted Lord, the heavenly Lord for its life, for all its resources. So it develops in its heavenly nature and heavenly vocation. Its very oneness, its very unity is the expression of that one Life which it possesses by the Holy Spirit.
+
+I do not believe that we are to pray John 17 now. Very often we hear people praying in the terms of John 17, ``that they all may be one''. That prayer has been answered. At Pentecost that prayer was answered. He prayed it through, and it was answered at Pentecost. The church is one. We have to do nothing to make the unity of the body of Christ. All we have to do is to guard it, to watch over it, to cherish it and give diligence to keep it. Every believer out of every nation, tribe, kindred and tongue shares one Life by one Spirit, and has their oneness in that basic fact. We discover that spontaneously. You know a living child of God when you meet one, without any introduction. If you meet one who has really got the Life in them, it is not long before you discover them. That Life is one Life; it flows together.
+
+The enemy has scored a great success by getting the Lord's people down on to that level where they accept a broken unity, and think that they have got to work for the recovery of unity, instead of taking the positive attitude that, whatever is done here on this earth, that in heaven, in Christ the Body is one, and nothing can alter that. So far as the testimony to it is concerned, that is another thing. That is where we have to give diligence.
+
+That is our Levitical ministry, to testify, to maintain the testimony to the heavenly facts. The Levites were a representation of heavenly things. The letter to the Hebrews tells us that this tabernacle, and all that had to do with it, were a pattern of the things in the heavens. The Levites were a pattern of things in the heavenlies. The Lord desires to have a testimony here to heavenly realities.
+
+We dare not take the opposite view, that because the Body is one in heaven, indestructibly and indivisibly, it does not matter how we behave towards one another here. It does matter. Our heavenly ministry and vocation is related to an expression here of heavenly things, the thoughts of God, and this is Levitical ministry in which we have to give diligence.
+
+If we were going on at this point to see what the ministry of the Levites was, we should see that it has to do with the tabernacle (the tent) of Testimony, and that is Christ and His members; a corporate thing. They had the care of that. But what we want is to keep the emphasis here, and here we finish for the time being.
+
+It is sonship which is God's way, means, and method of manifesting Himself, and sonship is, in the first place with God an established thing, but with us it is a progressive thing. Of course, all Divine truths are like that. With God they are complete and perfect and settled. Even the church is finished with Him, the last member is added with Him; so in Ephesians it is always represented as a complete thing, but from our side the matter is progressive. The initiation of sonship is when He sends forth the Spirit of His Son into our hearts, whereby we cry, ``Abba, Father''. That is the cry of the infant, it is the cry of the Spirit of Sonship, at its inception. But that sonship has to be progressive, and it is that which is the object of Divine attention and care. ``God dealeth with you as with sons'' and in all His activities with us, the one thing upon which He is concentrating all the time is the development of what is meant by sonship, full growth, and spiritual maturity; the end of which shall be the fullest possible manifestation of Himself. That is an individual as well as a corporate thing, and while we should get all the help that should come to us from recognising the individual and the personal side of that and the meaning of the dealings of God with us: all the explanation of the way in which He handles us, the experiences through which He takes us, the mysteries of our life, the hard things, is unto sonship.
+
+But do let us remember that sonship in its fullest expression can never be by an individual or any number of individuals as such. It requires the corporate Body, and so there is a peculiar and particular kind of dealing on the part of God through corporate life which can never be known in separate individual life; that is the House of God; the fellowship of God's people provides God with a peculiar opportunity for developing sonship. For the flesh the most difficult place is the House of God.
+
+\section{The House of God}
+
+Jacob came to Bethel, but he was in the flesh, he was a carnal man, and it was impossible for him to stay there. The House of God is always an awful place to the flesh, and Jacob said: ``How awful is this place.'' Jacob went on his way, and for twenty years he was under the hand of God in chastening, and then he came back to Bethel and he was able to abide. He is now made suitable to the House of God, and he can be there in rest.
+
+The real spiritual fellowship of the saints is a very difficult place for us if we are in the flesh. We find the rub, the friction, the trial, the difficulty of relationships, of the different constitutions and temperaments and dispositions of the Lord's people. Ah, but it is the supreme opportunity for living in the Spirit, and not in the flesh; for living on a basis of the Spirit and not on the basis of the natural life. It is a great opportunity for ascendancy over all that is of the old creation. The fellowship of the Lord's people is a tremendous discipline and training. There is nothing more valuable to us and to God than real spiritual fellowship among the saints, but it is there that you find your training, there you find your discipline, there you find the constant demand for not living in the flesh or else you make trouble, but of moving in the Spirit all the time. There you must not allow your natural feelings to arise and influence you. You must allow the love of God all the time to triumph.
+
+Through assembly life and fellowship God is securing something He could not secure if He put us all as isolated units in different parts of the world. It is this Life in which we constantly refuse to take on what people are naturally, and to live in the love of God, in the Spirit of Christ. I have never yet met the person with whom I could find no fault at all; not that we look for faults, but sooner or later we do come up against something that we do not approve of, that we think is strange, peculiar, or something that they would be better without. Now, that is the opportunity to get above that. It is in the corporate life of His people that the Lord has a special opportunity. I do not believe our training can possibly be complete until we have got to the place where in corporate life we know the triumph of the grace of God. Is not that the tragedy of so much of the Lord's work - Christians not able to get on with one another, missionaries at strife with their fellows, and the work of the Lord being arrested and the testimony being lost?
+
+The House of God is a great training centre for service - we mean by that the fellowship of God's people - and no one ought to be put in a place of spiritual responsibility who has not graduated in fellowship, who has not learned to live triumphantly with difficult people if they are the Lord's people. It is so easy to resign if people are difficult, and go and work somewhere else where they are not so difficult. If we do so, we have thrown away our supreme opportunity of qualification for honour.
+
+So the Lord prays this thing out, and He puts the testimony right in the balances with this: ``That they all may be one: as Thou, Father, art in Me, and I in Thee, that they also may be one in Us: that the world may believe''. There is your ministry; there is your testimony. God deals with us in our relationships in a way of discipline to develop sonship.
+
+Perhaps after this we shall have to take a different attitude to people, and see that that very difficult person whom the Lord does not remove from our lives is His way of developing sonship, and when sonship has been developed, then perhaps the Lord can change the situation - or it may be that it is already changed, by the fact that we are changed.
+
+Sonship is the way in which God is going to reveal Himself through this universe, and that will be as we - individually, as far as possible, and collectively, in a far bigger way - are conformed to the image of God's Son, and we have come eventually to the adoption as sons for which the whole universe waits, unto which the whole creation has been subjected to vanity. Then, when the sons are manifested, the creation shall be delivered.
+
+\chapter{The Cross in Relation to God's Eternal Purpose}
+
+\scripture{\textbf{John 17} 1 Jesus spoke these things; and lifting up His eyes to heaven, He said, ``Father, the hour has come; glorify Your Son, that the Son may glorify You,
+    2 even as You gave Him authority over all flesh, that to all whom You have given Him, He may give eternal life.
+    3 This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent.
+    4 I glorified You on the earth, having accomplished the work which You have given Me to do.
+    5 Now, Father, glorify Me together with Yourself, with the glory which I had with You before the world was.
+    6 ``I have manifested Your name to the men whom You gave Me out of the world; they were Yours and You gave them to Me, and they have kept Your word.
+    7 Now they have come to know that everything You have given Me is from You;
+    8 for the words which You gave Me I have given to them; and they received them and truly understood that I came forth from You, and they believed that You sent Me.
+    9 I ask on their behalf; I do not ask on behalf of the world, but of those whom You have given Me; for they are Yours;
+    10 and all things that are Mine are Yours, and Yours are Mine; and I have been glorified in them.
+    11 I am no longer in the world; and yet they themselves are in the world, and I come to You. Holy Father, keep them in Your name, the name which You have given Me, that they may be one even as We are.
+    12 While I was with them, I was keeping them in Your name which You have given Me; and I guarded them and not one of them perished but the son of perdition, so that the Scripture would be fulfilled.
+    13 But now I come to You; and these things I speak in the world so that they may have My joy made full in themselves.
+    14 I have given them Your word; and the world has hated them, because they are not of the world, even as I am not of the world.
+    15 I do not ask You to take them out of the world, but to keep them from the evil one.
+    16 They are not of the world, even as I am not of the world.
+    17 Sanctify them in the truth; Your word is truth.
+    18 As You sent Me into the world, I also have sent them into the world.
+    19 For their sakes I sanctify Myself, that they themselves also may be sanctified in truth.
+    20 ``I do not ask on behalf of these alone, but for those also who believe in Me through their word;
+    21 that they may all be one; even as You, Father, are in Me and I in You, that they also may be in Us, so that the world may believe that You sent Me.
+    22 The glory which You have given Me I have given to them, that they may be one, just as We are one;
+    23 I in them and You in Me, that they may be perfected in unity, so that the world may know that You sent Me, and loved them, even as You have loved Me.
+    24 Father, I desire that they also, whom You have given Me, be with Me where I am, so that they may see My glory which You have given Me, for You loved Me before the foundation of the world.
+    25 ``O righteous Father, although the world has not known You, yet I have known You; and these have known that You sent Me;
+    26 and I have made Your name known to them, and will make it known, so that the love with which You loved Me may be in them, and I in them.''
+
+    \textbf{John 18} 1 When Jesus had spoken these words, He went forth with His disciples over the ravine of the Kidron, where there was a garden, in which He entered with His disciples.
+    2 Now Judas also, who was betraying Him, knew the place, for Jesus had often met there with His disciples.
+    3 Judas then, having received the Roman cohort and officers from the chief priests and the Pharisees, *came there with lanterns and torches and weapons.
+    4 So Jesus, knowing all the things that were coming upon Him, went forth and *said to them, ``Whom do you seek?''
+    5 They answered Him, ``Jesus the Nazarene.'' He *said to them, ``I am He.'' And Judas also, who was betraying Him, was standing with them.
+    6 So when He said to them, ``I am He,'' they drew back and fell to the ground.
+    7 Therefore He again asked them, ``Whom do you seek?'' And they said, ``Jesus the Nazarene.''
+    8 Jesus answered, ``I told you that I am He; so if you seek Me, let these go their way,''
+    9 to fulfill the word which He spoke, ``Of those whom You have given Me I lost not one.''
+    10 Simon Peter then, having a sword, drew it and struck the high priest’s slave, and cut off his right ear; and the slave’s name was Malchus.
+    11 So Jesus said to Peter, ``Put the sword into the sheath; the cup which the Father has given Me, shall I not drink it?''
+    12 So the Roman cohort and the commander and the officers of the Jews, arrested Jesus and bound Him,
+    13 and led Him to Annas first; for he was father-in-law of Caiaphas, who was high priest that year.
+    14 Now Caiaphas was the one who had advised the Jews that it was expedient for one man to die on behalf of the people.
+    15 Simon Peter was following Jesus, and so was another disciple. Now that disciple was known to the high priest, and entered with Jesus into the court of the high priest,
+    16 but Peter was standing at the door outside. So the other disciple, who was known to the high priest, went out and spoke to the doorkeeper, and brought Peter in.
+    17 Then the slave-girl who kept the door *said to Peter, ``You are not also one of this man’s disciples, are you?'' He *said, ``I am not.''
+    18 Now the slaves and the officers were standing there, having made a charcoal fire, for it was cold and they were warming themselves; and Peter was also with them, standing and warming himself.
+    19 The high priest then questioned Jesus about His disciples, and about His teaching.
+    20 Jesus answered him, ``I have spoken openly to the world; I always taught in synagogues and in the temple, where all the Jews come together; and I spoke nothing in secret.
+    21 Why do you question Me? Question those who have heard what I spoke to them; they know what I said.''
+    22 When He had said this, one of the officers standing nearby struck Jesus, saying, ``Is that the way You answer the high priest?''
+    23 Jesus answered him, ``If I have spoken wrongly, testify of the wrong; but if rightly, why do you strike Me?''
+    24 So Annas sent Him bound to Caiaphas the high priest.
+    25 Now Simon Peter was standing and warming himself. So they said to him, ``You are not also one of His disciples, are you?'' He denied it, and said, ``I am not.''
+    26 One of the slaves of the high priest, being a relative of the one whose ear Peter cut off, *said, ``Did I not see you in the garden with Him?''
+    27 Peter then denied it again, and immediately a rooster crowed.
+    28 Then they *led Jesus from Caiaphas into the Praetorium, and it was early; and they themselves did not enter into the Praetorium so that they would not be defiled, but might eat the Passover.
+    29 Therefore Pilate went out to them and *said, ``What accusation do you bring against this Man?''
+    30 They answered and said to him, ``If this Man were not an evildoer, we would not have delivered Him to you.''
+    31 So Pilate said to them, ``Take Him yourselves, and judge Him according to your law.'' The Jews said to him, ``We are not permitted to put anyone to death,''
+    32 to fulfill the word of Jesus which He spoke, signifying by what kind of death He was about to die.
+    33 Therefore Pilate entered again into the Praetorium, and summoned Jesus and said to Him, ``Are You the King of the Jews?''
+    34 Jesus answered, ``Are you saying this on your own initiative, or did others tell you about Me?''
+    35 Pilate answered, ``I am not a Jew, am I? Your own nation and the chief priests delivered You to me; what have You done?''
+    36 Jesus answered, ``My kingdom is not of this world. If My kingdom were of this world, then My servants would be fighting so that I would not be handed over to the Jews; but as it is, My kingdom is not of this realm.''
+    37 Therefore Pilate said to Him, ``So You are a king?'' Jesus answered, ``You say correctly that I am a king. For this I have been born, and for this I have come into the world, to testify to the truth. Everyone who is of the truth hears My voice.''
+    38 Pilate *said to Him, ``What is truth?'' And when he had said this, he went out again to the Jews and *said to them, ``I find no guilt in Him.
+    39 But you have a custom that I release someone for you at the Passover; do you wish then that I release for you the King of the Jews?''
+    40 So they cried out again, saying, ``Not this Man, but Barabbas.'' Now Barabbas was a robber.
+
+
+    \textbf{Acts 20:28} Be on guard for yourselves and for all the flock, among which the Holy Spirit has made you overseers, to shepherd the church of God which He purchased with His own blood.
+
+    \textbf{Hebrews 12:23} to the general assembly and church of the firstborn who are enrolled in heaven, and to God, the Judge of all, and to the spirits of the righteous made perfect,
+
+
+    \textbf{Ephesians 5:25-27} 25 Husbands, love your wives, just as Christ also loved the church and gave Himself up for her,
+    26 so that He might sanctify her, having cleansed her by the washing of water with the word,
+    27 that He might present to Himself the church in all her glory, having no spot or wrinkle or any such thing; but that she would be holy and blameless.
+
+
+    \textbf{Matthew 24:22} Unless those days had been cut short, no life would have been saved; but for the sake of the elect those days will be cut short.
+
+
+    \textbf{Matthew 24:24} For false Christs and false prophets will arise and will show great signs and wonders, so as to mislead, if possible, even the elect.
+
+    \textbf{Matthew 24:31} And He will send forth His angels with a great trumpet and they will gather together His elect from the four winds, from one end of the sky to the other.
+
+    \textbf{1 Peter 1:1-2} 1 Peter, an apostle of Jesus Christ, To those who reside as aliens, scattered throughout Pontus, Galatia, Cappadocia, Asia, and Bithynia, who are chosen
+    2 according to the foreknowledge of God the Father, by the sanctifying work of the Spirit, to obey Jesus Christ and be sprinkled with His blood: May grace and peace be yours in the fullest measure.
+
+    \textbf{Ephesians 1:4} just as He chose us in Him before the foundation of the world, that we would be holy and blameless before Him. In love ...
+
+    \textbf{Ephesians 1:7} In Him we have redemption through His blood, the forgiveness of our trespasses, according to the riches of His grace}
+
+We come back to John 17 and 18. In continuation of this meditation, not dealing with all the content of these chapters which is quite another step, but looking at the whole of this section in the light of the main object which has been brought into view, that is, God's eternal purpose and the instrument or vessel by which and in which that purpose shall be most fully realised: the church of the Firstborn. The purpose being, as we have seen, the expression of Himself in this universe, that we should be unto the praise of His glory.
+
+So, in relation to that eternal purpose, we come to the Cross. We have seen throughout this Gospel a progressive development of the ways and means, the laws and principles which underlie the purpose of God, and now the Cross stands over all. It is as though there had been an indicating of the way, and all that is in the way, and a bringing into view in chapter 17 of the end of the way, with Christ in glory. And then the Holy Spirit says, ``But the whole of this revealed way and purpose demands, and can only be entered into, known, and realised, by the Cross''. So before there can be a beginning on our side, we have to face the inclusiveness of the Cross and see what the Cross means in relation to the eternal purpose.
+
+Of course, the full meaning of the Cross could never be comprehended or set forth in a short time, but it may be helpful for us to look at this matter from two or three standpoints. In so doing we shall be led to see the relationship of the Cross to that purpose of God.
+
+\section{The Cross Viewed from Satan's Standpoint}
+
+\subsection{His hatred revealed in crucifixion.}
+
+First of all we look at it from the standpoint of the crucifixion. The crucifixion properly has very limited connection with the Divine purpose. It is an aspect of things which comes from the outside, and yet it represents something of very real meaning. Crucifixion as such was not a part of God's thought, not a part of God's arrangement. The death of Christ is quite another thing, but crucifixion is not something which God had planned as a necessary part of the whole redemptive order. The crucifixion represented, in the first place, satan's hatred and malice.
+
+We have to draw a line of distinction and discrimination between what we mean when we speak of the Cross, and when we speak of the crucifixion. When we speak of the Cross we really mean the comprehensive meaning of the death of Christ, but when we speak of the crucifixion we refer to just an aspect, a method; and that method and aspect represents this vehement hatred and malice of the devil. It was satan's way of degrading and humiliating the Son of God to the deepest depths. No form of death in the eyes of the world was more despicable and loathsome, horrible and humiliating than crucifixion. So by the crucifixion satan is revealed in the real spirit of hatred for, and malice against, God's Son. In a sense it is satan's answer to His claims. At the opening of His public life and ministry he took up the heavenly announcement: ``This is My beloved Son...'', and challenged that in the hour of weakness, in the hour of trial, under conditions of testing. He pressed home his challenge: ``If Thou be the Son...''; and there at the outset he was defeated by the Son, and sonship triumphed over satan. It was the triumph of that sonship when satan, the personification of all that is evil, hellish, and diabolical, came against Him. In the power of sonship, under supreme testing, He triumphed over satan, and sonship was upheld and preserved intact. Unspoiled, unsoiled, sonship came through the ordeal.
+
+From that time onward there is this constant battle on the matter of sonship. It is all raging round that point. You notice that the one thing that the Jews hurled against Him as the ground upon which He should be crucified, was, ``He made Himself the Son of God''. They could never get over that, showing how true it was what the Lord had said, ``Ye are of your father the devil''. The terrific expression of satan's hatred of that sonship, and what it meant, was because of what it was going to mean ultimately.
+
+It is as well to recognise how sonship has been bitterly assailed in Him, and is always bitterly assailed in us. There are few things more bitterly assailed in this universe than the maturing of saints, the bringing of children of God through to sonship. We understand that in the light of the throne, which eventually sees the whole kingdom of satan cast out, and the manifestation of the sons with the Son.
+
+However, here you have in the crucifixion the form taken by that hatred of satan for the Son, and for what sonship means in Him that was never of God; for crucifixion is that. It has always been recognised that crucifixion was the most ignominious or humiliating form of death that the world then knew. That is why the Jews would not do it. They refused to crucify Him. They brought Him to Pilate. They forced the issue with Pilate. Pilate said, ``Take ye Him and crucify Him''. No, they would not; only Gentile dogs could do a thing like that. Even low as they had fallen morally, they were not going to do this with their own hands. They would use that which they considered to be far below them in the standard of this world's moral estimates and values to crucify.
+
+\subsection{His hold on men revealed in crucifixion.}
+
+Then there is this extra factor: the crucifixion reveals what a hold satan had on men; in the first place, that he could make the Jews force that issue, and then make the Gentiles carry it out. What a grip satan had on men to use them for this thing, the direst humiliation of God's Son. It speaks volumes for the captivity of men to the devil, that men should be instrumental in satan's hands of doing that which in all history stands out as the worst thing that could be done to anybody. If He were only a man, to be crucified was the worst, most degrading thing that could be done to Him; but He was God's Son! Can you enter into the meaning of that?
+
+Now, putting those two things together, and seeing crucifixion as an expression of satan's hatred and satan's grip on men to use them to fan that background hatred, then you have the setting for a wonderful manifestation of Divine sovereignty. The strongest, bitterest, and most terrible thing that satan could do, and that by the instrumentality of those who are gripped and held by him, became the very occasion for two things: one, the overthrow of satan, and two, the judgement of mankind. That is the crucifixion. The very crucifixion was turned to the overthrow of satan.
+
+An extra element was in the crucifixion to make it that, of course, and that is what we mean by the Cross, the death of Christ; but through crucifixion satan was entirely overthrown. In the place, and at the time of his most bitter and terrible assault upon the Son of God he was met and destroyed, and men, his instrument, came under the very judgement which they were being used to express against the Son of God.
+
+We must recognise that on that side of things the Cross of the Lord Jesus is the judgement of the world, and that is what He has just said, ``Now is the judgement of this world: now shall the prince of this world be cast out'' (John 12:31); and that in connection with the cross: ``And I, if I be lifted up...'' (John12:32). What was the connection? ``It is not lawful for us to put any man to death'' (John 18:31). They were not going to crucify Him. That is the connection for this comment of the apostle that the Word of Jesus might be fulfilled (John 18:32). If you look at the marginal reference it takes you back to chapter 12:32: ``And I, if I be lifted up from the earth, will draw all men unto Me.'' So that that lifting up, which the Jews would not do themselves, but used Gentiles to do, became, on the one hand, the judgement of the world, and on the other hand, the casting out of the prince of the world. It was the sovereignty of God right in the heart of satan's most bitter antagonism.
+
+\section{The Cross Viewed from the Divine Standpoint}
+
+Then we turn to view it from the Divine standpoint. These things are clearly traceable in this account. One is that the Cross of the Lord Jesus was Divinely ordained. That is perfectly patent. It did not originate with man or devil, it originated with God in the Divine economy. Not only was it Divinely ordained, but it was Divinely governed in all its details. That is seen very clearly in this record. It was carried through in perfect order, it was timed from above, and it was entirely under Divine control. Men did try to manipulate these proceedings. They said, ``Not on the Passover''. He took it out of their hands and saw to it that it was on the Passover, because it was so vitally related to the meaning of the Passover. As Paul says later, ``Christ our Passover''. So they would have arranged the time, but He took the matter of the time out of their hands. He controlled it so perfectly in its order, that bit by bit it fulfilled prophetic Scriptures. One feature of this record is the repetition of such words as, ``That the Scripture might be fulfilled'', just in perfect order. This matter is in the hands of God, after all, not in man's hands. There is another standpoint always.
+
+God was doing the main thing here. What was He doing? After all, what satan and men did was subservient, was only relative. The main thing was what God was doing. In a word, God was dealing with all that broke in against the eternal purpose. God's purposes had been established from of old, they could not be frustrated. But inasmuch as a great deal had broken in against the realisation of those purposes, God will deal with all that which has broken in and get it out of the way, and go on towards the realisation of that purpose.
+
+One of the inclusive factors in dealing with all that which had come in, and making a way, securing His end, was the recovering of a racial Man according to the Divine type. Read again Hebrews 1 and 2, and a quotation from Psalm 8: ``What is man, that Thou art mindful of him, or the son of man that Thou makest mention of him?'' The literal translation is: ``...dost put him in charge... Thou madest him to have dominion over the works of Thy hands''. Then the Lord Jesus is brought into that very place. ``We see not yet all things put in subjection under Him... but we see Jesus... crowned with glory and honour'' (Heb. 2:8,9). He occupies the place which was intended to be occupied by the first Adam; transcending that place, of course, or, shall we say, of which the first Adam was a type, for that seems to be what the Scripture says, that he was a figure of Him that was to come. Here, through the Cross, that racial Man, first born, according to Divine type, was recovered, secured, and by the very cross which expressed the violent hatred of satan and satan's terrible work in man's heart, God was perfecting a Captain: ``For it became Him, for whom are all things, and through whom are all things, in bringing many sons to glory, to make the Captain of their salvation perfect through sufferings''. Peter speaks of ``the sufferings of Christ and the glory that should follow'', bringing many sons to glory, the Captain of their salvation made perfect through suffering. In the very Cross, with its dark background of evil, its cosmic encompassment of violence, God was perfecting a file-leader of many sons to come to glory, made perfect through sufferings.
+
+That does not mean that Christ was anything but perfect in His nature, but it was perfecting the perfect, it was developing perfection to its full dimensions, He was perfect in the beginning, as a child is perfect, but He was perfected as from the child to the man, and those perfections were brought to final development through suffering. There was patience in Him, but it was made perfect patience through suffering. All the graces and virtues were there without a tinge or taint of evil, but subjected to the fire they were developed, so that they became the full measure required by many sons. We have got a very great Christ in heaven. He has enough perfection for us all. He was made complete, mature through suffering.
+
+That is the Divine standpoint of the Cross in relation all the time to the eternal purpose. Keep that in view, and make all your lines converge upon that. Was it satan's activity in crucifixion? Yes, but your arrow takes you to God's purpose, not defeated but realised. Was it Christ's sufferings and death? Yes, but from the Divine standpoint all ending in the realisation of the purpose.
+
+\section{The Cross Viewed from the Standpoint of the Church}
+
+What are the great words that stand over the church? They gather the church into themselves. They are two words which govern (shall we say) two dispensations: the word ``elect'' and the word ``redemption''. Those two words govern the church entirely in its history from eternity to eternity. Election takes us back to the before times eternal. The words Paul uses are: ``...chose us in Him before the foundation of the world'', and the word ``chose'' there is the same as ``elected''. We were elected in Him before the foundation of the world. ``Elect'', says Peter, speaking of the church, ``according to the foreknowledge of God the Father''. That is why we referred at the beginning to those passages in Matthew about the elect. Everything, you notice, is being governed in relation to the elect, ``Except those days had been shortened there should no flesh be saved, but because of the elect those days will be shortened.'' We will come back to that in a moment. We just point out that the other word is ``redemption'', and it is peculiarly related to the elect.
+
+Now we come back to ``election''. There is a great deal of confusion about election. There is no need to be. I think a great deal of the trouble in relation to election and what is called ``the doctrine of election'' has come about because people have assumed that the elect is the only party that will ever be saved, which is not true. We are not talking about times, about this dispensation; we are talking about all dispensations. You cannot read the book of the Revelation and conclude that the elect is the only company saved. Read the book of the Revelation again, with that thought in mind. There will be many more saved at some time (and we are not going to say when that may be) than the elect, but the elect will be saved in this dispensation. The elect in this dispensation represent that for God which shall be, must be, because He cannot be cheated of His full thought. There will be nations walking in the light of the City, which is the church, the elect. Because that has not been recognised, but it has been assumed that the elect represent the saved and all the rest are going to be lost, there has been such confusion in this matter. We are not going to the other extreme and talking universalism, but we are saying that, as far as we can see, what the Word of God shows is that there is a body within the great body, a company within the great company, and that inner company is the elect, and many more beyond may be saved. It is a wide sweep on the part of God to get a specific object.
+
+Have you noticed this on the part of satan, that he will make a very wide sweep to secure a specific object? He will slay all the infant sons to get one Son. He is after that sonship. All the infants will be sacrificed to the sword in order to get one. All the babes of Israel will be sacrificed to the sword in order to get one in the devil's intent, and so with Herod to get one.
+
+God makes a wide sweep too. He spreads the wide net of His heavenly government (for the kingdom of heaven is that), and into that net all sorts of things will be found, but He is after something particular in the midst of it. There is a treasure in the field; perhaps not the only bit of the world that the Lord is going to have, but something in it that He is after. Satan is after the elect, and God is after the elect.
+
+This matter of election is set forth in type in the case of Israel. Israel was an elect nation, but no one reading the Scriptures will say that all the other nations were destined by God to be lost. There will be [those] gathered out of every nation, and even in Israel's days there was a testimony in the nations, and God would show mercy to the nations; but Israel occupied the place of the elect in the midst of the nations. There are many prophecies as to the nations, even Egypt. Israel as the elect was not the only nation or only company of people to know God and to be saved, but their election was unto a specific purpose, and this is the thing that governs the whole revelation or doctrine of election: it is the purpose. Israel was elected from the nations to manifest God in the midst of the nations, and that is the purpose of the church in election. It is this that the Lord Jesus touches upon. He touches upon it lightly. It has to wait yet for a time, for a fuller development, but He has touched upon it. ``Thine they were, and Thou gavest them to Me.'' God has secured them before they came to Christ.
+
+Our danger, and the danger of people always in connection with such a truth, is to begin to organise it, and act in a wrong way in relation to it. When they see people not responding to the gospel they conclude they are not the elect, and leave them alone for evermore. As soon as we begin to take up attitudes like that, we are going to frustrate the purposes of God, we are altogether out of the right realm. There is one thing that is made manifest, and that is that from our side we must never give up, never to accept for a moment the loss of any soul, never to abandon any soul as hopeless. We shall find ourselves full of contradictions immediately we begin to systematise a doctrine like this.
+
+The point is that there is such a thing as an elect, and that elect is engulfed in the whole flood of sin, of that which has broken in against God's purpose. There has come a tidal wave over the whole creation of evil, and that tidal wave has engulfed the elect. It is in the nations, it is in the kingdom of satan, but it is there.
+
+Now then, the other word that governs the elect because of that, is ``redemption''. It is the ``redemption of the purchased possession''; it is ``redeemed unto God''. It is the highest expression of redemption.
+
+I am afraid that aspect of things has been largely missed. We rejoice, and rightly so, in such words as, ``redeemed from all iniquity''; ``redeemed us with His own blood''; but that is not enough. It is ``redeemed unto God''. That is what Paul means when writing particularly and specifically in relation to the church.
+
+That which is in Ephesians relates to the church. We are not saying that nothing else does, but it does there, and when Paul in Ephesians asks the Lord to give the church a ``spirit of wisdom and revelation in the knowledge of Him, the eyes of their heart being enlightened''; it is that they might know ``what are the riches... of His inheritance in the saints''. God has an inheritance in the saints. God has an inheritance in the elect. The elect stands in relation to God's deepest and highest intention and purpose. It is the very centre and heart of the thought of God. God's full thought is bound up with the elect, a central Body in whom sonship is brought through to fulness; therefore the purchased possession is for God, ``redeemed unto God''.
+
+We spoke of the Levites, and you will remember that the Lord said, ``They shall be Mine''; ``They shall be offered as a wave offering to the Lord''; ``the church of the firstborn ones''; ``Thine they were, and Thou gavest them to Me... all Mine are Thine.'' It is unto God all the time.
+
+Why is it unto God in this specific and particular emphasis? Because God has the treasure of His own heart bound up with that Body, that elect, and so, because the elect is involved in the state of the whole race, the elect must be redeemed in this specific meaning of redemption. What is the meaning of redemption? The word is 'apolytrosis', to loosen out, with the extra thought of a price paid, loosed out. When you say, ``He has redeemed us'', you say, ``He has loosed us out''; and when you say, ``We are redeemed unto God'', you say, ``We are loosed out unto God''. ``Translated out of the power of darkness, unto the kingdom of the Son of His love'', but that translation is a mighty loosing out. He loosed us in His blood. The Cross, then, was the mighty loosing out of the church. It was the redemption of the purchased possession.
+
+Viewed from the standpoint of the church the Cross is this wonderful releasing from every kind of tyranny and bondage that had broken in to defeat the Divine purpose. Now you see Divine purpose realised through the Cross, so far as the church is concerned.
+
+Let us summarise that. That word ``elect'', chosen, is a governing idea of God. It means, firstly, that not all will be saved in this age. It is not for us to say who will be, and who will not be saved, nor to accept, as we have said, the loss of anyone. But the fact remains that it is folly to think that everyone is going to be saved in this dispensation. That is one of the false doctrines, giving rise to a false enterprise. It is the basis of the post-millennial doctrine that all are going to be saved, the whole world is going to be saved. There is nothing in the Word of God to teach that, so far as this dispensation is concerned, but what God is doing is taking out from the nations a people for His Name.
+
+Secondly, the full thought of God is bound up with the saved in this dispensation. We want to define that a little more. It is not enough from God's standpoint, from the standpoint of the eternal purpose, that men should just be brought out of darkness into light and left there, that there should be what is called the ``evangelistic work'' in the salvation of souls, and then for them to be left to get on with the saving of others. From the Divine standpoint the full thought of God is not just to be saved.
+
+That explains, in the third place, why the believers were from the beginning gathered into assemblies, and why the assembly order was brought into being by the Holy Spirit. That is the explanation of the necessity for corporate principles being recognised among the Lord's people, because the full thought of God is in view with the saved. The assembly was for a building up, a maturing of believers, and an assembly order is a great factor in spiritual maturity: no independence, no freelance activity, no personal and individual domination and interest, but an order. If we upset the Divine order in the House of God, we immediately arrest the operation of the Holy Spirit towards sonship. If we violate corporate principles, we immediately put a limitation upon our own spiritual growth.
+
+If you want any proof of that, look around you. We are not taking a censorious and criticising attitude. Do not misunderstand. It is a real grief and sorrow to recognise that there are scattered about the world what are called ``Gospel Missions'' and in those missions the gospel is continuously preached to the unsaved, although the majority of the people in them are saved, and there is a repudiating of anything more than what they call ``the simple gospel for the sinner''. There is nothing for building up allowed, and if it is brought in, there is a restiveness. So you find everywhere Gospel Missions like that, with companies of people, smaller or larger, which have been there for decades, and they are still spiritual infants and do not understand the language of men and women, only the language of childhood, and they cannot bear strong meat. There is no assembly order, no real corporate life, and so you get people growing old in years in Christ and never growing up from infancy, and it is a contradiction and a tragedy.
+
+That was not what it was in the beginning; and again, let us note that ninety-nine per cent of the New Testament is for believers, showing how important God regards the maturing of saints, the bringing to full growth. Now He has loosed out the church by the Cross with the full thought in view, and it is not enough for us to stay by the elementary things of Calvary, but to recognise that Calvary embodies and involves all that purpose which was in the counsels of the Godhead before times eternal. The Cross is a tremendous thing, going right on to the end. When at length you get to the throne, which is the throne of universal dominion, authority, power and glory and you look at the throne finally established, you find in the midst of the throne a Lamb. The Cross leads to the throne; that is God's thought. The Cross points on to the government of this universe, the revelation of God universally.
+
+The main point at issue is whether it is to the unsaved or whether it is to the saved in this dispensation, that God is working to one end, and that is the end which He determined should be in eternity past, the expressing of Himself through a vessel, and that vessel related to Him in terms of sonship. That is, mature spiritual life, with all that that means.
+
+So sonship is the governing word; and if you want the other word for elect, it is ``son'' in the thought of God; and if you want the full meaning of redemption, it is sonship in the thought of God.
+
+\chapter{The Resurrected Position of the Church}
+
+\scripture{\textbf{John 17} 1 Now on the first day of the week Mary Magdalene *came early to the tomb, while it *was still dark, and *saw the stone already taken away from the tomb. 2 So she *ran and *came to Simon Peter and to the other disciple whom Jesus loved, and *said to them, ``They have taken away the Lord out of the tomb, and we do not know where they have laid Him.'' 3 So Peter and the other disciple went forth, and they were going to the tomb. 4 The two were running together; and the other disciple ran ahead faster than Peter and came to the tomb first; 5 and stooping and looking in, he *saw the linen wrappings lying there; but he did not go in. 6 And so Simon Peter also *came, following him, and entered the tomb; and he *saw the linen wrappings lying there, 7 and the face-cloth which had been on His head, not lying with the linen wrappings, but rolled up in a place by itself. 8 So the other disciple who had first come to the tomb then also entered, and he saw and believed. 9 For as yet they did not understand the Scripture, that He must rise again from the dead. 10 So the disciples went away again to their own homes. 11 But Mary was standing outside the tomb weeping; and so, as she wept, she stooped and looked into the tomb; 12 and she *saw two angels in white sitting, one at the head and one at the feet, where the body of Jesus had been lying. 13 And they *said to her, ``Woman, why are you weeping?'' She *said to them, ``Because they have taken away my Lord, and I do not know where they have laid Him.'' 14 When she had said this, she turned around and *saw Jesus standing there, and did not know that it was Jesus. 15 Jesus *said to her, ``Woman, why are you weeping? Whom are you seeking?'' Supposing Him to be the gardener, she *said to Him, ``Sir, if you have carried Him away, tell me where you have laid Him, and I will take Him away.'' 16 Jesus *said to her, ``Mary!'' She turned and *said to Him in Hebrew, ``Rabboni!'' (which means, Teacher). 17 Jesus *said to her, ``Stop clinging to Me, for I have not yet ascended to the Father; but go to My brethren and say to them, ‘I ascend to My Father and your Father, and My God and your God.’'' 18 Mary Magdalene *came, announcing to the disciples, ``I have seen the Lord,'' and that He had said these things to her. 19 So when it was evening on that day, the first day of the week, and when the doors were shut where the disciples were, for fear of the Jews, Jesus came and stood in their midst and *said to them, ``Peace be with you.'' 20 And when He had said this, He showed them both His hands and His side. The disciples then rejoiced when they saw the Lord. 21 So Jesus said to them again, ``Peace be with you; as the Father has sent Me, I also send you.'' 22 And when He had said this, He breathed on them and *said to them, ``Receive the Holy Spirit. 23 If you forgive the sins of any, their sins have been forgiven them; if you retain the sins of any, they have been retained.'' 24 But Thomas, one of the twelve, called Didymus, was not with them when Jesus came. 25 So the other disciples were saying to him, ``We have seen the Lord!'' But he said to them, ``Unless I see in His hands the imprint of the nails, and put my finger into the place of the nails, and put my hand into His side, I will not believe.'' 26 After eight days His disciples were again inside, and Thomas with them. Jesus *came, the doors having been shut, and stood in their midst and said, ``Peace be with you.'' 27 Then He *said to Thomas, ``Reach here with your finger, and see My hands; and reach here your hand and put it into My side; and do not be unbelieving, but believing.'' 28 Thomas answered and said to Him, ``My Lord and my God!'' 29 Jesus *said to him, ``Because you have seen Me, have you believed? Blessed are they who did not see, and yet believed.'' 30 Therefore many other signs Jesus also performed in the presence of the disciples, which are not written in this book; 31 but these have been written so that you may believe that Jesus is the Christ, the Son of God; and that believing you may have life in His name.
+
+
+    \textbf{John 18}   1 After these things Jesus manifested Himself again to the disciples at the Sea of Tiberias, and He manifested Himself in this way. 2 Simon Peter, and Thomas called Didymus, and Nathanael of Cana in Galilee, and the sons of Zebedee, and two others of His disciples were together. 3 Simon Peter *said to them, ``I am going fishing.'' They *said to him, ``We will also come with you.'' They went out and got into the boat; and that night they caught nothing. 4 But when the day was now breaking, Jesus stood on the beach; yet the disciples did not know that it was Jesus. 5 So Jesus *said to them, ``Children, you do not have any fish, do you?'' They answered Him, ``No.'' 6 And He said to them, ``Cast the net on the right-hand side of the boat and you will find a catch.'' So they cast, and then they were not able to haul it in because of the great number of fish. 7 Therefore that disciple whom Jesus loved *said to Peter, ``It is the Lord.'' So when Simon Peter heard that it was the Lord, he put his outer garment on (for he was stripped for work), and threw himself into the sea. 8 But the other disciples came in the little boat, for they were not far from the land, but about one hundred yards away, dragging the net full of fish. 9 So when they got out on the land, they *saw a charcoal fire already laid and fish placed on it, and bread. 10 Jesus *said to them, ``Bring some of the fish which you have now caught.'' 11 Simon Peter went up and drew the net to land, full of large fish, a hundred and fifty-three; and although there were so many, the net was not torn. 12 Jesus *said to them, ``Come and have breakfast.'' None of the disciples ventured to question Him, ``Who are You?'' knowing that it was the Lord. 13 Jesus *came and *took the bread and *gave it to them, and the fish likewise. 14 This is now the third time that Jesus was manifested to the disciples, after He was raised from the dead. 15 So when they had finished breakfast, Jesus *said to Simon Peter, ``Simon, son of John, do you love Me more than these?'' He *said to Him, ``Yes, Lord; You know that I love You.'' He *said to him, ``Tend My lambs.'' 16 He *said to him again a second time, ``Simon, son of John, do you love Me?'' He *said to Him, ``Yes, Lord; You know that I love You.'' He *said to him, ``Shepherd My sheep.'' 17 He *said to him the third time, ``Simon, son of John, do you love Me?'' Peter was grieved because He said to him the third time, ``Do you love Me?'' And he said to Him, ``Lord, You know all things; You know that I love You.'' Jesus *said to him, ``Tend My sheep. 18 Truly, truly, I say to you, when you were younger, you used to gird yourself and walk wherever you wished; but when you grow old, you will stretch out your hands and someone else will gird you, and bring you where you do not wish to go.'' 19 Now this He said, signifying by what kind of death he would glorify God. And when He had spoken this, He *said to him, ``Follow Me!'' 20 Peter, turning around, *saw the disciple whom Jesus loved following them; the one who also had leaned back on His bosom at the supper and said, ``Lord, who is the one who betrays You?'' 21 So Peter seeing him *said to Jesus, ``Lord, and what about this man?'' 22 Jesus *said to him, ``If I want him to remain until I come, what is that to you? You follow Me!'' 23 Therefore this saying went out among the brethren that that disciple would not die; yet Jesus did not say to him that he would not die, but only, ``If I want him to remain until I come, what is that to you?'' 24 This is the disciple who is testifying to these things and wrote these things, and we know that his testimony is true. 25 And there are also many other things which Jesus did, which if they *were written in detail, I suppose that even the world itself *would not contain the books that *would be written.}
+
+Our last meditation in this series finds us right on the ground that we have been governed by all the way through, that is, resurrection ground. Everything has been in the light of resurrection.
+
+At the outset, by way of a general survey of the chapters, we might follow the outline again of ``A Companion to the Gospel by John'', and then perhaps make a few specific remarks.
+
+This section of the gospel may very well be gathered up into those words of the apostle at the close of the letter to the Hebrews: ``Now the God of peace, who brought again from the dead that great shepherd of the sheep, in (Greek translation) the blood of the everlasting covenant, even Jesus, make you perfect in every good thing to do His will, working in you that which is well-pleasing in His sight, to whom be glory for ever and ever.'' You will have no difficulty in breaking that comprehensive word up into parts, and seeing how these two chapters can be arranged under those parts.
+
+\section{The Great Shepherd Returns}
+
+Here we have the return of the Great Shepherd, brought up from among the dead, even our Lord Jesus.
+
+Our outline follows this course, that these chapters are a very clear and concrete presentation of what the church is in principle.
+
+First, it is an exclusive witness to the resurrection of Christ; that is, He confined the revelation of Himself as the risen Lord to the church, and never gives that to the world. Inasmuch as there are many who believe or accept the historic fact of His resurrection who cannot be regarded as of the church, this must be recognised to mean something more than just the fact that Jesus Christ rose from the dead. It must carry with it a revelation by the Holy Spirit of the risen Lord in the heart. That is essential to constituting anyone a member of the church. The church was constituted by a personal, immediate, direct revelation of Himself as the Risen Lord, and such a revelation was regarded as indispensable as to the foundations of the church. The apostle to whom there was given the unique revelation of the church, was given a unique revelation of the Risen Lord.
+
+That is the first thing, that the living knowledge of the risen Christ is bound up with the church, and the church takes its very being and character from that knowledge.
+
+Secondly, because of that, He constitutes the church a resurrection company, and then a heavenly people, by first ascending to His Father as its Head (John 20:17). It is quite clear that something transpired in the way of His appearing in the presence of God at a given moment during the course of the forty days after His resurrection and early in that period, otherwise we cannot understand a seeming contradiction, for here He said to Mary: ``Touch Me not, for I have not yet ascended unto My Father'', but in another place it says that they took Him, or held Him by the feet when they saw Him. There is no word of rebuke recorded, nothing which indicates or intimates that He pushed them away, but it says definitely that they did hold Him. Then later He said, ``Reach hither thy hand... handle Me and see...''.
+
+We may regard the appearance to Mary as the first appearance after His resurrection, and between that and the subsequent appearances where they did hold Him and where He did say ``handle Me'', there must have taken place some appearance in the presence of the Father, as represented by these words: ``I have not yet ascended''.
+
+So He constituted His church a heavenly people by first appearing in the presence of His Father as the Head of the church. We shall see more about that in a moment.
+
+In the third place He constitutes the church upon the basis of the peace which He has made by the blood of His Cross (verses 19, 20 and 26). It is upon the ground of that peace that the church rests, the peace that He has made by the blood of His Cross.
+
+Next, He establishes the fact that the Holy Spirit will be the governing reality of the church in this age (verse 22): ``When He had said this, He breathed on them, and said, Receive ye the Holy Spirit''. That was prospective, not actual at the moment; that is, they did not receive the Holy Spirit at that moment when He breathed upon them. That is quite clear; but it was a symbolic act, which secured unto them the reception of the Spirit who came later. The symbolism will be mentioned again presently, but the point here is this, that the fact was then established that the Holy Spirit would be the governing reality of the church in this age.
+
+Then again, He makes it clear that the full blessing of fellowship with Him as risen, is through faith (verses 24 and 29). Thomas was absent for eight days through unbelief, and eventually when he was present and convinced, the Lord said, ``Blessed are they that have not seen, and yet have believed''. It is a greater blessing and the full blessing of fellowship with Him as risen is through faith.
+
+In the sixth place, He gives the church the beautiful character of a family: ``Go to My brethren, and say unto them, I ascend unto My Father, and your Father''.
+
+Now, that is all a summary of points and principles which show what the church is from the Lord's standpoint.
+
+\section{Attachment to Him on the Basis of Resurrection}
+
+Passing on to John 21 we note that this chapter is an after-inspiration. It is fairly clear that John closed his narrative with verse 31 of chapter 20 and then, as by a new inspiration, he added what is chapter 21. This chapter tells of the events of Christ's third appearance to them after His resurrection. John says, ``This is the third time Jesus appeared unto them''.
+
+What have we here represented? Inclusively it is a new attaching of His own to Himself on the basis which resurrection represents. There is an entirely new position represented by resurrection, and in that new position He seeks to bring them into an attachment with Himself. The old kind of attachment has been broken; that is all at an end, it has been taken away from them; it is as though they were suspended between heaven and earth without any kind of solid ground under their feet. Their relationship is a very indefinite and uncertain one, and in this third appearance He seeks to make definite the new relationship on the new ground.
+
+Here are things which we may regard as symbolic. The church as represented by them is on the sea, and we know the sea as a biblical type of humanity. It is as though the church here was represented as being in the world among men.
+
+Then, it has toiled through the night and known failure for one reason, and that is because of self-energy. Peter said, ``I go fishing.'' They said, ``We also go with thee.'' They toiled all night and took nothing. It was a self-directed, and self-energised activity in the world, ending in failure.
+
+Christ, however, is on the distant shore, and knows all about them, and all about their failure. But when eventually they come absolutely and completely under His government, the place of failure becomes the place of fulness. To come under His government, in their case meant the setting aside of the whole of their natural reasoning, ``We have toiled all night'' (the best time for fishing), and to let down a net in the light is not good sense to a fisherman. If you have failed in the dark you are not likely to succeed in the light; but all such natural reasoning, and the laws which govern the natural man in his activities, have to be set aside, or we have to be willing to surrender them when we come under the complete government of Christ. It is a matter of subjection to His Headship in mind, and heart, and will. When that is so, then that which has issued in failure may, under circumstances which the natural reasoning would dictate to be altogether contrary to any hope or expectation, be the very place of fulness.
+
+Therefore the church's fulness does not depend upon favourable circumstances, but upon subjection to Christ. That is a principle, a law. The most unfavourable circumstances may prove very fruitful if it is in obedience to the Lord, while out of the Lord's will the most favourable conditions, naturally speaking, may prove utterly unfruitful.
+
+Then you note the precision as to the number of fishes, ``one hundred, and fifty, and three''. If the Holy Spirit dictates the writing of any record, we may take it that He does not just use words for the sake of forming a narrative, but words weigh with Him, and if He inspired the writing of that statement, He evidently meant something. They counted the fish when they had brought them to land.
+
+We are not going to stop with the symbolism of numbers. The point is the precision. To me this speaks of the elect gathered out of the sea of humanity in this age, under the direction of Christ, and this represents a special relationship to Himself. That is set forth in verses 15 to 18.
+
+We are going to stop with that last paragraph for a moment. Let us say again about the matter of the elect and election, that all we mean by this is the fact that the Word of God states that there is such a thing as an elect, and reveals that the elect is the elect in relation to a purpose of God. The very thing that governs God in election is the realisation of a specific purpose. To put that in another way, the elect was an idea and a thought of God with a view to particular and peculiar service to the Lord that is to be in the closest relation to Him, and in the fullest expression of Him for the good of others.
+
+Election does not begin and end with the matter of salvation. I do not know how far we may take it in relation to salvation. When we speak of the elect and of election, we have got to keep vocation always in mind as the thing which governs it. The elect simply stand in the counsels of God in a special relationship to Himself for a special purpose. That is all (but it is a mighty 'all'), and that is what we mean by election; a vessel, an instrument secured in the foreknowledge of God.
+
+Always remember that it is: ``elect according to the foreknowledge of God''. God knows. God does not live in time. All time is present with Him; all that we call the future exists now in this moment with God. He is timeless. Get outside of the realm of our human senses and time ceases to be any consideration or factor at all. You know that when you go to sleep you lose consciousness. You might lose consciousness for some reason or another, for half-an-hour so thoroughly that when you regain consciousness it may be like years, a lifetime. The point is this: get outside of human sense and you get outside of time, and God is not governed by human sense; He is outside of all those things of our human life. Ages and ages in which He submits His purposes for outworking are all in the present moment with Him, and He knows the end; and if He knows that at a certain time, because of certain things, in His grace and in His activity and in His sovereign working certain people will respond to the calling, then in the knowledge of that He can ordain that those people shall constitute for Him that vessel for that special purpose.
+
+That takes it outside of the mere level of God chooses some to be saved, and they cannot be lost, and those who are not chosen to be saved might be saved and might not be, but there is nothing whatever to go by in their case. Let us get outside of that realm of things, and see that election relates primarily, in the foreknowledge of God, to purpose, and the elect is a concrete Body. That elect belongs to this dispensation, and it is the church being gathered in this dispensation.
+
+In our last meditation we said that the church, the elect, is not the only company that will be saved; others will be saved. But you will remember we were careful to say that we are not concerned with the time factor as to when the others will be saved, and we wholly repudiate the idea of universalism, that every being ever created will be saved, including the devil. We cannot tolerate such an idea. We do not believe it is Scriptural, however cleverly men have formatted a system which seems to their satisfaction to prove to the contrary.
+
+The point is this, that the elect are being gathered out in this dispensation, or this part of the dispensation, and there will come a point at which the church will be translated. But that is not the end of the age of grace; that is not the end of the salvation of men. There is Israel to come in yet, and Israel is not of the church. The church is something altogether different. Israel will be saved, and there will be those yet of the nations who will be saved. That is all we meant by saying that the elect is a particular company for a particular purpose, which constitutes the main object of this dispensation.
+
+If you prefer to think of the dispensation going on after the translation of the church we do not dispute that the dispensation may not conclude with the translation of the church. There may be other happenings before the whole dispensation is wound up. But that is not the point, and this is all that we meant by election and salvation coming to others beyond the church.
+
+I have read again through those letters in the book of the Revelation carefully, from start to finish, and one thing that has come to me with renewed force is this: that as you move through that book you find different companies in heaven at different times, and you find at a given point when certain companies are already represented as in heaven, the angel going forth with the everlasting gospel. There is something in the everlasting gospel which is probably another gospel than the gospel of the grace of God at this time in the dispensation, probably a different gospel from the gospel of the Kingdom. We do not profess to understand it, but we see that is there, and the point is that you have different companies in heaven at different times, and you find the range widening, and when you come to the end you have actually got the Lamb, and the Bride, the Lamb's wife, and you have got those who are bidden to the feast who are the guests, and then you have the appeal to some larger company (and, mark you, this is where a great many people have gone astray, and where our hymns have led us astray): ``The Spirit and the bride say, Come, and let him that is athirst come...''. That has been said to be the Spirit and the church saying to the Lord Jesus, 'Come'. But look at the setting. You have got the river of the water of Life (Rev. 22:1), and you have the church, the bride, the Lamb's wife. The marriage supper has taken place, and there is the City, the River, the Lamb and His Bride already there, and then this: ``The Spirit and the Bride say, Come...'' (v.17). To whom? ``Whosoever will, let him take the water of life freely''. It is not a call to the Lord Jesus to come. It is an invitation to others to receive of that Life, to enjoy that Life which is here in the church, in the City: ``And I saw... the New Jerusalem, coming down out of heaven... as a bride adorned for her husband'' (Rev. 21:2). You see you have a good deal to get over if you are at all disposed to argue that the church is the only saved company for ever and ever. Not at all.
+
+Now, when Christ breathed upon the disciples it was a symbolic act, which suggested or set forth the new creation in resurrection. God breathed into the first Adam the breath of life, and he became a living soul. That is how the first creation, the first race, became animate, intended to show forth the glory of God. It has failed, and God has a new creation in Christ Jesus, coming out of His death, raised up in His resurrection, and on those who represent that new creation at the outset, He breathes in a symbolic act. They are the first of that new creation by the Spirit of God, and that creation is destined in Christ to reveal to a wondering universe what God is like. That is the elect.
+
+So the apostle urges: ``Give the more diligence to make your calling and election sure.'' The apostle got that from the races with which he was familiar in the Greek world, the Olympic games. As the runners went forth into the race, at a certain point in the course there was a bend, and from that point it was the homeward lap, and as they came round that bend the goal was before them, the prize was in view, and just at that point a notice was put up, a notice of encouragement, with words which in English mean, ``Make speed''. As they rounded that bend, and saw that notice, the crowd gathered there shouted and encouraged and did everything they could to make those words living words, with power in them, ``Make speed! The goal is in view, do not drop out now, it is the last lap!''
+
+The apostle took that up, and said, ``Give more speed to make your calling and election sure. You are on the last lap now; do not drop out here, do not let go here - make speed!'' Is that not the spirit of Paul? ``Brethren, I count not myself to have attained, neither am I already perfect (complete), this one thing I do, forgetting those things which are behind, and looking forward to those things which are before, I press towards the mark of the prize of the upward calling of God in Christ... I count all things but loss for the excellency of the knowledge of Christ Jesus My Lord.'' I make speed, I give the more diligence.
+
+You see what the prize is and what the goal is. The letter to the Hebrews tells us, ``Wherefore, holy brethren, partners in a heavenly calling... We see Jesus crowned with glory and honour... bringing many sons to glory''. It is the throne, the shared glory for the elect, for those who come through to sonship and maturity, who go right on with the Lord. That surely is the word today for the Lord's people: Make speed! Give the more diligence!
+
+The note which rings out, and will ring out everywhere, is sonship, the inheritance, the throne, the partnership with Him in the glory for administrative purposes in the ages to come.
+
+May the Lord put His own urgency into our hearts, and give us a clear apprehension of what it is He is seeking to say to us, and through us to all His people.
+
+\chapter{A Companion to the Gospel by John}
+
+\begin{center}
+    \textit{First published as a booklet in 1934 by ``Witness and Testimony'' Publishers.}
+\end{center}
+
+\begin{outline}
+
+    \outlinesection{Introductory}
+
+    The Gospel by John speaks for itself, but there may be help in a few suggestions as to its deeper meaning.
+
+    1. The theme of ``John'' in all his writings (Gospel, Epistles, and Apocalypse) is ``The Testimony of Jesus.''
+
+    This Testimony is shown to be Christ Himself.
+
+    The Testimony is carried on, not merely by teaching, but by the vital union of Christ and His own.
+
+
+    2. The special word used by John for ``Miracle'' is ``Sign''. This means that everything is for instruction, not only interest and wonder.
+
+    This really is the key to ``John''. Everything has a hidden meaning.
+
+    What is said and done is a sign of something else. We have to look deeper for the things signified.
+
+
+    3. ``John'' is not an earthly history; it is a spiritual history; related to heaven and not merely to earth; to eternity, and not merely to time.
+    ``John'' is in the same realm as ``Ephesians''.
+
+
+    4. John's Gospel is a comprehensive embodiment of great truths and their laws. Every great truth has its own law, and obedience to that law is the way into the experience of that truth.
+
+    \outlinesection{Chapter 1 \\ The Presentation.}
+
+    1. From Eternity:
+    (a) One in being with God, verses 1-2,
+    (b) All creation through Him, verse 3
+    (c) The fountain of life, verse 4
+
+    2. Into Time:
+    (a) His Forerunner-Witness, vv. 6-8, 15-42
+    (b) The Shekinah in the Tabernacle (not condemnation as with Moses; but grace and truth) vv. 14-17
+    (c) An unrecognised Visitor received by a few only, vv. 10-13
+    (d) God has provided Himself a Lamb for a sacrifice, vv. 29, 36
+
+    3. A Company Gathered out to Him vv. 43-47
+    Chapter 1 contains the whole Gospel of John in germ. (See Appendix).
+
+    \outlinesection{Chapter 2}
+    ``The Beginning of Signs'' (verse 11).
+    In the sign of the Marriage of Cana all the subsequent signs and truths are found in germ. This is the foundation of the whole ``Gospel''.
+
+    1. ``Third Day.'' Verse 1.
+    Three in the Bible is the sign of fulness of Divine Testimony.
+
+    Taking up contents of chapter 1:
+    (a) The truth of the Person of Christ, verse 11
+    (b) The witness of John the Baptist, verse 11
+    (c) Gathering of disciples, verse 11
+
+    2. ``Marriage.''
+    Type of Christ's union with His Church. Revelation 19: 7 (By same writer). See also Ephesians 5:25.
+    (a) Waterpots - vessels. Type of humanity.
+    (b) From emptiness to fulness. What Christ's company enjoy. (See 1:16).
+    (c) From death unto life. (``No wine.'') What Christ's company enjoy.
+    (d) From despair to joy.
+    (e) From shame to glory. What Christ's company enjoy, verse 11 (See 1:14).
+
+    Wine a type of Blood and Life. Blood the means of a Covenant (Marriage).
+
+    Key words: ``Mine hour,'' 4; ``Sign,'' 11; ``Glory,'' 11.
+
+    The Testimony here is that of Life triumphant over Death, and it is gathered up in verses 13-25 in relation to the Passover.
+
+    The Passover:
+    (1) Lamb slain
+    (2) Blood shed.
+    (3) Death destroyed.
+    (4) A people secured.
+    The Kingdom of God.
+
+    \outlinesection{Chapter 3}
+    The Kingdom of God
+    The Kingdom of God is not merely a realm, but a state; not merely an order of outward things, but a condition of life; not a system imposed from outside, but a kind of life and nature which is from God.
+
+    1. The need and concern for being in this Kingdom.
+
+    2. The law which governs this Kingdom. ``Ye must be born again.''
+    Three things:
+    (1) Difference verse 6
+    (2) Essence verse 6
+    (3) Basis vv. 15-18
+
+    Nicodemus corresponds to the wine having failed and the miracle of new birth.
+
+    The Serpent in the Wilderness, verse 14.
+    (1) The Curse.
+    (2) Man by nature is under a curse. (Even a religious leader like Nicodemus).
+    (3) Christ was made a curse for us, that we might be saved.
+    (4) Faith in Christ crucified delivers from the curse.
+
+    \outlinesection{Chapter 4}
+    The Truth of Eternal Life
+    Nicodemus represents death in the realm of man by nature, and the demand for new birth; thus he prepares the way for New Life.
+
+    1. The Local Setting.
+    Illustrating absence of God's life.
+    (1) Spiritual; an abiding sense of lack. Abiding dissatisfaction.
+    (2) Moral; life out of harmony with God's mind.
+    (3) Religious: Powerless tradition. Religion against rather than for.
+
+    This is life which is not life, but death.
+
+    2. The Nature of Eternal Life.
+    It is God's own life; differing from man's; and its quality gives it its death-overcoming power, implied by ``Eternal.''
+
+    3. The Law of Eternal Life.
+    The indwelling of the Holy Spirit of God, verse 14. Chapter 7:38,39.This is related to Christ in Person, verse 14.
+    This makes everything spiritually alive, verse 23.
+
+    The Testimony here is again life in Christ delivering from death, and is summed up in verses 46-54.
+
+    \outlinesection{Chapter 5}
+    Walking in the Power of God
+    The impotent man at the pool.
+    Key verses: 19, 20, 21, 30.
+
+    In this chapter Christ takes the position of man by nature, and shows that as such he can do nothing of (out from) himself.
+
+    The man 38 years a cripple.
+
+    This was the period of Israel's journey in the wilderness up to the death of Moses: Israel's impotence and probation.
+
+    This man signifies the impotence on the bed of the Law, unable to carry it.
+
+    Christ comes in after the Law in ``Grace and Truth'' (chapter 1:17).
+
+    A new inward strength enables to carry the Law.
+
+    The man could do nothing out from himself. The word of life came through Christ and he walked (verse 26).
+
+    The Law - like the bed - was intended for a blessing; but human weakness makes it a bondage.
+
+    Christ delivers from the bondage of the Law.
+
+    The law of this walk in life and power is: meeting everything as out from the Lord, and not ourselves. This was the law of Christ's own life of moral and spiritual ascendency.
+
+    The Sabbath in this chapter speaks of God's rest.
+
+    It is related to Christ as He brings God's works to perfection.
+
+    \outlinesection{Chapter 6}
+    Life Triumphant over Death as a Present and Continuous Testimony (verse 50).
+    1. The Passover at Hand (verse 4). Life victorious over death (Exodus 12).
+
+    2. The Manna (verses 30-32). Life victorious over death (Exodus 16).
+    (1) Speaks of the initial salvation from death through the blood of the Lamb.
+    (2) Speaks of our maintenance in life by constantly receiving Christ.
+
+    3. The Law of this Victory over Death.
+
+    Feeding on Christ.
+    Verse 53. ``Except ye eat'' (Greek, once for all) connects with Passover.
+    Verse 54. ``He that eateth'' (Greek, continues eating) connects with Manna.
+
+    We feed on Christ by:
+    (1) Prayer.
+    (2) The Word of God.
+    (3) Obedience to Him.
+    (4) Fellowship with believers.
+    (5) Worship.
+
+    Chapter 3 - The need for new birth.
+    Chapter 4 - The new life.
+    Chapter 5 - The new walk.
+    Chapter 6 - The new victory.
+
+    \outlinesection{Chapter 7}
+    A New Day Foreshadowed
+    Chapter 6 brings to a close the ``Life'' section of the Gospel.
+
+    It is seen that life is only possible in Christ, and many are offended and go away.
+
+    Chapter 7 is a transition from Life to Light, and combines both. The Light section will close as did the Life, with unbelief and sifting.
+
+    The Feast of Tabernacles is the background here. At this Feast a great candelabra was lighted, and great vessels of water from the Pool of Bethesda were poured out in the Temple.
+
+    Christ takes hold of this custom and puts Himself in the place of both, uniting in Himself the twofold symbolism of the Light and the Life.
+
+    A New Day is here in view - the eighth day (verse 37; Lev. 23:36), which is to be the day of the Spirit on the ground of Christ glorified (verse 39).
+
+    There is a vital secret contained in this chapter. In the presence of almost universal unbelief (even in His own family), hostility, suspicion, prejudice, and danger to His life, Jesus maintains a calm, steady, strong moral ascendancy, and moves as one protected until His work is done.
+
+    Why? Because He has a secret life with God, from which He refuses to be drawn out. He moves, not at the dictates of men, nor under the government of set religious ordinances, nor yet by what is either expected of Him or what is politic, but by the inner witness of the Father; waiting for His sanction and time for movement (verses 8, 9).
+
+    \outlinesection{Chapters 8 \& 9}
+    Christ Presented as the Light
+    To the end of chapter 6 the subject is Life (1:4).
+
+    Chapter 7 is a transition chapter.
+
+    Chapter 8 brings in the subject of Light (1:4).
+
+    Verses 1-11 are an introduction; the Jewish Rulers, blind even in the presence of the Law, are convicted in the presence of Christ Who is the Light, revealing the heart.
+
+    Chapter 8 is an emphasis upon the fact that Christ is the Light; that man by nature is in darkness; that liberty comes through knowledge of and obedience to the truth; and that Christ is the Truth, and the full revelation of God.
+
+    Chapter 9 is a sign (object lesson) of Chapter 8 (see especially verses 1, 4, 5, 39, 40, 41).
+
+    Man ``born blind.'' This is connected with the works of God.
+
+    Salvation is not by believing certain doctrines, but by Christ giving a new spiritual faculty, which has never before operated in us.
+
+    This man's condition was an illustration of the condition of all men by nature, even of the religious Jews.
+
+    The law which governs this new living knowledge is the absolute Lordship of Christ. Not tradition, men, religious systems; but personal and complete surrender to Christ. This runs right through chapters 8-9.
+
+    The sequel to this surrender is seen to be a great cost; being cast out by men. But Christ takes up such and more than satisfies.
+
+    \outlinesection{Chapter 10}
+    Separation Unto Christ
+    Chapter 9 ends with what happens to those who surrender to Christ; they are cast out.
+
+    Chapter 10 begins with what Christ does with such; He leads them out of one order and into the true fold.
+
+    He becomes their Shepherd.
+
+    Chapter 10 marks a Big Transition.
+
+    Up to this point all has been individual; now it is collective. All the great truths illustrated in individual cases are now embodied in a called-out company.
+
+    The movement begins with coming out to Christ, and ends with having eternal life.
+
+    Christ is here seen as :
+    (1) Shepherd - leading out, vv. 2, 3
+    (2) Door - leading in, verse 7
+    (3) Good Shepherd - inspiring confidence, verse 11
+    (4) One Shepherd - bringing unity, verse 16
+
+    The Issue: Division. Verses 31, 42
+
+    \outlinesection{Chapter 11 \& 12}
+    The Church which is His Body
+
+    Note that a distinct movement is taking place now. Christ is closing in with His own; public ministry is ceasing, while He concentrates upon His Church for future testimony (11:54).
+
+    ``Bethany'' (verse 1).
+
+    Three Pictures:
+    (1) Luke 10:38. Strain and discord.
+    (2) John 11. Death.
+    (3) John 12. A feast in resurrection.
+
+    This is the Spiritual History and Nature of the Church.
+    (1) Connected with the Passover. Because of sin there is judgment and death, in order to newness of life (11:49-51; 12:1).
+    (2) Related to the glorifying of Christ (4).
+    (3) Spiritually related to the incurable state of man by nature, needing a new life (39).
+    Note the many delays of Christ.
+    (4) The object in view is a vessel of testimony to Christ (12:10,11; 11:52).
+    (5) The issue, antagonism toward Christ and the vessel of testimony.
+
+    The Corn of Wheat (12:24):
+    (1) Much out of little.
+    (2) Gain out of loss.
+    (3) Life out of death.
+
+    This is ``Bethany''. Christ, and His Church.
+
+    \outlinesection{Chapter 13}
+
+    The Servant and Service of God
+
+    As embodying all the spiritual truths of chapters 1-11.
+
+    The chosen company now come to service.
+    Chapter 3 Heavenly Birth.
+    Chapter 4 Eternal Life.
+    Chapter 5 Walking in victory.
+    Chapter 6 Life triumphant over death.
+    Chapter 7 The fulness of the Spirit.
+    Chaps. 8-9 Spiritual revelation.
+    Chapter 10 A separated company.
+    Chaps. 11-12 The nature of the Church.
+    Chapter 13 Service.
+
+    The Church is to Carry on Christ's Ministry.
+
+    (1) Sin and ruin entered because Satan in pride refused place of a servant and sought equality with God.
+    (2) Sin and ruin are dealt with through Christ laying aside (temporarily) equality with God and becoming a servant.
+    (3) The Church has to have the mind of Christ in this way. (See Philippians 2).
+
+    Chapter 13 teaches that the way to glory is through humility, suffering, and shame, to save from sin.
+
+    At verse 34 of chapter 13, the ``Gospel'' enters specifically upon the theme of Love.
+
+    \outlinesection{Chapter 14}
+    Heavenly Fellowship with Christ
+
+    What Christ has been saying about going away and the manner thereof was beginning to touch them as with a chill hand.
+
+    A state of uncertainty about everything was created. This was an inevitable thing, and necessary as a part of spiritual history. They were spiritually on resurrection ground since chapter 12, and that means the world left behind, and heavenly things taking the place of the earthly. Thus Christ introduces another spiritual factor - the mystery of spiritual fellowship with Himself after His departure; union with Christ in heaven.
+
+    With everything earthly, uncertain and passing, He introduces a word which touches the whole situation.
+
+    Menō (Greek) means - to stay, remain, abide, continue, enduring, permanence.
+
+    Verse 2. (1) Heavenly abiding places (``mansions''), Greek, Monai.
+    Verse 10 (2) The Father abides in Him.
+    Verse 17 (3) The Holy Spirit will abide in them.
+    Verse 23 (4) The Godhead will make His abode in believers.
+
+    Their questions are:
+    (1) How shall we get to God? ``I am the Way,'' verse 6
+    (2) How shall we know the truth about God? ``I am the Truth,'' verse 6
+    (3) How shall we know the life of God? ``I am the Life,'' verse 6
+
+    To go, to know, to live, Christ is the answer.
+
+    \outlinesection{Chapter 15}
+    Fruitfulness by Heavenly Fellowship with Christ
+
+    Israel was of old called the Lord's Vine.
+
+    Christ now takes the place of Israel: ``I am the Vine'' (verse 1).
+
+    The object of the Vine is the glory and satisfaction of God.
+
+    (See link with chapter 2: Wine, vine, glory, marriage, union, life, joy, fulness.)
+
+    The law of fruitfulness is ``Abiding in Christ.''
+
+    Christ's fruitfulness was because He abode in the Father.
+
+    Theirs (and ours) is to be a continued expression of the principle of His own life.
+
+    He abode in the Father - not in Himself.
+
+    He did this by obeying the Father, and neither consulting Himself nor obeying the Evil One.
+
+    We abide in Christ and bear much fruit by seeking to do everything as out from Him and not from ourselves.
+
+    Love is the secret of fruitfulness.
+
+    \outlinesection{Chapter 16}
+    The Gain of His Going
+
+    Christ said that the Holy Spirit's coming was more important than His own remaining (verse 7).
+
+    How is this?
+    (1) His presence was outward.
+    The Holy Spirit would be within.
+
+    (2) He would only be able to be with some in one place at a time.
+    The Holy Spirit would be with all everywhere.
+
+    (3) He could at most only stay for a few years.
+    The Holy Spirit would abide for the age.
+
+    (4) He came to do a work for our salvation by dying an atoning death.
+    The Holy Spirit would convict men worldwide of the need of that work.
+
+    Chapter 16 shows that persecution will come from the religious world, but that the Holy Spirit would be with them to be their strength.
+
+    It also teaches that their equipment for service would be the same as His.
+
+    \outlinesection{Chapter 17}
+    The Prayer Beside the Altar
+
+    Christ here takes the place of the High Priest. He has already taken the place of the Jewish Feasts, the Sacrifice, the Temple, the Vine, etc.
+
+    He is now about to offer the Whole Burnt Offering (Himself) (verse 19).
+
+    His prayer will be sealed with His own blood.
+
+    The prayer includes the three sections of this Gospel, viz. :
+
+    Life, Light, and Love.
+    (These are mentioned and dealt with).
+
+    The prayer is:
+    1. That the Father may be glorified in the Son, Verse 1
+    2. That the Son may be glorified in the Father, Verse 5
+    3. That He may be glorified in His disciples, Verse 10
+    4. That the disciples may be glorified in Him, Verse 24
+    5. That they all may be one, Verse 21
+    6. That they may be kept from the Evil One, Verse 15
+
+    Was this prayer answered?
+
+    Yes! The book of the ``Acts'' shows the answer.
+
+    God is glorified in Him in His resurrection.
+
+    All believers are one because they share one life.
+
+    The answer to the prayer will yet be revealed universally.
+
+    Chapter 17 takes up most of the great words of ``John'': Life, Light, Love, Truth, Believe, Know, Glory, Father, Son, etc.
+
+    \outlinesection{Chapter 18 \& 19}
+    CHRIST THE KING
+
+    When this trial (?) is closed, there is not a vestige of true ground for anyone but Himself to stand upon.
+
+    See how He rules in the midst of His foes:
+    1. He Rules by His Person.
+    As to the soldiers and officers: They fell back when He said, ``I am'' (verse 6).
+    He commanded then what to do (verse 8).
+
+    2. He Rules by the Word already spoken by Him.
+    As to His flock (17:12).
+    As to His denial (13:38).
+    As to His betrayal (13:2,18,21).
+    As to His death (12:32,33; Mark 10:33).
+
+    3. He Demoralises the Jews.
+    They have repeatedly to change their methods to make up a case. They charge Him with:
+    (a) Evil doing (verse 30).
+    (6) Sedition (verse 33) (implied).
+    (c) Religious misdoing (19:7).
+    (d) Rivalry to Pilate (19:12).
+    They stood for ceremonial cleanness, but stooped to moral infamy (18:28).
+    He compelled them to say the most humiliating thing about themselves (19:15).
+
+    4. He Disconcerted Pilate.
+    (a) Proved him guilty of accepting reports without getting evidence, 18:34,35
+    (b) Made him hide behind a veil of cynicism, verse 38
+    (c) Compelled a verdict of innocence, verse 38
+    (d) Drove him to subterfuge, verse 39
+    (e) Drew out his inconsistency,19:1
+    (f) Made him repeat his verdict twice, vv. 4,6
+    (g) Discovered a secret fear (note ``more''), verse 8
+    (h) Put him in the place of a puppet, verse 11
+    (i) Disclosed more moral weakness, vv. 12-13
+    (j) Proved him to be a mere worldly time-server, vv. 12,16
+    (k) Drew forth an acknowledgment (even if in irony) of universal sovereignty, vv. 19-22
+
+    Christ's Death was:
+    (1) A deliberate laying down of His life; not having it taken away.
+    (2) A universal uncovering of man's sin and wickedness.
+    (3) A prophecy that He will universally reign in righteousness.
+
+    It seemed that evil was in the place of supreme control, but the references to the fulfilment of Scripture (e.g., 19:24,36) show that God was over all in government.
+
+    \outlinesection{Chapter 20}
+    The Great Shepherd Returns
+
+    This chapter gives a beautiful and concrete presentation of what the Church is in principle.
+
+    1. An exclusive witness to the Resurrection of Christ. He confined (and always does confine) the revelation of Himself as the Risen Lord to His own, and never to the world.
+
+    2. He constitutes the Church a Resurrection company, and then a heavenly people by first ascending to His Father as its Head (verse 17).
+
+    3. He constitutes the Church upon the basis of the peace which He has made by the blood of His Cross (verses 19, 20, 26; see Hebrews 13:20).
+
+    4. He establishes the fact that the Holy Spirit will be the governing reality of the Church in this age (verse 22).
+
+    5. He makes it clear that the full blessing of fellowship with Him as risen is through faith (verses 24-29).
+
+    6. He gives to the Church the beautiful character of a family (verse 17). ``Father,'' ``Brethren'' (see Hebrews 2:11-13,17; 3:1).
+
+    \outlinesection{Chapter 21}
+    (This chapter is an after-inspiration. John evidently closed his narrative with 20:31.)
+
+    The chapter tells of the events of Christ's third appearance to His own after His resurrection (verse 14).
+
+    As three is the number of Divine completeness, we look for completing factors here.
+
+    What is the main feature of this chapter?
+
+    It is a new attaching of His own to Himself on the different basis which resurrection represents.
+    (1) The Church is out on the sea (``Sea'' is a Biblical type of humanity).
+    (2) It has known failure because of self-energy (verse 3).
+    (3) Christ is on the distant shore, and knows all about them.
+    (4) When they come absolutely under His government (above natural reasoning) the place of failure becomes the place of fulness (verses 5, 6).
+    (5) The precision as to ``one hundred, and fifty, and three,'' speaks of the elect gathered out of humanity in this age under the direction of Christ in service. This represents a special relationship to Him (verses 15-18).
+
+    \outlinesection{THE GOSPEL BY JOHN \\
+        APPENDIX FOR STUDENTS. \\
+        A Suggested Outline.}
+
+    1. The Prologue (1:1-19).
+
+    2. The Narrative.
+
+    The whole Gospel is an exposition of two great opposites:
+    1. Unbelief and Faith.
+    2. The World and Christ and His own.
+
+    The Narrative is in two main sections:
+    1. The presentation of Christ to the world (1:19-12:5).
+    2. The revelation of Christ to His disciples (13-21).
+
+    Each of these two main sections has its phases:
+    1. (a) Presentation to the world (1:19-4:54).
+    (b) Recognised in the world (3-4).
+    (c) Antagonised by the world (6-12:50).
+
+    In the Upper Room.
+    2. (a) Reveals the mind which is basic to the service of God and purges the chosen company of internal antagonism (13; Cp. Phil. 2).
+    (b) Reveals the spiritual position of the Church by reason of His departure (14).
+
+    1. (a) The presentation to the world is in two parts:
+
+    (1) Testimony to Him (1:19-2:11).
+    (2) His work (2:13-4:54).
+
+    The Testimony is threefold:
+    (1) John the Baptist - the old dispensation (1:19-34).
+    (2) Disciples who recognised Him (1:35-51).
+    (3) The ``signs'' (2:1-11).
+
+    1. (b) The recognition is threefold:
+    (1) Nicodemus - Jewish Pharisee (2:13-3:36).
+    (2) Samaritans (4:1-32).
+    (3) The King's officer (4:43-54).
+
+    1. (c) The antagonism runs right through alongside of works and testimony; both become more and more emphatic, is mainly in Judea - especially Jerusalem. The greatest testimony and signs in and near Jerusalem; the final burst of antagonism also there.
+
+    On the Way.
+    (c) Reveals the secret and nature of fruitfulness (15).
+
+    (d) Reveals the manner of His presence with them for the new dispensation. (The Holy Spirit) (16).
+
+    (e) The prayer before the Altar (17).
+    (1) For Himself (1-5).
+    (2) For those in fellowship (6-19).
+    (3) Those to be in fellowship (20-26).
+
+
+    (f) The final scenes.
+    The antagonism prevails.
+    He remains dead to unbelief.
+    He triumphs and lives to faith.
+    His death is the source of life.
+
+    His sufferings were voluntary, pre-determined and did not obscure His moral glory.
+
+    The great significance that John was the last apostolic writer, and that the contents of this book is the last revelation and emphasis. Before John's death a fatal tendency set in to sever the person of Christ; i.e., of the two natures to make two persons. That the Divine nature only joined Him at His baptism and forsook Him at His Cross. John wrote to refute this, and to affirm the indivisableness of Jesus Christ - the Son of God.
+
+    Chapter 1 sums up the whole book in its words:
+
+    Life, verse 4
+    Light, verse 4
+    Father, verse 14
+    Glory (and Glorify), verse 14
+    Truth, verse 17
+    Witness, verse 7
+    World, verse 10
+    Believe, verse 7
+    Name, verse 12
+    See also:
+
+    ``To know.''
+    ``Works.''
+    ``Signs.''
+    ``To judge'' and ``judgment.''
+    ``To abide in.''
+    ``To manifest.''
+    ``Eternal Life.''
+    ``Flesh.''
+    ``Love'' and ``to love.''
+    ``Behold.''
+    ``Darkness.''
+    Give the number of occurrences of each of the above words and phrases in the whole Gospel; then note in which part of the Gospel there are special preponderances.
+
+\end{outline}
+
+\end{document}
