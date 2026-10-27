@@ -4,23 +4,24 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f4f1e9"><title>秋冬 · 平台实页</title>
   <meta name="description" content="网购平台公开榜单与商品已售记录，附商品图片及来源链接">
-  <link rel="stylesheet" href="platforms.css?v=1"><script src="platforms.js?v=1" defer></script>
+  <link rel="stylesheet" href="platforms.css?v=2"><script src="../picks.js?v=4" defer></script><script src="platforms.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip" href="#results">跳到商品</a>
 <div class="wrap">
-  <header><a class="brand" href="../"><span class="glyph">W</span><span>小本选款<small>PLATFORM OBSERVATIONS</small></span></a><nav><a class="here" href="./">平台实页</a><a href="../">图库 / 备选 ↗</a></nav></header>
+  <header><a class="brand" href="../"><span class="glyph">W</span><span>小本选款<small>WOMENSWEAR</small></span></a><nav><a href="../catalog.html">原图库 ↗</a><button id="show-saved" type="button" aria-pressed="false">♡ 备选 <b id="saved-count">0</b></button><button id="sync-button" type="button" aria-label="备选自动保存">自动保存</button></nav></header>
   <main>
-    <section class="heading"><div><div class="eyebrow">AUTUMN / WINTER</div><h1>秋冬 · <em>平台实页</em></h1></div><div class="date"><span>采集快照</span><time datetime="2026-10-27">2026.10.27</time></div></section>
+    <section class="heading"><div><div class="eyebrow">AUTUMN / WINTER</div><h1>秋冬 · <em id="page-title">选款</em></h1></div><div class="date"><span>采集快照</span><time datetime="2026-10-27">2026.10.27</time></div></section>
     <div class="tabs" id="tabs" role="group" aria-label="平台与品类"></div>
     <section class="workspace" aria-label="平台数据">
       <div class="context"><span class="market" id="market"></span><span id="metric"></span><a id="source-link" target="_blank" rel="noopener noreferrer">平台原页 ↗</a></div>
-      <div class="toolbar"><div class="filters"><label><input type="checkbox" id="winter-only" checked> 秋冬 / 长袖</label><label id="threshold-wrap"><input type="checkbox" id="threshold" checked> 累计 ≥ 1千</label><input type="search" id="search" aria-label="搜索商品或品牌" placeholder="搜品牌 / 款式 / 商品号"></div><div class="actions"><span id="count" aria-live="polite"></span><button id="view-toggle" type="button">切换图库</button><a href="observations.csv" download>↓ CSV</a></div></div>
-      <div class="chart-head" id="chart-head"><span>商品链接</span><span>商品累计已售 · 含退货 · 平台约数</span></div>
+      <div class="toolbar"><div class="filters"><select id="amazon-view" aria-label="亚马逊数据视图"><option value="recent">近月购买徽标</option><option value="coats">外套 · 当前榜</option><option value="sweaters">毛衣 · 当前榜</option><option value="hoodies">卫衣 · 当前榜</option></select><label id="winter-wrap"><input type="checkbox" id="winter-only" checked> 秋冬 / 长袖</label><label id="threshold-wrap"><input type="checkbox" id="threshold" checked> <span id="threshold-label">近月徽标 ≥ 500</span></label><input type="search" id="search" aria-label="搜索商品或品牌" placeholder="搜品牌 / 款式 / 商品号"></div><div class="actions"><span id="count" aria-live="polite"></span><button id="view-toggle" type="button">切换图库</button><button id="export-picks" type="button" hidden>↓ 选单</button><a href="observations.csv" download id="all-csv">↓ CSV</a></div></div>
+      <div class="chart-head" id="chart-head"><span>商品链接</span><span id="chart-metric">Amazon · 近月购买徽标</span></div>
       <div id="results" aria-live="polite"></div>
       <div class="empty" id="empty" hidden>没有匹配记录</div>
     </section>
   </main>
-  <footer><span id="footer-context">平台公开记录</span><a href="data.json" target="_blank" rel="noopener">来源数据 ↗</a><a href="../">返回备选图库 ↗</a></footer>
+  <footer><span id="footer-context">平台公开记录</span><a href="data.json" target="_blank" rel="noopener">来源数据 ↗</a><a href="../catalog.html">原图库 ↗</a></footer>
 </div>
+<div id="toast" role="status" hidden></div>
 </body></html>
