@@ -1,5 +1,1004 @@
 [
   {
+    "id": "45",
+    "name": "立领防风保暖短棉服",
+    "category": "外搭",
+    "brand": "H&M Move",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 89.99,
+    "originalPrice": null,
+    "source": "https://www2.hm.com/en_us/productpage.1336884001.html",
+    "image": "assets/45.jpg",
+    "imageSource": "https://image.hm.com/assets/hm/31/07/3107303366b8834f9c96f9cf4a36c3f627b918b2.jpg?imwidth=2160",
+    "sku": "1336884001",
+    "keyword": "padded sports puffer jacket high funnel collar",
+    "season": "冬季外搭",
+    "seasonGroup": "winter",
+    "seasonLabel": "冬季·保暖层",
+    "winterBasis": [
+      "夹棉",
+      "防风",
+      "高立领",
+      "长袖"
+    ],
+    "segment": "A",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "H&M Move",
+    "priceMethod": "live browser visible UI",
+    "stockObserved": "selected sizes available",
+    "observationFile": "winter-assets/hm-puffer-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": null,
+        "title": "立领防风保暖短棉服",
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "立领夹棉保暖马甲",
+    "category": "外搭",
+    "brand": "H&M Move",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 59.99,
+    "originalPrice": null,
+    "source": "https://www2.hm.com/en_us/productpage.1366094001.html",
+    "image": "assets/46.jpg",
+    "imageSource": "https://image.hm.com/assets/hm/d9/c4/d9c476a5ab1253967934723e66fabaec5de81a2c.jpg?imwidth=2160",
+    "sku": "1366094001",
+    "keyword": "padded thermal puffer vest",
+    "season": "秋冬叠穿",
+    "seasonGroup": "winter",
+    "seasonLabel": "冬季·保暖层",
+    "winterBasis": [
+      "夹棉",
+      "立领",
+      "防风",
+      "保暖技术"
+    ],
+    "segment": "A",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "H&M Move",
+    "priceMethod": "live browser visible UI",
+    "stockObserved": "Notify me in current default selection",
+    "observationFile": "winter-assets/hm-sportsvest-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": null,
+        "title": "立领夹棉保暖马甲",
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "name": "羊羔绒半拉链套头衫",
+    "category": "上衣",
+    "brand": "Old Navy",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 24.99,
+    "originalPrice": 49.99,
+    "source": "https://oldnavy.gap.com/browse/product.do?pid=903179002",
+    "image": "assets/47.jpg",
+    "imageSource": "https://content.gapinc.com/b/0062/850/266/cn62850266.png?width=737",
+    "sku": "903179002",
+    "keyword": "sherpa quarter zip pullover",
+    "season": "秋冬保暖层",
+    "seasonGroup": "winter",
+    "seasonLabel": "冬季·保暖层",
+    "winterBasis": [
+      "羊羔绒表面",
+      "半拉链高领",
+      "长袖",
+      "弹力袖口"
+    ],
+    "segment": "B",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "Old Navy",
+    "priceMethod": "live browser visible UI",
+    "stockObserved": "selected product page offers add to bag",
+    "observationFile": "winter-assets/on-sherpa-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": null,
+        "title": "羊羔绒半拉链套头衫",
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "提花半高领毛衣",
+    "category": "针织",
+    "brand": "H&M",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 37.99,
+    "originalPrice": 49.99,
+    "source": "https://www2.hm.com/en_us/productpage.1374897001.html",
+    "image": "assets/48.jpg",
+    "imageSource": "https://image.hm.com/assets/hm/81/08/810831c4fe49cb667232aaed108afaafac6e47ea.jpg?imwidth=2160",
+    "sku": "1374897001",
+    "keyword": "jacquard knit mock turtleneck sweater",
+    "season": "秋冬保暖层",
+    "seasonGroup": "winter",
+    "seasonLabel": "冬季·保暖层",
+    "winterBasis": [
+      "提花针织",
+      "半高领",
+      "长袖",
+      "落肩"
+    ],
+    "segment": "A",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "H&M",
+    "priceMethod": "live browser visible UI",
+    "stockObserved": "Notify me in current default selection",
+    "observationFile": "winter-assets/hm-jacquard-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": null,
+        "title": "提花半高领厚针织衫",
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "圆领立体麻花毛衣",
+    "category": "针织",
+    "brand": "H&M",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 59.99,
+    "originalPrice": null,
+    "source": "https://www2.hm.com/en_us/productpage.1311148001.html",
+    "image": "assets/49.jpg",
+    "imageSource": "https://image.hm.com/assets/hm/e1/c5/e1c53143e3f2989f0f7b2363c7f8257e5ee91379.jpg?imwidth=2160",
+    "sku": "1311148001",
+    "keyword": "chunky cable knit crew neck sweater",
+    "season": "秋冬保暖层",
+    "seasonGroup": "winter",
+    "seasonLabel": "冬季·保暖层",
+    "winterBasis": [
+      "立体麻花组织",
+      "长袖",
+      "罗纹领口和袖口"
+    ],
+    "segment": "A",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "H&M",
+    "priceMethod": "live browser visible UI",
+    "stockObserved": "add to bag shown, specific variants not queried",
+    "observationFile": "winter-assets/hm-cable-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": null,
+        "title": "圆领立体麻花毛衣",
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "高腰加绒防泼水束脚裤",
+    "category": "裤装",
+    "brand": "G GRADUAL",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 69.99,
+    "originalPrice": null,
+    "source": "https://shop.tiktok.com/us/pdp/womens-fleece-lined-high-waist-joggers-waterproof-warm/1731617920636064465",
+    "image": "assets/50.jpg",
+    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/62e747e6849f48b0a84b7ed0401cb074~tplv-fhlh96nyum-crop-webp:800:800.webp?dr=12190&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=useast5&from=3376456192",
+    "sku": "1731617920636064465",
+    "keyword": "fleece lined water resistant winter joggers",
+    "season": "冬季保暖裤",
+    "seasonGroup": "winter",
+    "seasonLabel": "冬季·保暖层",
+    "winterBasis": [
+      "内侧加绒",
+      "高腰",
+      "长裤",
+      "收口裤脚"
+    ],
+    "segment": "B",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "TikTok",
+    "priceMethod": "live browser visible UI",
+    "stockObserved": "selected White / S offers add to cart",
+    "observationFile": "winter-assets/gg-jogger-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": "1731617920636064465",
+        "title": "高腰加绒防泼水束脚裤",
+        "url": "https://shop.tiktok.com/us/pdp/womens-fleece-lined-high-waist-joggers-waterproof-warm/1731617920636064465",
+        "source": "https://shop.tiktok.com/us/pdp/womens-fleece-lined-high-waist-joggers-waterproof-warm/1731617920636064465",
+        "price": 69.99,
+        "value": "15.1K",
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "name": "松紧高腰灯芯绒阔腿长裤",
+    "category": "裤装",
+    "brand": "Old Navy",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 24.99,
+    "originalPrice": 49.99,
+    "source": "https://oldnavy.gap.com/browse/product.do?pid=9055230120002",
+    "image": "assets/51.jpg",
+    "imageSource": "https://content.gapinc.com/b/0063/549/969/cn63549969.png?width=737",
+    "sku": "9055230120002",
+    "keyword": "high waisted corduroy wide leg pants",
+    "season": "秋冬长裤",
+    "seasonGroup": "layers",
+    "seasonLabel": "秋冬·灯芯绒",
+    "winterBasis": [
+      "灯芯绒面料",
+      "长裤",
+      "松紧高腰",
+      "宽松臀腿"
+    ],
+    "segment": "B",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "Old Navy",
+    "priceMethod": "live browser visible UI",
+    "stockObserved": "selected Sedimentary / regular M out of stock; other displayed sizes not fully queried",
+    "observationFile": "winter-assets/corduroy-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": null,
+        "title": "松紧高腰灯芯绒阔腿长裤",
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "name": "重磅加绒双层帽连帽卫衣",
+    "category": "上衣",
+    "brand": "Comfrt",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 39,
+    "originalPrice": null,
+    "source": "https://comfrt.com/products/signature-fit-unisex-hoodie",
+    "image": "assets/52.jpg",
+    "imageSource": "https://comfrt.com/fast-image/comfrt/files/1_05821975-fa2f-4aae-b28d-c624b5cad08f.jpg?v=1776908020",
+    "sku": "signature-fit-unisex-hoodie",
+    "keyword": "heavyweight fleece oversized double lined hoodie",
+    "season": "冬季保暖层",
+    "seasonGroup": "winter",
+    "seasonLabel": "冬季·保暖层",
+    "winterBasis": [
+      "CloudTouch Heavyweight Fleece",
+      "双层帽",
+      "长袖",
+      "袋鼠口袋"
+    ],
+    "segment": "B",
+    "archived": false,
+    "dual": false,
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "pricePlatform": "Comfrt",
+    "priceMethod": "official US page web read 2026-10-27; live browser geo-redirected to en-tw, do not label US price browser-current",
+    "stockObserved": "US web page says in-stock; browser redirects to Taiwan currency, US price taken from official US web read",
+    "observationFile": "winter-assets/comfrt-hoodie-live.json",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": null,
+        "title": "重磅加绒双层帽连帽卫衣",
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开商品页",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "未取得",
+        "match": null,
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
     "id": "25",
     "name": "罗纹圆领修身长袖",
     "category": "上衣",
@@ -120,7 +1119,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋冬·叠穿",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "26",
@@ -243,7 +1246,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋冬·叠穿",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "27",
@@ -366,499 +1373,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
-  },
-  {
-    "id": "28",
-    "name": "大圆领罗纹短袖",
-    "category": "上衣",
-    "sku": "1730564921303404873",
-    "brand": "ANRABESS",
-    "market": "美国市场",
-    "currency": "USD",
-    "price": 42.89,
-    "originalPrice": null,
-    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/396ab4b732e24122959a529bc15a2ca4~tplv-fhlh96nyum-crop-webp:1999:1999.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
-    "source": "https://shop.tiktok.com/us/pdp/scoop-neck-slim-fitted-tee-by-anrabess-womens-ribbed-knit-summer-top/1730564921303404873",
-    "color": "见参考商品图；颜色与尺码随页面选择变化",
-    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
-    "keyword": "women scoop neck ribbed short sleeve tee",
-    "reason": "当前有近月购买信号，适合作为 2027 春季基础款方向。",
-    "caution": "浅色透度、领口深度、胸部拉伸与常规衣长。",
-    "buyer": "通勤叠穿客群 A",
-    "season": "2027 春夏待验证",
-    "recommended": false,
-    "checkedAt": "2026-10-27",
-    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
-    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
-    "evidenceUrl": "https://shop.tiktok.com/us/pdp/scoop-neck-slim-fitted-tee-by-anrabess-womens-ribbed-knit-summer-top/1730564921303404873",
-    "image": "assets/28.jpg",
-    "archived": false,
-    "decision": "春季储备",
-    "decisionReason": "当前有近月购买信号，适合作为 2027 春季基础款方向。",
-    "segment": "A",
-    "dual": true,
-    "channels": [
-      {
-        "platform": "TikTok Shop US",
-        "id": "1730564921303404873",
-        "title": "ANRABESS Women's Short Sleeve Tops Casual Scoop Neck Ribbed Knit Slim Fitted Basic Tee Shirts 2026 Summer Trendy Skinny Shirts Minimalist Blouse",
-        "url": "https://shop.tiktok.com/us/pdp/scoop-neck-slim-fitted-tee-by-anrabess-womens-ribbed-knit-summer-top/1730564921303404873",
-        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
-        "price": 42.89,
-        "value": "11.8K",
-        "metric": "上架以来累计已售（含退货）",
-        "period": "上架至核查日；上架日未披露",
-        "method": "公开页面显示值，K 为千；非近期或净销量",
-        "observedAt": "2026-10-27"
-      },
-      {
-        "platform": "Amazon US",
-        "id": "B0DHXCKD2S",
-        "title": "Women Short Sleeve Tops Scoop Neck Ribbed Tee Shirts",
-        "url": "https://www.amazon.com/dp/B0DHXCKD2S",
-        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
-        "price": 7.99,
-        "value": "500+",
-        "metric": "过去一个月购买量徽标",
-        "period": "滚动近月；非自然月",
-        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
-        "match": "短袖、大圆领、罗纹版型一致；具体变体不同。",
-        "comparable": true,
-        "observedAt": "2026-10-27"
-      }
     ],
-    "monthly": [
-      {
-        "month": "2025-10",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-11",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-12",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-01",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-02",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-03",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-04",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-05",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-06",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-07",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-08",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-09",
-        "amazon": null,
-        "tiktok": null
-      }
-    ]
-  },
-  {
-    "id": "29",
-    "name": "V 领罗纹背心",
-    "category": "上衣",
-    "sku": "1732288548001386825",
-    "brand": "ANRABESS",
-    "market": "美国市场",
-    "currency": "USD",
-    "price": 24.99,
-    "originalPrice": null,
-    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/ac6e543dc3b84a8da7310a0166192d6c~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
-    "source": "https://shop.tiktok.com/us/pdp/anrabess-womens-v-neck-ribbed-knit-slim-fit-tank-top-summer/1732288548001386825",
-    "color": "见参考商品图；颜色与尺码随页面选择变化",
-    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
-    "keyword": "women v neck ribbed knit tank top",
-    "reason": "近月购买信号较强，但低价竞争明显，先验证小店是否愿意采购。",
-    "caution": "肩带遮内衣、袖窿不走光；不要仅依据模特图定尺码。",
-    "buyer": "通勤叠穿客群 A",
-    "season": "2027 春夏待验证",
-    "recommended": false,
-    "checkedAt": "2026-10-27",
-    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
-    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
-    "evidenceUrl": "https://shop.tiktok.com/us/pdp/anrabess-womens-v-neck-ribbed-knit-slim-fit-tank-top-summer/1732288548001386825",
-    "image": "assets/29.jpg",
-    "archived": false,
-    "decision": "春季储备",
-    "decisionReason": "近月购买信号较强，但低价竞争明显，先验证小店是否愿意采购。",
-    "segment": "A",
-    "dual": true,
-    "channels": [
-      {
-        "platform": "TikTok Shop US",
-        "id": "1732288548001386825",
-        "title": "ANRABESS Tank Tops for Women V Neck Ribbed Knit Slim Fitted Sleeveless Tee – 2026 Summer Casual Basic Tanks",
-        "url": "https://shop.tiktok.com/us/pdp/anrabess-womens-v-neck-ribbed-knit-slim-fit-tank-top-summer/1732288548001386825",
-        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
-        "price": 24.99,
-        "value": "21.0K",
-        "metric": "上架以来累计已售（含退货）",
-        "period": "上架至核查日；上架日未披露",
-        "method": "公开页面显示值，K 为千；非近期或净销量",
-        "observedAt": "2026-10-27"
-      },
-      {
-        "platform": "Amazon US",
-        "id": "B0FTSS3PHW",
-        "title": "Tank Tops for Women V Neck Summer Sleeveless Ribbed Knit",
-        "url": "https://www.amazon.com/dp/B0FTSS3PHW",
-        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
-        "price": 7.99,
-        "value": "2,000+",
-        "metric": "过去一个月购买量徽标",
-        "period": "滚动近月；非自然月",
-        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
-        "match": "V 领、罗纹、无袖特征一致；肩带宽度及变体待核。",
-        "comparable": true,
-        "observedAt": "2026-10-27"
-      }
-    ],
-    "monthly": [
-      {
-        "month": "2025-10",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-11",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-12",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-01",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-02",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-03",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-04",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-05",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-06",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-07",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-08",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-09",
-        "amazon": null,
-        "tiktok": null
-      }
-    ]
-  },
-  {
-    "id": "30",
-    "name": "荷叶短袖 V 领上衣",
-    "category": "上衣",
-    "sku": "1730866978455458121",
-    "brand": "ANRABESS",
-    "market": "美国市场",
-    "currency": "USD",
-    "price": 42.89,
-    "originalPrice": null,
-    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/e81d0a77985e48ebbb18ecb1c7b3eca1~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
-    "source": "https://shop.tiktok.com/us/pdp/casual-v-neck-blouse-anrabess-ruffle-sleeve-top-for-summer-workwear/1730866978455458121",
-    "color": "见参考商品图；颜色与尺码随页面选择变化",
-    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
-    "keyword": "women ruffle sleeve v neck work blouse",
-    "reason": "有两渠道数字，但袖型匹配不足，暂不计入双渠道可比款。",
-    "caution": "比较荷叶袖与盖袖样衣；先验证目标店主偏好。",
-    "buyer": "通勤叠穿客群 A",
-    "season": "秋冬／春季叠穿",
-    "recommended": false,
-    "checkedAt": "2026-10-27",
-    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
-    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
-    "evidenceUrl": "https://shop.tiktok.com/us/pdp/casual-v-neck-blouse-anrabess-ruffle-sleeve-top-for-summer-workwear/1730866978455458121",
-    "image": "assets/30.jpg",
-    "archived": false,
-    "decision": "补证",
-    "decisionReason": "有两渠道数字，但袖型匹配不足，暂不计入双渠道可比款。",
-    "segment": "A",
-    "dual": false,
-    "channels": [
-      {
-        "platform": "TikTok Shop US",
-        "id": "1730866978455458121",
-        "title": "ANRABESS Womens Dressy Casual Tops Ruffle Short Sleeve V Neck Shirts Elegant Business V-Neck Work Blouse",
-        "url": "https://shop.tiktok.com/us/pdp/casual-v-neck-blouse-anrabess-ruffle-sleeve-top-for-summer-workwear/1730866978455458121",
-        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
-        "price": 42.89,
-        "value": "5.6K",
-        "metric": "上架以来累计已售（含退货）",
-        "period": "上架至核查日；上架日未披露",
-        "method": "公开页面显示值，K 为千；非近期或净销量",
-        "observedAt": "2026-10-27"
-      },
-      {
-        "platform": "Amazon US",
-        "id": "B0DK8H3MRG",
-        "title": "Women Tops Business Casual Cap Sleeve Dressy Blouse V Neck Shirts",
-        "url": "https://www.amazon.com/dp/B0DK8H3MRG",
-        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
-        "price": 9.99,
-        "value": "500+",
-        "metric": "过去一个月购买量徽标",
-        "period": "滚动近月；非自然月",
-        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
-        "match": "Amazon 为盖袖 V 领通勤上衣；荷叶袖细节不同，仅作近似竞品。",
-        "comparable": false,
-        "observedAt": "2026-10-27"
-      }
-    ],
-    "monthly": [
-      {
-        "month": "2025-10",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-11",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-12",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-01",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-02",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-03",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-04",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-05",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-06",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-07",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-08",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-09",
-        "amazon": null,
-        "tiktok": null
-      }
-    ]
-  },
-  {
-    "id": "31",
-    "name": "泡泡长袖 V 领上衣",
-    "category": "上衣",
-    "sku": "1730313467406487881",
-    "brand": "ANRABESS",
-    "market": "美国市场",
-    "currency": "USD",
-    "price": 63.69,
-    "originalPrice": null,
-    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/b1ca47d327f44544924194550ab11d15~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
-    "source": "https://shop.tiktok.com/us/pdp/puff-long-sleeve-shirt-anrabess-v-neck-casual-loose-blouse-for-work/1730313467406487881",
-    "color": "见参考商品图；颜色与尺码随页面选择变化",
-    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
-    "keyword": "women puff long sleeve v neck loose blouse",
-    "reason": "目前只有 TikTok 累计成交；不能称为已验证畅销。",
-    "caution": "肩部体积、上臂宽度、垂坠感；拍实际坐姿和抬手效果。",
-    "buyer": "宽松日常客群 B",
-    "season": "秋冬／春季叠穿",
-    "recommended": false,
-    "checkedAt": "2026-10-27",
-    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
-    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
-    "evidenceUrl": "https://shop.tiktok.com/us/pdp/puff-long-sleeve-shirt-anrabess-v-neck-casual-loose-blouse-for-work/1730313467406487881",
-    "image": "assets/31.jpg",
-    "archived": false,
-    "decision": "补证",
-    "decisionReason": "目前只有 TikTok 累计成交；不能称为已验证畅销。",
-    "segment": "B",
-    "dual": false,
-    "channels": [
-      {
-        "platform": "TikTok Shop US",
-        "id": "1730313467406487881",
-        "title": "ANRABESS Women's Puff Long Sleeve Shirts V Neck Loose T-Shirts Dressy Casual Work Blouses 2026 Fall Tops Trendy Clothes Outfits Womenswear",
-        "url": "https://shop.tiktok.com/us/pdp/puff-long-sleeve-shirt-anrabess-v-neck-casual-loose-blouse-for-work/1730313467406487881",
-        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
-        "price": 63.69,
-        "value": "2.3K",
-        "metric": "上架以来累计已售（含退货）",
-        "period": "上架至核查日；上架日未披露",
-        "method": "公开页面显示值，K 为千；非近期或净销量",
-        "observedAt": "2026-10-27"
-      },
-      {
-        "platform": "Amazon US",
-        "id": null,
-        "title": null,
-        "url": null,
-        "source": null,
-        "price": null,
-        "value": null,
-        "metric": "过去一个月购买量徽标",
-        "period": "滚动近月；非自然月",
-        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
-        "match": "尚未找到版型足够接近、并有购买量徽标的第二渠道商品。",
-        "comparable": false,
-        "observedAt": "2026-10-27"
-      }
-    ],
-    "monthly": [
-      {
-        "month": "2025-10",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-11",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-12",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-01",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-02",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-03",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-04",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-05",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-06",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-07",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-08",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-09",
-        "amazon": null,
-        "tiktok": null
-      }
-    ]
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "32",
@@ -981,7 +1500,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "33",
@@ -1104,7 +1627,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋冬·叠穿",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "34",
@@ -1227,7 +1754,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "35",
@@ -1350,7 +1881,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "36",
@@ -1473,7 +2008,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "37",
@@ -1596,7 +2135,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "38",
@@ -1719,253 +2262,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
-  },
-  {
-    "id": "39",
-    "name": "高腰亚麻感阔腿裤",
-    "category": "裤装",
-    "sku": "1730694420962906441",
-    "brand": "ANRABESS",
-    "market": "美国市场",
-    "currency": "USD",
-    "price": 62.39,
-    "originalPrice": null,
-    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/8cafc249dbda42c5ae2086689ca4a8bd~tplv-fhlh96nyum-crop-webp:1600:1600.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
-    "source": "https://shop.tiktok.com/us/pdp/palazzo-pants-by-anrabess-womens-flowy-high-waist-linen-wide-leg-pants/1730694420962906441",
-    "color": "见参考商品图；颜色与尺码随页面选择变化",
-    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
-    "keyword": "women high waist linen palazzo pants pockets",
-    "reason": "累计成交较多，但材质匹配和季节性尚未验证。",
-    "caution": "面料真实含量、透度、裆长、裤长；分别量平铺和拉伸腰围。",
-    "buyer": "宽松日常客群 B",
-    "season": "秋冬／春季叠穿",
-    "recommended": false,
-    "checkedAt": "2026-10-27",
-    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
-    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
-    "evidenceUrl": "https://shop.tiktok.com/us/pdp/palazzo-pants-by-anrabess-womens-flowy-high-waist-linen-wide-leg-pants/1730694420962906441",
-    "image": "assets/39.jpg",
-    "archived": false,
-    "decision": "补证",
-    "decisionReason": "累计成交较多，但材质匹配和季节性尚未验证。",
-    "segment": "B",
-    "dual": false,
-    "channels": [
-      {
-        "platform": "TikTok Shop US",
-        "id": "1730694420962906441",
-        "title": "ANRABESS Women's Comfy Linen Palazzo Pants - Summer Boho, High Waist, Wide Leg, Casual Lounge Bottoms for Beach Travel Vacation Outfits",
-        "url": "https://shop.tiktok.com/us/pdp/palazzo-pants-by-anrabess-womens-flowy-high-waist-linen-wide-leg-pants/1730694420962906441",
-        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
-        "price": 62.39,
-        "value": "10.6K",
-        "metric": "上架以来累计已售（含退货）",
-        "period": "上架至核查日；上架日未披露",
-        "method": "公开页面显示值，K 为千；非近期或净销量",
-        "observedAt": "2026-10-27"
-      },
-      {
-        "platform": "Amazon US",
-        "id": "B0DLVRCYCM",
-        "title": "Womens Wide Leg Palazzo Pants with Pockets",
-        "url": "https://www.amazon.com/dp/B0DLVRCYCM",
-        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
-        "price": 19.98,
-        "value": "700+",
-        "metric": "过去一个月购买量徽标",
-        "period": "滚动近月；非自然月",
-        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
-        "match": "Amazon 为口袋 palazzo 阔腿裤；面料未核实为亚麻，仅近似竞品。",
-        "comparable": false,
-        "observedAt": "2026-10-27"
-      }
     ],
-    "monthly": [
-      {
-        "month": "2025-10",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-11",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-12",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-01",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-02",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-03",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-04",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-05",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-06",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-07",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-08",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-09",
-        "amazon": null,
-        "tiktok": null
-      }
-    ]
-  },
-  {
-    "id": "40",
-    "name": "条格纹宽松阔腿裤",
-    "category": "裤装",
-    "sku": "1732128391237112137",
-    "brand": "ANRABESS",
-    "market": "美国市场",
-    "currency": "USD",
-    "price": 64.99,
-    "originalPrice": null,
-    "imageSource": "https://p19-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/e614741809a84e9d8ef285af4cee1305~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
-    "source": "https://shop.tiktok.com/us/pdp/anrabess-womens-striped-gingham-palazzo-pants-high-waist-pockets/1732128391237112137",
-    "color": "见参考商品图；颜色与尺码随页面选择变化",
-    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
-    "keyword": "women gingham striped wide leg lounge pants",
-    "reason": "图案有成交线索，裤脚结构不同，先不列为可比验证。",
-    "caution": "对格、裤长、臀围余量和面料缩水；先问基础直口版本。",
-    "buyer": "宽松日常客群 B",
-    "season": "秋冬／春季叠穿",
-    "recommended": false,
-    "checkedAt": "2026-10-27",
-    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
-    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
-    "evidenceUrl": "https://shop.tiktok.com/us/pdp/anrabess-womens-striped-gingham-palazzo-pants-high-waist-pockets/1732128391237112137",
-    "image": "assets/40.jpg",
-    "archived": false,
-    "decision": "补证",
-    "decisionReason": "图案有成交线索，裤脚结构不同，先不列为可比验证。",
-    "segment": "B",
-    "dual": false,
-    "channels": [
-      {
-        "platform": "TikTok Shop US",
-        "id": "1732128391237112137",
-        "title": "ANRABESS Womens Striped Gingham Palazzo Pants Lightweight Wide Leg High Waisted Lounge Pajama Pants Cute Casual Trousers with Pockets for Comfort",
-        "url": "https://shop.tiktok.com/us/pdp/anrabess-womens-striped-gingham-palazzo-pants-high-waist-pockets/1732128391237112137",
-        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
-        "price": 64.99,
-        "value": "9.7K",
-        "metric": "上架以来累计已售（含退货）",
-        "period": "上架至核查日；上架日未披露",
-        "method": "公开页面显示值，K 为千；非近期或净销量",
-        "observedAt": "2026-10-27"
-      },
-      {
-        "platform": "Amazon US",
-        "id": "B0H1CZ5Z9X",
-        "title": "Womens Gingham Striped Ruffle Hem Pants",
-        "url": "https://www.amazon.com/dp/B0H1CZ5Z9X",
-        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
-        "price": 27.99,
-        "value": "300+",
-        "metric": "过去一个月购买量徽标",
-        "period": "滚动近月；非自然月",
-        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
-        "match": "均为条格纹休闲裤；Amazon 多了荷叶裤脚，不能当同一版型。",
-        "comparable": false,
-        "observedAt": "2026-10-27"
-      }
-    ],
-    "monthly": [
-      {
-        "month": "2025-10",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-11",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2025-12",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-01",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-02",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-03",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-04",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-05",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-06",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-07",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-08",
-        "amazon": null,
-        "tiktok": null
-      },
-      {
-        "month": "2026-09",
-        "amazon": null,
-        "tiktok": null
-      }
-    ]
+    "seasonGroup": "layers",
+    "seasonLabel": "秋冬·叠穿",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "41",
@@ -2088,7 +2389,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "42",
@@ -2211,7 +2516,773 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "layers",
+    "seasonLabel": "秋季·层搭",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
+  },
+  {
+    "id": "28",
+    "name": "大圆领罗纹短袖",
+    "category": "上衣",
+    "sku": "1730564921303404873",
+    "brand": "ANRABESS",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 42.89,
+    "originalPrice": null,
+    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/396ab4b732e24122959a529bc15a2ca4~tplv-fhlh96nyum-crop-webp:1999:1999.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
+    "source": "https://shop.tiktok.com/us/pdp/scoop-neck-slim-fitted-tee-by-anrabess-womens-ribbed-knit-summer-top/1730564921303404873",
+    "color": "见参考商品图；颜色与尺码随页面选择变化",
+    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
+    "keyword": "women scoop neck ribbed short sleeve tee",
+    "reason": "当前有近月购买信号，适合作为 2027 春季基础款方向。",
+    "caution": "浅色透度、领口深度、胸部拉伸与常规衣长。",
+    "buyer": "通勤叠穿客群 A",
+    "season": "2027 春夏待验证",
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
+    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
+    "evidenceUrl": "https://shop.tiktok.com/us/pdp/scoop-neck-slim-fitted-tee-by-anrabess-womens-ribbed-knit-summer-top/1730564921303404873",
+    "image": "assets/28.jpg",
+    "archived": true,
+    "decision": "春季储备",
+    "decisionReason": "当前有近月购买信号，适合作为 2027 春季基础款方向。",
+    "segment": "A",
+    "dual": true,
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": "1730564921303404873",
+        "title": "ANRABESS Women's Short Sleeve Tops Casual Scoop Neck Ribbed Knit Slim Fitted Basic Tee Shirts 2026 Summer Trendy Skinny Shirts Minimalist Blouse",
+        "url": "https://shop.tiktok.com/us/pdp/scoop-neck-slim-fitted-tee-by-anrabess-womens-ribbed-knit-summer-top/1730564921303404873",
+        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
+        "price": 42.89,
+        "value": "11.8K",
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开页面显示值，K 为千；非近期或净销量",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": "B0DHXCKD2S",
+        "title": "Women Short Sleeve Tops Scoop Neck Ribbed Tee Shirts",
+        "url": "https://www.amazon.com/dp/B0DHXCKD2S",
+        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
+        "price": 7.99,
+        "value": "500+",
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
+        "match": "短袖、大圆领、罗纹版型一致；具体变体不同。",
+        "comparable": true,
+        "observedAt": "2026-10-27"
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
+  },
+  {
+    "id": "29",
+    "name": "V 领罗纹背心",
+    "category": "上衣",
+    "sku": "1732288548001386825",
+    "brand": "ANRABESS",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 24.99,
+    "originalPrice": null,
+    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/ac6e543dc3b84a8da7310a0166192d6c~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
+    "source": "https://shop.tiktok.com/us/pdp/anrabess-womens-v-neck-ribbed-knit-slim-fit-tank-top-summer/1732288548001386825",
+    "color": "见参考商品图；颜色与尺码随页面选择变化",
+    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
+    "keyword": "women v neck ribbed knit tank top",
+    "reason": "近月购买信号较强，但低价竞争明显，先验证小店是否愿意采购。",
+    "caution": "肩带遮内衣、袖窿不走光；不要仅依据模特图定尺码。",
+    "buyer": "通勤叠穿客群 A",
+    "season": "2027 春夏待验证",
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
+    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
+    "evidenceUrl": "https://shop.tiktok.com/us/pdp/anrabess-womens-v-neck-ribbed-knit-slim-fit-tank-top-summer/1732288548001386825",
+    "image": "assets/29.jpg",
+    "archived": true,
+    "decision": "春季储备",
+    "decisionReason": "近月购买信号较强，但低价竞争明显，先验证小店是否愿意采购。",
+    "segment": "A",
+    "dual": true,
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": "1732288548001386825",
+        "title": "ANRABESS Tank Tops for Women V Neck Ribbed Knit Slim Fitted Sleeveless Tee – 2026 Summer Casual Basic Tanks",
+        "url": "https://shop.tiktok.com/us/pdp/anrabess-womens-v-neck-ribbed-knit-slim-fit-tank-top-summer/1732288548001386825",
+        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
+        "price": 24.99,
+        "value": "21.0K",
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开页面显示值，K 为千；非近期或净销量",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": "B0FTSS3PHW",
+        "title": "Tank Tops for Women V Neck Summer Sleeveless Ribbed Knit",
+        "url": "https://www.amazon.com/dp/B0FTSS3PHW",
+        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
+        "price": 7.99,
+        "value": "2,000+",
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
+        "match": "V 领、罗纹、无袖特征一致；肩带宽度及变体待核。",
+        "comparable": true,
+        "observedAt": "2026-10-27"
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
+  },
+  {
+    "id": "30",
+    "name": "荷叶短袖 V 领上衣",
+    "category": "上衣",
+    "sku": "1730866978455458121",
+    "brand": "ANRABESS",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 42.89,
+    "originalPrice": null,
+    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/e81d0a77985e48ebbb18ecb1c7b3eca1~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
+    "source": "https://shop.tiktok.com/us/pdp/casual-v-neck-blouse-anrabess-ruffle-sleeve-top-for-summer-workwear/1730866978455458121",
+    "color": "见参考商品图；颜色与尺码随页面选择变化",
+    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
+    "keyword": "women ruffle sleeve v neck work blouse",
+    "reason": "有两渠道数字，但袖型匹配不足，暂不计入双渠道可比款。",
+    "caution": "比较荷叶袖与盖袖样衣；先验证目标店主偏好。",
+    "buyer": "通勤叠穿客群 A",
+    "season": "秋冬／春季叠穿",
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
+    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
+    "evidenceUrl": "https://shop.tiktok.com/us/pdp/casual-v-neck-blouse-anrabess-ruffle-sleeve-top-for-summer-workwear/1730866978455458121",
+    "image": "assets/30.jpg",
+    "archived": true,
+    "decision": "补证",
+    "decisionReason": "有两渠道数字，但袖型匹配不足，暂不计入双渠道可比款。",
+    "segment": "A",
+    "dual": false,
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": "1730866978455458121",
+        "title": "ANRABESS Womens Dressy Casual Tops Ruffle Short Sleeve V Neck Shirts Elegant Business V-Neck Work Blouse",
+        "url": "https://shop.tiktok.com/us/pdp/casual-v-neck-blouse-anrabess-ruffle-sleeve-top-for-summer-workwear/1730866978455458121",
+        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
+        "price": 42.89,
+        "value": "5.6K",
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开页面显示值，K 为千；非近期或净销量",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": "B0DK8H3MRG",
+        "title": "Women Tops Business Casual Cap Sleeve Dressy Blouse V Neck Shirts",
+        "url": "https://www.amazon.com/dp/B0DK8H3MRG",
+        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
+        "price": 9.99,
+        "value": "500+",
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
+        "match": "Amazon 为盖袖 V 领通勤上衣；荷叶袖细节不同，仅作近似竞品。",
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
+  },
+  {
+    "id": "31",
+    "name": "泡泡长袖 V 领上衣",
+    "category": "上衣",
+    "sku": "1730313467406487881",
+    "brand": "ANRABESS",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 63.69,
+    "originalPrice": null,
+    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/b1ca47d327f44544924194550ab11d15~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
+    "source": "https://shop.tiktok.com/us/pdp/puff-long-sleeve-shirt-anrabess-v-neck-casual-loose-blouse-for-work/1730313467406487881",
+    "color": "见参考商品图；颜色与尺码随页面选择变化",
+    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
+    "keyword": "women puff long sleeve v neck loose blouse",
+    "reason": "目前只有 TikTok 累计成交；不能称为已验证畅销。",
+    "caution": "肩部体积、上臂宽度、垂坠感；拍实际坐姿和抬手效果。",
+    "buyer": "宽松日常客群 B",
+    "season": "秋冬／春季叠穿",
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
+    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
+    "evidenceUrl": "https://shop.tiktok.com/us/pdp/puff-long-sleeve-shirt-anrabess-v-neck-casual-loose-blouse-for-work/1730313467406487881",
+    "image": "assets/31.jpg",
+    "archived": true,
+    "decision": "补证",
+    "decisionReason": "目前只有 TikTok 累计成交；不能称为已验证畅销。",
+    "segment": "B",
+    "dual": false,
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": "1730313467406487881",
+        "title": "ANRABESS Women's Puff Long Sleeve Shirts V Neck Loose T-Shirts Dressy Casual Work Blouses 2026 Fall Tops Trendy Clothes Outfits Womenswear",
+        "url": "https://shop.tiktok.com/us/pdp/puff-long-sleeve-shirt-anrabess-v-neck-casual-loose-blouse-for-work/1730313467406487881",
+        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
+        "price": 63.69,
+        "value": "2.3K",
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开页面显示值，K 为千；非近期或净销量",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": null,
+        "title": null,
+        "url": null,
+        "source": null,
+        "price": null,
+        "value": null,
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
+        "match": "尚未找到版型足够接近、并有购买量徽标的第二渠道商品。",
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
+  },
+  {
+    "id": "39",
+    "name": "高腰亚麻感阔腿裤",
+    "category": "裤装",
+    "sku": "1730694420962906441",
+    "brand": "ANRABESS",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 62.39,
+    "originalPrice": null,
+    "imageSource": "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/8cafc249dbda42c5ae2086689ca4a8bd~tplv-fhlh96nyum-crop-webp:1600:1600.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
+    "source": "https://shop.tiktok.com/us/pdp/palazzo-pants-by-anrabess-womens-flowy-high-waist-linen-wide-leg-pants/1730694420962906441",
+    "color": "见参考商品图；颜色与尺码随页面选择变化",
+    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
+    "keyword": "women high waist linen palazzo pants pockets",
+    "reason": "累计成交较多，但材质匹配和季节性尚未验证。",
+    "caution": "面料真实含量、透度、裆长、裤长；分别量平铺和拉伸腰围。",
+    "buyer": "宽松日常客群 B",
+    "season": "秋冬／春季叠穿",
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
+    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
+    "evidenceUrl": "https://shop.tiktok.com/us/pdp/palazzo-pants-by-anrabess-womens-flowy-high-waist-linen-wide-leg-pants/1730694420962906441",
+    "image": "assets/39.jpg",
+    "archived": true,
+    "decision": "补证",
+    "decisionReason": "累计成交较多，但材质匹配和季节性尚未验证。",
+    "segment": "B",
+    "dual": false,
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": "1730694420962906441",
+        "title": "ANRABESS Women's Comfy Linen Palazzo Pants - Summer Boho, High Waist, Wide Leg, Casual Lounge Bottoms for Beach Travel Vacation Outfits",
+        "url": "https://shop.tiktok.com/us/pdp/palazzo-pants-by-anrabess-womens-flowy-high-waist-linen-wide-leg-pants/1730694420962906441",
+        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
+        "price": 62.39,
+        "value": "10.6K",
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开页面显示值，K 为千；非近期或净销量",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": "B0DLVRCYCM",
+        "title": "Womens Wide Leg Palazzo Pants with Pockets",
+        "url": "https://www.amazon.com/dp/B0DLVRCYCM",
+        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
+        "price": 19.98,
+        "value": "700+",
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
+        "match": "Amazon 为口袋 palazzo 阔腿裤；面料未核实为亚麻，仅近似竞品。",
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
+  },
+  {
+    "id": "40",
+    "name": "条格纹宽松阔腿裤",
+    "category": "裤装",
+    "sku": "1732128391237112137",
+    "brand": "ANRABESS",
+    "market": "美国市场",
+    "currency": "USD",
+    "price": 64.99,
+    "originalPrice": null,
+    "imageSource": "https://p19-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/e614741809a84e9d8ef285af4cee1305~tplv-fhlh96nyum-crop-webp:2400:2400.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=a6e80448&idc=useast5&from=2378011839",
+    "source": "https://shop.tiktok.com/us/pdp/anrabess-womens-striped-gingham-palazzo-pants-high-waist-pockets/1732128391237112137",
+    "color": "见参考商品图；颜色与尺码随页面选择变化",
+    "material": "采购样衣需独立确认；本页不把图片外观当成成分证明。",
+    "keyword": "women gingham striped wide leg lounge pants",
+    "reason": "图案有成交线索，裤脚结构不同，先不列为可比验证。",
+    "caution": "对格、裤长、臀围余量和面料缩水；先问基础直口版本。",
+    "buyer": "宽松日常客群 B",
+    "season": "秋冬／春季叠穿",
+    "recommended": false,
+    "checkedAt": "2026-10-27",
+    "priceNote": "TikTok 所见变体挂牌价，不含可能的运费税费；其他渠道价格见证据。",
+    "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
+    "evidenceUrl": "https://shop.tiktok.com/us/pdp/anrabess-womens-striped-gingham-palazzo-pants-high-waist-pockets/1732128391237112137",
+    "image": "assets/40.jpg",
+    "archived": true,
+    "decision": "补证",
+    "decisionReason": "图案有成交线索，裤脚结构不同，先不列为可比验证。",
+    "segment": "B",
+    "dual": false,
+    "channels": [
+      {
+        "platform": "TikTok Shop US",
+        "id": "1732128391237112137",
+        "title": "ANRABESS Womens Striped Gingham Palazzo Pants Lightweight Wide Leg High Waisted Lounge Pajama Pants Cute Casual Trousers with Pockets for Comfort",
+        "url": "https://shop.tiktok.com/us/pdp/anrabess-womens-striped-gingham-palazzo-pants-high-waist-pockets/1732128391237112137",
+        "source": "https://shop.tiktok.com/us/store/anrabess/7495434645551745353",
+        "price": 64.99,
+        "value": "9.7K",
+        "metric": "上架以来累计已售（含退货）",
+        "period": "上架至核查日；上架日未披露",
+        "method": "公开页面显示值，K 为千；非近期或净销量",
+        "observedAt": "2026-10-27"
+      },
+      {
+        "platform": "Amazon US",
+        "id": "B0H1CZ5Z9X",
+        "title": "Womens Gingham Striped Ruffle Hem Pants",
+        "url": "https://www.amazon.com/dp/B0H1CZ5Z9X",
+        "source": "https://keywordseverywhere.com/tools/amazon-product-research-tool/?job=bf47ab00-4698-40d8-8368-47a7db661540",
+        "price": 27.99,
+        "value": "300+",
+        "metric": "过去一个月购买量徽标",
+        "period": "滚动近月；非自然月",
+        "method": "Keywords Everywhere 转述 Amazon 页面；结果可缓存 7 天",
+        "match": "均为条格纹休闲裤；Amazon 多了荷叶裤脚，不能当同一版型。",
+        "comparable": false,
+        "observedAt": "2026-10-27"
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2025-10",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-11",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2025-12",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-01",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-02",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-03",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-04",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-05",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-06",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-07",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-08",
+        "amazon": null,
+        "tiktok": null
+      },
+      {
+        "month": "2026-09",
+        "amazon": null,
+        "tiktok": null
+      }
+    ],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "43",
@@ -2238,7 +3309,7 @@
     "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
     "evidenceUrl": "https://shop.tiktok.com/us/pdp/lounge-set-anrabess-womens-knit-pullover-elastic-pants-s-xl/1729422469867278665",
     "image": "assets/43.jpg",
-    "archived": false,
+    "archived": true,
     "decision": "春季补证",
     "decisionReason": "夏季累计销量不能证明秋冬好卖；先补同版近期成交和季节数据。",
     "segment": "B",
@@ -2334,7 +3405,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "44",
@@ -2361,7 +3436,7 @@
     "evidence": "公开成交线索，不等于已经通过逐月销量验证。",
     "evidenceUrl": "https://shop.tiktok.com/us/pdp/crochet-sweater-top-and-wide-leg-pants-set-by-anrabess-for-women/1729566818356465993",
     "image": "assets/44.jpg",
-    "archived": false,
+    "archived": true,
     "decision": "春季补证",
     "decisionReason": "休闲度假属性更强，暂不进入秋冬拿样优先组。",
     "segment": "B",
@@ -2457,7 +3532,11 @@
         "amazon": null,
         "tiktok": null
       }
-    ]
+    ],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "TikTok",
+    "winterBasis": []
   },
   {
     "id": "01",
@@ -2490,7 +3569,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "02",
@@ -2523,7 +3606,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "03",
@@ -2556,7 +3643,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "04",
@@ -2589,7 +3680,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "05",
@@ -2622,7 +3717,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "06",
@@ -2655,7 +3754,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "07",
@@ -2688,7 +3791,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "08",
@@ -2721,7 +3828,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "09",
@@ -2754,7 +3865,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "10",
@@ -2787,7 +3902,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "11",
@@ -2820,7 +3939,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "12",
@@ -2853,7 +3976,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "13",
@@ -2886,7 +4013,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "14",
@@ -2919,7 +4050,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "15",
@@ -2952,7 +4087,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "16",
@@ -2985,7 +4124,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "history",
+    "seasonLabel": "历史参考",
+    "pricePlatform": "H&M",
+    "winterBasis": []
   },
   {
     "id": "17",
@@ -3023,7 +4166,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   },
   {
     "id": "18",
@@ -3061,7 +4208,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   },
   {
     "id": "19",
@@ -3099,7 +4250,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   },
   {
     "id": "20",
@@ -3137,7 +4292,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   },
   {
     "id": "21",
@@ -3175,7 +4334,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   },
   {
     "id": "22",
@@ -3213,7 +4376,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   },
   {
     "id": "23",
@@ -3251,7 +4418,11 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   },
   {
     "id": "24",
@@ -3289,6 +4460,10 @@
     "segment": "archive",
     "dual": false,
     "channels": [],
-    "monthly": []
+    "monthly": [],
+    "seasonGroup": "summer",
+    "seasonLabel": "春夏",
+    "pricePlatform": "Showpo",
+    "winterBasis": []
   }
 ]

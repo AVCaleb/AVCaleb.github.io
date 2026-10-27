@@ -1,131 +1,34 @@
 (() => {
   'use strict';
-  const products = JSON.parse(document.querySelector('#catalog-data').textContent);
-  const byId = new Map(products.map(p => [p.id, p]));
-  const cards = [...document.querySelectorAll('.product')];
-  const dialog = document.querySelector('#product-dialog');
-  const storageKey = 'womenswear-edit-2026-10-favorites';
-  let favorites = new Set();
-  try { favorites = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]').filter(id => byId.has(id))); } catch { /* Browsing remains available without storage. */ }
-  const sharedPicks = new URLSearchParams(location.search).get('pick');
-  if (sharedPicks) sharedPicks.split(',').filter(id => byId.has(id)).forEach(id => favorites.add(id));
-  let scope = 'active', category = '全部', activeProduct = null, toastTimer;
-  const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const unit = p => p.currency === 'USD' ? '美元' : '澳元';
-  const price = p => `<span>${p.price.toFixed(2)}<span class="unit">${unit(p)}</span></span>${p.originalPrice ? `<del>${p.originalPrice.toFixed(2)}</del>` : ''}`;
-
-  function notify(message) {
-    const el = document.querySelector('#toast');
-    el.textContent = message; el.hidden = false;
-    clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.hidden = true; }, 2400);
-  }
-  function updateFavorites() {
-    document.querySelectorAll('[data-favorite]').forEach(button => {
-      const saved = favorites.has(button.dataset.favorite);
-      button.setAttribute('aria-pressed', String(saved));
-      button.setAttribute('aria-label', `${saved ? '取消记下' : '记下'}${byId.get(button.dataset.favorite).name}`);
-    });
-    document.querySelector('#saved-count').textContent = String(favorites.size);
-    document.querySelector('#share-selection').hidden = !favorites.size;
-    if (activeProduct) {
-      const button = document.querySelector('.dialog-save');
-      if (button) { button.classList.toggle('active', favorites.has(activeProduct.id)); button.textContent = favorites.has(activeProduct.id) ? '已记下这款 ✓' : '记下这款'; button.setAttribute('aria-pressed', String(favorites.has(activeProduct.id))); }
-    }
-    try { localStorage.setItem(storageKey, JSON.stringify([...favorites])); } catch { /* No persistent storage required. */ }
-  }
-  function filter() {
-    const query = document.querySelector('#search').value.trim().toLowerCase();
-    const recommended = document.querySelector('#recommended-only').checked;
-    const segment = document.querySelector('#segment-filter').value;
-    const savedOnly = document.querySelector('#saved-only').checked;
-    let count = 0;
-    cards.forEach(card => {
-      const p = byId.get(card.dataset.id);
-      const haystack = [p.id, p.name, p.brand, p.category, p.keyword, p.color, p.buyer, p.season, p.reason].join(' ').toLowerCase();
-      const visible = (scope === 'all' || (scope === 'archive' ? p.archived : !p.archived)) && (segment === 'all' || p.segment === segment) && (category === '全部' || p.category === category) && (!recommended || p.dual) && (!savedOnly || favorites.has(p.id)) && (!query || haystack.includes(query));
-      card.hidden = !visible; if (visible) count++;
-    });
-    document.querySelector('#result-count').textContent = `${count} 款${recommended ? ' · 双渠道同类线索' : savedOnly ? ' · 我的备选' : scope === 'archive' ? ' · 仅留风格参考' : ' · 点击看证据'}`;
-    document.querySelector('#empty-state').hidden = count > 0;
-    document.querySelector('#share-selection').hidden = !favorites.size;
-  }
-  function resetFilters() {
-    setScope('active'); category = '全部'; document.querySelector('#segment-filter').value = 'all'; document.querySelector('#search').value = '';
-    document.querySelector('#recommended-only').checked = false; document.querySelector('#saved-only').checked = false;
-    document.querySelectorAll('[data-category]').forEach(button => { const active = button.dataset.category === category; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
-  }
-  function setScope(value) {
-    scope = value;
-    document.querySelectorAll('[data-scope]').forEach(b => { const on = b.dataset.scope === value; b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
-  }
-  function snapshot(c) {
-    if (c.platform.startsWith('TikTok')) return c.source.includes('/store/') ? 'evidence/tiktok-store.json' : 'evidence/tiktok-details.json';
-    if ((c.source || '').includes('0a32d0a2')) return 'evidence/amazon-cardigans.json';
-    if ((c.source || '').includes('2f0735a3')) return 'evidence/amazon-summer.json';
-    return 'evidence/amazon-autumn.json';
-  }
-  function channelEvidence(c) {
-    const isAmazon = c.platform.startsWith('Amazon');
-    return `<section class="channel-box${isAmazon && !c.comparable ? ' near' : ''}">
-      <div class="channel-head"><span>${escape(c.platform)}</span><span>${isAmazon ? (c.comparable ? '同类版型线索' : '匹配／数据待补') : '图示参考商品'}</span></div>
-      <div class="channel-number">${escape(c.value || '未取得')}<small>${c.price !== null ? `USD ${Number(c.price).toFixed(2)}` : '价格未取得'}</small></div>
-      <p>${escape(c.metric)} · ${escape(c.period)}<br>${escape(c.method)}<br>核查：${escape(c.observedAt)} · 商品 ID：${escape(c.id || '未核到')}</p>
-      ${c.title ? `<p>${escape(c.title)}</p>` : ''}${c.match ? `<p><b>可比边界：</b>${escape(c.match)}</p>` : ''}
-      <div class="channel-links">${c.url ? `<a href="${escape(c.url)}" target="_blank" rel="noopener noreferrer">商品原页 ↗</a>` : ''}${c.source ? `<a href="${escape(c.source)}" target="_blank" rel="noopener noreferrer">观察来源 ↗</a>` : ''}${c.value ? `<a href="${snapshot(c)}" target="_blank" rel="noopener noreferrer">保存的观察记录 ↗</a>` : ''}</div>
-    </section>`;
-  }
-  function monthlyEvidence(p) {
-    return `<div class="monthly-detail"><strong>逐月验证：未完成</strong><p>2025-10 至 2026-09，两个渠道均未取得可用的完整自然月销量。近月徽标与累计数均未填入月度格子。</p><details><summary>展开 12 个月的数据状态</summary><table class="monthly-mini"><thead><tr><th scope="col">自然月</th><th scope="col">Amazon</th><th scope="col">TikTok</th></tr></thead><tbody>${p.monthly.map(m => `<tr><th scope="row">${escape(m.month)}</th><td>未取得</td><td>未取得</td></tr>`).join('')}</tbody></table></details></div>`;
-  }
-  function openProduct(id) {
-    const p = byId.get(id); if (!p) return;
-    activeProduct = p;
-    document.querySelector('#dialog-title').textContent = `款式 ${p.id} · ${p.archived ? '原参考档案' : '证据与客群'}`;
-    const evidence = p.archived ? `<div class="archive-callout">已移出本轮候选：只有品牌风格／畅销专区线索，没有商品销售记录。原编号保留，避免旧备选链接指向别的衣服。</div>` : `<span class="detail-tag">${escape(p.decision)} · ${p.dual ? '双渠道同类线索' : '匹配／数据待补'}</span><div class="detail-channels">${p.channels.map(channelEvidence).join('')}</div><p class="evidence-footnote">两个市场的商品 ID 不同，未确认同一货号。数字保留各自口径，不相加；价格可能对应不同颜色、尺码、促销与运费条件。</p>${monthlyEvidence(p)}`;
-    document.querySelector('#dialog-content').innerHTML = `
-      <div class="dialog-image"><img src="${escape(p.image)}" alt="${escape(p.name)}，${escape(p.brand)} 参考图"></div>
-      <div class="dialog-info"><div class="eyebrow">${escape(p.category)} / ${escape(p.season)}</div><h2 id="detail-name">${escape(p.name)}</h2>
-        ${p.archived ? `<div class="product-price">${price(p)}</div><p class="price-context">原 ${escape(p.brand)} ${escape(p.market)}零售参考价 · ${escape(p.checkedAt)} 核查</p>` : ''}
-        ${evidence}
-        <div class="info-block"><h3>这个方向怎样处理</h3><p>${escape(p.decisionReason)}</p></div>
-        <div class="info-block"><h3>卖给谁 · 定位假设</h3><p>${p.archived ? escape(p.buyer) : p.segment === 'A' ? '客群 A：先访谈 28—45 岁、需要办公室叠穿的女性；核心是常规衣长、不透与活动量。先接触已有基础针织／通勤系列、能处理进口的小型女装店。年龄与需求尚未由买家数据证实。' : '客群 B：先访谈 35—55 岁、关注腰臀活动空间与穿搭便利的女性；重点是松紧腰、宽松上衣和舒适套装。先接触现有 comfort／relaxed fit 系列的店主。年龄与需求尚未由买家数据证实。'}</p></div>
-        <div class="info-block"><h3>拿样与改款重点</h3><p>${escape(p.caution)}</p></div>
-        <div class="info-block"><h3>图片、材质与采购边界</h3><p>图示品牌：${escape(p.brand)}，图片来自对应商品页。${escape(p.material)} 国内供货、可售尺码、成本和返单能力尚未核实。</p></div>
-        <div class="info-block"><h3>英文找款词</h3><p class="english-keyword">${escape(p.keyword)}</p></div>
-        <div class="dialog-buttons"><a class="button" href="${escape(p.source)}" target="_blank" rel="noopener noreferrer">参考商品原页 ↗</a><button class="button secondary dialog-save" type="button">记下这款</button><button class="button secondary copy-keyword" type="button">复制找款词</button></div>
-      </div>`;
-    document.querySelector('.dialog-save').addEventListener('click', () => toggleFavorite(id));
-    document.querySelector('.copy-keyword').addEventListener('click', () => copyText(p.keyword, '英文找款词已复制'));
-    updateFavorites();
-    if (!dialog.open) dialog.showModal();
-    dialog.scrollTop = 0;
-    document.body.style.overflow = 'hidden';
-  }
-  function toggleFavorite(id) { if (favorites.has(id)) favorites.delete(id); else favorites.add(id); updateFavorites(); filter(); }
-  async function copyText(value, message) {
-    try { await navigator.clipboard.writeText(value); notify(message); }
-    catch { const input = document.createElement('textarea'); input.value = value; input.style.position = 'fixed'; input.style.opacity = '0'; document.body.append(input); input.select(); const copied = document.execCommand('copy'); input.remove(); notify(copied ? message : '当前浏览器不支持复制，请手动复制链接'); }
-  }
-  document.querySelectorAll('[data-category]').forEach(button => button.addEventListener('click', () => {
-    category = button.dataset.category;
-    document.querySelectorAll('[data-category]').forEach(b => { const active = b === button; b.classList.toggle('active', active); b.setAttribute('aria-pressed', String(active)); });
-    filter();
-  }));
-  document.querySelector('#search').addEventListener('input', filter);
-  document.querySelector('#recommended-only').addEventListener('change', filter);
-  document.querySelector('#segment-filter').addEventListener('change', filter);
-  document.querySelectorAll('[data-scope]').forEach(b => b.addEventListener('click', () => { setScope(b.dataset.scope); document.querySelector('#segment-filter').value = 'all'; document.querySelector('#recommended-only').checked = false; filter(); }));
-  document.querySelectorAll('[data-segment-pick]').forEach(b => b.addEventListener('click', () => { resetFilters(); document.querySelector('#segment-filter').value = b.dataset.segmentPick; filter(); document.querySelector('#catalog').scrollIntoView({behavior: 'smooth'}); }));
-  document.querySelector('#saved-only').addEventListener('change', filter);
-  document.querySelectorAll('[data-open]').forEach(button => button.addEventListener('click', () => openProduct(button.dataset.open)));
-  document.querySelectorAll('[data-favorite]').forEach(button => button.addEventListener('click', () => toggleFavorite(button.dataset.favorite)));
-  document.querySelector('#reset-filters').addEventListener('click', () => { resetFilters(); filter(); });
-  document.querySelector('#show-recommended').addEventListener('click', () => { resetFilters(); document.querySelector('#recommended-only').checked = true; filter(); document.querySelector('#catalog').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}); });
-  document.querySelector('#show-saved').addEventListener('click', () => { resetFilters(); setScope('all'); document.querySelector('#saved-only').checked = true; filter(); document.querySelector('#catalog').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}); });
-  document.querySelector('#share-selection').addEventListener('click', () => { const url = new URL(location.href); url.search = ''; url.hash = 'catalog'; url.searchParams.set('pick', [...favorites].sort().join(',')); copyText(url.href, '备选清单链接已复制，可以发给家人'); });
-  document.querySelector('#close-dialog').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
-  dialog.addEventListener('close', () => { document.body.style.overflow = ''; activeProduct = null; });
-  if (sharedPicks && favorites.size) { setScope('all'); document.querySelector('#saved-only').checked = true; }
-  updateFavorites(); filter();
+  const products=JSON.parse(document.querySelector('#catalog-data').textContent), byId=new Map(products.map(p=>[p.id,p])), cards=[...document.querySelectorAll('.product')];
+  const key='womenswear-edit-2026-10-favorites', tokenKey='womenswear-sync-device-v3', revKey='womenswear-sync-revision-v3';
+  const endpoint='https://avcaleb-womenswear-picks.jammybead24.chatgpt.site/api/picks';
+  const dialog=document.querySelector('#product-dialog');
+  let filteredProducts=[],favorites=new Set(),season='active',view='gallery',activeProduct=null,revision=0,pending=false,syncing=false,retryTimer,toastTimer,token='';
+  try {favorites=new Set(JSON.parse(localStorage.getItem(key)||'[]').filter(id=>byId.has(id)));revision=Number(localStorage.getItem(revKey)||0);token=localStorage.getItem(tokenKey)||'';}catch{}
+  const picks=new URLSearchParams(location.search).get('pick');if(picks)picks.split(',').filter(id=>byId.has(id)).forEach(id=>favorites.add(id));
+  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const num=c=>c?.value?Number(String(c.value).replace(/[,+]/g,'').replace(/K/i,'e3')):null;
+  function notify(text){const e=document.querySelector('#toast');e.textContent=text;e.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>e.hidden=true,2000);}
+  function status(state,label){const e=document.querySelector('#sync-status');e.dataset.state=state;e.title=label;e.setAttribute('aria-label',label);document.querySelector('#sync-label').textContent=label;}
+  function persist(){try{localStorage.setItem(key,JSON.stringify([...favorites]));}catch{}}
+  function updateFavorites(){document.querySelectorAll('[data-favorite]').forEach(b=>{const yes=favorites.has(b.dataset.favorite);b.setAttribute('aria-pressed',String(yes));b.setAttribute('aria-label',`${yes?'取消':'记下'}${byId.get(b.dataset.favorite).name}`);});document.querySelector('#saved-count').textContent=favorites.size;document.querySelector('#share-selection').hidden=!favorites.size;const save=document.querySelector('#dialog-save');if(save&&activeProduct){const yes=favorites.has(activeProduct.id);save.classList.toggle('selected',yes);save.textContent=yes?'已选 ✓':'记下 ♡';save.setAttribute('aria-pressed',String(yes));}persist();}
+  function queueSync(){revision=Math.max(Date.now(),revision+1);try{localStorage.setItem(revKey,String(revision));}catch{}pending=true;status('pending','待同步');clearTimeout(retryTimer);retryTimer=setTimeout(push,400);}
+  function getToken(){if(!token){const bytes=crypto.getRandomValues(new Uint8Array(32));token=btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=/g,'');try{localStorage.setItem(tokenKey,token);}catch{}}return token;}
+  async function push(){if(syncing||!pending)return;syncing=true;status('sending','保存中');try{while(pending){pending=false;const rev=revision,ids=[...favorites].sort();const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),9000);let r;try{r=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+getToken()},body:JSON.stringify({revision:rev,picks:ids,version:location.hostname==='127.0.0.1'?'qa-v3':'aw-2026-v3'}),signal:controller.signal,keepalive:true});}finally{clearTimeout(timer);}if(!r.ok)throw new Error('sync');const ack=await r.json();if(!ack.saved){revision=Math.max(revision,Number(ack.revision)||0)+1;pending=true;try{localStorage.setItem(revKey,String(revision));}catch{}}}status('synced','已同步');}catch{pending=true;status('pending','待同步');retryTimer=setTimeout(push,25000);}finally{syncing=false;}}
+  function toggle(id){favorites.has(id)?favorites.delete(id):favorites.add(id);updateFavorites();filter();queueSync();}
+  function setSeason(value){season=value;document.querySelectorAll('[data-season]').forEach(b=>{const on=b.dataset.season===value;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));});}
+  function setView(value){view=value;document.querySelectorAll('[data-view]').forEach(b=>{const on=b.dataset.view===view;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));});document.querySelector('#catalog-grid').hidden=view!=='gallery';document.querySelector('#sales-charts').hidden=view!=='charts';document.querySelector('#view-heading').innerHTML=`${view==='gallery'?'秋冬图库':'成交图谱'}`;filter();}
+  function filter(){const q=document.querySelector('#search').value.trim().toLowerCase(),category=document.querySelector('#category-filter').value,segment=document.querySelector('#segment-filter').value,saved=document.querySelector('#saved-only').checked,sort=document.querySelector('#sort-filter').value;const visible=products.filter(p=>(saved?favorites.has(p.id):season==='active'?!p.archived:season==='history'?p.archived:p.seasonGroup===season&&!p.archived)&&(category==='all'||p.category===category)&&(segment==='all'||p.segment===segment)&&(!q||[p.id,p.name,p.brand,p.keyword].join(' ').toLowerCase().includes(q)));if(sort==='price')visible.sort((a,b)=>a.price-b.price);if(sort==='sold')visible.sort((a,b)=>(num(b.channels?.[0])??-1)-(num(a.channels?.[0])??-1));filteredProducts=visible;const ids=new Set(visible.map(p=>p.id));cards.forEach(c=>c.hidden=!ids.has(c.dataset.id));const grid=document.querySelector('#catalog-grid');visible.forEach(p=>grid.append(document.querySelector(`.product[data-id="${p.id}"]`)));document.querySelector('#result-count').textContent=`${visible.length} 款`;document.querySelector('#empty-state').hidden=visible.length>0;if(view==='charts'&&visible.length)window.renderFashionCharts?.(visible);else if(view==='charts')document.querySelector('#sales-charts').replaceChildren();}
+  function reset(){setSeason('active');document.querySelector('#search').value='';document.querySelector('#saved-only').checked=false;document.querySelector('#category-filter').value='all';document.querySelector('#segment-filter').value='all';document.querySelector('#sort-filter').value='season';filter();}
+  function mini(p,index){const c=p.channels?.[index],v=num(c),max=index===0?60000:10000,raw=c?.value||'未公开',width=v===null?0:Math.max(1,Math.min(v/max,1)*220),color=index===0?'#687557':'#a47b5a';return `<figure class="mini-chart"><figcaption><b>${index===0?'TikTok Shop US':'Amazon US'}</b><span>${index===0?'累计 · 含退货':'近月购买徽标 · 非自然月'}</span></figcaption><svg viewBox="0 0 310 62" role="img" aria-label="${esc(raw)}"><path d="M0 39H225" stroke="#d7dbd0"/>${v===null?'<path d="M0 15H220" stroke="#e1e3db" stroke-width="15" stroke-dasharray="2 4"/><text x="8" y="22" fill="#8e9487" font-size="12">未公开</text>':`<rect x="0" y="10" width="${width}" height="21" fill="${color}"/><text x="${Math.min(width+8,228)}" y="25" fill="#4a5543" font-size="13">${esc(raw)}</text><text x="0" y="55" fill="#9a9f92" font-size="10">0</text><text x="220" y="55" text-anchor="end" fill="#9a9f92" font-size="10">${index===0?'60k':'10k+'}</text>`}</svg><div class="chart-source"><time>${esc(c?.observedAt||p.checkedAt)}</time>${c?.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer" title="${esc(c.id)} · ${index===1?(c.comparable?'标题同类':'近似竞品'):'图示商品'}">${esc(c.id)} ↗</a>`:'<span>—</span>'}</div></figure>`;}
+  function monthMini(){const labels=['25.10','11','12','26.01','02','03','04','05','06','07','08','09'];return `<figure class="month-mini"><figcaption>月销量 <span>○ 缺失</span></figcaption><svg viewBox="0 0 330 75" role="img" aria-label="2025年10月至2026年9月，两渠道月销量均未取得"><g fill="#8d9584" font-size="8">${labels.map((m,i)=>`<text x="${12+i*27}" y="15" text-anchor="middle">${m}</text><circle cx="${12+i*27}" cy="33" r="3.4" fill="none" stroke="#b8c0ae"/><circle cx="${12+i*27}" cy="48" r="3.4" fill="none" stroke="#b8c0ae"/>`).join('')}<text x="0" y="70">TikTok / Amazon · 2025.10 — 2026.09</text></g></svg></figure>`;}
+  function open(id){const p=byId.get(id);if(!p)return;activeProduct=p;document.querySelector('#dialog-title').textContent=`${p.id} / ${p.brand}`;document.querySelector('#dialog-content').innerHTML=`<div class="detail-image"><img src="${esc(p.image)}" alt="${esc(p.name)} · ${esc(p.brand)}"></div><div class="detail-data"><div class="detail-tags"><span>${esc(p.seasonLabel)}</span><span>${esc(p.category)}</span>${(p.winterBasis||[]).slice(0,2).map(x=>`<span>${esc(x)}</span>`).join('')}</div><h2 id="detail-name">${esc(p.name)}</h2><div class="detail-price"><b>${p.price.toFixed(2)}</b><span>${p.currency}</span><small>${esc(p.pricePlatform)} · ${esc(p.checkedAt)}</small></div>${mini(p,0)}${mini(p,1)}${monthMini()}<div class="dialog-actions"><button id="dialog-save" data-favorite="${p.id}" aria-pressed="false">记下 ♡</button><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">商品原页 ↗</a><button id="copy-keyword" title="复制英文款式关键词">找款词 ⧉</button></div></div>`;document.querySelector('#dialog-save').addEventListener('click',()=>toggle(p.id));document.querySelector('#copy-keyword').addEventListener('click',()=>copy(p.keyword,'已复制'));updateFavorites();if(!dialog.open)dialog.showModal();dialog.scrollTop=0;document.body.style.overflow='hidden';}
+  function exportCsv(event){event.preventDefault();const rows=[['style_id','style','season','channel','listing_id','displayed_value','metric','period','checked_at','price_usd','product_url']];filteredProducts.forEach(p=>[0,1].forEach(i=>{const c=p.channels?.[i];rows.push([p.id,p.name,p.seasonLabel,c?.platform||(i===0?'TikTok Shop US':'Amazon US'),c?.id||'',c?.value||'',c?.metric||'',c?.period||'',c?.observedAt||p.checkedAt,c?.price??'',c?.url||'']);}));const csv='\ufeff'+rows.map(r=>r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(',')).join('\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='womenswear-'+filteredProducts.length+'-styles.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);}
+  async function copy(text,message){try{await navigator.clipboard.writeText(text);notify(message);}catch{notify('复制未完成');}}
+  document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{setView(b.dataset.view);document.querySelector('#catalog').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});}));document.querySelectorAll('[data-season]').forEach(b=>b.addEventListener('click',()=>{setSeason(b.dataset.season);document.querySelector('#saved-only').checked=false;filter();}));document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>open(b.dataset.open)));document.querySelectorAll('.favorite').forEach(b=>b.addEventListener('click',()=>toggle(b.dataset.favorite)));
+  ['category-filter','segment-filter','sort-filter','saved-only'].forEach(id=>document.getElementById(id).addEventListener('change',filter));document.querySelector('#search').addEventListener('input',filter);document.querySelector('#reset-filters').addEventListener('click',reset);document.querySelector('#show-saved').addEventListener('click',()=>{reset();document.querySelector('#saved-only').checked=true;filter();document.querySelector('#catalog').scrollIntoView({behavior:'smooth'});});document.querySelector('#share-selection').addEventListener('click',()=>{const url=new URL(location.href);url.search='';url.searchParams.set('pick',[...favorites].sort().join(','));url.hash='catalog';copy(url.href,'链接已复制');});document.querySelector('#close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{document.body.style.overflow='';activeProduct=null;});dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+  window.addEventListener('online',()=>{if(pending)push();});window.addEventListener('focus',()=>{if(pending)push();});window.addEventListener('fashion:open',e=>open(e.detail));window.addEventListener('storage',e=>{if(e.key===key){try{favorites=new Set(JSON.parse(e.newValue||'[]').filter(id=>byId.has(id)));updateFavorites();filter();queueSync();}catch{}}});
+  document.querySelector('a[download]').addEventListener('click',exportCsv);
+  if(picks&&favorites.size)document.querySelector('#saved-only').checked=true;updateFavorites();filter();if(favorites.size||token)queueSync();
 })();
