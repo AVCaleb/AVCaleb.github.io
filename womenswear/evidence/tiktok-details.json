@@ -1,0 +1,46 @@
+{
+  "observedAt": "2026-10-27",
+  "method": "Public product-page observations",
+  "soldDefinition": "Cumulative units sold since listing, including returned units; platform info tooltip.",
+  "rows": [
+    {
+      "platform": "TikTok Shop US",
+      "id": "1730252599313535305",
+      "title": "ANRABESS Sweaters for Women Long Sleeve Lightweight Crewneck Soft Basic Knit Loose Fit Pullover Top 2026 Fall Trendy Outfits Casual Knitwear Womenswear Flat",
+      "url": "https://shop.tiktok.com/us/pdp/pullover-sweater-by-anrabess-womens-crewneck-classic-fall-top/1730252599313535305",
+      "source": "https://shop.tiktok.com/us/pdp/pullover-sweater-by-anrabess-womens-crewneck-classic-fall-top/1730252599313535305",
+      "price": 35.09,
+      "value": "1.5K",
+      "metric": "上架以来累计已售（含退货）",
+      "period": "上架至核查日；上架日未披露",
+      "method": "公开页面显示值，K 为千；非近期或净销量",
+      "observedAt": "2026-10-27"
+    },
+    {
+      "platform": "TikTok Shop US",
+      "id": "1731711884509352265",
+      "title": "ANRABESS Womens Quarter Zip Sweaters 2026 Fall Long Sleeve V Neck Collared Business Casual Tops Knit Pullover Sweater Shirts Fit Basic",
+      "url": "https://shop.tiktok.com/us/pdp/anrabess-womens-color-block-sweater-quarter-zip-v-neck/1731711884509352265",
+      "source": "https://shop.tiktok.com/us/pdp/anrabess-womens-color-block-sweater-quarter-zip-v-neck/1731711884509352265",
+      "price": 53.29,
+      "value": "2.3K",
+      "metric": "上架以来累计已售（含退货）",
+      "period": "上架至核查日；上架日未披露",
+      "method": "公开页面显示值，K 为千；非近期或净销量",
+      "observedAt": "2026-10-27"
+    },
+    {
+      "platform": "TikTok Shop US",
+      "id": "1731704001243091273",
+      "title": "ANRABESS Cardigan Sweaters for Women Lightweight Button Down Long Sleeve Soft Y2k Trendy Casual 2026 Fall Fashion Fit Elegant",
+      "url": "https://shop.tiktok.com/us/pdp/anrabess-womens-cardigan-sweater-lightweight-stretchy/1731704001243091273",
+      "source": "https://shop.tiktok.com/us/pdp/anrabess-womens-cardigan-sweater-lightweight-stretchy/1731704001243091273",
+      "price": 64.99,
+      "value": "348",
+      "metric": "上架以来累计已售（含退货）",
+      "period": "上架至核查日；上架日未披露",
+      "method": "公开页面显示值，K 为千；非近期或净销量",
+      "observedAt": "2026-10-27"
+    }
+  ]
+}
