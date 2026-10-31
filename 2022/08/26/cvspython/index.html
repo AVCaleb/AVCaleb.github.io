@@ -1,679 +1,99 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://s2.loli.net/2023/01/08/v4qVodeyGSQxFpf.jpg">
-  <link rel="icon" href="https://s2.loli.net/2023/01/08/v4qVodeyGSQxFpf.jpg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   
-  <meta name="theme-color" content="#181818">
+  <title>C语言和python运行速度的比较 — The Meditations of A. V. Caleb</title>
+  <meta name="description" content="今天在利用python算圆周率的过程中，发现python速度过慢，于是寻找运行速度快的语言。 发现C语言最快，据称效率是python的70倍。哪种编程语言的运行效率最高？更值得学习? - 程序员编程指南的回答 - 知乎 然后，我做了一个测试。代码思路源自 蒙特卡罗算法 - ARGO创新实验室的文章 …">
   <meta name="author" content="A. V. Caleb">
-  <meta name="keywords" content="">
   
-    <meta name="description" content="C语言和python运行速度的比较 今天在利用python算圆周率的过程中，发现python速度过慢，于是寻找运行速度快的语言。 发现C语言最快，据称效率是python的70倍。哪种编程语言的运行效率最高？更值得学习? - 程序员编程指南的回答 - 知乎 然后，我做了一个测试。代码思路源自 蒙特卡罗算法 - ARGO创新实验室的文章 - 知乎 首先是python的程序 12345678910111">
-<meta property="og:type" content="article">
-<meta property="og:title" content="C语言和python运行速度的比较">
-<meta property="og:url" content="http://avcaleb.github.io/2022/08/26/cvspython/index.html">
-<meta property="og:site_name" content="The Meditations of A. V. Caleb">
-<meta property="og:description" content="C语言和python运行速度的比较 今天在利用python算圆周率的过程中，发现python速度过慢，于是寻找运行速度快的语言。 发现C语言最快，据称效率是python的70倍。哪种编程语言的运行效率最高？更值得学习? - 程序员编程指南的回答 - 知乎 然后，我做了一个测试。代码思路源自 蒙特卡罗算法 - ARGO创新实验室的文章 - 知乎 首先是python的程序 12345678910111">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://avcaleb.github.io/img/cpython.png">
-<meta property="article:published_time" content="2022-08-26T06:00:00.000Z">
-<meta property="article:modified_time" content="2022-08-26T08:56:46.000Z">
-<meta property="article:author" content="A. V. Caleb">
-<meta property="article:tag" content="Computer Science">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://avcaleb.github.io/img/cpython.png">
-  
-  
-  
-  <title>C语言和python运行速度的比较 - The Meditations of A. V. Caleb</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"avcaleb.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Sdw8DRwUlnjHSsdTfRNMd8RO-MdYXbMMI","app_key":"jBACYng8nnQ3oNpRXo68wBV6","server_url":null,"path":"window.location.pathname","ignore_local":false},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="The Meditations of A. V. Caleb" type="application/atom+xml">
-
+  <meta property="og:title" content="C语言和python运行速度的比较">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://avcaleb.github.io/2022/08/26/cvspython/">
+  <link rel="alternate" type="application/atom+xml" title="The Meditations of A. V. Caleb" href="/atom.xml">
+  <link rel="icon" type="image/svg+xml" href="/journal/img/favicon.svg">
+  <link rel="stylesheet" href="/journal/css/site.css">
+  <link rel="stylesheet" href="/journal/css/reader.css">
+  <script defer src="/journal/js/site.js"></script>
+  <script defer src="/journal/vendor/mathjax/tex-svg.js"></script>
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
+<body class="inner-page" id="top" data-fallback="/journal/img/gleaners.webp">
+  <a class="skip-link" href="#main">跳至正文</a>
+  <header class="journal-header">
+  <div class="journal-topline"><span>Veritas, Vita, Dulceduo</span><a href="/atom.xml">订阅 RSS <span aria-hidden="true">↗</span></a></div>
+  <a class="journal-masthead" href="/" aria-label="The Meditations of A. V. Caleb，返回首页">The Meditations<span>of A. V. Caleb</span></a>
+  <div class="journal-nav">
+    <span class="journal-topics">哲学 · 神学 · 文学</span>
+    <nav class="site-nav" aria-label="主导航">
+      
+      
+        <a href="/">首页</a>
+      
+        <a href="/archives/">归档</a>
+      
+        <a href="/categories/">分类</a>
+      
+        <a href="/tags/">标签</a>
+      
+        <a href="/about/">关于</a>
+      
+        <a href="/search/">搜索</a>
+      
+    </nav>
+  </div>
+</header>
 
-
-<body>
+  <main id="main" class="site-main">
+<header class="article-heading"><div class="article-breadcrumb"><a href="/">首页</a><span>/</span><a href="/archives/">文章</a><span>/</span><a href="/categories/Class-Notes/">课程笔记</a></div><div class="post-meta">
   
-
-  <header>
-    
-
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>The Elements</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
+  <a href="/tags/Computer-Science/">Computer Science</a>
   
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/cpython.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="C语言和python运行速度的比较"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-26 14:00" pubdate>
-          2022年8月26日 下午
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          <!-- compatible with older versions-->
-          1.6k 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          <!-- compatible with older versions-->
-          4 分钟
-        
-      </span>
-    
-
-    
-    
-  </div>
-
-
-        
-      </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
-      
-    </div>
-  </div>
+  <time datetime="2022-08-26T06:00:00.000Z">2022.08.26</time>
 </div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">C语言和python运行速度的比较</h1>
-            
-            
-              <div class="markdown-body">
-                
-                <h1 id="c语言和python运行速度的比较">C语言和python运行速度的比较</h1>
+<h1>C语言和python运行速度的比较</h1><p class="article-byline">A. V. Caleb<span>约 13 分钟阅读</span></p></header>
+<figure class="article-cover"><img src="/img/cpython.png" alt="《C语言和python运行速度的比较》文章头图" fetchpriority="high"></figure>
+<div class="reader-layout">
+  <aside class="article-aside"><details class="article-toc" open><summary>本文目录 <span aria-hidden="true">⌄</span></summary><nav aria-label="本文目录"><a href="#article-body">阅读全文 ↓</a></nav></details><div class="reader-aside-links"><a href="/archives/">返回归档 ↗</a><a href="#top">回到篇首 ↑</a></div></aside>
+  <div class="article-column"><article class="prose" id="article-body">
 <p>今天在利用python算圆周率的过程中，发现python速度过慢，于是寻找运行速度快的语言。</p>
 <p>发现C语言最快，据称效率是python的70倍。<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/450605938/answer/1806124622">哪种编程语言的运行效率最高？更值得学习?
 - 程序员编程指南的回答 - 知乎</a></p>
 <p>然后，我做了一个测试。代码思路源自 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/150729238">蒙特卡罗算法 -
 ARGO创新实验室的文章 - 知乎</a></p>
 <p>首先是python的程序</p>
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> random<br><span class="hljs-keyword">import</span> math<br><span class="hljs-keyword">import</span> xlwt<br><span class="hljs-keyword">import</span> time<br><br><span class="hljs-comment"># def main():</span><br>t0=time.time()<br><span class="hljs-built_in">print</span>(<span class="hljs-string">'显示程序开始的时间:'</span>,time.strftime(<span class="hljs-string">'%Y-%m-%d %H:%M:%S'</span>,time.localtime(time.time())))<br>total = <span class="hljs-number">0</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">'Start experiment: '</span>)<br>n = <span class="hljs-number">0</span><br>f = xlwt.Workbook()<br>sheet1 = f.add_sheet(<span class="hljs-string">'sheet1'</span>,cell_overwrite_ok=<span class="hljs-literal">True</span>)<br><br><span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">20</span>, <span class="hljs-number">10000</span>):<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>        x = random.uniform(-<span class="hljs-number">1</span>,<span class="hljs-number">1</span>)<br>        y = random.uniform(-<span class="hljs-number">1</span>,<span class="hljs-number">1</span>)<br>         <br>        <span class="hljs-keyword">if</span> math.sqrt(x ** <span class="hljs-number">2</span> + y ** <span class="hljs-number">2</span>) &lt;= <span class="hljs-number">1.0</span>:<br>                        total += <span class="hljs-number">1</span><br>    mypi = <span class="hljs-number">4.0</span> * total / n<br>    s=<span class="hljs-built_in">abs</span>(math.pi - mypi) / math.pi<br>    t1=time.time()<br>    sheet1.write(n,<span class="hljs-number">0</span>,n)<span class="hljs-comment">#第n+1行第1列</span><br>    sheet1.write(n,<span class="hljs-number">1</span>,mypi)<span class="hljs-comment">#第n+1行第2列</span><br>    sheet1.write(n,<span class="hljs-number">2</span>,s)<span class="hljs-comment">#第n+1行第3列</span><br>    sheet1.write(n,<span class="hljs-number">3</span>,(t1-t0))<span class="hljs-comment">#第n+1行第4列</span><br>  <br>    total=<span class="hljs-number">0</span><br><br><br><br>t1=time.time()<br>f.save(<span class="hljs-string">'test1.xls'</span>)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">'显示程序结束的时间:'</span>,time.strftime(<span class="hljs-string">'%Y-%m-%d %H:%M:%S'</span>,time.localtime(time.time())))<br><span class="hljs-built_in">print</span>(<span class="hljs-string">"用时：%.6fs"</span>%(t1-t0))<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> xlwt</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># def main():</span></span><br><span class="line">t0=time.time()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'显示程序开始的时间:'</span>,time.strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>,time.localtime(time.time())))</span><br><span class="line">total = <span class="number">0</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">'Start experiment: '</span>)</span><br><span class="line">n = <span class="number">0</span></span><br><span class="line">f = xlwt.Workbook()</span><br><span class="line">sheet1 = f.add_sheet(<span class="string">'sheet1'</span>,cell_overwrite_ok=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>, <span class="number">10000</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        x = random.uniform(-<span class="number">1</span>,<span class="number">1</span>)</span><br><span class="line">        y = random.uniform(-<span class="number">1</span>,<span class="number">1</span>)</span><br><span class="line">         </span><br><span class="line">        <span class="keyword">if</span> math.sqrt(x ** <span class="number">2</span> + y ** <span class="number">2</span>) &lt;= <span class="number">1.0</span>:</span><br><span class="line">                        total += <span class="number">1</span></span><br><span class="line">    mypi = <span class="number">4.0</span> * total / n</span><br><span class="line">    s=<span class="built_in">abs</span>(math.pi - mypi) / math.pi</span><br><span class="line">    t1=time.time()</span><br><span class="line">    sheet1.write(n,<span class="number">0</span>,n)<span class="comment">#第n+1行第1列</span></span><br><span class="line">    sheet1.write(n,<span class="number">1</span>,mypi)<span class="comment">#第n+1行第2列</span></span><br><span class="line">    sheet1.write(n,<span class="number">2</span>,s)<span class="comment">#第n+1行第3列</span></span><br><span class="line">    sheet1.write(n,<span class="number">3</span>,(t1-t0))<span class="comment">#第n+1行第4列</span></span><br><span class="line">  </span><br><span class="line">    total=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">t1=time.time()</span><br><span class="line">f.save(<span class="string">'test1.xls'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'显示程序结束的时间:'</span>,time.strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>,time.localtime(time.time())))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"用时：%.6fs"</span>%(t1-t0))</span><br></pre></td></tr></tbody></table></figure>
 <p>其次是C语言的程序</p>
-<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdlib.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;time.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;windows.h&gt;</span></span><br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> pi acos(-1)</span><br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{<br>	LARGE_INTEGER t1, t2, tc;<br>    QueryPerformanceFrequency(&amp;tc);<br>    QueryPerformanceCounter(&amp;t1);<br>	<span class="hljs-type">int</span> n, i, total;<br>	<span class="hljs-type">double</span> x, y, mypi, s, a;<br>	FILE *fp = <span class="hljs-literal">NULL</span> ;<br>    fp = fopen(<span class="hljs-string">"..\\test.xls"</span>,<span class="hljs-string">"w"</span>) ;\\这一句我打了码<br>	srand((<span class="hljs-type">unsigned</span> <span class="hljs-type">int</span>)time(<span class="hljs-literal">NULL</span>));<br>	total = <span class="hljs-number">0</span>;<br>	<span class="hljs-keyword">for</span> (n = <span class="hljs-number">20</span>;n &lt;= <span class="hljs-number">10000</span>;n++) {<br>		<br>		<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; n; i++) {<br>			x = <span class="hljs-number">2.0</span> * rand()  /(<span class="hljs-type">double</span>)(RAND_MAX) <span class="hljs-number">-1</span> ;<br>			y = <span class="hljs-number">2.0</span> * rand()  /(<span class="hljs-type">double</span>)(RAND_MAX) <span class="hljs-number">-1</span> ;<br>			<span class="hljs-keyword">if</span> (<span class="hljs-built_in">sqrt</span>(x * x + y * y) &lt;= <span class="hljs-number">1.0</span>) {<br>				total = total + <span class="hljs-number">1</span>;<br>			}<br>		}<br>		s=<span class="hljs-number">0</span>;<br>		mypi = <span class="hljs-number">4.0</span> * total / (n*<span class="hljs-number">1.0</span>);<br>		s = <span class="hljs-built_in">fabs</span>(pi - mypi) / pi;<br>		QueryPerformanceCounter(&amp;t2);<br>		<span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"%d\t%f\t%f\t%lf\n"</span>,n, mypi, s,(<span class="hljs-type">double</span>)(t2.QuadPart-t1.QuadPart)/(<span class="hljs-type">double</span>)tc.QuadPart) ;<br>		total=<span class="hljs-number">0</span>;<br>		<br>	}<br>	fclose(fp);<br>	<br>    QueryPerformanceCounter(&amp;t2);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Proceed Time: %lfs"</span>,(<span class="hljs-type">double</span>)(t2.QuadPart-t1.QuadPart)/(<span class="hljs-type">double</span>)tc.QuadPart);<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>}<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;windows.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pi acos(-1)</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>{</span><br><span class="line">	LARGE_INTEGER t1, t2, tc;</span><br><span class="line">    QueryPerformanceFrequency(&amp;tc);</span><br><span class="line">    QueryPerformanceCounter(&amp;t1);</span><br><span class="line">	<span class="type">int</span> n, i, total;</span><br><span class="line">	<span class="type">double</span> x, y, mypi, s, a;</span><br><span class="line">	FILE *fp = <span class="literal">NULL</span> ;</span><br><span class="line">    fp = fopen(<span class="string">"..\\test.xls"</span>,<span class="string">"w"</span>) ;\\这一句我打了码</span><br><span class="line">	srand((<span class="type">unsigned</span> <span class="type">int</span>)time(<span class="literal">NULL</span>));</span><br><span class="line">	total = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (n = <span class="number">20</span>;n &lt;= <span class="number">10000</span>;n++) {</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) {</span><br><span class="line">			x = <span class="number">2.0</span> * rand()  /(<span class="type">double</span>)(RAND_MAX) <span class="number">-1</span> ;</span><br><span class="line">			y = <span class="number">2.0</span> * rand()  /(<span class="type">double</span>)(RAND_MAX) <span class="number">-1</span> ;</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">sqrt</span>(x * x + y * y) &lt;= <span class="number">1.0</span>) {</span><br><span class="line">				total = total + <span class="number">1</span>;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">		s=<span class="number">0</span>;</span><br><span class="line">		mypi = <span class="number">4.0</span> * total / (n*<span class="number">1.0</span>);</span><br><span class="line">		s = <span class="built_in">fabs</span>(pi - mypi) / pi;</span><br><span class="line">		QueryPerformanceCounter(&amp;t2);</span><br><span class="line">		<span class="built_in">fprintf</span>(fp,<span class="string">"%d\t%f\t%f\t%lf\n"</span>,n, mypi, s,(<span class="type">double</span>)(t2.QuadPart-t1.QuadPart)/(<span class="type">double</span>)tc.QuadPart) ;</span><br><span class="line">		total=<span class="number">0</span>;</span><br><span class="line">		</span><br><span class="line">	}</span><br><span class="line">	fclose(fp);</span><br><span class="line">	</span><br><span class="line">    QueryPerformanceCounter(&amp;t2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Proceed Time: %lfs"</span>,(<span class="type">double</span>)(t2.QuadPart-t1.QuadPart)/(<span class="type">double</span>)tc.QuadPart);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>最后发现两者差距确实大，但是在我这个环境下没有70倍这么夸张，应该只有20倍——这是检验10000个随机数后的结果，如果python要100000个excel写入程序会报错。</p>
-<p><img src="/img/cpython.png" srcset="/img/loading.gif" lazyload></p>
-<p><img src="/img/3456.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/cpython.png"></p>
+<p><img src="/img/3456.png"></p>
 <p>最后，用C成功运行了100000个随机数的情况，共计用时643.7486s。在计算到70000随机数时，粗略估计了一下计算机的处理速度，大概1s处理100个随机数；而在python那边，运行到64000随机数时，大概1s处理5个随机数。所以，总的来看，对于这个程序，很可能在极限状态下，C的效率最终为python的20倍。</p>
 <p>最后，运用matlab分析了“随机数越大，结果越接近圆周率”这一结论——这一命题的关键预设是概率的一个命题——因为误差值普遍上比较接近，所以处理为<span class="math inline">\(e^x\)</span>后，再进行拟合分析。</p>
 <p>以下为matlab的代码：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><code class="hljs matlab">n=<span class="hljs-number">1</span>;<br>p=<span class="hljs-built_in">zeros</span>(<span class="hljs-number">1</span>,n+<span class="hljs-number">1</span>);<br>b=<span class="hljs-string">'x^'</span>;<br>p = polyfit(mc.VarName1(<span class="hljs-number">1</span>:<span class="hljs-number">20000</span>),<span class="hljs-built_in">exp</span>(mc.VarName2(<span class="hljs-number">1</span>:<span class="hljs-number">20000</span>)),n);<span class="hljs-comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span><br>t2 = <span class="hljs-number">20.0</span>:<span class="hljs-number">0.001</span>:<span class="hljs-number">20000</span>;<span class="hljs-comment">%这是一种数组表示方式，0.1为步长</span><br>y2 = polyval(p,t2);<span class="hljs-comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span><br>p = polyfit(mc.VarName1(<span class="hljs-number">20001</span>:<span class="hljs-number">50000</span>),<span class="hljs-built_in">exp</span>(mc.VarName2(<span class="hljs-number">20001</span>:<span class="hljs-number">50000</span>)),n);<span class="hljs-comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span><br>t3 = <span class="hljs-number">20001.0</span>:<span class="hljs-number">0.001</span>:<span class="hljs-number">50000</span>;<span class="hljs-comment">%这是一种数组表示方式，0.1为步长</span><br>y3 = polyval(p,t3);<span class="hljs-comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span><br>p = polyfit(mc.VarName1(<span class="hljs-number">50001</span>:<span class="hljs-number">60000</span>),<span class="hljs-built_in">exp</span>(mc.VarName2(<span class="hljs-number">50001</span>:<span class="hljs-number">60000</span>)),n);<span class="hljs-comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span><br>t4 = <span class="hljs-number">50001.0</span>:<span class="hljs-number">0.001</span>:<span class="hljs-number">60000</span>;<span class="hljs-comment">%这是一种数组表示方式，0.1为步长</span><br>y4 = polyval(p,t4);<span class="hljs-comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span><br>p = polyfit(mc.VarName1(<span class="hljs-number">60001</span>:<span class="hljs-number">70000</span>),<span class="hljs-built_in">exp</span>(mc.VarName2(<span class="hljs-number">60001</span>:<span class="hljs-number">70000</span>)),n);<span class="hljs-comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span><br>t5 = <span class="hljs-number">60001.0</span>:<span class="hljs-number">0.001</span>:<span class="hljs-number">70000</span>;<span class="hljs-comment">%这是一种数组表示方式，0.1为步长</span><br>y5 = polyval(p,t5);<span class="hljs-comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span><br>p = polyfit(mc.VarName1(<span class="hljs-number">70001</span>:<span class="hljs-number">80000</span>),<span class="hljs-built_in">exp</span>(mc.VarName2(<span class="hljs-number">70001</span>:<span class="hljs-number">80000</span>)),n);<span class="hljs-comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span><br>t6 = <span class="hljs-number">70001.0</span>:<span class="hljs-number">0.001</span>:<span class="hljs-number">80000</span>;<span class="hljs-comment">%这是一种数组表示方式，0.1为步长</span><br>y6 = polyval(p,t6);<span class="hljs-comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span><br>p = polyfit(mc.VarName1(<span class="hljs-number">80001</span>:<span class="hljs-number">90000</span>),<span class="hljs-built_in">exp</span>(mc.VarName2(<span class="hljs-number">80001</span>:<span class="hljs-number">90000</span>)),n);<span class="hljs-comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span><br>t7 = <span class="hljs-number">80001.0</span>:<span class="hljs-number">0.001</span>:<span class="hljs-number">90000</span>;<span class="hljs-comment">%这是一种数组表示方式，0.1为步长</span><br>y7 = polyval(p,t7);<span class="hljs-comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span><br>p = polyfit(mc.VarName1(<span class="hljs-number">90001</span>:<span class="hljs-number">99981</span>),<span class="hljs-built_in">exp</span>(mc.VarName2(<span class="hljs-number">90001</span>:<span class="hljs-number">99981</span>)),n);<span class="hljs-comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span><br>t8 = <span class="hljs-number">90001.0</span>:<span class="hljs-number">0.001</span>:<span class="hljs-number">99981</span>;<span class="hljs-comment">%这是一种数组表示方式，0.1为步长</span><br>y8 = polyval(p,t8);<span class="hljs-comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span><br><span class="hljs-built_in">figure</span><span class="hljs-comment">%弹出图像框</span><br><span class="hljs-built_in">plot</span>(mc.VarName1,<span class="hljs-built_in">exp</span>(mc.VarName2),<span class="hljs-string">'.'</span>,t2,y2,<span class="hljs-string">'y'</span>,<span class="hljs-string">'LineWidth'</span>,<span class="hljs-number">1</span>)<br><span class="hljs-built_in">hold</span> on<br><span class="hljs-built_in">plot</span>(t3,y3,<span class="hljs-string">'y'</span>,<span class="hljs-string">'LineWidth'</span>,<span class="hljs-number">1</span>)<br><span class="hljs-built_in">hold</span> on<br><span class="hljs-built_in">plot</span>(t4,y4,<span class="hljs-string">'y'</span>,<span class="hljs-string">'LineWidth'</span>,<span class="hljs-number">1</span>)<br><span class="hljs-built_in">hold</span> on<br><span class="hljs-built_in">plot</span>(t5,y5,<span class="hljs-string">'y'</span>,<span class="hljs-string">'LineWidth'</span>,<span class="hljs-number">1</span>)<br><span class="hljs-built_in">hold</span> on<br><span class="hljs-built_in">plot</span>(t6,y6,<span class="hljs-string">'y'</span>,<span class="hljs-string">'LineWidth'</span>,<span class="hljs-number">1</span>)<br><span class="hljs-built_in">hold</span> on<br><span class="hljs-built_in">plot</span>(t7,y7,<span class="hljs-string">'y'</span>,<span class="hljs-string">'LineWidth'</span>,<span class="hljs-number">1</span>)<br><span class="hljs-built_in">hold</span> on<br><span class="hljs-built_in">plot</span>(t8,y8,<span class="hljs-string">'y'</span>,<span class="hljs-string">'LineWidth'</span>,<span class="hljs-number">1</span>)<span class="hljs-comment">%画线</span><br>poly2sym(p);<br>fprintf(<span class="hljs-string">'\nf(x)='</span>);<br>txt=<span class="hljs-string">''</span>;<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:(n+<span class="hljs-number">1</span>)<br>    xs=<span class="hljs-string">''</span>;<br>    <span class="hljs-keyword">if</span> p(<span class="hljs-built_in">i</span>)&gt;<span class="hljs-number">0</span><br>        fprintf(<span class="hljs-string">'+%g*%s%d'</span>,p(<span class="hljs-built_in">i</span>),b,n+<span class="hljs-number">1</span>-<span class="hljs-built_in">i</span>);<br>        xs=[<span class="hljs-string">'+'</span>,num2str(p(<span class="hljs-built_in">i</span>)),num2str(b),num2str(n+<span class="hljs-number">1</span>-<span class="hljs-built_in">i</span>)];<br>    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> p(<span class="hljs-built_in">i</span>)&lt;<span class="hljs-number">0</span><br>        fprintf(<span class="hljs-string">'%g*%s%d'</span>,p(<span class="hljs-built_in">i</span>),b,n+<span class="hljs-number">1</span>-<span class="hljs-built_in">i</span>);<br>        xs=[num2str(p(<span class="hljs-built_in">i</span>)),num2str(b),num2str(n+<span class="hljs-number">1</span>-<span class="hljs-built_in">i</span>)];<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> p(<span class="hljs-built_in">i</span>)==<span class="hljs-number">0</span><br>                fprintf(<span class="hljs-string">' '</span>);<br>                xs=<span class="hljs-string">' '</span>;<br>            <span class="hljs-keyword">end</span><br>        <span class="hljs-keyword">end</span><br>    <span class="hljs-keyword">end</span><br>    txt=[txt,xs];<br><span class="hljs-keyword">end</span><br>fprintf(<span class="hljs-string">'\n'</span>);<br>t=text(<span class="hljs-number">50000</span>,<span class="hljs-number">0.1</span>,txt);<br><br>title(<span class="hljs-string">'Plot of Data (Points) and Model (Line)'</span>)<span class="hljs-comment">%起标题</span><br><br>y3 = polyval(p,mc.VarName1);<span class="hljs-comment">%计算在每个原x时对应的拟合曲线上的值的大小</span><br>res = mc.VarName2 - y3;<span class="hljs-comment">%计算残差</span><br><br>title(<span class="hljs-string">'Plot of the Residuals'</span>)<br><br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">n=<span class="number">1</span>;</span><br><span class="line">p=<span class="built_in">zeros</span>(<span class="number">1</span>,n+<span class="number">1</span>);</span><br><span class="line">b=<span class="string">'x^'</span>;</span><br><span class="line">p = polyfit(mc.VarName1(<span class="number">1</span>:<span class="number">20000</span>),<span class="built_in">exp</span>(mc.VarName2(<span class="number">1</span>:<span class="number">20000</span>)),n);<span class="comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span></span><br><span class="line">t2 = <span class="number">20.0</span>:<span class="number">0.001</span>:<span class="number">20000</span>;<span class="comment">%这是一种数组表示方式，0.1为步长</span></span><br><span class="line">y2 = polyval(p,t2);<span class="comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span></span><br><span class="line">p = polyfit(mc.VarName1(<span class="number">20001</span>:<span class="number">50000</span>),<span class="built_in">exp</span>(mc.VarName2(<span class="number">20001</span>:<span class="number">50000</span>)),n);<span class="comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span></span><br><span class="line">t3 = <span class="number">20001.0</span>:<span class="number">0.001</span>:<span class="number">50000</span>;<span class="comment">%这是一种数组表示方式，0.1为步长</span></span><br><span class="line">y3 = polyval(p,t3);<span class="comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span></span><br><span class="line">p = polyfit(mc.VarName1(<span class="number">50001</span>:<span class="number">60000</span>),<span class="built_in">exp</span>(mc.VarName2(<span class="number">50001</span>:<span class="number">60000</span>)),n);<span class="comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span></span><br><span class="line">t4 = <span class="number">50001.0</span>:<span class="number">0.001</span>:<span class="number">60000</span>;<span class="comment">%这是一种数组表示方式，0.1为步长</span></span><br><span class="line">y4 = polyval(p,t4);<span class="comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span></span><br><span class="line">p = polyfit(mc.VarName1(<span class="number">60001</span>:<span class="number">70000</span>),<span class="built_in">exp</span>(mc.VarName2(<span class="number">60001</span>:<span class="number">70000</span>)),n);<span class="comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span></span><br><span class="line">t5 = <span class="number">60001.0</span>:<span class="number">0.001</span>:<span class="number">70000</span>;<span class="comment">%这是一种数组表示方式，0.1为步长</span></span><br><span class="line">y5 = polyval(p,t5);<span class="comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span></span><br><span class="line">p = polyfit(mc.VarName1(<span class="number">70001</span>:<span class="number">80000</span>),<span class="built_in">exp</span>(mc.VarName2(<span class="number">70001</span>:<span class="number">80000</span>)),n);<span class="comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span></span><br><span class="line">t6 = <span class="number">70001.0</span>:<span class="number">0.001</span>:<span class="number">80000</span>;<span class="comment">%这是一种数组表示方式，0.1为步长</span></span><br><span class="line">y6 = polyval(p,t6);<span class="comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span></span><br><span class="line">p = polyfit(mc.VarName1(<span class="number">80001</span>:<span class="number">90000</span>),<span class="built_in">exp</span>(mc.VarName2(<span class="number">80001</span>:<span class="number">90000</span>)),n);<span class="comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span></span><br><span class="line">t7 = <span class="number">80001.0</span>:<span class="number">0.001</span>:<span class="number">90000</span>;<span class="comment">%这是一种数组表示方式，0.1为步长</span></span><br><span class="line">y7 = polyval(p,t7);<span class="comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span></span><br><span class="line">p = polyfit(mc.VarName1(<span class="number">90001</span>:<span class="number">99981</span>),<span class="built_in">exp</span>(mc.VarName2(<span class="number">90001</span>:<span class="number">99981</span>)),n);<span class="comment">%这一步得到拟合曲线公式，n代表n次项。t=mc.VarName1, y=mc.VarName2</span></span><br><span class="line">t8 = <span class="number">90001.0</span>:<span class="number">0.001</span>:<span class="number">99981</span>;<span class="comment">%这是一种数组表示方式，0.1为步长</span></span><br><span class="line">y8 = polyval(p,t8);<span class="comment">%按照均匀步长得到一条拟合曲线用于绘图——由于不能直接把函数画上去</span></span><br><span class="line"><span class="built_in">figure</span><span class="comment">%弹出图像框</span></span><br><span class="line"><span class="built_in">plot</span>(mc.VarName1,<span class="built_in">exp</span>(mc.VarName2),<span class="string">'.'</span>,t2,y2,<span class="string">'y'</span>,<span class="string">'LineWidth'</span>,<span class="number">1</span>)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line"><span class="built_in">plot</span>(t3,y3,<span class="string">'y'</span>,<span class="string">'LineWidth'</span>,<span class="number">1</span>)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line"><span class="built_in">plot</span>(t4,y4,<span class="string">'y'</span>,<span class="string">'LineWidth'</span>,<span class="number">1</span>)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line"><span class="built_in">plot</span>(t5,y5,<span class="string">'y'</span>,<span class="string">'LineWidth'</span>,<span class="number">1</span>)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line"><span class="built_in">plot</span>(t6,y6,<span class="string">'y'</span>,<span class="string">'LineWidth'</span>,<span class="number">1</span>)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line"><span class="built_in">plot</span>(t7,y7,<span class="string">'y'</span>,<span class="string">'LineWidth'</span>,<span class="number">1</span>)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line"><span class="built_in">plot</span>(t8,y8,<span class="string">'y'</span>,<span class="string">'LineWidth'</span>,<span class="number">1</span>)<span class="comment">%画线</span></span><br><span class="line">poly2sym(p);</span><br><span class="line">fprintf(<span class="string">'\nf(x)='</span>);</span><br><span class="line">txt=<span class="string">''</span>;</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:(n+<span class="number">1</span>)</span><br><span class="line">    xs=<span class="string">''</span>;</span><br><span class="line">    <span class="keyword">if</span> p(<span class="built_in">i</span>)&gt;<span class="number">0</span></span><br><span class="line">        fprintf(<span class="string">'+%g*%s%d'</span>,p(<span class="built_in">i</span>),b,n+<span class="number">1</span>-<span class="built_in">i</span>);</span><br><span class="line">        xs=[<span class="string">'+'</span>,num2str(p(<span class="built_in">i</span>)),num2str(b),num2str(n+<span class="number">1</span>-<span class="built_in">i</span>)];</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> p(<span class="built_in">i</span>)&lt;<span class="number">0</span></span><br><span class="line">        fprintf(<span class="string">'%g*%s%d'</span>,p(<span class="built_in">i</span>),b,n+<span class="number">1</span>-<span class="built_in">i</span>);</span><br><span class="line">        xs=[num2str(p(<span class="built_in">i</span>)),num2str(b),num2str(n+<span class="number">1</span>-<span class="built_in">i</span>)];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> p(<span class="built_in">i</span>)==<span class="number">0</span></span><br><span class="line">                fprintf(<span class="string">' '</span>);</span><br><span class="line">                xs=<span class="string">' '</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    txt=[txt,xs];</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">fprintf(<span class="string">'\n'</span>);</span><br><span class="line">t=text(<span class="number">50000</span>,<span class="number">0.1</span>,txt);</span><br><span class="line"></span><br><span class="line">title(<span class="string">'Plot of Data (Points) and Model (Line)'</span>)<span class="comment">%起标题</span></span><br><span class="line"></span><br><span class="line">y3 = polyval(p,mc.VarName1);<span class="comment">%计算在每个原x时对应的拟合曲线上的值的大小</span></span><br><span class="line">res = mc.VarName2 - y3;<span class="comment">%计算残差</span></span><br><span class="line"></span><br><span class="line">title(<span class="string">'Plot of the Residuals'</span>)</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 <p>最终的运行结果为下图</p>
-<p><img src="/img/polyfit.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/polyfit.png"></p>
 <p>发现最后一段的线性回归线的表达式为 <span class="math display">\[
 f(x)=-1.69747\times 10^{-9}x^1+1.00152x^0
 \]</span></p>
 <p>我后来换了一种方法，直接直观地看最终结果，运用matlab的loglog绘图，得到如下</p>
-<p><img src="/img/cploglog.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/cploglog.png"></p>
 <p>用semilogx更直观</p>
-<p><img src="/img/cpsemilogx.png" srcset="/img/loading.gif" lazyload></p>
-
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/Computer-Science/" class="print-no-link">#Computer Science</a>
-      
-    </div>
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>C语言和python运行速度的比较</div>
-      <div>http://avcaleb.github.io/2022/08/26/cvspython/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>A. V. Caleb</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2022年8月26日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2022/08/26/Spiritintuition/" title="论直觉中的圣灵">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">论直觉中的圣灵</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2022/08/10/The%20Trinity/" title="三位一体论（The Trinity）">
-                        <span class="hidden-mobile">三位一体论（The Trinity）</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
+<p><img src="/img/cpsemilogx.png"></p>
+</article>
+    <footer class="article-end"><nav class="article-tags" aria-label="本文标签"><a href="/tags/Computer-Science/">Computer Science ↗</a></nav><p>作者：A. V. Caleb · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer">CC BY 4.0</a></p><p class="article-permalink"><a href="https://avcaleb.github.io/2022/08/26/cvspython/">本文永久链接 ↗</a></p></footer>
+    <nav class="adjacent-posts" aria-label="相邻文章"><a href="/2022/08/26/Spiritintuition/"><span>← 较新的文章</span><strong>论直觉中的圣灵</strong></a><a href="/2022/08/10/The%20Trinity/"><span>较早的文章 →</span><strong>三位一体论（The Trinity）</strong></a></nav>
   </div>
 </div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-  
-
-
-
-  
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://www.avcaleb.top/about/" target="_blank" rel="nofollow noopener"><span>A. V. Caleb</span></a> <i class="iconfont icon-love"></i> <a href="https://www.avcaleb.top/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" ></script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
+</main>
+  <footer class="site-footer">
+  <div><a href="/">The Meditations of A. V. Caleb</a><span>Veritas, Vita, Dulceduo</span></div>
+  <nav aria-label="页脚导航"><a href="/archives/">所有文章</a><a href="/about/">关于作者</a><a href="/atom.xml">RSS ↗</a><a href="#top">返回页首 ↑</a></nav>
+</footer>
+
+  <dialog id="image-viewer" aria-label="查看大图"><form method="dialog"><button aria-label="关闭大图">关闭 ×</button></form><img src="/journal/img/gleaners.webp" alt=""></dialog>
 </body>
 </html>

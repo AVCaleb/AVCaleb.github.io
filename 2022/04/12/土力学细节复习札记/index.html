@@ -1,291 +1,63 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://s2.loli.net/2023/01/08/v4qVodeyGSQxFpf.jpg">
-  <link rel="icon" href="https://s2.loli.net/2023/01/08/v4qVodeyGSQxFpf.jpg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   
-  <meta name="theme-color" content="#181818">
+  <title>土力学细节复习札记 — The Meditations of A. V. Caleb</title>
+  <meta name="description" content="土力学复习札记 By A. V. Caleb 这个札记主要为了土力学中一些零零碎碎的性质。因为前几天，我已经把土力学基本的概念框架做好了。 第二章、土的物理性质与工程分类 土的三相组成 固体 一定范围粒径的土粒称为粒组。 0.005~0.075mm为粉粒 土的颗粒级配是由土的颗粒大小分析实验测定的，…">
   <meta name="author" content="A. V. Caleb">
-  <meta name="keywords" content="">
   
-    <meta name="description" content="土力学复习札记 By A. V. Caleb 这个札记主要为了土力学中一些零零碎碎的性质。因为前几天，我已经把土力学基本的概念框架做好了。 第二章、土的物理性质与工程分类 土的三相组成 固体 一定范围粒径的土粒称为粒组。 0.005~0.075mm为粉粒 土的颗粒级配是由土的颗粒大小分析实验测定的，若小于0.075mm则一般用土粒在水中匀速下沉测得。 土粒级配曲线为粒径累积频率曲线，横坐标为对数，">
-<meta property="og:type" content="article">
-<meta property="og:title" content="土力学细节复习札记">
-<meta property="og:url" content="http://avcaleb.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%E7%BB%86%E8%8A%82%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0/index.html">
-<meta property="og:site_name" content="The Meditations of A. V. Caleb">
-<meta property="og:description" content="土力学复习札记 By A. V. Caleb 这个札记主要为了土力学中一些零零碎碎的性质。因为前几天，我已经把土力学基本的概念框架做好了。 第二章、土的物理性质与工程分类 土的三相组成 固体 一定范围粒径的土粒称为粒组。 0.005~0.075mm为粉粒 土的颗粒级配是由土的颗粒大小分析实验测定的，若小于0.075mm则一般用土粒在水中匀速下沉测得。 土粒级配曲线为粒径累积频率曲线，横坐标为对数，">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2025/08/20/XrQqUYuRLMzfChv.jpg">
-<meta property="article:published_time" content="2022-04-12T04:50:00.000Z">
-<meta property="article:modified_time" content="2025-08-20T05:23:54.973Z">
-<meta property="article:author" content="A. V. Caleb">
-<meta property="article:tag" content="Science">
-<meta property="article:tag" content="Soil">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s2.loli.net/2025/08/20/XrQqUYuRLMzfChv.jpg">
-  
-  
-  
-  <title>土力学细节复习札记 - The Meditations of A. V. Caleb</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"avcaleb.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":80}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Sdw8DRwUlnjHSsdTfRNMd8RO-MdYXbMMI","app_key":"jBACYng8nnQ3oNpRXo68wBV6","server_url":null,"path":"window.location.pathname","ignore_local":false},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="The Meditations of A. V. Caleb" type="application/atom+xml">
-
+  <meta property="og:title" content="土力学细节复习札记">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://avcaleb.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%E7%BB%86%E8%8A%82%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0/">
+  <link rel="alternate" type="application/atom+xml" title="The Meditations of A. V. Caleb" href="/atom.xml">
+  <link rel="icon" type="image/svg+xml" href="/journal/img/favicon.svg">
+  <link rel="stylesheet" href="/journal/css/site.css">
+  <link rel="stylesheet" href="/journal/css/reader.css">
+  <script defer src="/journal/js/site.js"></script>
+  <script defer src="/journal/vendor/mathjax/tex-svg.js"></script>
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
+<body class="inner-page" id="top" data-fallback="/journal/img/gleaners.webp">
+  <a class="skip-link" href="#main">跳至正文</a>
+  <header class="journal-header">
+  <div class="journal-topline"><span>Veritas, Vita, Dulceduo</span><a href="/atom.xml">订阅 RSS <span aria-hidden="true">↗</span></a></div>
+  <a class="journal-masthead" href="/" aria-label="The Meditations of A. V. Caleb，返回首页">The Meditations<span>of A. V. Caleb</span></a>
+  <div class="journal-nav">
+    <span class="journal-topics">哲学 · 神学 · 文学</span>
+    <nav class="site-nav" aria-label="主导航">
+      
+      
+        <a href="/">首页</a>
+      
+        <a href="/archives/">归档</a>
+      
+        <a href="/categories/">分类</a>
+      
+        <a href="/tags/">标签</a>
+      
+        <a href="/about/">关于</a>
+      
+        <a href="/search/">搜索</a>
+      
+    </nav>
+  </div>
+</header>
 
-
-<body>
+  <main id="main" class="site-main">
+<header class="article-heading"><div class="article-breadcrumb"><a href="/">首页</a><span>/</span><a href="/archives/">文章</a><span>/</span><a href="/categories/Class-Notes/">课程笔记</a></div><div class="post-meta">
   
-
-  <header>
-    
-
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>The Elements</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
+  <a href="/tags/Science/">Science</a>
   
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('https://s2.loli.net/2025/08/20/XrQqUYuRLMzfChv.jpg') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="土力学细节复习札记"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-04-12 12:50" pubdate>
-          2022年4月12日 下午
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          <!-- compatible with older versions-->
-          3k 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          <!-- compatible with older versions-->
-          6 分钟
-        
-      </span>
-    
-
-    
-    
-  </div>
-
-
-        
-      </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
-      
-    </div>
-  </div>
+  <time datetime="2022-04-12T04:50:00.000Z">2022.04.12</time>
 </div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">土力学细节复习札记</h1>
-            
-            
-              <div class="markdown-body">
-                
-                <h1 id="土力学复习札记">土力学复习札记</h1>
+<h1>土力学细节复习札记</h1><p class="article-byline">A. V. Caleb<span>约 12 分钟阅读</span></p></header>
+<figure class="article-cover"><img src="/journal/covers/714351a61d916b31.webp" alt="《土力学细节复习札记》文章头图" fetchpriority="high"></figure>
+<div class="reader-layout">
+  <aside class="article-aside"><details class="article-toc" open><summary>本文目录 <span aria-hidden="true">⌄</span></summary><nav aria-label="本文目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%9F%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0"><span class="toc-text">土力学复习札记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E5%9C%9F%E7%9A%84%E7%89%A9%E7%90%86%E6%80%A7%E8%B4%A8%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%88%86%E7%B1%BB"><span class="toc-text">第二章、土的物理性质与工程分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%9F%E7%9A%84%E4%B8%89%E7%9B%B8%E7%BB%84%E6%88%90"><span class="toc-text">土的三相组成</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BA%E4%BD%93"><span class="toc-text">固体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%9F%E4%B8%AD%E6%B0%B4"><span class="toc-text">土中水</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E4%B8%AA%E6%8C%87%E6%95%B0"><span class="toc-text">三个指数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E7%BB%93%E6%9E%84"><span class="toc-text">两个结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%9F%E7%9A%84%E5%8E%8B%E5%AE%9E%E6%80%A7"><span class="toc-text">土的压实性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%9F%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%88%86%E7%B1%BB"><span class="toc-text">土的工程分类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%E5%9C%9F%E7%9A%84%E6%B8%97%E9%80%8F%E6%80%A7"><span class="toc-text">第三章、土的渗透性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%97%E9%80%8F%E7%B3%BB%E6%95%B0"><span class="toc-text">渗透系数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E5%9C%9F%E4%B8%8E%E7%AE%A1%E6%B6%8C%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">流土与管涌的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%B2%E6%B2%BB%E6%8E%AA%E6%96%BD"><span class="toc-text">防治措施</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E6%95%88%E5%BA%94%E5%8A%9B%E5%8E%9F%E7%90%86"><span class="toc-text">有效应力原理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%E5%9C%B0%E5%9F%BA%E5%9C%9F%E7%9A%84%E5%BA%94%E5%8A%9B%E8%AE%A1%E7%AE%97"><span class="toc-text">第四章、地基土的应力计算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E9%87%8D%E5%BA%94%E5%8A%9B%E6%9C%89%E6%95%88%E5%BA%94%E5%8A%9B%E8%AE%A1%E7%AE%97"><span class="toc-text">自重应力（有效应力）计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E5%BA%95%E5%8E%8B%E5%8A%9B%E5%88%86%E5%B8%83"><span class="toc-text">基底压力分布</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E5%B1%82%E5%9C%9F%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-text">多层土的情况</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9D%87%E8%B4%A8%E5%9C%9F%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-text">均质土的情况</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%E5%9C%9F%E7%9A%84%E5%8E%8B%E7%BC%A9%E6%80%A7%E5%92%8C%E5%9B%BA%E7%BB%93%E7%90%86%E8%AE%BA"><span class="toc-text">第五章、土的压缩性和固结理论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B"><span class="toc-text">数学模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0%E5%9C%B0%E5%9F%BA%E6%B2%89%E9%99%8D%E4%B8%8E%E8%AE%A1%E7%AE%97"><span class="toc-text">第六章、地基沉降与计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0%E5%9C%9F%E7%9A%84%E6%8A%97%E5%89%AA%E5%BC%BA%E5%BA%A6"><span class="toc-text">第七章、土的抗剪强度</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%9F%E7%9A%84%E6%8A%97%E5%89%AA%E5%BC%BA%E5%BA%A6%E7%9A%84%E6%B5%8B%E5%AE%9A"><span class="toc-text">土的抗剪强度的测定</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B%E9%87%8D%E7%82%B9"><span class="toc-text">课程重点</span></a></li></ol></nav></details><div class="reader-aside-links"><a href="/archives/">返回归档 ↗</a><a href="#top">回到篇首 ↑</a></div></aside>
+  <div class="article-column"><article class="prose" id="article-body"><h1 id="土力学复习札记">土力学复习札记</h1>
 <p>By <em>A. V. Caleb</em></p>
 <p>这个札记主要为了土力学中一些零零碎碎的性质。因为前几天，我已经把土力学基本的概念框架做好了。</p>
 <h2 id="第二章土的物理性质与工程分类">第二章、土的物理性质与工程分类</h2>
@@ -295,7 +67,7 @@
 <p>0.005~0.075mm为粉粒</p>
 <p>土的颗粒级配是由土的颗粒大小分析实验测定的，若小于0.075mm则一般用土粒在水中匀速下沉测得。</p>
 <p>土粒级配曲线为粒径累积频率曲线，横坐标为对数，因为粒径相差巨大。若曲线较陡，则级配不好，因为土粒均匀。若曲线平缓，则反之。见下图</p>
-<p><img src="https://s2.loli.net/2022/04/14/N9egDSvHuXkjwt4.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/N9egDSvHuXkjwt4.png"></p>
 <p>重点！小于某粒径的土粒质量累计百分数为10%时，则相应的粒径称为有效粒径<span class="math inline">\(d_{10}\)</span>。此外，<span class="math inline">\(d_{30}、\ d_{60}、\ d_{50}\)</span>同理。<span class="math inline">\(d_{60}\)</span>称为限定粒径，<span class="math inline">\(d_{50}\)</span>为平均粒径。这四个为特征粒径。</p>
 <p>不均匀系数 <span class="math display">\[
 C_u=\frac{d_{60}}{d_{10}}
@@ -310,18 +82,18 @@ C_c=\frac{d_{30}^2}{d_{10}\cdot d_{60}}
 3\)</span>两个条件时，则定名为良好级配砾或良好级配砂。</li>
 </ol>
 <p>关于矿物，参考下面这张图</p>
-<p><img src="https://s2.loli.net/2022/04/14/qksHrU8maCdfnu5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/qksHrU8maCdfnu5.png"></p>
 <p>黏土矿物可分为高岭石、伊利石、蒙脱石三类。三者亲水能力依次增强，比表面积也依次增大。下面为三者颗粒形状</p>
 <figure>
-<img src="https://s2.loli.net/2022/04/14/wItUDvhZ73XA6KF.png" srcset="/img/loading.gif" lazyload alt="高岭石">
+<img src="https://s2.loli.net/2022/04/14/wItUDvhZ73XA6KF.png" alt="高岭石">
 <figcaption aria-hidden="true">高岭石</figcaption>
 </figure>
 <figure>
-<img src="https://s2.loli.net/2022/04/14/QmhO1tZbMeaguvJ.png" srcset="/img/loading.gif" lazyload alt="伊利石">
+<img src="https://s2.loli.net/2022/04/14/QmhO1tZbMeaguvJ.png" alt="伊利石">
 <figcaption aria-hidden="true">伊利石</figcaption>
 </figure>
 <figure>
-<img src="https://s2.loli.net/2022/04/14/E19jSz4qYdc8a2B.png" srcset="/img/loading.gif" lazyload alt="蒙脱石">
+<img src="https://s2.loli.net/2022/04/14/E19jSz4qYdc8a2B.png" alt="蒙脱石">
 <figcaption aria-hidden="true">蒙脱石</figcaption>
 </figure>
 <h4 id="土中水">土中水</h4>
@@ -345,16 +117,16 @@ I_l=\frac{w-w_p}{w_l-w_p}
 <p><strong>细粒土</strong></p>
 <p>分散结构：分散结构的颗粒一般平行排列</p>
 <p>絮凝结构：土的结构是面-边接触</p>
-<p><img src="https://s2.loli.net/2022/04/14/krSycVHT7mvObau.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/krSycVHT7mvObau.png"></p>
 <h3 id="土的压实性">土的压实性</h3>
 <p>细粒土压实标准：<strong>压实度</strong> <span class="math display">\[
 D_c=\frac{\rho_d}{\rho_{dmax}}
 \]</span>
 细粒土之所以有最优含水量是两方面：水的润滑作用、水中的空气能否排出。</p>
-<p><img src="https://s2.loli.net/2022/04/14/n9ZhyQDfmsKCSIj.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/n9ZhyQDfmsKCSIj.png"></p>
 <p>可知，最优含水量大概12%。</p>
 <p>对于粗粒土，压实标准用<strong>相对密度</strong><span class="math inline">\(D_r\)</span>。一般<span class="math inline">\(D_r\)</span>要0.7以上。</p>
-<p><img src="https://s2.loli.net/2022/04/14/kU5nMYupTJjGfoQ.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/kU5nMYupTJjGfoQ.png"></p>
 <p>注意完全风干或饱和状态下容易击实。</p>
 <h3 id="土的工程分类">土的工程分类</h3>
 <p>粗粒土：级配组成</p>
@@ -405,10 +177,10 @@ p_0=p-\sigma_{cd}=p-\gamma_0 d
 \]</span> 由布辛涅斯科解 <span class="math display">\[
 \sigma_z=\alpha \frac{P}{Z^2}
 \]</span> 则可知其应力分布情况</p>
-<p><img src="https://s2.loli.net/2022/04/14/QoLK6yNXPfRiUCM.png" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://s2.loli.net/2022/04/14/h9tDf58XJuOsib3.png" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://s2.loli.net/2022/04/14/vH6OcbnorpRzfF2.png" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://s2.loli.net/2022/04/14/4LQ6WlJpNCEyivd.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://s2.loli.net/2022/04/14/QoLK6yNXPfRiUCM.png"></p>
+<p><img src="https://s2.loli.net/2022/04/14/h9tDf58XJuOsib3.png"></p>
+<p><img src="https://s2.loli.net/2022/04/14/vH6OcbnorpRzfF2.png"></p>
+<p><img src="https://s2.loli.net/2022/04/14/4LQ6WlJpNCEyivd.png"></p>
 <h4 id="多层土的情况">多层土的情况</h4>
 <p>如果上层土软，则其高度换算就小，就会应力集中；从而上层土硬，就会应力扩散。</p>
 <h4 id="均质土的情况">均质土的情况</h4>
@@ -419,7 +191,7 @@ p_0=p-\sigma_{cd}=p-\gamma_0 d
 <p>压缩模量等都需要记忆。</p>
 <p><span class="math inline">\(a_{1-2}\)</span>即应力范围为100-200kPa的a。通常也用这个a对不同土的压缩性进行比较。</p>
 <p>需要记得的图是</p>
-<p><img src="/img/soil1.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/soil1.png"></p>
 <p>e-lgp曲线主要用来研究应力历史。</p>
 <p>土的变形模量（无侧限时测得）<span class="math inline">\(E_0\)</span>也是需要记忆的。 <span class="math display">\[
 E_0=\frac{\Delta\sigma_z}{\Delta\epsilon_z}
@@ -450,11 +222,11 @@ S_t=S_{\infty}\cdot U_t
 S_{t}=\int \epsilon_zdz
 \]</span></p>
 <p>另有一个或许比较重要，就是下面这张图</p>
-<p><img src="/img/soil2.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/soil2.png"></p>
 <p><strong>注意，当双面排水时，无论应力分布如何，都可以通过割补而成为矩形的应力分布。</strong></p>
 <p>同样需要注意，在一维固结理论中，初始的超静孔压也就是总应力。</p>
 <p>最好参考一下下面这张图：</p>
-<p><img src="/img/soil3.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/soil3.png"></p>
 <h2 id="第六章地基沉降与计算">第六章、地基沉降与计算</h2>
 <p>地基沉降的基本理念借鉴于压缩试验，其假定土层压缩时不发生侧向变形</p>
 <p>对于规范法，任意深度z范围内的压缩量为 <span class="math display">\[
@@ -489,7 +261,7 @@ c——土的黏聚力
 \]</span></p>
 <h3 id="土的抗剪强度的测定">土的抗剪强度的测定</h3>
 <p>不固结、不排水实验的莫尔圆的规律很奇特，根本上是因为其不固结。正是因为不固结，所以总应力里包含的成分只有超孔压，而水的抗剪强度不会因为水压的增大而增大。所以导致最后的摩尔包线是水平的。如下图。</p>
-<p><img src="/img/soil4.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/soil4.png"></p>
 <p>从而UU实验只用于测定饱和黏土不排水抗剪强度<span class="math inline">\(C_u\)</span>，应用于总应力等于0的情况。</p>
 <p>不过，此处的不固结不是指土样从未固结过，而是在三轴仪中在所加压力下土体未发生排水固结。</p>
 <p>无侧限抗压强度实验可以用来测定土的不排水抗剪强度<span class="math inline">\(C_u\)</span>和饱和黏土的灵敏度。</p>
@@ -503,372 +275,17 @@ c——土的黏聚力
 <p>摩尔库伦公式要记</p>
 <p>有可能整体圆弧法</p>
 <p>考主动土压力</p>
-
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Class-Notes/" class="category-chain-item">Class Notes</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/Science/" class="print-no-link">#Science</a>
-      
-        <a href="/tags/Soil/" class="print-no-link">#Soil</a>
-      
-    </div>
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>土力学细节复习札记</div>
-      <div>http://avcaleb.github.io/2022/04/12/土力学细节复习札记/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>A. V. Caleb</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2022年4月12日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2022/04/12/MarineDynamic/" title="Marine Dynamic">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Marine Dynamic</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%20%E7%AC%AC%E5%8D%81%E7%AB%A0/" title="土力学课程笔记">
-                        <span class="hidden-mobile">土力学课程笔记</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
+</article>
+    <footer class="article-end"><nav class="article-tags" aria-label="本文标签"><a href="/tags/Science/">Science ↗</a><a href="/tags/Soil/">Soil ↗</a></nav><p>作者：A. V. Caleb · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer">CC BY 4.0</a></p><p class="article-permalink"><a href="https://avcaleb.github.io/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%E7%BB%86%E8%8A%82%E5%A4%8D%E4%B9%A0%E6%9C%AD%E8%AE%B0/">本文永久链接 ↗</a></p></footer>
+    <nav class="adjacent-posts" aria-label="相邻文章"><a href="/2022/04/12/MarineDynamic/"><span>← 较新的文章</span><strong>Marine Dynamic</strong></a><a href="/2022/04/12/%E5%9C%9F%E5%8A%9B%E5%AD%A6%20%E7%AC%AC%E5%8D%81%E7%AB%A0/"><span>较早的文章 →</span><strong>土力学课程笔记</strong></a></nav>
   </div>
 </div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-  
-
-
-
-  
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://www.avcaleb.top/about/" target="_blank" rel="nofollow noopener"><span>A. V. Caleb</span></a> <i class="iconfont icon-love"></i> <a href="https://www.avcaleb.top/about/" target="_blank" rel="nofollow noopener"><span>Veritas, Vita, Dulcedo</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" ></script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
+</main>
+  <footer class="site-footer">
+  <div><a href="/">The Meditations of A. V. Caleb</a><span>Veritas, Vita, Dulceduo</span></div>
+  <nav aria-label="页脚导航"><a href="/archives/">所有文章</a><a href="/about/">关于作者</a><a href="/atom.xml">RSS ↗</a><a href="#top">返回页首 ↑</a></nav>
+</footer>
+
+  <dialog id="image-viewer" aria-label="查看大图"><form method="dialog"><button aria-label="关闭大图">关闭 ×</button></form><img src="/journal/img/gleaners.webp" alt=""></dialog>
 </body>
 </html>
